@@ -1,0 +1,38 @@
+#uclw .uclw_shop_mango #uclw_header #uclw_logo {
+  background: url("/images/widget_v2/overrides/logos/mango.png") no-repeat 0 0;
+  width: 122px;
+  height: 22px;
+  top: 0px; }
+
+#uclw .uclw_shop_mango .uclw_button_continue, #uclw .uclw_shop_mango .uclw_button,
+#uclw .uclw_shop_mango .uclw_submit_form_button,
+#uclw .uclw_shop_mango #uclw_cart_button,
+#uclw .uclw_shop_mango #uclw_close_button {
+  background: #000;
+  border-color: #000; }
+  #uclw .uclw_shop_mango .uclw_button_continue:hover, #uclw .uclw_shop_mango .uclw_button_continue:active, #uclw .uclw_shop_mango .uclw_button:hover, #uclw .uclw_shop_mango .uclw_button:active,
+  #uclw .uclw_shop_mango .uclw_submit_form_button:hover,
+  #uclw .uclw_shop_mango .uclw_submit_form_button:active,
+  #uclw .uclw_shop_mango #uclw_cart_button:hover,
+  #uclw .uclw_shop_mango #uclw_cart_button:active,
+  #uclw .uclw_shop_mango #uclw_close_button:hover,
+  #uclw .uclw_shop_mango #uclw_close_button:active {
+    background: #1a1a1a;
+    border-color: #1a1a1a; }
+
+#uclw .uclw_shop_mango #uclw_preloader .uclw_spinner > div {
+  background-color: #000; }
+
+#uclw * {
+  position: static; }
+
+body.uclw_widget_open {
+  overflow: auto !important;
+  padding-right: initial; }
+
+html.uclw_widget_open1 {
+  overflow: hidden !important;
+  padding-right: 15px; }
+
+#menuContainer.uclw_widget_open1, .product-actions.uclw_widget_open1, #navTools.uclw_widget_open1 {
+  margin-right: 15px; }

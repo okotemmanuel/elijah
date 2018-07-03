@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+
+
 <?php include 'config.php';
 
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -7,7 +9,24 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 ?>
-<html class="home     js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths supports csstransforms csstransforms3d csstransitions add-horizontal-scroll" xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en"><script type="text/javascript" async="" src="home_files/js_002"></script><script id="mngRTD" src="home_files/mngrtd.js"></script><script src="home_files/441271682641901.js" async=""></script><script async="" src="home_files/fbevents.js"></script><script type="text/javascript" async="" src="home_files/ld.js"></script><script type="text/javascript" async="" src="home_files/conversion_async.js"></script><script type="text/javascript" async="" src="home_files/bat.js"></script><script type="text/javascript" async="" src="home_files/bntmtycmx0.js"></script><script type="text/javascript" async="" src="home_files/analytics.js"></script><script type="text/javascript" async="" src="home_files/ec.js"></script><script async="" src="home_files/analytics.js"></script><script async="" src="home_files/gtm.js"></script><script>(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(_dereq_,module,exports){
+
+<html class="home     js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths supports csstransforms csstransforms3d csstransitions add-horizontal-scroll" xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+<script type="text/javascript" async="" src="home_files/js_002"></script>
+<script id="elijahRTD" src="home_files/elijahrtd.js"></script>
+<script src="home_files/441271682641901.js" async=""></script>
+<script async="" src="home_files/fbevents.js"></script>
+<script type="text/javascript" async="" src="home_files/ld.js"></script>
+<script type="text/javascript" async="" src="home_files/conversion_async.js"></script>
+<script type="text/javascript" async="" src="home_files/bat.js"></script>
+<script type="text/javascript" async="" src="home_files/bntmtycmx0.js"></script>
+<script type="text/javascript" async="" src="home_files/analytics.js"></script>
+<script type="text/javascript" async="" src="home_files/ec.js"></script>
+<script async="" src="home_files/analytics.js"></script>
+<script async="" src="home_files/gtm.js"></script>
+
+<!--script>
+
+(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(_dereq_,module,exports){
 (function (global){
 'use strict';
 
@@ -14309,12 +14328,16 @@ function extend() {
 
 },{}]},{},[1]);
 //# sourceURL=moz-extension://48904160-8e34-4d16-9296-27ab0d330361/scripts/inpage.js
-</script><head>
-				<title> elijahmcquinn uganda</title>
+</script>
+
+
+
+<head>
+				<title>Fashion for Women | elijahmcquinn uganda</title>
 		<meta name="description" content="Latest trends in women’s fashion. Discover our designs: dresses, tops, jeans, shoes, bags and accessories.  FREE SHIPPING &amp; FREE RETURNS ON ALL ORDERS">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
 		<meta name="apple-itunes-app" content="app-id=372216941, affiliate-data=myAffiliateData, app-argument=myURL">
-		<meta name="author" content="elijahmcquinn MNG">
+		<meta name="author" content="elijahmcquinn elijah">
 		<meta name="google-play-app" content="app-id=com.dylvian.elijahmcquinn.activities">
 	
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -14327,8 +14350,8 @@ function extend() {
 
 <meta property="fb:pages" content="155318785394,205619922891606,499683423422363">
 	
-	
-	
+		
+				
 				<link rel="stylesheet" type="text/css" href="home_files/maqueta.css">
 				<link rel="stylesheet" type="text/css" href="home_files/global.css">
 					<link rel="stylesheet" type="text/css" href="home_files/form.css">
@@ -14345,7 +14368,7 @@ function extend() {
 
 			
 			<script type="text/javascript">
-				var shopJson = {"shop":"shop","country":{"code":"400","iso2":"US","iso3":"uganda","isSaleCountry":true,"isMng":false,"languages":[{"code":"US","iso2":"en"},{"code":"ES","iso2":"es"}],"currencyCode":"USD"},"brands":["she","he","nina","nino","violeta"],"pageNameNoSuffix":"home","idSeccionActiva":"nuevo"};
+				var shopJson = {"shop":"shop","country":{"code":"400","iso2":"US","iso3":"uganda","isSaleCountry":true,"iselijah":false,"languages":[{"code":"US","iso2":"en"},{"code":"ES","iso2":"es"}],"currencyCode":"USD"},"brands":["she","he","nina","nino","violeta"],"pageNameNoSuffix":"home","idSeccionActiva":"nuevo"};
 				var sessionObjectsJson = {"browser":{"name":"Firefox","version":60,"mobile":false,"ipad":false,"tablet":false},"androidApp":false,"isApp":false,"newVisit":false,"fromPreHome":false,"paisConfirm":false,"countryCode":"400","urlCountryCode":"400","countryCodeCookie":"400","countryISOCodeCookie":"US","estadoProvinciaDetected":false,"periodoRebajasAlgunaProvincia":false,"language":{"code":"US","iso2":"en"},"selectedBrand":"she","userLogged":false,"modals":[{"id":"modalBannerCookies","src":"modals/bannerCookies.faces","srcLocationType":"url","event":"load"},{"id":"modalRegistroNewsletter","src":"modals/registroNewsletter.faces","srcLocationType":"url","event":"load","cookieName":"modalRegistroNewsletter","repetitions":1},{"id":"modalCambioPais","src":"modals/cambioPais.faces","srcLocationType":"local","event":"click"}]};
 				var viewObjectsJson = {"browserLanguage":"en","headerMenusParams":{"isoCode":"US","optionalParams":{"selectedMenu":"she.nuevo","cacheId":"v6_14_0.ts2052.400.US.0.false.false.v3.15164698811383"}}};
 				
@@ -14425,7 +14448,9 @@ function extend() {
       };
      }catch(err){}
    ;
-		</script>
+		
+		
+		</script-->
                     <script async="" src="home_files/aksb.js"></script><script>var w=window;if(w.performance||w.mozPerformance||w.msPerformance||w.webkitPerformance){var d=document;AKSB=w.AKSB||{},AKSB.q=AKSB.q||[],AKSB.mark=AKSB.mark||function(e,_){AKSB.q.push(["mark",e,_||(new Date).getTime()])},AKSB.measure=AKSB.measure||function(e,_,t){AKSB.q.push(["measure",e,_,t||(new Date).getTime()])},AKSB.done=AKSB.done||function(e){AKSB.q.push(["done",e])},AKSB.mark("firstbyte",(new Date).getTime()),AKSB.prof={custid:"15333",ustr:"",originlat:"0",clientrtt:"577",ghostip:"2.21.98.55",ipv6:false,pct:"10",clientip:"197.239.38.12",requestid:"22a706c7",region:"32506",protocol:"h2",blver:14,akM:"a",akN:"ae",akTT:"O",akTX:"1",akTI:"22a706c7",ai:"174235",ra:"false",pmgn:"",pmgi:"",pmp:"",qc:""},function(e){var _=d.createElement("script");_.async="async",_.src=e;var t=d.getElementsByTagName("script"),t=t[t.length-1];t.parentNode.insertBefore(_,t)}(("https:"===d.location.protocol?"https:":"http:")+"//ds-aksb-a.akamaihd.net/aksb.min.js")}</script>
                     <script>undefined</script><script>
 
@@ -14461,11 +14486,9 @@ function extend() {
             }
         }
 
-    </script><script type="text/javascript" src="home_files/elijahmcquinn.js"></script><iframe target="_self" style="display: none; height: 0px; width: 0px;" src="home_files/receiver.html"></iframe><script type="text/javascript" charset="UTF-8" src="home_files/common_002.js"></script><script type="text/javascript" charset="UTF-8" src="home_files/util.js"></script><script type="text/javascript" charset="UTF-8" src="home_files/stats.js"></script></head><body onload="" class="main-body shopMNG brand_she subBrand__sections_she_ugandaCanadaDiaPadre_PromoJeansuganda_Privadas  country_400 language_en user_no_loged tele_false phoneSales_false multi       PC firefox firefox60 isDesktop showF">
+    </script><script type="text/javascript" src="home_files/elijahmcquinn.js"></script><iframe target="_self" style="display: none; height: 0px; width: 0px;" src="home_files/receiver.html"></iframe><script type="text/javascript" charset="UTF-8" src="home_files/common_002.js"></script><script type="text/javascript" charset="UTF-8" src="home_files/util.js"></script><script type="text/javascript" charset="UTF-8" src="home_files/stats.js"></script></head><body onload="" class="main-body shopelijah brand_she subBrand__sections_she_ugandaCanadaDiaPadre_PromoJeansuganda_Privadas  country_400 language_en user_no_loged tele_false phoneSales_false multi       PC firefox firefox60 isDesktop showF">
 					
-					
-		
-				<header id="headerMNG" class="headerMNG">
+				<header id="headerelijah" class="headerelijah">
 
 	
 	<div id="navMain" class="nav-main hidden_mobile" style="left: 0px;">
@@ -14473,18 +14496,18 @@ function extend() {
 		<div class="nav-main-container">
 
 	<div class="nav-logo">
-			<img src="photos/logo.png" style="margin-left:30px;height:60px;">
+			<img src="photos/logo.png" style="margin-left:30px;height:150px;">
 	</div>
 
 	<div class="nav-shop">
 		<nav id="menuContainer" class="menu-container hover"><ul class="menu-list">
     
 	   <li class="menu-elem ">
-        <a href="home.php" class="menu-link menu-link-js selected" >Home</a>
+        <a href="home.php" class="menu-link menu-link-js " data-id="sheSubmenu" data-ga-action="mujer" data-ga-label="exterior-mujer" data-ga-category="">Home</a>
     </li>
 	
 	 <li class="menu-elem ">
-        <a href="women.php" class="menu-link menu-link-js " data-id="sheSubmenu" data-ga-action="mujer" data-ga-label="exterior-mujer" data-ga-category="">Women</a>
+        <a href="women.php" class="menu-link menu-link-js selected" data-id="sheSubmenu" data-ga-action="mujer" data-ga-label="exterior-mujer" data-ga-category="">Women</a>
     </li>
 	
  
@@ -14504,9 +14527,7 @@ function extend() {
 	<li class="menu-elem ">
         <a href="acc.php" class="menu-link menu-link-js " data-id="sections_editsSubmenu" data-ga-action="nino" data-ga-label="exterior-nino" data-ga-category="">Accessories</a>
     </li>
-		<li class="menu-elem ">
-        <a href="acc.php" class="menu-link menu-link-js " >About Us </a>
-    </li>
+	
  
     <li id="menuLine" class="menu-line" style="left: 460px; width: 47px;"></li>
 </ul>
@@ -14521,49 +14542,55 @@ function extend() {
 
 		
 	
-	<div class="nav-tools-wrapper">
-	<form id="SVBodyHeader:SVUserMenu:userMenuForm" name="SVBodyHeader:SVUserMenu:userMenuForm" method="post" action="https://shop.elijahmcquinn.com/catalog/catalogPc.faces?ts=1529393591276&amp;state=she_400_US" enctype="application/x-www-form-urlencoded">
-	<div id="SVBodyHeader:SVUserMenu:userMenuForm:linksHeader">
-	<div id="SVBodyHeader:SVUserMenu:userMenuForm:userMenuLinksDiv" class="userMenuLinksDiv">
+	<div class="nav-tools-wrapper"><form id="SVBodyHeader:SVUserMenu:userMenuForm" name="SVBodyHeader:SVUserMenu:userMenuForm" method="post" action="https://shop.elijahmcquinn.com/catalog/catalogPc.faces?ts=1529393591276&amp;state=she_400_US" enctype="application/x-www-form-urlencoded"><div id="SVBodyHeader:SVUserMenu:userMenuForm:linksHeader"><div id="SVBodyHeader:SVUserMenu:userMenuForm:userMenuLinksDiv" class="userMenuLinksDiv">
 	
 					
 					<div id="navToolsUser" class="nav-tools-wrapper nav-tools-user">
 						<div id="userMenuContainer" class="user-menu-container">
-																	
+										<a id="userMenuTrigger" class="nav-tools-link" href="https://shop.elijahmcquinn.com/us/login?tab=login" data-origin="login"><span class="nav-tools-link-text">Sign in</span></a>								
 						
-				<nav class="user-menu log_false" id="userMenu">
+								<nav class="user-menu log_false" id="userMenu">
 										
-			<a href="https://shop.elijahmcquinn.com/us/login?tab=login" class="user-menu-link userMenu__content userMenu__register" data-origin="login"><span>Sign in</span></a>
-	<a href="https://shop.elijahmcquinn.com/favorites" class="user-menu-link wishListButton wishlist_bolsa_txt userMenu__content userMenu__favoritos" data-ga="favoritos"><span>Wishlist</span></a>
+										<a href="https://shop.elijahmcquinn.com/us/login?tab=login" class="user-menu-link userMenu__content userMenu__register" data-origin="login"><span>Sign in</span></a>
+											<a href="https://shop.elijahmcquinn.com/favorites" class="user-menu-link wishListButton wishlist_bolsa_txt userMenu__content userMenu__favoritos" data-ga="favoritos"><span>Wishlist</span></a>
 
 										
-<a href="https://shop.elijahmcquinn.com/us/signup?tab=register" class="user-menu-link userMenu__content userMenu__register" data-origin="register"><span>Register</span></a>
+										<a href="https://shop.elijahmcquinn.com/us/signup?tab=register" class="user-menu-link userMenu__content userMenu__register" data-origin="register"><span>Register</span></a>
 										
 										
-		<a href="https://shop.elijahmcquinn.com/us/account/orders" class="user-menu-link userMenu__content userMenu__pedidos"><span>Orders</span></a><a href="https://shop.elijahmcquinn.com/us/women/help/12592.html" style="text-decoration: none; ">
-		<span id="SVBodyHeader:SVUserMenu:userMenuForm:j_id_11_b_o" style="cursor: pointer;" class="user-menu-link userMenu__content userMenu__help">Help</span></a>
+										<a href="https://shop.elijahmcquinn.com/us/account/orders" class="user-menu-link userMenu__content userMenu__pedidos"><span>Orders</span></a><a href="https://shop.elijahmcquinn.com/us/women/help/12592.html" style="text-decoration: none; "><span id="SVBodyHeader:SVUserMenu:userMenuForm:j_id_11_b_o" style="cursor: pointer;" class="user-menu-link userMenu__content userMenu__help">Help</span></a>
 
 								</nav>
 	
 						</div>
-					</div><div id="SVBodyHeader:SVUserMenu:userMenuForm:SVWishlistHeader:WishListAddProducto" style="padding: 10px; position: absolute; right: 7px; top:37px; z-index: 180; background-color: #fff; display: none; border: 1px solid #dedede; width: 400px;">
-					</div>
+					</div><div id="SVBodyHeader:SVUserMenu:userMenuForm:SVWishlistHeader:WishListAddProducto" style="padding: 10px; position: absolute; right: 7px; top:37px; z-index: 180; background-color: #fff; display: none; border: 1px solid #dedede; width: 400px;"></div>
 	
 		
-		<div id="shoppingBag" class="nav-tools-wrapper nav-tools-shopping-bag hidden_mobile userMenu__shoppingCart">
-		<a href="cart.php">
-		<span id="SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:panelWishListBolsa" class="nav-tools-link shopping-bag-button-js shoppingBagButton">
-		<span id="SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:j_id_11_b_w_5" class="icon">j</span>
+		<div id="shoppingBag" class="nav-tools-wrapper nav-tools-shopping-bag hidden_mobile userMenu__shoppingCart"><span id="SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:panelWishListBolsa" class="nav-tools-link shopping-bag-button-js shoppingBagButton"><span id="SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:j_id_11_b_w_5" class="icon">j</span>
 				<span class="conjunto_numItemsBolsa">
 					<span class="parentesisbolsa hidden">(</span><span id="SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:bolsa_articulosNum" class="shopping-bag-items bolsaItems bolsa_empty"></span>
 					<span class="parentesisbolsa hidden">)</span>
 				</span></span>
-				
-			</a>
 			
-   
-		</div></div></div><input name="SVBodyHeader:SVUserMenu:userMenuForm_SUBMIT" value="1" type="hidden">
-		<input name="javax.faces.ViewState" id="j_id__v_0:javax.faces.ViewState:1" value="HlhAdMQoAxeY41jaqQLRxNO1DaUxr5I1NVxXAAUwanoltDzb
+			
+            <div id="shoppingBagContent" class="shopping-bag shoppingBagContent">
+			<script type="text/javascript"></script>
+                <div id="mainDivBolsa" class="shopping-bag-content clearfix"><div id="SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:SVBolsa:panelBolsa" style=""><span id="SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:SVBolsa:panelBolsa:bolsa_titulo">
+			<div class="bolsa_cerrar row-fluid">
+				<p class="tu_bolsa">Your shopping bag is empty
+				</p>
+				<p class="bolsa_close icono">x</p>
+			</div></span><div id="SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:SVBolsa:panelBolsa:bolsaItems" class="bolsa_items row-fluid">
+			<span class="moveBolsa icono hidden_mobile" onclick="bolsaDown();">^</span><div style="max-height: 258px;"><div id="SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:SVBolsa:panelBolsa:j_id_11_b_w_r"></div></div>
+
+			<span class="moveBolsa icono hidden_mobile" onclick="bolsaUp();">v</span></div><div id="SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:SVBolsa:panelBolsa:bolsa_total" class="row-fluid"></div></div>
+				</div>
+				<div id="mainDivBolsaUpdate" class="clearfix show-1">
+					<p class="title">YOUR SHOPPING BAG HAS BEEN UPDATED</p>
+					<p>The items you added in your last session have been included.</p>
+				</div>
+			</div>
+		</div></div></div><input name="SVBodyHeader:SVUserMenu:userMenuForm_SUBMIT" value="1" type="hidden"><input name="javax.faces.ViewState" id="j_id__v_0:javax.faces.ViewState:1" value="HlhAdMQoAxeY41jaqQLRxNO1DaUxr5I1NVxXAAUwanoltDzb
 " type="hidden"></form>
 	</div>			
 			</div>
@@ -14995,7 +15022,8 @@ echo '
 		</div>
 </div>
 </header>
-		
+
+			
 			<div class="modalContainer"></div>
 			<div id="listenerModal" style="display: none;"><span id="j_id_1:panelModalRegistroNewsletter" data-ga-category="modal"><form id="j_id_1:FormRegistroNewsletter" name="j_id_1:FormRegistroNewsletter" method="post" action="https://shop.elijahmcquinn.com/modals/registroNewsletter.faces?ts=1529393591276&amp;state=she_400_US" class="modalRegistroNewsletter customFormIdFormRegistroNewsletter" enctype="application/x-www-form-urlencoded" data-validate-active="true">							
 				<div class="modal-container-newsletter">
@@ -15009,7 +15037,7 @@ echo '
 	
 	<div class="modal-header">
 		<h6 class="modal-pre-title"> </h6>
-			<h2 class="modal-title"></h2>
+			<h2 class="modal-title">Sign up now &amp; get 10% off</h2>
 	</div>
 	
 	<div class="modal-body">
@@ -15046,7 +15074,7 @@ echo '
 	</script>
 								
 								<div class="modal-close closeModal" id="modalClose">
-									<span class="modal-close-icon"></span>
+									<span class="modal-close-icon">q</span>
 								</div>
 							</div>
 						</div>
@@ -15056,13 +15084,13 @@ echo '
 				</div><input name="j_id_1:FormRegistroNewsletter_SUBMIT" value="1" type="hidden"><input name="javax.faces.ViewState" id="j_id__v_0:javax.faces.ViewState:1" value="6+c7eLbMbxJEFyxcQfmzEPUXGE7fcI8maCpQPgu0Rx/Jcjsq
 " type="hidden"></form></span></div>
 			<div id="storeLocator"><div></div></div><span id="panelModalRopo" style="z-index:101; position:fixed" class="panelModalLocalizador">
-		<div class="mngCSS" style="z-index: 100"><form id="SVPanelDroppointsROPO:FRopo" name="SVPanelDroppointsROPO:FRopo" method="post" action="https://shop.elijahmcquinn.com/home.faces?ts=1529393591276&amp;state=she_400_US" class="customFormIdFRopo hidden" enctype="application/x-www-form-urlencoded" data-validate-active="true"><input name="SVPanelDroppointsROPO:FRopo_SUBMIT" value="1" type="hidden"><input name="javax.faces.ViewState" id="j_id__v_0:javax.faces.ViewState:2" value="6+c7eLbMbxJ9lg/TmxR4JQZxM8Fpl6AMDEYKKYc0WZRdv6XH
+		<div class="elijahCSS" style="z-index: 100"><form id="SVPanelDroppointsROPO:FRopo" name="SVPanelDroppointsROPO:FRopo" method="post" action="https://shop.elijahmcquinn.com/home.faces?ts=1529393591276&amp;state=she_400_US" class="customFormIdFRopo hidden" enctype="application/x-www-form-urlencoded" data-validate-active="true"><input name="SVPanelDroppointsROPO:FRopo_SUBMIT" value="1" type="hidden"><input name="javax.faces.ViewState" id="j_id__v_0:javax.faces.ViewState:2" value="6+c7eLbMbxJ9lg/TmxR4JQZxM8Fpl6AMDEYKKYc0WZRdv6XH
 " type="hidden"></form>
 		</div></span><span id="blancoModalBlock">
 		<div id="blockBackGround" class="blancoModal cerrado"></div></span>
 			
 	
-<form id="j_id_2h_d" name="j_id_2h_d" method="post" action="https://shop.elijahmcquinn.com/home.faces?ts=1529393591276&amp;state=she_400_US" enctype="application/x-www-form-urlencoded"><span id="j_id_2h_d:searchShop" onclick="_mng_preSubmit('_mng_hidde_valuesearchShop','searchShop','j_id_2h_d');jsf.util.chain(document.getElementById('j_id_2h_d:searchShop'), event,'mostrarInfoPopup();;', 'jsf.ajax.request(\'j_id_2h_d:searchShop\',event,{execute:\'@form \',render:\'panelModalRopo blancoModalBlock \',onevent:function(e) {if (e.status == \'complete\') { ocultarInfoPopup(); } else if (e.status == \'success\'){ storesComponentsController.init(); storesMapsController.init(); }},\'javax.faces.behavior.event\':\'click\'})'); return false;" style="cursor: pointer;" class="boton_buscatiendas shop_search shop-search-js hidden"></span><input name="j_id_2h_d_SUBMIT" value="1" type="hidden"><input name="javax.faces.ViewState" id="j_id__v_0:javax.faces.ViewState:3" value="6+c7eLbMbxJ9lg/TmxR4JQZxM8Fpl6AMDEYKKYc0WZRdv6XH
+<form id="j_id_2h_d" name="j_id_2h_d" method="post" action="https://shop.elijahmcquinn.com/home.faces?ts=1529393591276&amp;state=she_400_US" enctype="application/x-www-form-urlencoded"><span id="j_id_2h_d:searchShop" onclick="_elijah_preSubmit('_elijah_hidde_valuesearchShop','searchShop','j_id_2h_d');jsf.util.chain(document.getElementById('j_id_2h_d:searchShop'), event,'mostrarInfoPopup();;', 'jsf.ajax.request(\'j_id_2h_d:searchShop\',event,{execute:\'@form \',render:\'panelModalRopo blancoModalBlock \',onevent:function(e) {if (e.status == \'complete\') { ocultarInfoPopup(); } else if (e.status == \'success\'){ storesComponentsController.init(); storesMapsController.init(); }},\'javax.faces.behavior.event\':\'click\'})'); return false;" style="cursor: pointer;" class="boton_buscatiendas shop_search shop-search-js hidden"></span><input name="j_id_2h_d_SUBMIT" value="1" type="hidden"><input name="javax.faces.ViewState" id="j_id__v_0:javax.faces.ViewState:3" value="6+c7eLbMbxJ9lg/TmxR4JQZxM8Fpl6AMDEYKKYc0WZRdv6XH
 " type="hidden"></form>
 			
 
@@ -15078,12 +15106,12 @@ echo '
 						</div>
 						<div id="mainDivBodyHome" class="main-vertical-component">
 		<div id="urlHomeExterna" style="display: none;" data-cached="false">
-			http://staticpages.mngbcn.com/homes/400/0/US/she/index.html
+			http://staticpages.elijahbcn.com/homes/400/0/US/she/index.html
 		</div><div id="homeContent" style="width: 100%;">
         <link rel="stylesheet" href="home_files/main.css">
     <script src="home_files/vendors.js"></script>
     <script type="text/javascript">
-                var json = {"name":"elijahmcquinn","tienda":"3","pais":"400","idioma":"US","device":"","grid":[{"id":"186","html":"<div class=\"vsv-box with-menu\" data-id=\"186\">\r\n\t<!--mobile-->\r\n\t<div class=\"visible-xs\" data-cta=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=prendas.tejanos&tiendaid=she\"> \r\n\t\t<div class=\"fullviewport\"><img data-bg=\"897 1024 cover center top\" src=\"\/\/staticpages.mngbcn.com\/homes\/images\/ss18\/she\/junio\/she_promo_jeans_ss18_mobile.jpg\"\/>\r\n\t\t\t<div class=\"vsv-container\">\r\n\t\t\t\t<div class=\"position-text position-text-top\"> \r\n\t\t\t\t\t<div class=\"text0\"> In stores & online - Ends on 06\/20<\/div>\r\n\t\t\t\t<\/div>\r\n\t\t\t\t<div class=\"position-text position-text-center\">\r\n\t\t\t\t\t<div class=\"text1\"> <\/div>\r\n\t\t\t\t\t<div class=\"text2\"> 30% off<\/div>\r\n\t\t\t\t\t<div class=\"text3\"> all our jeans<\/div>\r\n\t\t\t\t\t<div class=\"text4\"> Use code <span> MNGJEANS<\/span>  at checkout<\/div>\r\n\t\t\t\t\t<div class=\"links\"><div class=\"link\" data-cta=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=prendas.tejanos&tiendaid=she\"><span class=\"hvr-underline-fix2\"> Shop now<\/span><\/div><\/div>\r\n\t\t\t\t<\/div>\r\n\t\t\t\t<div class=\"position-text position-text-bottom\">\r\n\t\t\t\t\t<div class=\"text5\"> Applies to jeans in the Women\u2019s Spring\/Summer\u201918 collection. Discount applied at the cash desk. Not valid with any other offer, discount or promotion. Excludes items from the Fall\/Winter'18 collection, whose reference begins with a 3.<\/div>\r\n\t\t\t\t<\/div>\r\n\t\t\t<\/div>\r\n\t\t<\/div>\r\n\t<\/div>\r\n\r\n\t<div class=\"hidden-xs\" data-cta=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=prendas.tejanos&tiendaid=she\" style=\"position: relative;\">\r\n\t\t<!--@ desktop && tablet landscape @--><div class=\"fullviewport\"><img data-bg=\"2048 1141 cover center top\" src=\"\/\/staticpages.mngbcn.com\/homes\/images\/ss18\/she\/junio\/she_promo_jeans_ss18.jpg\"\/><\/div><!--@ end desktop && tablet landscape @-->\r\n\t\t<!--@ tablet portrait @--><div><img class=\"img-responsive\" src=\"\/\/staticpages.mngbcn.com\/homes\/images\/ss18\/she\/junio\/she_promo_jeans_ss18_tablet.jpg\"\/><\/div><!--@ end tablet portrait @-->\r\n\t\t<div class=\"vsv-container\">\r\n\t\t\t<div class=\"position-text position-text-top\">\r\n\t\t\t\t<div class=\"text0\"> In stores & online - Ends on 06\/20<\/div>\r\n\t\t\t<\/div>\r\n\t\t\t<div class=\"position-text position-text-center\">\r\n\t\t\t\t<div class=\"text1\"> <\/div>\r\n\t\t\t\t<div class=\"text2\"> 30% off<\/div>\r\n\t\t\t\t<div class=\"text3\"> all our jeans<\/div>\r\n\t\t\t\t<div class=\"text4\"> Use code <span> MNGJEANS<\/span>  at checkout<\/div>\r\n\t\t\t\t<!--@ desktop && tablet landscape @-->\r\n\t\t\t\t<div class=\"links\"><div class=\"link\" data-cta=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=prendas.tejanos&tiendaid=she\"><span class=\"hvr-underline-fix2\"> Shop now<\/span><\/div><\/div>\r\n\t\t\t\t<!--@ end desktop && tablet landscape @-->\r\n\t\t\t<\/div>\r\n\t\t\t<!--@ desktop && tablet landscape @-->\r\n\t\t\t<div class=\"position-text position-text-bottom\">\r\n\t\t\t\t<div class=\"text5\"> Applies to jeans in the Women\u2019s Spring\/Summer\u201918 collection. Discount applied at the cash desk. Not valid with any other offer, discount or promotion. Excludes items from the Fall\/Winter'18 collection, whose reference begins with a 3.<\/div>\r\n\t\t\t<\/div>\r\n\t\t\t<!--@ end desktop && tablet landscape @-->\r\n\t\t\t<!--@ tablet portrait @-->\r\n\t\t\t<div class=\"position-text position-text-bottom\">\r\n\t\t\t\t<div class=\"links\"><div class=\"link\" data-cta=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=prendas.tejanos&tiendaid=she\"><span class=\"hvr-underline-fix2\"> Shop now<\/span><\/div><\/div>\r\n\t\t\t<\/div>\r\n\t\t\t<!--@ end tablet portrait @-->\r\n\t\t<\/div>\r\n\t\t<!--@ tablet portrait @-->\r\n\t\t<div class=\"position-text-bottom-tablet\">\r\n\t\t\t<div class=\"text5\"> Applies to jeans in the Women\u2019s Spring\/Summer\u201918 collection. Discount applied at the cash desk. Not valid with any other offer, discount or promotion. Excludes items from the Fall\/Winter'18 collection, whose reference begins with a 3.<\/div>\r\n\t\t<\/div>\r\n\t\t<!--@ end tablet portrait @-->\r\n\t<\/div>\r\n  <style>\r\n@font-face {\r\n  font-family: 'elijahmcquinnSans-Regular';\r\n  src: url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/elijahmcquinnSans-Regular.eot\");\r\n  src: url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/elijahmcquinnSans-Regular.eot?#iefix\") format(\"embedded-opentype\"), url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/elijahmcquinnSans-Regular.woff\") format(\"woff\"), url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/elijahmcquinnSans-Regular.ttf\") format(\"truetype\"); }\r\n@font-face {\r\n  font-family: 'elijahmcquinnSans-Bold';\r\n  src: url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/elijahmcquinnSans-Bold.eot\");\r\n  src: url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/elijahmcquinnSans-Bold.eot?#iefix\") format(\"embedded-opentype\"), url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/elijahmcquinnSans-Bold.woff\") format(\"woff\"), url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/elijahmcquinnSans-Bold.ttf\") format(\"truetype\"); }\r\n@font-face {\r\n  font-family: 'elijahmcquinnSans-Light';\r\n  src: url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/elijahmcquinnSans-Light.eot\");\r\n  src: url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/elijahmcquinnSans-Light.eot?#iefix\") format(\"embedded-opentype\"), url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/elijahmcquinnSans-Light.woff\") format(\"woff\"), url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/elijahmcquinnSans-Light.ttf\") format(\"truetype\"); }\r\n@font-face {\r\n  font-family: 'Austin-Light';\r\n  src: url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/Austin-Light.otf\");\r\n  src: url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/Austin-Light.eot?#iefix\") format(\"embedded-opentype\"), url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/Austin-Light.woff\") format(\"woff\"), url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/Austin-Light.otf\") format(\"truetype\"); }\r\n@font-face {\r\n  font-family: 'Austin-Light-Italic';\r\n  src: url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/Austin-LightItalic.otf\");\r\n  src: url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/Austin-LightItalic.eot?#iefix\") format(\"embedded-opentype\"), url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/Austin-LightItalic.woff\") format(\"woff\"), url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/Austin-LightItalic.otf\") format(\"truetype\"); }\r\n[data-id=\"186\"] {\r\n  margin: 0;\r\n  overflow: hidden; }\r\n  [data-id=\"186\"] div[data-cta] {\r\n    cursor: pointer; }\r\n  [data-id=\"186\"] .vsv-container {\r\n    position: absolute;\r\n    width: 50%;\r\n    right: 0;\r\n    height: 100%;\r\n    top: 0;\r\n    color: #000; }\r\n  [data-id=\"186\"] .position-text {\r\n    position: absolute;\r\n    \/*top: 0;*\/\r\n    width: 100%;\r\n    height: 100%;\r\n    display: flex;\r\n    pointer-events: none; }\r\n  [data-id=\"186\"] .position-text-top {\r\n    top: 0;\r\n    flex-direction: column;\r\n    justify-content: flex-start;\r\n    align-items: center;\r\n    text-align: center;\r\n    padding-top: 9.5vh; }\r\n  [data-id=\"186\"] .position-text-center {\r\n    flex-direction: column;\r\n    justify-content: center;\r\n    align-items: center;\r\n    text-align: center; }\r\n  [data-id=\"186\"] .position-text-bottom {\r\n    bottom: 0;\r\n    flex-direction: column;\r\n    justify-content: flex-end;\r\n    align-items: center;\r\n    text-align: center;\r\n    padding-bottom: 3vh; }\r\n  [data-id=\"186\"] .text0 {\r\n    font-family: elijahmcquinnSans-Light;\r\n    font-size: 12px;\r\n    line-height: 14px;\r\n    letter-spacing: 1px;\r\n    text-transform: uppercase; }\r\n  [data-id=\"186\"] .text1 {\r\n    font-family: Austin-Light;\r\n    font-size: 30px;\r\n    line-height: 30px;\r\n    padding: 0 5%; }\r\n  [data-id=\"186\"] .text2 {\r\n    font-family: Austin-Light;\r\n    font-size: 70px;\r\n    line-height: 84px; }\r\n  [data-id=\"186\"] .text3 {\r\n    font-family: Austin-Light;\r\n    font-size: 52px;\r\n    line-height: 38px; }\r\n  [data-id=\"186\"] .text4 {\r\n    font-family: elijahmcquinnSans-Light;\r\n    font-size: 16px;\r\n    line-height: 22px;\r\n    margin-top: 17vh;\r\n    padding: 0 5%; }\r\n    [data-id=\"186\"] .text4 span {\r\n      font-family: elijahmcquinnSans-Bold; }\r\n  [data-id=\"186\"] .text5 {\r\n    font-family: elijahmcquinnSans-Light;\r\n    font-size: 9px;\r\n    line-height: 11px;\r\n    color: #ADAFB2;\r\n    padding: 0 15%; }\r\n  [data-id=\"186\"] .links {\r\n    margin-top: 10vh;\r\n    pointer-events: auto; }\r\n    [data-id=\"186\"] .links .link {\r\n      display: inline-block; }\r\n      [data-id=\"186\"] .links .link .separation {\r\n        font-family: elijahmcquinnSans-UltraLight;\r\n        margin: 0 12px;\r\n        display: inline; }\r\n      [data-id=\"186\"] .links .link .hvr-underline-fix2 {\r\n        font-family: elijahmcquinnSans-Regular;\r\n        font-size: 12px;\r\n        line-height: 12px;\r\n        height: 12px;\r\n        color: #000;\r\n        margin: 0;\r\n        cursor: pointer;\r\n        display: inline-block;\r\n        padding: 0 0 15px 0;\r\n        border-bottom: 1px solid #000; }\r\n        [data-id=\"186\"] .links .link .hvr-underline-fix2:hover {\r\n          color: #999;\r\n          border-bottom: 1px solid #999;\r\n          text-decoration: none;\r\n          transition: all 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955);\r\n          -webkit-transition: all 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955);\r\n          -moz-transition: all 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955);\r\n          -o-transition: all 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955);\r\n          -ms-transition: all 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955); }\r\n\r\n@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {\r\n  [data-id=\"186\"] .vsv-container {\r\n    width: 100%;\r\n    height: 93%;\r\n    color: #000; }\r\n  [data-id=\"186\"] .position-text-top {\r\n    padding-top: 3vh; }\r\n  [data-id=\"186\"] .position-text-bottom {\r\n    padding-bottom: 3vh; }\r\n  [data-id=\"186\"] .position-text-bottom-tablet {\r\n    margin-top: 25px;\r\n    text-align: center; }\r\n  [data-id=\"186\"] .text0 {\r\n    font-family: elijahmcquinnSans-Light; }\r\n  [data-id=\"186\"] .text5 {\r\n    padding: 0 5%; }\r\n  [data-id=\"186\"] .links {\r\n    margin-top: 0; }\r\n    [data-id=\"186\"] .links .link .hvr-underline-fix2 {\r\n      color: #000;\r\n      border-bottom: 1px solid #000; } }\r\n@media (min-width: 1px) and (max-width: 767px) {\r\n  [data-id=\"186\"] .vsv-container {\r\n    width: 100%;\r\n    color: #000; }\r\n  [data-id=\"186\"] .position-text-top {\r\n    padding-top: 2vh; }\r\n  [data-id=\"186\"] .position-text-center {\r\n    padding-top: 1vh; }\r\n  [data-id=\"186\"] .position-text-bottom {\r\n    padding-top: 2vh; }\r\n  [data-id=\"186\"] .text0 {\r\n    font-size: 10px;\r\n    line-height: 12px; }\r\n  [data-id=\"186\"] .text1 {\r\n    font-size: 24px;\r\n    line-height: 24px;\r\n    padding: 0 5%; }\r\n  [data-id=\"186\"] .text2 {\r\n    font-size: 40px;\r\n    line-height: 48px; }\r\n  [data-id=\"186\"] .text3 {\r\n    font-size: 36px;\r\n    line-height: 26px; }\r\n  [data-id=\"186\"] .text4 {\r\n    font-size: 12px;\r\n    line-height: 16px;\r\n    margin-top: 10vh; }\r\n  [data-id=\"186\"] .text5 {\r\n    color: #000;\r\n    padding: 0 5%; }\r\n  [data-id=\"186\"] .links {\r\n    margin-top: 10vh; }\r\n    [data-id=\"186\"] .links .link .hvr-underline-fix2 {\r\n      color: #000;\r\n      border-bottom: 1px solid #000;\r\n      font-size: 10px; } }\r\n  <\/style>\r\n<\/div>","analytics":["send","event","banner home",1,"extra_2018_06_promojeans"]},{"id":"201","html":"<div class=\"vsv-box vsv-with-menu-lateral\" data-id=\"201\">\r\n    <div>\r\n        <div id=\"trigger0\" class=\"vsv-container\">\r\n            <div class=\"title\">New <span>now<\/span><\/div>\r\n            <div class=\"vsv-menu-wrapper\">\r\n                <div class=\"vsv-menu-prendas\">\r\n                    <div>\r\n                        <div class=\"vsv-menu-title\">Clothing<\/div>\r\n                        <div class=\"link\" data-cta=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=prendas.vestidos&tiendaid=she\" data-ga-cr=\"dresses\"><a href=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=prendas.vestidos&tiendaid=she\"><span class=\"hvr-underline-fix2\">Dresses<\/span><\/a><\/div>\r\n                        <div class=\"link\" data-cta=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=prendas.monos&tiendaid=she\" data-ga-cr=\"jumpsuits\"><a href=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=prendas.monos&tiendaid=she\"><span class=\"hvr-underline-fix2\">Rompers<\/span><\/a><\/div>\r\n                        <div class=\"link\" data-cta=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=prendas.camisas&tiendaid=she\" data-ga-cr=\"shirts\"><a href=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=prendas.camisas&tiendaid=she\"><span class=\"hvr-underline-fix2\">Shirts<\/span><\/a><\/div>\r\n                        <div class=\"link\" data-cta=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=prendas.camisetas&tiendaid=she\" data-ga-cr=\"tshirts\"><a href=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=prendas.camisetas&tiendaid=she\"><span class=\"hvr-underline-fix2\">T-shirts and tops<\/span><\/a><\/div>\r\n                        <div class=\"link\" data-cta=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=prendas.cardigans&tiendaid=she\" data-ga-cr=\"cardigans\"><a href=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=prendas.cardigans&tiendaid=she\"><span class=\"hvr-underline-fix2\">Cardigans and sweaters<\/span><\/a><\/div>\r\n                        <div class=\"link\" data-cta=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=prendas.sudaderas&tiendaid=she\" data-ga-cr=\"sweatshirts\"><a href=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=prendas.sudaderas&tiendaid=she\"><span class=\"hvr-underline-fix2\">Sweatshirts<\/span><\/a><\/div>\r\n                        <div class=\"link\" data-cta=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=prendas.chaquetas&tiendaid=she\" data-ga-cr=\"jackets\"><a href=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=prendas.chaquetas&tiendaid=she\"><span class=\"hvr-underline-fix2\">Jackets<\/span><\/a><\/div>\r\n                        <div class=\"link\" data-cta=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=prendas.abrigos&tiendaid=she\" data-ga-cr=\"coats\"><a href=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=prendas.abrigos&tiendaid=she\"><span class=\"hvr-underline-fix2\">Coats<\/span><\/a><\/div>\r\n                        <div class=\"link\" data-cta=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=prendas.pantalones&tiendaid=she\" data-ga-cr=\"trousers\"><a href=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=prendas.pantalones&tiendaid=she\"><span class=\"hvr-underline-fix2\">Pants<\/span><\/a><\/div>\r\n                        <div class=\"link\" data-cta=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=prendas.tejanos&tiendaid=she\" data-ga-cr=\"jeans\"><a href=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=prendas.tejanos&tiendaid=she\"><span class=\"hvr-underline-fix2\">Jeans<\/span><\/a><\/div>\r\n                        <div class=\"link\" data-cta=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=prendas.shorts&tiendaid=she\" data-ga-cr=\"shorts\"><a href=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=prendas.pantalones&tiendaid=she\"><span class=\"hvr-underline-fix2\">Shorts<\/span><\/a><\/div>\r\n                        <div class=\"link\" data-cta=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=prendas.faldas&tiendaid=she\" data-ga-cr=\"skirts\"><a href=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=prendas.faldas&tiendaid=she\"><span class=\"hvr-underline-fix2\">Skirts<\/span><\/a><\/div>\r\n                        <!--<div class=\"link\" data-cta=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=prendas.bano&tiendaid=she\" data-ga-cr=\"beachwear\"><a href=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=prendas.bano&tiendaid=she\"><span class=\"hvr-underline-fix2\">Swimwear<\/span><\/a><\/div>-->\r\n                    <\/div>\r\n\r\n                    <div>\r\n                        <div class=\"vsv-menu-title2\">Accessories<\/div>\r\n                        <div class=\"link displeyNoneShoes400\" data-cta=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=accesorios.zapatos&tiendaid=she\" data-ga-cr=\"shoes\"><a href=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=accesorios.zapatos&tiendaid=she\"><span class=\"hvr-underline-fix2\">Shoes<\/span><\/a><\/div>\r\n                        <div class=\"link displeyNoneBags400\" data-cta=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=accesorios.bolsos&tiendaid=she\" data-ga-cr=\"bags\"><a href=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=accesorios.bolsos&tiendaid=she\"><span class=\"hvr-underline-fix2\">Bags<\/span><\/a><\/div>\r\n                        <div class=\"link displeyNoneLeather400\" data-cta=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=accesorios.marroquineria&tiendaid=she\" data-ga-cr=\"leather\"><a href=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=accesorios.marroquineria&tiendaid=she\"><span class=\"hvr-underline-fix2\">Wallets and cases<\/span><\/a><\/div>\r\n                        <div class=\"link displeyNoneJewellery400\" data-cta=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=accesorios.bisuteria&tiendaid=she\" data-ga-cr=\"jewellery\"><a href=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=accesorios.bisuteria&tiendaid=she\"><span class=\"hvr-underline-fix2\">Jewelry<\/span><\/a><\/div>\r\n                        <div class=\"link displeyNoneScarves400\" data-cta=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=accesorios.fulares&tiendaid=she\" data-ga-cr=\"scarves\"><a href=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=accesorios.fulares&tiendaid=she\"><span class=\"hvr-underline-fix2\">Scarves<\/span><\/a><\/div>\r\n                        <div class=\"link displeyNoneSunglasses400\" data-cta=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=accesorios.gafasdesol&tiendaid=she\" data-ga-cr=\"sunglasses\"><a href=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=accesorios.gafasdesol&tiendaid=she\"><span class=\"hvr-underline-fix2\">Sunglasses<\/span><\/a><\/div>\r\n                        <div class=\"link displeyNoneBelts400\" data-cta=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=accesorios.cinturones&tiendaid=she\" data-ga-cr=\"belts\"><a href=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=accesorios.cinturones&tiendaid=she\"><span class=\"hvr-underline-fix2\">Belts<\/span><\/a><\/div>\r\n                        <div class=\"link displeyNoneMoreAccessories400\" data-cta=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=accesorios.mas_accesorios&tiendaid=she\" data-ga-cr=\"more-accesories\"><a href=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=accesorios.mas_accesorios&tiendaid=she\"><span class=\"hvr-underline-fix2\">More accessories<\/span><\/a><\/div>\r\n                    <\/div>\r\n                <\/div>\r\n            <\/div>\r\n            <div class=\"vsv-images-wrapper\">\r\n                <div class=\"vsv-images\">\r\n                    <div class=\"image image100 image1 vsv-waypoint-image\">\r\n                        <div data-cta=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=CONTA&producto=31060876&color=32&tiendaid=she\" data-ga-cr=\"short\"><img class=\"img-responsive\" src=\"\/\/staticpages.mngbcn.com\/homes\/images\/ss18\/she\/junio\/newnow_she_junio_1_1_large.jpg\" data-width=\"100\"\/><\/div>\r\n                        <div class=\"price\"><a href=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=CONTA&idioma=US&pais=400&producto=31060876&tiendaid=she\" class=\"vsv-opi-price\" data-reference=\"31060876\" data-color=\"32\">\r\n                            <span class=\"vsv-opi-prenda\">Blazer<\/span>\r\n                            <span class=\"vsv-opi-description\"><span class=\"vsv-opi-currency\">$<\/span><span class=\"vsv-opi-interger\">119.<\/span><span class=\"vsv-opi-decimal\">99<\/span><\/span>\r\n                        <\/a><\/div>\r\n                    <\/div>\r\n                    <div class=\"image image50 image2 vsv-waypoint-image\">\r\n                        <div data-cta=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=CONTA&producto=33030522&color=20&tiendaid=she\" data-ga-cr=\"top\"><img class=\"img-responsive\" src=\"\/\/staticpages.mngbcn.com\/homes\/images\/ss18\/she\/junio\/newnow_she_junio_1_2.jpg\" data-width=\"100\"\/><\/div>\r\n                        <div class=\"price\"><a href=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=CONTA&idioma=US&pais=400&producto=33030522&tiendaid=she\" class=\"vsv-opi-price\" data-reference=\"33030522\" data-color=\"20\">\r\n                            <span class=\"vsv-opi-prenda\">Blouse<\/span>\r\n                            <span class=\"vsv-opi-description\"><span class=\"vsv-opi-currency\">$<\/span><span class=\"vsv-opi-interger\">49.<\/span><span class=\"vsv-opi-decimal\">99<\/span><\/span>\r\n                        <\/a><\/div>\r\n                    <\/div>\r\n                    <div class=\"image image50 image3 vsv-waypoint-image\">\r\n                        <div data-cta=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=CONTA&producto=33070788&color=70&tiendaid=she\" data-ga-cr=\"bluganda\"><img class=\"img-responsive\" src=\"\/\/staticpages.mngbcn.com\/homes\/images\/ss18\/she\/junio\/newnow_she_junio_1_3.jpg\" data-width=\"100\"\/><\/div>\r\n                        <div class=\"price\"><a href=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=CONTA&idioma=US&pais=400&producto=33070788&tiendaid=she\" class=\"vsv-opi-price\" data-reference=\"33070788\" data-color=\"20\">\r\n                            <span class=\"vsv-opi-prenda\">Dress<\/span>\r\n                            <span class=\"vsv-opi-description\"><span class=\"vsv-opi-currency\">$<\/span><span class=\"vsv-opi-interger\">79.<\/span><span class=\"vsv-opi-decimal\">99<\/span><\/span>\r\n                        <\/a><\/div>\r\n                    <\/div>\r\n                    <div class=\"image image50 image4 vsv-waypoint-image\">\r\n                        <div data-cta=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=CONTA&producto=33080928&color=12&tiendaid=she\" data-ga-cr=\"americana\"><img class=\"img-responsive\" src=\"\/\/staticpages.mngbcn.com\/homes\/images\/ss18\/she\/junio\/newnow_she_junio_1_4.jpg\" data-width=\"100\"\/><\/div>\r\n                        <div class=\"price\"><a href=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=CONTA&idioma=US&pais=400&producto=33080928&tiendaid=she\" class=\"vsv-opi-price\" data-reference=\"33080928\" data-color=\"12\">\r\n                            <span class=\"vsv-opi-prenda\">Dress<\/span>\r\n                            <span class=\"vsv-opi-description\"><span class=\"vsv-opi-currency\">$<\/span><span class=\"vsv-opi-interger\">79.<\/span><span class=\"vsv-opi-decimal\">99<\/span><\/span>\r\n                        <\/a><\/div>\r\n                    <\/div>\r\n                    <div class=\"image image50 image5 vsv-waypoint-image\">\r\n                        <div data-cta=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=CONTA&producto=33060930&color=04&tiendaid=she\" data-ga-cr=\"vestido\"><img class=\"img-responsive\" src=\"\/\/staticpages.mngbcn.com\/homes\/images\/ss18\/she\/junio\/newnow_she_junio_1_5.jpg\" data-width=\"100\"\/><\/div>\r\n                        <div class=\"price\"><a href=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=CONTA&idioma=US&pais=400&producto=33060930&tiendaid=she\" class=\"vsv-opi-price\" data-reference=\"33060930\" data-color=\"04\">\r\n                            <span class=\"vsv-opi-prenda\">Shirt<\/span>\r\n                            <span class=\"vsv-opi-description\"><span class=\"vsv-opi-currency\">$<\/span><span class=\"vsv-opi-interger\">49.<\/span><span class=\"vsv-opi-decimal\">99<\/span><\/span>\r\n                        <\/a><\/div>\r\n                    <\/div>\r\n                    <div class=\"links\">\r\n                        <div class=\"link\" data-cta=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=nuevo&tiendaid=she\"><span class=\"hvr-underline-fix2\">Shop now<\/span><\/div>\r\n                    <\/div>\r\n                <\/div>\r\n            <\/div>\r\n        <\/div>\r\n    <\/div>\r\n\r\n    <script type=\"text\/javascript\">\r\n\r\n        function vsv_script_banner(ScrollMagic, Config) {\r\n\r\n            if(!Config.isMobileDevice) {\r\n                setTimeout(function() {\r\n                    var controller = new ScrollMagic.Controller();\r\n                    function parallaxAnimations() {\r\n\r\n                        \/\/animacion video\r\n                        controller.destroy(true);\r\n                        controller = new ScrollMagic.Controller();\r\n\r\n                        var vsvratio = (1366 \/ 765) \/ (window.innerWidth \/ window.innerHeight);\r\n                        var alturaTrigger = $(\".nav-main-container\").height() \/ window.innerHeight;\r\n\r\n                        var scene1 = new ScrollMagic.Scene({\r\n                            triggerElement: \"#trigger0\",\r\n                            duration: $(\".vsv-images-wrapper\").height() - $(\".vsv-menu-prendas\").height() - 50\r\n                        })\r\n                            .setPin(\"#trigger0 .vsv-menu-prendas\")\r\n                            .addTo(controller);\r\n                        scene1.triggerHook(alturaTrigger + (0 \/ vsvratio));\r\n                    }\r\n\r\n                    parallaxAnimations();\r\n                    window.addEventListener(\"resize\", function () {\r\n                        parallaxAnimations();\r\n                    });\r\n                }, 200);\r\n\r\n            }\r\n        }\r\n\r\n    <\/script>\r\n\r\n  <style>\r\n@font-face {\r\n  font-family: 'elijahmcquinnSans-Regular';\r\n  src: url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/elijahmcquinnSans-Regular.otf\");\r\n  src: url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/elijahmcquinnSans-Regular.eot?#iefix\") format(\"embedded-opentype\"), url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/elijahmcquinnSans-Regular.woff\") format(\"woff\"), url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/elijahmcquinnSans-Regular.ttf\") format(\"truetype\"); }\r\n@font-face {\r\n  font-family: 'elijahmcquinnSans-Bold';\r\n  src: url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/elijahmcquinnSans-Bold.otf\");\r\n  src: url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/elijahmcquinnSans-Bold.eot?#iefix\") format(\"embedded-opentype\"), url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/elijahmcquinnSans-Bold.woff\") format(\"woff\"), url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/elijahmcquinnSans-Bold.ttf\") format(\"truetype\"); }\r\n@font-face {\r\n  font-family: 'elijahmcquinnSans-Light';\r\n  src: url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/elijahmcquinnSans-Light.eot\");\r\n  src: url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/elijahmcquinnSans-Light.eot?#iefix\") format(\"embedded-opentype\"), url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/elijahmcquinnSans-Light.woff\") format(\"woff\"), url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/elijahmcquinnSans-Light.ttf\") format(\"truetype\"); }\r\n@font-face {\r\n  font-family: 'Austin-Light';\r\n  src: url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/Austin-Light.otf\");\r\n  src: url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/Austin-Light.eot?#iefix\") format(\"embedded-opentype\"), url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/Austin-Light.woff\") format(\"woff\"), url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/Austin-Light.ttf\") format(\"truetype\"); }\r\n@font-face {\r\n  font-family: 'Austin-Light-Italic';\r\n  src: url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/Austin-LightItalic.otf\");\r\n  src: url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/Austin-LightItalic.eot?#iefix\") format(\"embedded-opentype\"), url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/Austin-LightItalic.woff\") format(\"woff\"), url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/Austin-LightItalic.ttf\") format(\"truetype\"); }\r\n[data-id=\"201\"] {\r\n  margin: 0 0 100px 0; }\r\n  [data-id=\"201\"] div[data-cta] {\r\n    cursor: pointer; }\r\n  [data-id=\"201\"] .displeyNoneShoes412, [data-id=\"201\"] .displeyNoneShoes700, [data-id=\"201\"] .displeyNoneShoes052, [data-id=\"201\"] .displeyNoneSunglasses052, [data-id=\"201\"] .displeyNoneSunglasses432, [data-id=\"201\"] .displeyNoneJewellery432, [data-id=\"201\"] .displeyNoneJewellery094 {\r\n    display: none; }\r\n  [data-id=\"201\"] .vsv-container {\r\n    width: 86%;\r\n    margin: 0 auto;\r\n    border: 1px solid #fff;\r\n    position: relative; }\r\n  [data-id=\"201\"] .title {\r\n    font-family: Austin-Light;\r\n    font-size: 30px;\r\n    line-height: 20px;\r\n    margin: 40px 0 20px 0;\r\n    text-align: right; }\r\n    [data-id=\"201\"] .title span {\r\n      font-family: Austin-Light-Italic; }\r\n  [data-id=\"201\"] .vsv-menu-wrapper {\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: flex-start; }\r\n  [data-id=\"201\"] .vsv-menu-title {\r\n    font-family: elijahmcquinnSans-Regular;\r\n    font-size: 10px;\r\n    line-height: 15px;\r\n    letter-spacing: 1px;\r\n    text-transform: uppercase;\r\n    margin-bottom: 20px; }\r\n  [data-id=\"201\"] .vsv-menu-title2 {\r\n    font-family: elijahmcquinnSans-Regular;\r\n    font-size: 10px;\r\n    line-height: 15px;\r\n    letter-spacing: 1px;\r\n    text-transform: uppercase;\r\n    margin-top: 40px;\r\n    margin-bottom: 20px; }\r\n  [data-id=\"201\"] .vsv-menu-prendas {\r\n    position: absolute;\r\n    z-index: 1; }\r\n    [data-id=\"201\"] .vsv-menu-prendas .link .hvr-underline-fix2 {\r\n      font-family: elijahmcquinnSans-Light;\r\n      font-size: 12px;\r\n      line-height: 24px;\r\n      letter-spacing: 0.3px;\r\n      color: #323438;\r\n      padding: 0;\r\n      cursor: pointer;\r\n      display: block; }\r\n      [data-id=\"201\"] .vsv-menu-prendas .link .hvr-underline-fix2:hover {\r\n        color: #adafb2;\r\n        text-decoration: none; }\r\n  [data-id=\"201\"] .vsv-fixed {\r\n    position: fixed;\r\n    top: 78px; }\r\n  [data-id=\"201\"] .vsv-absolute {\r\n    position: absolute;\r\n    bottom: 0;\r\n    top: auto; }\r\n  [data-id=\"201\"] .vsv-images-wrapper {\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: flex-end; }\r\n  [data-id=\"201\"] .vsv-images {\r\n    width: 77%;\r\n    display: flex;\r\n    flex-direction: row;\r\n    flex-wrap: wrap;\r\n    margin-top: -2.5px;\r\n    margin-right: -2.5px; }\r\n    [data-id=\"201\"] .vsv-images .image {\r\n      position: relative;\r\n      padding: 2.5px; }\r\n    [data-id=\"201\"] .vsv-images .image50 {\r\n      width: 50%; }\r\n    [data-id=\"201\"] .vsv-images .image100 {\r\n      width: 100%; }\r\n  [data-id=\"201\"] .price {\r\n    font-family: Austin-Light;\r\n    color: #ffffff;\r\n    position: absolute;\r\n    bottom: 15px;\r\n    right: 15px;\r\n    text-align: right; }\r\n    [data-id=\"201\"] .price .vsv-opi-prenda {\r\n      font-size: 12px !important;\r\n      line-height: 10px;\r\n      font-style: italic;\r\n      display: inline-block !important; }\r\n    [data-id=\"201\"] .price .vsv-opi-description .vsv-opi-interger, [data-id=\"201\"] .price .vsv-opi-description .vsv-opi-decimal, [data-id=\"201\"] .price .vsv-opi-description .vsv-opi-currency {\r\n      font-family: Austin-Light;\r\n      font-size: 12px !important; }\r\n    [data-id=\"201\"] .price.price-grey {\r\n      color: #323438; }\r\n  [data-id=\"201\"] .links {\r\n    margin-top: 35px;\r\n    width: 100%;\r\n    text-align: center; }\r\n    [data-id=\"201\"] .links .link {\r\n      display: inline-block; }\r\n      [data-id=\"201\"] .links .link .hvr-underline-fix2 {\r\n        font-family: elijahmcquinnSans-Regular;\r\n        font-size: 12px;\r\n        line-height: 18px;\r\n        height: 18px;\r\n        color: #000000;\r\n        padding: 0;\r\n        margin: 0;\r\n        cursor: pointer;\r\n        display: inline-block;\r\n        border-bottom: 1px solid #000000; }\r\n        [data-id=\"201\"] .links .link .hvr-underline-fix2:hover {\r\n          color: #999;\r\n          border-bottom: 1px solid #999;\r\n          text-decoration: none;\r\n          transition: all 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955);\r\n          -webkit-transition: all 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955);\r\n          -moz-transition: all 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955);\r\n          -o-transition: all 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955);\r\n          -ms-transition: all 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955); }\r\n\r\n@media (min-width: 1px) and (max-width: 767px) {\r\n  [data-id=\"201\"] .vsv-container {\r\n    width: 102%;\r\n    display: flex;\r\n    margin-left: -1%;\r\n    flex-direction: column; }\r\n  [data-id=\"201\"] .title {\r\n    font-size: 24px;\r\n    line-height: 24px;\r\n    text-align: center;\r\n    margin: 70px 0 20px 0; }\r\n  [data-id=\"201\"] .vsv-container .title {\r\n    order: 1; }\r\n  [data-id=\"201\"] .vsv-container .vsv-menu-wrapper {\r\n    order: 3; }\r\n  [data-id=\"201\"] .vsv-container .vsv-images-wrapper {\r\n    order: 2; }\r\n  [data-id=\"201\"] .vsv-menu-wrapper {\r\n    align-items: center; }\r\n  [data-id=\"201\"] .vsv-menu-title {\r\n    background-color: #ffffff;\r\n    border-top: 1px solid #FAFAFA;\r\n    line-height: 35px;\r\n    height: 35px;\r\n    margin-bottom: 4px; }\r\n  [data-id=\"201\"] .vsv-menu-title2 {\r\n    background-color: #ffffff;\r\n    border-top: 1px solid #FAFAFA;\r\n    line-height: 30px;\r\n    height: 30px;\r\n    margin-bottom: 4px;\r\n    border-top: none; }\r\n  [data-id=\"201\"] .vsv-menu-prendas {\r\n    width: 100%;\r\n    position: relative;\r\n    text-align: center;\r\n    margin-top: 50px; }\r\n    [data-id=\"201\"] .vsv-menu-prendas .link {\r\n      background-color: #FAFAFA;\r\n      margin-bottom: 4px; }\r\n      [data-id=\"201\"] .vsv-menu-prendas .link .hvr-underline-fix2 {\r\n        line-height: 35px;\r\n        height: 35px; }\r\n      [data-id=\"201\"] .vsv-menu-prendas .link:last-child {\r\n        margin-bottom: 0; }\r\n  [data-id=\"201\"] .vsv-images-wrapper {\r\n    align-items: center; }\r\n  [data-id=\"201\"] .vsv-images {\r\n    width: 100%;\r\n    margin: 0; }\r\n    [data-id=\"201\"] .vsv-images .image {\r\n      padding: 1px; }\r\n  [data-id=\"201\"] .price-prenda {\r\n    text-align: center;\r\n    position: relative;\r\n    bottom: auto;\r\n    right: auto;\r\n    margin: 10px 0 15px 0; }\r\n  [data-id=\"201\"] .links {\r\n    margin-top: 20px; } }\r\n\r\n\r\n\r\n  <\/style>  \r\n<\/div>","analytics":["send","event","banner home",2,"new_now_2018_06_she"]}]};
+                var json = {"name":"elijahmcquinn","tienda":"3","pais":"400","idioma":"US","device":"","grid":[{"id":"186","html":"<div class=\"vsv-box with-menu\" data-id=\"186\">\r\n\t<!--mobile-->\r\n\t<div class=\"visible-xs\" data-cta=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=prendas.tejanos&tiendaid=she\"> \r\n\t\t<div class=\"fullviewport\"><img data-bg=\"897 1024 cover center top\" src=\"\/\/staticpages.elijahbcn.com\/homes\/images\/ss18\/she\/junio\/she_promo_jeans_ss18_mobile.jpg\"\/>\r\n\t\t\t<div class=\"vsv-container\">\r\n\t\t\t\t<div class=\"position-text position-text-top\"> \r\n\t\t\t\t\t<div class=\"text0\"> In stores & online - Ends on 06\/20<\/div>\r\n\t\t\t\t<\/div>\r\n\t\t\t\t<div class=\"position-text position-text-center\">\r\n\t\t\t\t\t<div class=\"text1\"> <\/div>\r\n\t\t\t\t\t<div class=\"text2\"> 30% off<\/div>\r\n\t\t\t\t\t<div class=\"text3\"> all our jeans<\/div>\r\n\t\t\t\t\t<div class=\"text4\"> Use code <span> elijahJEANS<\/span>  at checkout<\/div>\r\n\t\t\t\t\t<div class=\"links\"><div class=\"link\" data-cta=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=prendas.tejanos&tiendaid=she\"><span class=\"hvr-underline-fix2\"> Shop now<\/span><\/div><\/div>\r\n\t\t\t\t<\/div>\r\n\t\t\t\t<div class=\"position-text position-text-bottom\">\r\n\t\t\t\t\t<div class=\"text5\"> Applies to jeans in the Women\u2019s Spring\/Summer\u201918 collection. Discount applied at the cash desk. Not valid with any other offer, discount or promotion. Excludes items from the Fall\/Winter'18 collection, whose reference begins with a 3.<\/div>\r\n\t\t\t\t<\/div>\r\n\t\t\t<\/div>\r\n\t\t<\/div>\r\n\t<\/div>\r\n\r\n\t<div class=\"hidden-xs\" data-cta=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=prendas.tejanos&tiendaid=she\" style=\"position: relative;\">\r\n\t\t<!--@ desktop && tablet landscape @--><div class=\"fullviewport\"><img data-bg=\"2048 1141 cover center top\" src=\"\/\/staticpages.elijahbcn.com\/homes\/images\/ss18\/she\/junio\/she_promo_jeans_ss18.jpg\"\/><\/div><!--@ end desktop && tablet landscape @-->\r\n\t\t<!--@ tablet portrait @--><div><img class=\"img-responsive\" src=\"\/\/staticpages.elijahbcn.com\/homes\/images\/ss18\/she\/junio\/she_promo_jeans_ss18_tablet.jpg\"\/><\/div><!--@ end tablet portrait @-->\r\n\t\t<div class=\"vsv-container\">\r\n\t\t\t<div class=\"position-text position-text-top\">\r\n\t\t\t\t<div class=\"text0\"> In stores & online - Ends on 06\/20<\/div>\r\n\t\t\t<\/div>\r\n\t\t\t<div class=\"position-text position-text-center\">\r\n\t\t\t\t<div class=\"text1\"> <\/div>\r\n\t\t\t\t<div class=\"text2\"> 30% off<\/div>\r\n\t\t\t\t<div class=\"text3\"> all our jeans<\/div>\r\n\t\t\t\t<div class=\"text4\"> Use code <span> elijahJEANS<\/span>  at checkout<\/div>\r\n\t\t\t\t<!--@ desktop && tablet landscape @-->\r\n\t\t\t\t<div class=\"links\"><div class=\"link\" data-cta=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=prendas.tejanos&tiendaid=she\"><span class=\"hvr-underline-fix2\"> Shop now<\/span><\/div><\/div>\r\n\t\t\t\t<!--@ end desktop && tablet landscape @-->\r\n\t\t\t<\/div>\r\n\t\t\t<!--@ desktop && tablet landscape @-->\r\n\t\t\t<div class=\"position-text position-text-bottom\">\r\n\t\t\t\t<div class=\"text5\"> Applies to jeans in the Women\u2019s Spring\/Summer\u201918 collection. Discount applied at the cash desk. Not valid with any other offer, discount or promotion. Excludes items from the Fall\/Winter'18 collection, whose reference begins with a 3.<\/div>\r\n\t\t\t<\/div>\r\n\t\t\t<!--@ end desktop && tablet landscape @-->\r\n\t\t\t<!--@ tablet portrait @-->\r\n\t\t\t<div class=\"position-text position-text-bottom\">\r\n\t\t\t\t<div class=\"links\"><div class=\"link\" data-cta=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=prendas.tejanos&tiendaid=she\"><span class=\"hvr-underline-fix2\"> Shop now<\/span><\/div><\/div>\r\n\t\t\t<\/div>\r\n\t\t\t<!--@ end tablet portrait @-->\r\n\t\t<\/div>\r\n\t\t<!--@ tablet portrait @-->\r\n\t\t<div class=\"position-text-bottom-tablet\">\r\n\t\t\t<div class=\"text5\"> Applies to jeans in the Women\u2019s Spring\/Summer\u201918 collection. Discount applied at the cash desk. Not valid with any other offer, discount or promotion. Excludes items from the Fall\/Winter'18 collection, whose reference begins with a 3.<\/div>\r\n\t\t<\/div>\r\n\t\t<!--@ end tablet portrait @-->\r\n\t<\/div>\r\n  <style>\r\n@font-face {\r\n  font-family: 'elijahmcquinnSans-Regular';\r\n  src: url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/elijahmcquinnSans-Regular.eot\");\r\n  src: url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/elijahmcquinnSans-Regular.eot?#iefix\") format(\"embedded-opentype\"), url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/elijahmcquinnSans-Regular.woff\") format(\"woff\"), url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/elijahmcquinnSans-Regular.ttf\") format(\"truetype\"); }\r\n@font-face {\r\n  font-family: 'elijahmcquinnSans-Bold';\r\n  src: url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/elijahmcquinnSans-Bold.eot\");\r\n  src: url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/elijahmcquinnSans-Bold.eot?#iefix\") format(\"embedded-opentype\"), url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/elijahmcquinnSans-Bold.woff\") format(\"woff\"), url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/elijahmcquinnSans-Bold.ttf\") format(\"truetype\"); }\r\n@font-face {\r\n  font-family: 'elijahmcquinnSans-Light';\r\n  src: url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/elijahmcquinnSans-Light.eot\");\r\n  src: url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/elijahmcquinnSans-Light.eot?#iefix\") format(\"embedded-opentype\"), url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/elijahmcquinnSans-Light.woff\") format(\"woff\"), url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/elijahmcquinnSans-Light.ttf\") format(\"truetype\"); }\r\n@font-face {\r\n  font-family: 'Austin-Light';\r\n  src: url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/Austin-Light.otf\");\r\n  src: url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/Austin-Light.eot?#iefix\") format(\"embedded-opentype\"), url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/Austin-Light.woff\") format(\"woff\"), url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/Austin-Light.otf\") format(\"truetype\"); }\r\n@font-face {\r\n  font-family: 'Austin-Light-Italic';\r\n  src: url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/Austin-LightItalic.otf\");\r\n  src: url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/Austin-LightItalic.eot?#iefix\") format(\"embedded-opentype\"), url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/Austin-LightItalic.woff\") format(\"woff\"), url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/Austin-LightItalic.otf\") format(\"truetype\"); }\r\n[data-id=\"186\"] {\r\n  margin: 0;\r\n  overflow: hidden; }\r\n  [data-id=\"186\"] div[data-cta] {\r\n    cursor: pointer; }\r\n  [data-id=\"186\"] .vsv-container {\r\n    position: absolute;\r\n    width: 50%;\r\n    right: 0;\r\n    height: 100%;\r\n    top: 0;\r\n    color: #000; }\r\n  [data-id=\"186\"] .position-text {\r\n    position: absolute;\r\n    \/*top: 0;*\/\r\n    width: 100%;\r\n    height: 100%;\r\n    display: flex;\r\n    pointer-events: none; }\r\n  [data-id=\"186\"] .position-text-top {\r\n    top: 0;\r\n    flex-direction: column;\r\n    justify-content: flex-start;\r\n    align-items: center;\r\n    text-align: center;\r\n    padding-top: 9.5vh; }\r\n  [data-id=\"186\"] .position-text-center {\r\n    flex-direction: column;\r\n    justify-content: center;\r\n    align-items: center;\r\n    text-align: center; }\r\n  [data-id=\"186\"] .position-text-bottom {\r\n    bottom: 0;\r\n    flex-direction: column;\r\n    justify-content: flex-end;\r\n    align-items: center;\r\n    text-align: center;\r\n    padding-bottom: 3vh; }\r\n  [data-id=\"186\"] .text0 {\r\n    font-family: elijahmcquinnSans-Light;\r\n    font-size: 12px;\r\n    line-height: 14px;\r\n    letter-spacing: 1px;\r\n    text-transform: uppercase; }\r\n  [data-id=\"186\"] .text1 {\r\n    font-family: Austin-Light;\r\n    font-size: 30px;\r\n    line-height: 30px;\r\n    padding: 0 5%; }\r\n  [data-id=\"186\"] .text2 {\r\n    font-family: Austin-Light;\r\n    font-size: 70px;\r\n    line-height: 84px; }\r\n  [data-id=\"186\"] .text3 {\r\n    font-family: Austin-Light;\r\n    font-size: 52px;\r\n    line-height: 38px; }\r\n  [data-id=\"186\"] .text4 {\r\n    font-family: elijahmcquinnSans-Light;\r\n    font-size: 16px;\r\n    line-height: 22px;\r\n    margin-top: 17vh;\r\n    padding: 0 5%; }\r\n    [data-id=\"186\"] .text4 span {\r\n      font-family: elijahmcquinnSans-Bold; }\r\n  [data-id=\"186\"] .text5 {\r\n    font-family: elijahmcquinnSans-Light;\r\n    font-size: 9px;\r\n    line-height: 11px;\r\n    color: #ADAFB2;\r\n    padding: 0 15%; }\r\n  [data-id=\"186\"] .links {\r\n    margin-top: 10vh;\r\n    pointer-events: auto; }\r\n    [data-id=\"186\"] .links .link {\r\n      display: inline-block; }\r\n      [data-id=\"186\"] .links .link .separation {\r\n        font-family: elijahmcquinnSans-UltraLight;\r\n        margin: 0 12px;\r\n        display: inline; }\r\n      [data-id=\"186\"] .links .link .hvr-underline-fix2 {\r\n        font-family: elijahmcquinnSans-Regular;\r\n        font-size: 12px;\r\n        line-height: 12px;\r\n        height: 12px;\r\n        color: #000;\r\n        margin: 0;\r\n        cursor: pointer;\r\n        display: inline-block;\r\n        padding: 0 0 15px 0;\r\n        border-bottom: 1px solid #000; }\r\n        [data-id=\"186\"] .links .link .hvr-underline-fix2:hover {\r\n          color: #999;\r\n          border-bottom: 1px solid #999;\r\n          text-decoration: none;\r\n          transition: all 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955);\r\n          -webkit-transition: all 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955);\r\n          -moz-transition: all 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955);\r\n          -o-transition: all 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955);\r\n          -ms-transition: all 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955); }\r\n\r\n@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {\r\n  [data-id=\"186\"] .vsv-container {\r\n    width: 100%;\r\n    height: 93%;\r\n    color: #000; }\r\n  [data-id=\"186\"] .position-text-top {\r\n    padding-top: 3vh; }\r\n  [data-id=\"186\"] .position-text-bottom {\r\n    padding-bottom: 3vh; }\r\n  [data-id=\"186\"] .position-text-bottom-tablet {\r\n    margin-top: 25px;\r\n    text-align: center; }\r\n  [data-id=\"186\"] .text0 {\r\n    font-family: elijahmcquinnSans-Light; }\r\n  [data-id=\"186\"] .text5 {\r\n    padding: 0 5%; }\r\n  [data-id=\"186\"] .links {\r\n    margin-top: 0; }\r\n    [data-id=\"186\"] .links .link .hvr-underline-fix2 {\r\n      color: #000;\r\n      border-bottom: 1px solid #000; } }\r\n@media (min-width: 1px) and (max-width: 767px) {\r\n  [data-id=\"186\"] .vsv-container {\r\n    width: 100%;\r\n    color: #000; }\r\n  [data-id=\"186\"] .position-text-top {\r\n    padding-top: 2vh; }\r\n  [data-id=\"186\"] .position-text-center {\r\n    padding-top: 1vh; }\r\n  [data-id=\"186\"] .position-text-bottom {\r\n    padding-top: 2vh; }\r\n  [data-id=\"186\"] .text0 {\r\n    font-size: 10px;\r\n    line-height: 12px; }\r\n  [data-id=\"186\"] .text1 {\r\n    font-size: 24px;\r\n    line-height: 24px;\r\n    padding: 0 5%; }\r\n  [data-id=\"186\"] .text2 {\r\n    font-size: 40px;\r\n    line-height: 48px; }\r\n  [data-id=\"186\"] .text3 {\r\n    font-size: 36px;\r\n    line-height: 26px; }\r\n  [data-id=\"186\"] .text4 {\r\n    font-size: 12px;\r\n    line-height: 16px;\r\n    margin-top: 10vh; }\r\n  [data-id=\"186\"] .text5 {\r\n    color: #000;\r\n    padding: 0 5%; }\r\n  [data-id=\"186\"] .links {\r\n    margin-top: 10vh; }\r\n    [data-id=\"186\"] .links .link .hvr-underline-fix2 {\r\n      color: #000;\r\n      border-bottom: 1px solid #000;\r\n      font-size: 10px; } }\r\n  <\/style>\r\n<\/div>","analytics":["send","event","banner home",1,"extra_2018_06_promojeans"]},{"id":"201","html":"<div class=\"vsv-box vsv-with-menu-lateral\" data-id=\"201\">\r\n    <div>\r\n        <div id=\"trigger0\" class=\"vsv-container\">\r\n            <div class=\"title\">New <span>now<\/span><\/div>\r\n            <div class=\"vsv-menu-wrapper\">\r\n                <div class=\"vsv-menu-prendas\">\r\n                    <div>\r\n                        <div class=\"vsv-menu-title\">Clothing<\/div>\r\n                        <div class=\"link\" data-cta=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=prendas.vestidos&tiendaid=she\" data-ga-cr=\"dresses\"><a href=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=prendas.vestidos&tiendaid=she\"><span class=\"hvr-underline-fix2\">Dresses<\/span><\/a><\/div>\r\n                        <div class=\"link\" data-cta=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=prendas.monos&tiendaid=she\" data-ga-cr=\"jumpsuits\"><a href=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=prendas.monos&tiendaid=she\"><span class=\"hvr-underline-fix2\">Rompers<\/span><\/a><\/div>\r\n                        <div class=\"link\" data-cta=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=prendas.camisas&tiendaid=she\" data-ga-cr=\"shirts\"><a href=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=prendas.camisas&tiendaid=she\"><span class=\"hvr-underline-fix2\">Shirts<\/span><\/a><\/div>\r\n                        <div class=\"link\" data-cta=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=prendas.camisetas&tiendaid=she\" data-ga-cr=\"tshirts\"><a href=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=prendas.camisetas&tiendaid=she\"><span class=\"hvr-underline-fix2\">T-shirts and tops<\/span><\/a><\/div>\r\n                        <div class=\"link\" data-cta=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=prendas.cardigans&tiendaid=she\" data-ga-cr=\"cardigans\"><a href=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=prendas.cardigans&tiendaid=she\"><span class=\"hvr-underline-fix2\">Cardigans and sweaters<\/span><\/a><\/div>\r\n                        <div class=\"link\" data-cta=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=prendas.sudaderas&tiendaid=she\" data-ga-cr=\"sweatshirts\"><a href=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=prendas.sudaderas&tiendaid=she\"><span class=\"hvr-underline-fix2\">Sweatshirts<\/span><\/a><\/div>\r\n                        <div class=\"link\" data-cta=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=prendas.chaquetas&tiendaid=she\" data-ga-cr=\"jackets\"><a href=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=prendas.chaquetas&tiendaid=she\"><span class=\"hvr-underline-fix2\">Jackets<\/span><\/a><\/div>\r\n                        <div class=\"link\" data-cta=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=prendas.abrigos&tiendaid=she\" data-ga-cr=\"coats\"><a href=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=prendas.abrigos&tiendaid=she\"><span class=\"hvr-underline-fix2\">Coats<\/span><\/a><\/div>\r\n                        <div class=\"link\" data-cta=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=prendas.pantalones&tiendaid=she\" data-ga-cr=\"trousers\"><a href=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=prendas.pantalones&tiendaid=she\"><span class=\"hvr-underline-fix2\">Pants<\/span><\/a><\/div>\r\n                        <div class=\"link\" data-cta=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=prendas.tejanos&tiendaid=she\" data-ga-cr=\"jeans\"><a href=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=prendas.tejanos&tiendaid=she\"><span class=\"hvr-underline-fix2\">Jeans<\/span><\/a><\/div>\r\n                        <div class=\"link\" data-cta=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=prendas.shorts&tiendaid=she\" data-ga-cr=\"shorts\"><a href=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=prendas.pantalones&tiendaid=she\"><span class=\"hvr-underline-fix2\">Shorts<\/span><\/a><\/div>\r\n                        <div class=\"link\" data-cta=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=prendas.faldas&tiendaid=she\" data-ga-cr=\"skirts\"><a href=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=prendas.faldas&tiendaid=she\"><span class=\"hvr-underline-fix2\">Skirts<\/span><\/a><\/div>\r\n                        <!--<div class=\"link\" data-cta=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=prendas.bano&tiendaid=she\" data-ga-cr=\"beachwear\"><a href=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=prendas.bano&tiendaid=she\"><span class=\"hvr-underline-fix2\">Swimwear<\/span><\/a><\/div>-->\r\n                    <\/div>\r\n\r\n                    <div>\r\n                        <div class=\"vsv-menu-title2\">Accessories<\/div>\r\n                        <div class=\"link displeyNoneShoes400\" data-cta=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=accesorios.zapatos&tiendaid=she\" data-ga-cr=\"shoes\"><a href=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=accesorios.zapatos&tiendaid=she\"><span class=\"hvr-underline-fix2\">Shoes<\/span><\/a><\/div>\r\n                        <div class=\"link displeyNoneBags400\" data-cta=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=accesorios.bolsos&tiendaid=she\" data-ga-cr=\"bags\"><a href=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=accesorios.bolsos&tiendaid=she\"><span class=\"hvr-underline-fix2\">Bags<\/span><\/a><\/div>\r\n                        <div class=\"link displeyNoneLeather400\" data-cta=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=accesorios.marroquineria&tiendaid=she\" data-ga-cr=\"leather\"><a href=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=accesorios.marroquineria&tiendaid=she\"><span class=\"hvr-underline-fix2\">Wallets and cases<\/span><\/a><\/div>\r\n                        <div class=\"link displeyNoneJewellery400\" data-cta=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=accesorios.bisuteria&tiendaid=she\" data-ga-cr=\"jewellery\"><a href=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=accesorios.bisuteria&tiendaid=she\"><span class=\"hvr-underline-fix2\">Jewelry<\/span><\/a><\/div>\r\n                        <div class=\"link displeyNoneScarves400\" data-cta=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=accesorios.fulares&tiendaid=she\" data-ga-cr=\"scarves\"><a href=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=accesorios.fulares&tiendaid=she\"><span class=\"hvr-underline-fix2\">Scarves<\/span><\/a><\/div>\r\n                        <div class=\"link displeyNoneSunglasses400\" data-cta=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=accesorios.gafasdesol&tiendaid=she\" data-ga-cr=\"sunglasses\"><a href=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=accesorios.gafasdesol&tiendaid=she\"><span class=\"hvr-underline-fix2\">Sunglasses<\/span><\/a><\/div>\r\n                        <div class=\"link displeyNoneBelts400\" data-cta=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=accesorios.cinturones&tiendaid=she\" data-ga-cr=\"belts\"><a href=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=accesorios.cinturones&tiendaid=she\"><span class=\"hvr-underline-fix2\">Belts<\/span><\/a><\/div>\r\n                        <div class=\"link displeyNoneMoreAccessories400\" data-cta=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=accesorios.mas_accesorios&tiendaid=she\" data-ga-cr=\"more-accesories\"><a href=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=accesorios.mas_accesorios&tiendaid=she\"><span class=\"hvr-underline-fix2\">More accessories<\/span><\/a><\/div>\r\n                    <\/div>\r\n                <\/div>\r\n            <\/div>\r\n            <div class=\"vsv-images-wrapper\">\r\n                <div class=\"vsv-images\">\r\n                    <div class=\"image image100 image1 vsv-waypoint-image\">\r\n                        <div data-cta=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=CONTA&producto=31060876&color=32&tiendaid=she\" data-ga-cr=\"short\"><img class=\"img-responsive\" src=\"\/\/staticpages.elijahbcn.com\/homes\/images\/ss18\/she\/junio\/newnow_she_junio_1_1_large.jpg\" data-width=\"100\"\/><\/div>\r\n                        <div class=\"price\"><a href=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=CONTA&idioma=US&pais=400&producto=31060876&tiendaid=she\" class=\"vsv-opi-price\" data-reference=\"31060876\" data-color=\"32\">\r\n                            <span class=\"vsv-opi-prenda\">Blazer<\/span>\r\n                            <span class=\"vsv-opi-description\"><span class=\"vsv-opi-currency\">$<\/span><span class=\"vsv-opi-interger\">119.<\/span><span class=\"vsv-opi-decimal\">99<\/span><\/span>\r\n                        <\/a><\/div>\r\n                    <\/div>\r\n                    <div class=\"image image50 image2 vsv-waypoint-image\">\r\n                        <div data-cta=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=CONTA&producto=33030522&color=20&tiendaid=she\" data-ga-cr=\"top\"><img class=\"img-responsive\" src=\"\/\/staticpages.elijahbcn.com\/homes\/images\/ss18\/she\/junio\/newnow_she_junio_1_2.jpg\" data-width=\"100\"\/><\/div>\r\n                        <div class=\"price\"><a href=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=CONTA&idioma=US&pais=400&producto=33030522&tiendaid=she\" class=\"vsv-opi-price\" data-reference=\"33030522\" data-color=\"20\">\r\n                            <span class=\"vsv-opi-prenda\">Blouse<\/span>\r\n                            <span class=\"vsv-opi-description\"><span class=\"vsv-opi-currency\">$<\/span><span class=\"vsv-opi-interger\">49.<\/span><span class=\"vsv-opi-decimal\">99<\/span><\/span>\r\n                        <\/a><\/div>\r\n                    <\/div>\r\n                    <div class=\"image image50 image3 vsv-waypoint-image\">\r\n                        <div data-cta=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=CONTA&producto=33070788&color=70&tiendaid=she\" data-ga-cr=\"bluganda\"><img class=\"img-responsive\" src=\"\/\/staticpages.elijahbcn.com\/homes\/images\/ss18\/she\/junio\/newnow_she_junio_1_3.jpg\" data-width=\"100\"\/><\/div>\r\n                        <div class=\"price\"><a href=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=CONTA&idioma=US&pais=400&producto=33070788&tiendaid=she\" class=\"vsv-opi-price\" data-reference=\"33070788\" data-color=\"20\">\r\n                            <span class=\"vsv-opi-prenda\">Dress<\/span>\r\n                            <span class=\"vsv-opi-description\"><span class=\"vsv-opi-currency\">$<\/span><span class=\"vsv-opi-interger\">79.<\/span><span class=\"vsv-opi-decimal\">99<\/span><\/span>\r\n                        <\/a><\/div>\r\n                    <\/div>\r\n                    <div class=\"image image50 image4 vsv-waypoint-image\">\r\n                        <div data-cta=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=CONTA&producto=33080928&color=12&tiendaid=she\" data-ga-cr=\"americana\"><img class=\"img-responsive\" src=\"\/\/staticpages.elijahbcn.com\/homes\/images\/ss18\/she\/junio\/newnow_she_junio_1_4.jpg\" data-width=\"100\"\/><\/div>\r\n                        <div class=\"price\"><a href=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=CONTA&idioma=US&pais=400&producto=33080928&tiendaid=she\" class=\"vsv-opi-price\" data-reference=\"33080928\" data-color=\"12\">\r\n                            <span class=\"vsv-opi-prenda\">Dress<\/span>\r\n                            <span class=\"vsv-opi-description\"><span class=\"vsv-opi-currency\">$<\/span><span class=\"vsv-opi-interger\">79.<\/span><span class=\"vsv-opi-decimal\">99<\/span><\/span>\r\n                        <\/a><\/div>\r\n                    <\/div>\r\n                    <div class=\"image image50 image5 vsv-waypoint-image\">\r\n                        <div data-cta=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=CONTA&producto=33060930&color=04&tiendaid=she\" data-ga-cr=\"vestido\"><img class=\"img-responsive\" src=\"\/\/staticpages.elijahbcn.com\/homes\/images\/ss18\/she\/junio\/newnow_she_junio_1_5.jpg\" data-width=\"100\"\/><\/div>\r\n                        <div class=\"price\"><a href=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=CONTA&idioma=US&pais=400&producto=33060930&tiendaid=she\" class=\"vsv-opi-price\" data-reference=\"33060930\" data-color=\"04\">\r\n                            <span class=\"vsv-opi-prenda\">Shirt<\/span>\r\n                            <span class=\"vsv-opi-description\"><span class=\"vsv-opi-currency\">$<\/span><span class=\"vsv-opi-interger\">49.<\/span><span class=\"vsv-opi-decimal\">99<\/span><\/span>\r\n                        <\/a><\/div>\r\n                    <\/div>\r\n                    <div class=\"links\">\r\n                        <div class=\"link\" data-cta=\"\/\/shop.elijahmcquinn.com\/redirect.faces?op=conta&seccion=nuevo&tiendaid=she\"><span class=\"hvr-underline-fix2\">Shop now<\/span><\/div>\r\n                    <\/div>\r\n                <\/div>\r\n            <\/div>\r\n        <\/div>\r\n    <\/div>\r\n\r\n    <script type=\"text\/javascript\">\r\n\r\n        function vsv_script_banner(ScrollMagic, Config) {\r\n\r\n            if(!Config.isMobileDevice) {\r\n                setTimeout(function() {\r\n                    var controller = new ScrollMagic.Controller();\r\n                    function parallaxAnimations() {\r\n\r\n                        \/\/animacion video\r\n                        controller.destroy(true);\r\n                        controller = new ScrollMagic.Controller();\r\n\r\n                        var vsvratio = (1366 \/ 765) \/ (window.innerWidth \/ window.innerHeight);\r\n                        var alturaTrigger = $(\".nav-main-container\").height() \/ window.innerHeight;\r\n\r\n                        var scene1 = new ScrollMagic.Scene({\r\n                            triggerElement: \"#trigger0\",\r\n                            duration: $(\".vsv-images-wrapper\").height() - $(\".vsv-menu-prendas\").height() - 50\r\n                        })\r\n                            .setPin(\"#trigger0 .vsv-menu-prendas\")\r\n                            .addTo(controller);\r\n                        scene1.triggerHook(alturaTrigger + (0 \/ vsvratio));\r\n                    }\r\n\r\n                    parallaxAnimations();\r\n                    window.addEventListener(\"resize\", function () {\r\n                        parallaxAnimations();\r\n                    });\r\n                }, 200);\r\n\r\n            }\r\n        }\r\n\r\n    <\/script>\r\n\r\n  <style>\r\n@font-face {\r\n  font-family: 'elijahmcquinnSans-Regular';\r\n  src: url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/elijahmcquinnSans-Regular.otf\");\r\n  src: url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/elijahmcquinnSans-Regular.eot?#iefix\") format(\"embedded-opentype\"), url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/elijahmcquinnSans-Regular.woff\") format(\"woff\"), url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/elijahmcquinnSans-Regular.ttf\") format(\"truetype\"); }\r\n@font-face {\r\n  font-family: 'elijahmcquinnSans-Bold';\r\n  src: url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/elijahmcquinnSans-Bold.otf\");\r\n  src: url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/elijahmcquinnSans-Bold.eot?#iefix\") format(\"embedded-opentype\"), url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/elijahmcquinnSans-Bold.woff\") format(\"woff\"), url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/elijahmcquinnSans-Bold.ttf\") format(\"truetype\"); }\r\n@font-face {\r\n  font-family: 'elijahmcquinnSans-Light';\r\n  src: url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/elijahmcquinnSans-Light.eot\");\r\n  src: url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/elijahmcquinnSans-Light.eot?#iefix\") format(\"embedded-opentype\"), url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/elijahmcquinnSans-Light.woff\") format(\"woff\"), url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/elijahmcquinnSans-Light.ttf\") format(\"truetype\"); }\r\n@font-face {\r\n  font-family: 'Austin-Light';\r\n  src: url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/Austin-Light.otf\");\r\n  src: url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/Austin-Light.eot?#iefix\") format(\"embedded-opentype\"), url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/Austin-Light.woff\") format(\"woff\"), url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/Austin-Light.ttf\") format(\"truetype\"); }\r\n@font-face {\r\n  font-family: 'Austin-Light-Italic';\r\n  src: url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/Austin-LightItalic.otf\");\r\n  src: url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/Austin-LightItalic.eot?#iefix\") format(\"embedded-opentype\"), url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/Austin-LightItalic.woff\") format(\"woff\"), url(\"\/\/ak.p2.elijahmcquinn.com\/elijahmcquinnapp\/fonts\/Austin-LightItalic.ttf\") format(\"truetype\"); }\r\n[data-id=\"201\"] {\r\n  margin: 0 0 100px 0; }\r\n  [data-id=\"201\"] div[data-cta] {\r\n    cursor: pointer; }\r\n  [data-id=\"201\"] .displeyNoneShoes412, [data-id=\"201\"] .displeyNoneShoes700, [data-id=\"201\"] .displeyNoneShoes052, [data-id=\"201\"] .displeyNoneSunglasses052, [data-id=\"201\"] .displeyNoneSunglasses432, [data-id=\"201\"] .displeyNoneJewellery432, [data-id=\"201\"] .displeyNoneJewellery094 {\r\n    display: none; }\r\n  [data-id=\"201\"] .vsv-container {\r\n    width: 86%;\r\n    margin: 0 auto;\r\n    border: 1px solid #fff;\r\n    position: relative; }\r\n  [data-id=\"201\"] .title {\r\n    font-family: Austin-Light;\r\n    font-size: 30px;\r\n    line-height: 20px;\r\n    margin: 40px 0 20px 0;\r\n    text-align: right; }\r\n    [data-id=\"201\"] .title span {\r\n      font-family: Austin-Light-Italic; }\r\n  [data-id=\"201\"] .vsv-menu-wrapper {\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: flex-start; }\r\n  [data-id=\"201\"] .vsv-menu-title {\r\n    font-family: elijahmcquinnSans-Regular;\r\n    font-size: 10px;\r\n    line-height: 15px;\r\n    letter-spacing: 1px;\r\n    text-transform: uppercase;\r\n    margin-bottom: 20px; }\r\n  [data-id=\"201\"] .vsv-menu-title2 {\r\n    font-family: elijahmcquinnSans-Regular;\r\n    font-size: 10px;\r\n    line-height: 15px;\r\n    letter-spacing: 1px;\r\n    text-transform: uppercase;\r\n    margin-top: 40px;\r\n    margin-bottom: 20px; }\r\n  [data-id=\"201\"] .vsv-menu-prendas {\r\n    position: absolute;\r\n    z-index: 1; }\r\n    [data-id=\"201\"] .vsv-menu-prendas .link .hvr-underline-fix2 {\r\n      font-family: elijahmcquinnSans-Light;\r\n      font-size: 12px;\r\n      line-height: 24px;\r\n      letter-spacing: 0.3px;\r\n      color: #323438;\r\n      padding: 0;\r\n      cursor: pointer;\r\n      display: block; }\r\n      [data-id=\"201\"] .vsv-menu-prendas .link .hvr-underline-fix2:hover {\r\n        color: #adafb2;\r\n        text-decoration: none; }\r\n  [data-id=\"201\"] .vsv-fixed {\r\n    position: fixed;\r\n    top: 78px; }\r\n  [data-id=\"201\"] .vsv-absolute {\r\n    position: absolute;\r\n    bottom: 0;\r\n    top: auto; }\r\n  [data-id=\"201\"] .vsv-images-wrapper {\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: flex-end; }\r\n  [data-id=\"201\"] .vsv-images {\r\n    width: 77%;\r\n    display: flex;\r\n    flex-direction: row;\r\n    flex-wrap: wrap;\r\n    margin-top: -2.5px;\r\n    margin-right: -2.5px; }\r\n    [data-id=\"201\"] .vsv-images .image {\r\n      position: relative;\r\n      padding: 2.5px; }\r\n    [data-id=\"201\"] .vsv-images .image50 {\r\n      width: 50%; }\r\n    [data-id=\"201\"] .vsv-images .image100 {\r\n      width: 100%; }\r\n  [data-id=\"201\"] .price {\r\n    font-family: Austin-Light;\r\n    color: #ffffff;\r\n    position: absolute;\r\n    bottom: 15px;\r\n    right: 15px;\r\n    text-align: right; }\r\n    [data-id=\"201\"] .price .vsv-opi-prenda {\r\n      font-size: 12px !important;\r\n      line-height: 10px;\r\n      font-style: italic;\r\n      display: inline-block !important; }\r\n    [data-id=\"201\"] .price .vsv-opi-description .vsv-opi-interger, [data-id=\"201\"] .price .vsv-opi-description .vsv-opi-decimal, [data-id=\"201\"] .price .vsv-opi-description .vsv-opi-currency {\r\n      font-family: Austin-Light;\r\n      font-size: 12px !important; }\r\n    [data-id=\"201\"] .price.price-grey {\r\n      color: #323438; }\r\n  [data-id=\"201\"] .links {\r\n    margin-top: 35px;\r\n    width: 100%;\r\n    text-align: center; }\r\n    [data-id=\"201\"] .links .link {\r\n      display: inline-block; }\r\n      [data-id=\"201\"] .links .link .hvr-underline-fix2 {\r\n        font-family: elijahmcquinnSans-Regular;\r\n        font-size: 12px;\r\n        line-height: 18px;\r\n        height: 18px;\r\n        color: #000000;\r\n        padding: 0;\r\n        margin: 0;\r\n        cursor: pointer;\r\n        display: inline-block;\r\n        border-bottom: 1px solid #000000; }\r\n        [data-id=\"201\"] .links .link .hvr-underline-fix2:hover {\r\n          color: #999;\r\n          border-bottom: 1px solid #999;\r\n          text-decoration: none;\r\n          transition: all 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955);\r\n          -webkit-transition: all 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955);\r\n          -moz-transition: all 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955);\r\n          -o-transition: all 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955);\r\n          -ms-transition: all 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955); }\r\n\r\n@media (min-width: 1px) and (max-width: 767px) {\r\n  [data-id=\"201\"] .vsv-container {\r\n    width: 102%;\r\n    display: flex;\r\n    margin-left: -1%;\r\n    flex-direction: column; }\r\n  [data-id=\"201\"] .title {\r\n    font-size: 24px;\r\n    line-height: 24px;\r\n    text-align: center;\r\n    margin: 70px 0 20px 0; }\r\n  [data-id=\"201\"] .vsv-container .title {\r\n    order: 1; }\r\n  [data-id=\"201\"] .vsv-container .vsv-menu-wrapper {\r\n    order: 3; }\r\n  [data-id=\"201\"] .vsv-container .vsv-images-wrapper {\r\n    order: 2; }\r\n  [data-id=\"201\"] .vsv-menu-wrapper {\r\n    align-items: center; }\r\n  [data-id=\"201\"] .vsv-menu-title {\r\n    background-color: #ffffff;\r\n    border-top: 1px solid #FAFAFA;\r\n    line-height: 35px;\r\n    height: 35px;\r\n    margin-bottom: 4px; }\r\n  [data-id=\"201\"] .vsv-menu-title2 {\r\n    background-color: #ffffff;\r\n    border-top: 1px solid #FAFAFA;\r\n    line-height: 30px;\r\n    height: 30px;\r\n    margin-bottom: 4px;\r\n    border-top: none; }\r\n  [data-id=\"201\"] .vsv-menu-prendas {\r\n    width: 100%;\r\n    position: relative;\r\n    text-align: center;\r\n    margin-top: 50px; }\r\n    [data-id=\"201\"] .vsv-menu-prendas .link {\r\n      background-color: #FAFAFA;\r\n      margin-bottom: 4px; }\r\n      [data-id=\"201\"] .vsv-menu-prendas .link .hvr-underline-fix2 {\r\n        line-height: 35px;\r\n        height: 35px; }\r\n      [data-id=\"201\"] .vsv-menu-prendas .link:last-child {\r\n        margin-bottom: 0; }\r\n  [data-id=\"201\"] .vsv-images-wrapper {\r\n    align-items: center; }\r\n  [data-id=\"201\"] .vsv-images {\r\n    width: 100%;\r\n    margin: 0; }\r\n    [data-id=\"201\"] .vsv-images .image {\r\n      padding: 1px; }\r\n  [data-id=\"201\"] .price-prenda {\r\n    text-align: center;\r\n    position: relative;\r\n    bottom: auto;\r\n    right: auto;\r\n    margin: 10px 0 15px 0; }\r\n  [data-id=\"201\"] .links {\r\n    margin-top: 20px; } }\r\n\r\n\r\n\r\n  <\/style>  \r\n<\/div>","analytics":["send","event","banner home",2,"new_now_2018_06_she"]}]};
         var newnow = "";
         var debugmode = '0';
         var alto = '0';
@@ -15100,62 +15128,16 @@ echo '
 <div id="vsvhome" class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
 <div id="vsvhome" class="no-js"><section id="mobile_checker" class="row-fluid">        <div id="phone" class="visible-xs"></div>        <div id="tablet" class="visible-sm"></div>        <div id="desktop" class="visible-lg"></div></section><section id="grid_region"><div class="vsv-wrapper"><div class="vsv-box with-menu" data-id="186" style="height: auto;"><div class="visible-xs" data-cta="//shop.elijahmcquinn.com/redirect.faces?op=conta&amp;seccion=prendas.tejanos&amp;tiendaid=she"> 
-		<div class="fullviewport" style="height: 524px;">
-					
-<?php
-
-$categg ='7';
-$sql = "SELECT * FROM items WHERE category='$categg'";
-$result = mysqli_query($conn, $sql);
-
-if (mysqli_num_rows($result) > 0) {
-    // output data of each row
-
-	while($row = mysqli_fetch_assoc($result)){
-
-	$id =$row["id"];
-
-	
-$sql = "SELECT * FROM itemsimages WHERE iditem='$id'";
-$result = mysqli_query($conn, $sql);
-
-if (mysqli_num_rows($result) > 0) {
-    // output data of each row
-
-	while($row = mysqli_fetch_assoc($result)){
-
-$img =$row["image"];
-
-}
-}	
-	
-	
-
-echo '
-     <img data-bg="897 1024 cover center top" src="../admin/'.$img.'" style="top: 0px; left: -230px; width: 459.012px; height: 524px; position: absolute;">
-			
-		
-
-';
-	}
-}
-
-
-?>	
-		
-			
-			
+		<div class="fullviewport" style="height: 524px;"><img data-bg="897 1024 cover center top" src="home_files/she_promo_jeans_ss18_mobile.jpg" style="top: 0px; left: -230px; width: 459.012px; height: 524px; position: absolute;">
 			<div class="vsv-container">
 				<div class="position-text position-text-top"> 
 					<div class="text0">   </div>
 				</div>
 				<div class="position-text position-text-center">
-					<div class="text1" > </div>
-					<div style="background-color:rgba(255,255,255,0.6);box-shadow:1px 1px rgba(0,0,0,0.1);font-family:Segoe UI Semibold;" class="text2"  > ELIJAH </div>
-					<div style="background-color:rgba(255,255,255,0.6);box-shadow:1px 1px rgba(0,0,0,0.1);font-family:Segoe UI Semibold;" class="text2"  > MCQUINN</div>
-					<div style="background-color:rgba(255,255,255,0.6);box-shadow:1px 1px rgba(0,0,0,0.1);font-family:Segoe UI Semibold;height:60px;" class="text3" > CLOTHING<br></div>
-				<div class="text4">  <span> </span>  </div>
-					<div class="links"><div class="link" data-cta="//shop.elijahmcquinn.com/redirect.faces?op=conta&amp;seccion=prendas.tejanos&amp;tiendaid=she"><span class="hvr-underline-fix2"> </span></div></div>
+					<div class="text1"> </div>
+					<div class="text2" > Quality Designs</div>
+					<div class="text4">  <span> </span>  </div>
+					<div class="links"><div class="link" data-cta="//shop.elijahmcquinn.com/redirect.faces?op=conta&amp;seccion=prendas.tejanos&amp;tiendaid=she"><span class="hvr-underline-fix2"> Shop now</span></div></div>
 				</div>
 				<div class="position-text position-text-bottom">
 					<div class="text5"> 
@@ -15169,64 +15151,20 @@ the Fall/Winter'18 collection, whose reference begins with a 3.</div-->
 			</div>
 		</div>
 	</div><div class="hidden-xs" data-cta="//shop.elijahmcquinn.com/redirect.faces?op=conta&amp;seccion=prendas.tejanos&amp;tiendaid=she" style="position: relative;">
-		<!--@ desktop && tablet landscape @--><div class="fullviewport" style="height: 524px;">
-		
-	<?php
-
-$categg ='7';
-$sql = "SELECT * FROM items WHERE category='$categg' ORDER BY ID DESC LIMIT 1";
-$result = mysqli_query($conn, $sql);
-
-if (mysqli_num_rows($result) > 0) {
-    // output data of each row
-
-	while($row = mysqli_fetch_assoc($result)){
-
-	$id =$row["id"];
-
-	
-$sql = "SELECT * FROM itemsimages WHERE iditem='$id' ORDER BY ID DESC LIMIT 1";
-$result = mysqli_query($conn, $sql);
-
-if (mysqli_num_rows($result) > 0) {
-    // output data of each row
-
-	while($row = mysqli_fetch_assoc($result)){
-
-$img =$row["image"];
-
-}
-}	
-	
-	
-
-echo '
-   <img data-bg="2048 1141 cover center top" src="../admin/'.$img.'" style="top: 0px; left: 0px; width: 1263px; height: 703.654px; position: absolute;"></div><!--@ end desktop && tablet landscape @-->
-';
-	}
-}
-
-
-?>		
-		
-		
-		
-		
+		<!--@ desktop && tablet landscape @--><div class="fullviewport" style="height: 524px;"><img data-bg="2048 1141 cover center top" src="home_files/she_promo_jeans_ss18.jpg" style="top: 0px; left: 0px; width: 1263px; height: 703.654px; position: absolute;"></div><!--@ end desktop && tablet landscape @-->
 		
 		<div class="vsv-container">
 			<div class="position-text position-text-top">
-				<div class="text0">   </div>
+				<div class="text0"> </div>
 			</div>
-			<div class="position-text position-text-center">
-					<div class="text1" > </div>
-					<div style="background-color:rgba(255,255,255,0.6);box-shadow:1px 1px rgba(0,0,0,0.1);font-family:Segoe UI Semibold;" class="text2"  > ELIJAH </div>
-					<div style="background-color:rgba(255,255,255,0.6);box-shadow:1px 1px rgba(0,0,0,0.1);font-family:Segoe UI Semibold;" class="text2" > MCQUINN</div>
-					<div style="background-color:rgba(255,255,255,0.6);box-shadow:1px 1px rgba(0,0,0,0.1);height:60px;font-family:Segoe UI Semibold;" class="text3"  > CLOTHING<br></div>
+			<div  class="position-text position-text-center">
+				<div class="text1" > </div>
+					<div style="background-color:rgba(255,255,255,0.6);box-shadow:1px 1px rgba(0,0,0,0.1);" class="text2" style="font-family:Segoe UI Semibold;" > ELIJAH </div>
+					<div style="background-color:rgba(255,255,255,0.6);box-shadow:1px 1px rgba(0,0,0,0.1);" class="text2" style="font-family:Segoe UI Semibold;" > MCQUINN</div>
+					<div style="background-color:rgba(255,255,255,0.6);box-shadow:1px 1px rgba(0,0,0,0.1);height:60px;" class="text3" style="font-family:Segoe UI Semibold;" > CLOTHING<br></div>
 				<div class="text4">  <span> </span>  </div>
 				<!--@ desktop && tablet landscape @-->
-				<div class="links">
-				<div class="link" data-cta="//shop.elijahmcquinn.com/redirect.faces?op=conta&amp;seccion=prendas.tejanos&amp;tiendaid=she">
-				<span class="hvr-underline-fix2"> </span></div></div>
+				<div class="links"><div class="link" data-cta="//shop.elijahmcquinn.com/redirect.faces?op=conta&amp;seccion=prendas.tejanos&amp;tiendaid=she"><span class="hvr-underline-fix2"> Shop now</span></div></div>
 				<!--@ end desktop && tablet landscape @-->
 			</div>
 			<!--@ desktop && tablet landscape @-->
@@ -15426,221 +15364,78 @@ collection, whose reference begins with a 3.
       font-size: 10px; } }
   </style></div><div class="vsv-box vsv-with-menu-lateral" data-id="201"><div>
         <div id="trigger0" class="vsv-container">
-            <div class="title">New <span></span></div>
+            <div class="title">New <span>now</span></div>
             <div class="vsv-menu-wrapper" style="">
-                <div style="top: auto; left: auto; bottom: auto; right: auto; margin: 0px; display: block; position: absolute; box-sizing: content-box; width: 119.933px; height: 590px;" data-scrollmagic-pin-spacer="" class="scrollmagic-pin-spacer">
-				<div class="vsv-menu-prendas" style="position: absolute; margin: auto; top: 0px; left: 0px; bottom: auto; right: auto;">
+                <div style="top: auto; left: auto; bottom: auto; right: auto; margin: 0px; display: block; position: absolute; box-sizing: content-box; width: 119.933px; height: 590px;" data-scrollmagic-pin-spacer="" class="scrollmagic-pin-spacer"><div class="vsv-menu-prendas" style="position: absolute; margin: auto; top: 0px; left: 0px; bottom: auto; right: auto;">
                     <div>
-                        <div class="vsv-menu-title">WOMENS </div>
-                    
-					   
-      						 <?php
-
-// Create connection
-// Check connection
-
-
-$categg ='womens';
-$sql = "SELECT * FROM category WHERE category='$categg'";
-$result = mysqli_query($conn, $sql);
-
-if (mysqli_num_rows($result) > 0) {
-    // output data of each row
-
-	while($row = mysqli_fetch_assoc($result)){
-		
-	 /*$categ = $row["category"];
-	 $subcateg = $row["subcategory"];*/
-$categ =$row["subcategory"];
-$id =$row["id"];
-
-
-echo '
-     <!--li>
-     <a  data-ga-action="mujer" data-ga-label="prendas-vestidos" data-ga-category="">'.$categ.'</a>
-     </li-->
-	    
-					   <div class="link"  data-ga-cr="dresses">
-					   <a href="women.php?id='.$id.'">
-					   <span class="hvr-underline-fix2">'.$categ.'</span>
-					   </a></div>
-
-';
-	}
-}
-
-
-?>             
-
-				   </div>
+                        <div class="vsv-menu-title">Clothing</div>
+                        <div class="link" data-cta="//shop.elijahmcquinn.com/redirect.faces?op=conta&amp;seccion=prendas.vestidos&amp;tiendaid=she" data-ga-cr="dresses"><a href="https://shop.elijahmcquinn.com/redirect.faces?op=conta&amp;seccion=prendas.vestidos&amp;tiendaid=she"><span class="hvr-underline-fix2">Dresses</span></a></div>
+                        <div class="link" data-cta="//shop.elijahmcquinn.com/redirect.faces?op=conta&amp;seccion=prendas.monos&amp;tiendaid=she" data-ga-cr="jumpsuits"><a href="https://shop.elijahmcquinn.com/redirect.faces?op=conta&amp;seccion=prendas.monos&amp;tiendaid=she"><span class="hvr-underline-fix2">Rompers</span></a></div>
+                        <div class="link" data-cta="//shop.elijahmcquinn.com/redirect.faces?op=conta&amp;seccion=prendas.camisas&amp;tiendaid=she" data-ga-cr="shirts"><a href="https://shop.elijahmcquinn.com/redirect.faces?op=conta&amp;seccion=prendas.camisas&amp;tiendaid=she"><span class="hvr-underline-fix2">Shirts</span></a></div>
+                        <div class="link" data-cta="//shop.elijahmcquinn.com/redirect.faces?op=conta&amp;seccion=prendas.camisetas&amp;tiendaid=she" data-ga-cr="tshirts"><a href="https://shop.elijahmcquinn.com/redirect.faces?op=conta&amp;seccion=prendas.camisetas&amp;tiendaid=she"><span class="hvr-underline-fix2">T-shirts and tops</span></a></div>
+                        <div class="link" data-cta="//shop.elijahmcquinn.com/redirect.faces?op=conta&amp;seccion=prendas.cardigans&amp;tiendaid=she" data-ga-cr="cardigans"><a href="https://shop.elijahmcquinn.com/redirect.faces?op=conta&amp;seccion=prendas.cardigans&amp;tiendaid=she"><span class="hvr-underline-fix2">Cardigans and sweaters</span></a></div>
+                        <div class="link" data-cta="//shop.elijahmcquinn.com/redirect.faces?op=conta&amp;seccion=prendas.sudaderas&amp;tiendaid=she" data-ga-cr="sweatshirts"><a href="https://shop.elijahmcquinn.com/redirect.faces?op=conta&amp;seccion=prendas.sudaderas&amp;tiendaid=she"><span class="hvr-underline-fix2">Sweatshirts</span></a></div>
+                        <div class="link" data-cta="//shop.elijahmcquinn.com/redirect.faces?op=conta&amp;seccion=prendas.chaquetas&amp;tiendaid=she" data-ga-cr="jackets"><a href="https://shop.elijahmcquinn.com/redirect.faces?op=conta&amp;seccion=prendas.chaquetas&amp;tiendaid=she"><span class="hvr-underline-fix2">Jackets</span></a></div>
+                        <div class="link" data-cta="//shop.elijahmcquinn.com/redirect.faces?op=conta&amp;seccion=prendas.abrigos&amp;tiendaid=she" data-ga-cr="coats"><a href="https://shop.elijahmcquinn.com/redirect.faces?op=conta&amp;seccion=prendas.abrigos&amp;tiendaid=she"><span class="hvr-underline-fix2">Coats</span></a></div>
+                        <div class="link" data-cta="//shop.elijahmcquinn.com/redirect.faces?op=conta&amp;seccion=prendas.pantalones&amp;tiendaid=she" data-ga-cr="trousers"><a href="https://shop.elijahmcquinn.com/redirect.faces?op=conta&amp;seccion=prendas.pantalones&amp;tiendaid=she"><span class="hvr-underline-fix2">Pants</span></a></div>
+                        <div class="link" data-cta="//shop.elijahmcquinn.com/redirect.faces?op=conta&amp;seccion=prendas.tejanos&amp;tiendaid=she" data-ga-cr="jeans"><a href="https://shop.elijahmcquinn.com/redirect.faces?op=conta&amp;seccion=prendas.tejanos&amp;tiendaid=she"><span class="hvr-underline-fix2">Jeans</span></a></div>
+                        <div class="link" data-cta="//shop.elijahmcquinn.com/redirect.faces?op=conta&amp;seccion=prendas.shorts&amp;tiendaid=she" data-ga-cr="shorts"><a href="https://shop.elijahmcquinn.com/redirect.faces?op=conta&amp;seccion=prendas.pantalones&amp;tiendaid=she"><span class="hvr-underline-fix2">Shorts</span></a></div>
+                        <div class="link" data-cta="//shop.elijahmcquinn.com/redirect.faces?op=conta&amp;seccion=prendas.faldas&amp;tiendaid=she" data-ga-cr="skirts"><a href="https://shop.elijahmcquinn.com/redirect.faces?op=conta&amp;seccion=prendas.faldas&amp;tiendaid=she"><span class="hvr-underline-fix2">Skirts</span></a></div>
+                        <!--<div class="link" data-cta="//shop.elijahmcquinn.com/redirect.faces?op=conta&seccion=prendas.bano&tiendaid=she" data-ga-cr="beachwear"><a href="//shop.elijahmcquinn.com/redirect.faces?op=conta&seccion=prendas.bano&tiendaid=she"><span class="hvr-underline-fix2">Swimwear</span></a></div>-->
+                    </div>
 
                     <div>
                         <div class="vsv-menu-title2">Accessories</div>
-                        
-									   
-      						 <?php
-
-// Create connection
-// Check connection
-
-
-$categg ='accessories';
-$sql = "SELECT * FROM category WHERE category='$categg'";
-$result = mysqli_query($conn, $sql);
-
-if (mysqli_num_rows($result) > 0) {
-    // output data of each row
-
-	while($row = mysqli_fetch_assoc($result)){
-		
-	 /*$categ = $row["category"];
-	 $subcateg = $row["subcategory"];*/
-$categ =$row["subcategory"];
-$id =$row["id"];
-
-
-echo '
-     <!--li>
-     <a  data-ga-action="mujer" data-ga-label="prendas-vestidos" data-ga-category="">'.$categ.'</a>
-     </li-->
-	    
-					   <div class="link"  data-ga-cr="dresses">
-					   <a href="women.php?id='.$id.'">
-					   <span class="hvr-underline-fix2">'.$categ.'</span>
-					   </a></div>
-
-';
-	}
-}
-
-
-?>  
-					
-					</div>
+                        <div class="link displeyNoneShoes400" data-cta="//shop.elijahmcquinn.com/redirect.faces?op=conta&amp;seccion=accesorios.zapatos&amp;tiendaid=she" data-ga-cr="shoes"><a href="https://shop.elijahmcquinn.com/redirect.faces?op=conta&amp;seccion=accesorios.zapatos&amp;tiendaid=she"><span class="hvr-underline-fix2">Shoes</span></a></div>
+                        <div class="link displeyNoneBags400" data-cta="//shop.elijahmcquinn.com/redirect.faces?op=conta&amp;seccion=accesorios.bolsos&amp;tiendaid=she" data-ga-cr="bags"><a href="https://shop.elijahmcquinn.com/redirect.faces?op=conta&amp;seccion=accesorios.bolsos&amp;tiendaid=she"><span class="hvr-underline-fix2">Bags</span></a></div>
+                        <div class="link displeyNoneLeather400" data-cta="//shop.elijahmcquinn.com/redirect.faces?op=conta&amp;seccion=accesorios.marroquineria&amp;tiendaid=she" data-ga-cr="leather"><a href="https://shop.elijahmcquinn.com/redirect.faces?op=conta&amp;seccion=accesorios.marroquineria&amp;tiendaid=she"><span class="hvr-underline-fix2">Wallets and cases</span></a></div>
+                        <div class="link displeyNoneJewellery400" data-cta="//shop.elijahmcquinn.com/redirect.faces?op=conta&amp;seccion=accesorios.bisuteria&amp;tiendaid=she" data-ga-cr="jewellery"><a href="https://shop.elijahmcquinn.com/redirect.faces?op=conta&amp;seccion=accesorios.bisuteria&amp;tiendaid=she"><span class="hvr-underline-fix2">Jewelry</span></a></div>
+                        <div class="link displeyNoneScarves400" data-cta="//shop.elijahmcquinn.com/redirect.faces?op=conta&amp;seccion=accesorios.fulares&amp;tiendaid=she" data-ga-cr="scarves"><a href="https://shop.elijahmcquinn.com/redirect.faces?op=conta&amp;seccion=accesorios.fulares&amp;tiendaid=she"><span class="hvr-underline-fix2">Scarves</span></a></div>
+                        <div class="link displeyNoneSunglasses400" data-cta="//shop.elijahmcquinn.com/redirect.faces?op=conta&amp;seccion=accesorios.gafasdesol&amp;tiendaid=she" data-ga-cr="sunglasses"><a href="https://shop.elijahmcquinn.com/redirect.faces?op=conta&amp;seccion=accesorios.gafasdesol&amp;tiendaid=she"><span class="hvr-underline-fix2">Sunglasses</span></a></div>
+                        <div class="link displeyNoneBelts400" data-cta="//shop.elijahmcquinn.com/redirect.faces?op=conta&amp;seccion=accesorios.cinturones&amp;tiendaid=she" data-ga-cr="belts"><a href="https://shop.elijahmcquinn.com/redirect.faces?op=conta&amp;seccion=accesorios.cinturones&amp;tiendaid=she"><span class="hvr-underline-fix2">Belts</span></a></div>
+                        <div class="link displeyNoneMoreAccessories400" data-cta="//shop.elijahmcquinn.com/redirect.faces?op=conta&amp;seccion=accesorios.mas_accesorios&amp;tiendaid=she" data-ga-cr="more-accesories"><a href="https://shop.elijahmcquinn.com/redirect.faces?op=conta&amp;seccion=accesorios.mas_accesorios&amp;tiendaid=she"><span class="hvr-underline-fix2">More accessories</span></a></div>
+                    </div>
                 </div></div>
             </div>
             <div class="vsv-images-wrapper">
                 <div class="vsv-images">
-				
                     <div class="image image100 image1 vsv-waypoint-image" style="visibility: inherit; opacity: 1;">
-                        <div data-cta="//shop.elijahmcquinn.com/redirect.faces?op=CONTA&amp;producto=31060876&amp;color=32&amp;tiendaid=she" data-ga-cr="short">
-						
-			
-       
-					
-<?php
-
-$categg ='8';
-$sql = "SELECT * FROM items WHERE category='$categg'";
-$result = mysqli_query($conn, $sql);
-
-if (mysqli_num_rows($result) > 0) {
-    // output data of each row
-
-	while($row = mysqli_fetch_assoc($result)){
-
-	$id =$row["id"];
-
-	
-$sql = "SELECT * FROM itemsimages WHERE iditem='$id'";
-$result = mysqli_query($conn, $sql);
-
-if (mysqli_num_rows($result) > 0) {
-    // output data of each row
-
-	while($row = mysqli_fetch_assoc($result)){
-
-$img =$row["image"];
-
-}
-}	
-	
-	
-
-echo '
-   	<img class="img-responsive" src="../admin/'.$img.'" data-width="100">	
-';
-	}
-}
-
-
-?>		   
-				</div>			  
-						
+                        <div data-cta="//shop.elijahmcquinn.com/redirect.faces?op=CONTA&amp;producto=31060876&amp;color=32&amp;tiendaid=she" data-ga-cr="short"><img class="img-responsive" src="home_files/newnow_she_junio_1_1_large.jpg" data-width="100"></div>
+                        <div class="price"><a href="https://shop.elijahmcquinn.com/redirect.faces?op=CONTA&amp;idioma=US&amp;pais=400&amp;producto=31060876&amp;tiendaid=she" class="vsv-opi-price" data-reference="31060876" data-color="32">
+                            <span class="vsv-opi-prenda">Blazer</span>
+                            <span class="vsv-opi-description"><span class="vsv-opi-currency">$</span><span class="vsv-opi-interger">119.</span><span class="vsv-opi-decimal">99</span></span>
+                        </a></div>
                     </div>
-					
-	
-
-
-<?php
-
-
-$categg = 9 ;
-
-$sqll = "SELECT * FROM items WHERE category='$categg' ORDER BY ID DESC LIMIT 6 ";
-$resultt = mysqli_query($conn, $sqll);
-
-if (mysqli_num_rows($resultt) > 0) {
-
-	while($rowt = mysqli_fetch_assoc($resultt)){
-	
-  $id =$rowt["id"];	
-  $name =$rowt["name"];
- $amount =$rowt["amount"];
-
-$sqls = "SELECT * FROM itemsimages WHERE iditem='$id' LIMIT 1";
-$results = mysqli_query($conn, $sqls);
-
-if (mysqli_num_rows($results) > 0) {
-
-while($rows = mysqli_fetch_assoc($results)){	
-$image =$rows["image"];
-$imgid =$rows["id"];
-}
-
-}
-
-
-echo ' 
-
-	  
-	   <a class="product-list-link product-list-link-js" href="prod.php?id='.$id.'&idimg='.$imgid.'" title="Buckle high-waist trousers" target="_self">
-        
-	        <div class="image image50 image2 vsv-waypoint-image" style="visibility: inherit; opacity: 1;">
-                        <div data-cta="//shop.elijahmcquinn.com/redirect.faces?op=CONTA&amp;producto=33030522&amp;color=20&amp;tiendaid=she" data-ga-cr="top">
-						<img class="img-responsive" src="../admin/'.$image.'" data-width="100"></div>
+                    <div class="image image50 image2 vsv-waypoint-image" style="visibility: inherit; opacity: 1;">
+                        <div data-cta="//shop.elijahmcquinn.com/redirect.faces?op=CONTA&amp;producto=33030522&amp;color=20&amp;tiendaid=she" data-ga-cr="top"><img class="img-responsive" src="home_files/newnow_she_junio_1_2.jpg" data-width="100"></div>
                         <div class="price"><a href="https://shop.elijahmcquinn.com/redirect.faces?op=CONTA&amp;idioma=US&amp;pais=400&amp;producto=33030522&amp;tiendaid=she" class="vsv-opi-price" data-reference="33030522" data-color="20">
-                         </a></div>
+                            <span class="vsv-opi-prenda">Blouse</span>
+                            <span class="vsv-opi-description"><span class="vsv-opi-currency">$</span><span class="vsv-opi-interger">49.</span><span class="vsv-opi-decimal">99</span></span>
+                        </a></div>
                     </div>
-					</a>
-';
-
-
-
-
-
-
-
-	}
-}
-
-
-?>
-
-
-
-	
-              
-				
-					
-     
-					
-		
-					
-					
-					
+                    <div class="image image50 image3 vsv-waypoint-image" style="visibility: inherit; opacity: 1;">
+                        <div data-cta="//shop.elijahmcquinn.com/redirect.faces?op=CONTA&amp;producto=33070788&amp;color=70&amp;tiendaid=she" data-ga-cr="bluganda"><img class="img-responsive" src="home_files/newnow_she_junio_1_3.jpg" data-width="100"></div>
+                        <div class="price"><a href="https://shop.elijahmcquinn.com/redirect.faces?op=CONTA&amp;idioma=US&amp;pais=400&amp;producto=33070788&amp;tiendaid=she" class="vsv-opi-price" data-reference="33070788" data-color="20">
+                            <span class="vsv-opi-prenda">Dress</span>
+                            <span class="vsv-opi-description"><span class="vsv-opi-currency">$</span><span class="vsv-opi-interger">79.</span><span class="vsv-opi-decimal">99</span></span>
+                        </a></div>
+                    </div>
+                    <div class="image image50 image4 vsv-waypoint-image" style="visibility: inherit; opacity: 1;">
+                        <div data-cta="//shop.elijahmcquinn.com/redirect.faces?op=CONTA&amp;producto=33080928&amp;color=12&amp;tiendaid=she" data-ga-cr="americana"><img class="img-responsive" src="home_files/newnow_she_junio_1_4.jpg" data-width="100"></div>
+                        <div class="price"><a href="https://shop.elijahmcquinn.com/redirect.faces?op=CONTA&amp;idioma=US&amp;pais=400&amp;producto=33080928&amp;tiendaid=she" class="vsv-opi-price" data-reference="33080928" data-color="12">
+                            <span class="vsv-opi-prenda">Dress</span>
+                            <span class="vsv-opi-description"><span class="vsv-opi-currency">$</span><span class="vsv-opi-interger">79.</span><span class="vsv-opi-decimal">99</span></span>
+                        </a></div>
+                    </div>
+                    <div class="image image50 image5 vsv-waypoint-image" style="visibility: inherit; opacity: 1;">
+                        <div data-cta="//shop.elijahmcquinn.com/redirect.faces?op=CONTA&amp;producto=33060930&amp;color=04&amp;tiendaid=she" data-ga-cr="vestido"><img class="img-responsive" src="home_files/newnow_she_junio_1_5.jpg" data-width="100"></div>
+                        <div class="price"><a href="https://shop.elijahmcquinn.com/redirect.faces?op=CONTA&amp;idioma=US&amp;pais=400&amp;producto=33060930&amp;tiendaid=she" class="vsv-opi-price" data-reference="33060930" data-color="04">
+                            <span class="vsv-opi-prenda">Shirt</span>
+                            <span class="vsv-opi-description"><span class="vsv-opi-currency">$</span><span class="vsv-opi-interger">49.</span><span class="vsv-opi-decimal">99</span></span>
+                        </a></div>
+                    </div>
                     <div class="links">
-                        <div class="link" data-cta="//shop.elijahmcquinn.com/redirect.faces?op=conta&amp;seccion=nuevo&amp;tiendaid=she"><span class="hvr-underline-fix2"></span></div>
+                        <div class="link" data-cta="//shop.elijahmcquinn.com/redirect.faces?op=conta&amp;seccion=nuevo&amp;tiendaid=she"><span class="hvr-underline-fix2">Shop now</span></div>
                     </div>
                 </div>
             </div>
@@ -15886,7 +15681,7 @@ echo '
 
 
   </style></div></div></section></div>
-<!-- MNGSGNT-NB2-SH3-BI186%201-MNGSGNT -->
+<!-- elijahSGNT-NB2-SH3-BI186%201-elijahSGNT -->
 
 </div>
 						</div><div id="Form:SVLoading:popupLoading" style="z-index: 302; position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; background-color: #ffffff; opacity: 0.9; display: none; "></div><div id="Form:SVLoading:popupLoading_t" style="z-index: 303; position: absolute; left: 50%; margin-left: -125px; width: 250px; height: 130px; text-align: center; vertical-align: middle; background-color: #ffffff; display: none; " class="panelLoadingMobile">
@@ -15895,18 +15690,18 @@ echo '
 				
 				<img class="gifLoadingMobile she" src="home_files/she.gif">
 			</div>
-		</div><input name="_mng_dialogVisible_popupLoading" id="_mng_dialogVisible_popupLoading" value="false" type="hidden"></div><div id="Form:SVPAviso:avisoPopup" class="max_stock">
+		</div><input name="_elijah_dialogVisible_popupLoading" id="_elijah_dialogVisible_popupLoading" value="false" type="hidden"></div><div id="Form:SVPAviso:avisoPopup" class="max_stock">
     	<span id="_panel_visiblepopupAviso"><input id="Form:SVPAviso:popupAviso:j_id_34" name="Form:SVPAviso:popupAviso:j_id_34" value="false" type="hidden"> 
     	</span>
-    	<div id="popupAviso" class="_mng_panel alertBanner _mng_panel_fixed" style="z-index: 201; display: none; width: 300px; left: 40%; top: 40%;">
+    	<div id="popupAviso" class="_elijah_panel alertBanner _elijah_panel_fixed" style="z-index: 201; display: none; width: 300px; left: 40%; top: 40%;">
     		
-    		<div id="popupAviso_header" class="_mng_panel_header alertBanner__header _mng_panel_move " onmousedown="if (true) _mng_activatePanelMove(event, 'popupAviso');"><a href="#" onclick="jsf.util.chain(document.getElementById('Form:SVPAviso:popupAviso:closePanel'), event,'hideAviso()', 'jsf.ajax.request(\'Form:SVPAviso:popupAviso:closePanel\',event,{\'javax.faces.behavior.event\':\'action\'})'); return false;" id="Form:SVPAviso:popupAviso:closePanel" name="Form:SVPAviso:popupAviso:closePanel" class="_mng_panel_close">  
+    		<div id="popupAviso_header" class="_elijah_panel_header alertBanner__header _elijah_panel_move " onmousedown="if (true) _elijah_activatePanelMove(event, 'popupAviso');"><a href="#" onclick="jsf.util.chain(document.getElementById('Form:SVPAviso:popupAviso:closePanel'), event,'hideAviso()', 'jsf.ajax.request(\'Form:SVPAviso:popupAviso:closePanel\',event,{\'javax.faces.behavior.event\':\'action\'})'); return false;" id="Form:SVPAviso:popupAviso:closePanel" name="Form:SVPAviso:popupAviso:closePanel" class="_elijah_panel_close">  
 		    			<span class="icon" style="text-decoration:none">C</span></a>
     		</div>
     		
-    		<div id="popupAviso_body" class="_mng_panel_body ">
+    		<div id="popupAviso_body" class="_elijah_panel_body ">
 		<div class="aviso_popup alertBanner__info"><span class="txt8 texto_limite_prendas alertBanner__text">We remind you that the limit on purchases is a maximum of $2,000 and/or 40 items, as indicated in the purchasing conditions.</span>
-			<div class="aviso_boton alertBanner__button"><span id="Form:SVPAviso:popupAviso:j_id_3f" onclick="_mng_preSubmit('_mng_hidde_valuej_id_3f','j_id_3f','Form');jsf.util.chain(document.getElementById('Form:SVPAviso:popupAviso:j_id_3f'), event,'hideAviso();; hideBolsa();', 'jsf.ajax.request(\'Form:SVPAviso:popupAviso:j_id_3f\',event,{render:\'Form:SVPAviso:avisoPopup \',\'javax.faces.behavior.event\':\'click\'})'); return false;" style="cursor: pointer;" class="txt7B txtLink limite_prendas_aceptar">Accept</span>
+			<div class="aviso_boton alertBanner__button"><span id="Form:SVPAviso:popupAviso:j_id_3f" onclick="_elijah_preSubmit('_elijah_hidde_valuej_id_3f','j_id_3f','Form');jsf.util.chain(document.getElementById('Form:SVPAviso:popupAviso:j_id_3f'), event,'hideAviso();; hideBolsa();', 'jsf.ajax.request(\'Form:SVPAviso:popupAviso:j_id_3f\',event,{render:\'Form:SVPAviso:avisoPopup \',\'javax.faces.behavior.event\':\'click\'})'); return false;" style="cursor: pointer;" class="txt7B txtLink limite_prendas_aceptar">Accept</span>
 			</div>
 		</div>
     		</div>
@@ -15919,7 +15714,7 @@ echo '
 	<div class="modalNoStock catalogModalNoStock">
 	
 		
-		<div class="modal-header-block"><span id="Form:SVResumenModalNoStock:close" onclick="_mng_preSubmit('_mng_hidde_valueclose','close','Form');jsf.util.chain(document.getElementById('Form:SVResumenModalNoStock:close'), event,'mostrarInfoPopup();;', 'jsf.ajax.request(\'Form:SVResumenModalNoStock:close\',event,{execute:\'@this \',render:\'Form:SVResumenModalNoStock:modalNoStock SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:SVBolsa:panelBolsa:bolsaItems SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:SVBolsa:panelBolsa:bolsa_total SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:bolsa_articulosNum SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:SVBolsa:panelBolsa:dentrobolsa SVBodyHeader:SVMobileHeaderMenu:mobileMenuCart:items_bolsa_mobile SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:SVBolsa:panelBolsa:bolsa_titulo \',onevent:function(e) {if (e.status == \'complete\'){ocultarInfoPopup();}},\'javax.faces.behavior.event\':\'click\'})'); return false;" style="cursor: pointer;" class="icon closeModal icon__close">q</span>	
+		<div class="modal-header-block"><span id="Form:SVResumenModalNoStock:close" onclick="_elijah_preSubmit('_elijah_hidde_valueclose','close','Form');jsf.util.chain(document.getElementById('Form:SVResumenModalNoStock:close'), event,'mostrarInfoPopup();;', 'jsf.ajax.request(\'Form:SVResumenModalNoStock:close\',event,{execute:\'@this \',render:\'Form:SVResumenModalNoStock:modalNoStock SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:SVBolsa:panelBolsa:bolsaItems SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:SVBolsa:panelBolsa:bolsa_total SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:bolsa_articulosNum SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:SVBolsa:panelBolsa:dentrobolsa SVBodyHeader:SVMobileHeaderMenu:mobileMenuCart:items_bolsa_mobile SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:SVBolsa:panelBolsa:bolsa_titulo \',onevent:function(e) {if (e.status == \'complete\'){ocultarInfoPopup();}},\'javax.faces.behavior.event\':\'click\'})'); return false;" style="cursor: pointer;" class="icon closeModal icon__close">q</span>	
 			
 			<span class="title">NOTE</span>	
 		</div>
@@ -15935,7 +15730,7 @@ echo '
 		</div>
 		
 		
-		<div class="modal-footer-block"><span id="Form:SVResumenModalNoStock:modalFormContinuar" onclick="_mng_preSubmit('_mng_hidde_valuemodalFormContinuar','modalFormContinuar','Form');jsf.util.chain(document.getElementById('Form:SVResumenModalNoStock:modalFormContinuar'), event,'mostrarInfoPopup();;', 'jsf.ajax.request(\'Form:SVResumenModalNoStock:modalFormContinuar\',event,{execute:\'@this \',render:\'Form:SVResumenModalNoStock:modalNoStock SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:SVBolsa:panelBolsa:bolsaItems SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:SVBolsa:panelBolsa:bolsa_total SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:bolsa_articulosNum SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:SVBolsa:panelBolsa:dentrobolsa SVBodyHeader:SVMobileHeaderMenu:mobileMenuCart:items_bolsa_mobile SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:SVBolsa:panelBolsa:bolsa_titulo \',onevent:function(e) {if (e.status == \'complete\'){ocultarInfoPopup();}},\'javax.faces.behavior.event\':\'click\'})'); return false;" style="cursor: pointer;" class="botonNew modalContinuar">CONTINUE</span>
+		<div class="modal-footer-block"><span id="Form:SVResumenModalNoStock:modalFormContinuar" onclick="_elijah_preSubmit('_elijah_hidde_valuemodalFormContinuar','modalFormContinuar','Form');jsf.util.chain(document.getElementById('Form:SVResumenModalNoStock:modalFormContinuar'), event,'mostrarInfoPopup();;', 'jsf.ajax.request(\'Form:SVResumenModalNoStock:modalFormContinuar\',event,{execute:\'@this \',render:\'Form:SVResumenModalNoStock:modalNoStock SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:SVBolsa:panelBolsa:bolsaItems SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:SVBolsa:panelBolsa:bolsa_total SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:bolsa_articulosNum SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:SVBolsa:panelBolsa:dentrobolsa SVBodyHeader:SVMobileHeaderMenu:mobileMenuCart:items_bolsa_mobile SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:SVBolsa:panelBolsa:bolsa_titulo \',onevent:function(e) {if (e.status == \'complete\'){ocultarInfoPopup();}},\'javax.faces.behavior.event\':\'click\'})'); return false;" style="cursor: pointer;" class="botonNew modalContinuar">CONTINUE</span>
 		</div>
 	</div></span><input name="Form_SUBMIT" value="1" type="hidden"><input name="javax.faces.ViewState" id="j_id__v_0:javax.faces.ViewState:4" value="6+c7eLbMbxJ9lg/TmxR4JQZxM8Fpl6AMDEYKKYc0WZRdv6XH
 " type="hidden"></form>
@@ -15947,12 +15742,10 @@ echo '
 			<script type="text/javascript"></script>
 
 			
-			<footer id="footerMNG" class="footerMNG" data-ga-category="footer" data-cached="false">
+			<footer id="footerelijah" class="footerelijah" data-ga-category="footer" data-cached="false">
 				<div class="container-fluid user-select"><span id="SVPie:SVFooterNewsletter:panelFooterRegistroNewsletter">
     	<div class="row">
-       		<div class="col-xs-24 col-ie-24 fullcol">
-			
-			<form id="SVPie:SVFooterNewsletter:FExpr4" name="SVPie:SVFooterNewsletter:FExpr4" method="post" action="email.php" class="customFormIdFExpr4 focusOff" enctype="application/x-www-form-urlencoded" data-validate-active="true">
+       		<div class="col-xs-24 col-ie-24 fullcol"><form id="SVPie:SVFooterNewsletter:FExpr4" name="SVPie:SVFooterNewsletter:FExpr4" method="post" action="https://shop.elijahmcquinn.com/home.faces?ts=1529393591276&amp;state=she_400_US" class="customFormIdFExpr4 focusOff" enctype="application/x-www-form-urlencoded" data-validate-active="true">
            			<div class="newsletterForm newsletter">
 
    	
@@ -15960,39 +15753,33 @@ echo '
   	<div class="newsletter-label">Sign up for our newsletter and get 10% off </div>
 
 
-	<div class="newsletter-form newsletterContainer">
-	<div class="eac-input-wrap" style="display: inline; position: relative; font-size: 13px;">
-	
-	<input id="" name="email" maxlength="120" class="newsletterForm__input newsletterFormInput emailSuggest newsletter-form-input" data-validate-required="true" data-validate-validator="^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-zA-Z]{2,6}(?:\.[a-zA-Z]{2})?)$" placeholder="Enter your e-mail" data-validate-validatormessage="Enter a correct e-mail address (e.g. name@gmail.com)" data-component-id="FExpr4_regExpMail4" data-validate-requiredmessage="Enter a correct e-mail address (e.g. name@gmail.com)" type="email">
-	<span class="eac-sugg" style="display: block; box-sizing: content-box; line-height: 42px; padding-top: 1.9px; padding-bottom: 1.9px; font-family: elijahmcquinn-light, Arial; font-weight: 400; letter-spacing: 0px; position: absolute; top: 0px; left: 0px;">
-	</span>
-	<span class="eac-cval" style="visibility: hidden; position: absolute; display: inline-block; font-family: elijahmcquinn-light, Arial; font-weight: 400; letter-spacing: 0px;">
-	</span></div>
+	<div class="newsletter-form newsletterContainer"><div class="eac-input-wrap" style="display: inline; position: relative; font-size: 13px;"><input id="SVPie:SVFooterNewsletter:FExpr4:SVFooterNewsletter:regExpMail4" name="SVPie:SVFooterNewsletter:FExpr4:SVFooterNewsletter:regExpMail4" maxlength="120" class="newsletterForm__input newsletterFormInput emailSuggest newsletter-form-input" data-validate-required="true" data-validate-validator="^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-zA-Z]{2,6}(?:\.[a-zA-Z]{2})?)$" placeholder="Enter your e-mail" data-validate-validatormessage="Enter a correct e-mail address (e.g. name@gmail.com)" data-component-id="FExpr4_regExpMail4" data-validate-requiredmessage="Enter a correct e-mail address (e.g. name@gmail.com)" type="email"><span class="eac-sugg" style="display: block; box-sizing: content-box; line-height: 42px; padding-top: 1.9px; padding-bottom: 1.9px; font-family: elijahmcquinn-light, Arial; font-weight: 400; letter-spacing: 0px; position: absolute; top: 0px; left: 0px;"></span><span class="eac-cval" style="visibility: hidden; position: absolute; display: inline-block; font-family: elijahmcquinn-light, Arial; font-weight: 400; letter-spacing: 0px;"></span></div>
 			
 		
 		<div id="FExpr4_regExpMail4ErrorLabel" class="newsletterForm__error">
 		</div>
 
 		
-		<div class="newsletterForm__buttonContainer" data-ga-action="newsletter">
+		<div class="newsletterForm__buttonContainer" data-ga-action="newsletter"><input id="SVPie:SVFooterNewsletter:FExpr4:SVFooterNewsletter:j_id_4a_1_1_6_9" name="SVPie:SVFooterNewsletter:FExpr4:SVFooterNewsletter:j_id_4a_1_1_6_9" value="J" onclick="jsf.util.chain(document.getElementById('SVPie:SVFooterNewsletter:FExpr4:SVFooterNewsletter:j_id_4a_1_1_6_9'), event,'return formController.setSubmitValidation(this);', 'jsf.ajax.request(\'SVPie:SVFooterNewsletter:FExpr4:SVFooterNewsletter:j_id_4a_1_1_6_9\',event,{execute:\'@form \',render:\'SVPie:SVFooterNewsletter:panelFooterRegistroNewsletter \',\'javax.faces.behavior.event\':\'action\'})'); return false;" class="newsletterForm__link icon " data-ga-label="suscribir" type="submit">
 		</div>
-<div class="submitContent" style="width:20%;margin-left:40%;">
-			<div class="submit">
-	<input style="background-color:black;color:white;boder-size:0px;padding:5px;width:100px;" id="SVLoginCheck:j_id_36:j_id_3v" name="SVLoginCheck:j_id_36:j_id_3v" value="Signup "  tabindex="8" class="submit" type="submit">
-	</div>	</div>
+
+		
 		
 	</div>
 		<div class="newsletterForm__text newsletterForm__textHover" data-ga-action="newsletter">
-			By subscribing you accept the		
+			By subscribing you accept the
+			
+			
+				<a class="separateLeft modal-link " onclick="window.open('https://shop.elijahmcquinn.com/us/women/helppopup/11622.html','ayuda','menubar=no,resizable=yes,scrollbars=yes,width=970,height=750').focus();" data-ga-label="politicaPrivacidad"><span>Privacy Policy</span></a>
+			 
+			
+				and the
+				
+				
+				<a class="separateLeft modal-link " onclick="window.open('https://shop.elijahmcquinn.com/us/women/helppopup/38740.html','ayuda','menubar=no,resizable=yes,scrollbars=yes,width=970,height=750').focus();" data-ga-label="termsconditions"><span>Promotion's T&amp;C</span></a>
 		</div>
-	
-					</div>
-									
-	
-								</div>
-								</div>			
-					
-					</form>
+					</div><input name="SVPie:SVFooterNewsletter:FExpr4_SUBMIT" value="1" type="hidden"><input name="javax.faces.ViewState" id="j_id__v_0:javax.faces.ViewState:5" value="6+c7eLbMbxJ9lg/TmxR4JQZxM8Fpl6AMDEYKKYc0WZRdv6XH
+" type="hidden"></form>
 
 			</div>
 		</div></span>
@@ -16002,13 +15789,115 @@ echo '
 	<div id="footerContentCache" class="row" data-cache-id="shop.elijahmcquinn.com_562_pc_400_US_she">
 
 		
-	
+		<div id="nav-footer" class="nav-footer">
+						<span class="nav-footer-link">
+				<span class="" id="ayuda">
+					<a target="" href="https://shop.elijahmcquinn.com/us/women/help/12592.html" data-ga-label="ayuda">Help</a>
+				</span>
+						</span>
+						<span class="nav-footer-link">
+			
+			<span class="" id="pedidos">
+				<a target="" href="https://shop.elijahmcquinn.com/registroExterno.faces?op=listaPedidos" data-ga-label="pedidos">		
+						
+						Orders
+				</a>
+			</span>
+						</span>
+						<span class="nav-footer-link">
+				<span class="" id="devoluciones">
+					<a target="" href="https://shop.elijahmcquinn.com/us/women/help/2882.html" data-ga-label="devoluciones">Returns</a>
+				</span>
+						</span>
+						<span class="nav-footer-link">
+			
+			<span class="modal-bt-js" id="buscarTiendas">
+				<a target="" href="javascript:void(0)" data-ga-label="buscarTiendas">		
+						
+						Stores
+				</a>
+			</span>
+						</span>
+						<span class="nav-footer-link">
+			
+			<span class="cheques" id="cheques">
+				<a target="" href="https://shop.elijahmcquinn.com/chequeRegalo.faces" data-ga-label="cheques">		
+						
+						eGift card
+				</a>
+			</span>
+						</span>
+						<span class="nav-footer-link">
+			
+			<span class="" id="apps">
+				<a target="" href="https://shop.elijahmcquinn.com/redirect.faces?op=conta&amp;externa=APPsheS0515" data-ga-label="apps">		
+						
+						Apps
+				</a>
+			</span>
+						</span>
+						<span class="nav-footer-link">
+			<span class="empresa">
+					
+					<a href="https://shop.elijahmcquinn.com/redirect.faces?op=conta&amp;externa=pieEmpresa" target="_blank" data-ga-label="pieEmpresa">
+						
+						Company
+					</a>
+			</span>
+						</span>
+						<span class="nav-footer-link">
+			<span class="franquicias">
+					
+					<a href="https://shop.elijahmcquinn.com/redirect.faces?op=conta&amp;externa=pieFranquicias" target="_blank" data-ga-label="pieFranquicias">
+						
+						Franchises
+					</a>
+			</span>
+						</span>
+						<span class="nav-footer-link">
+			<span class="">
+					
+					<a href="https://shop.elijahmcquinn.com/redirect.faces?op=conta&amp;externa=affiliate" target="_blank" data-ga-label="afiliados">
+						
+						Affiliate
+					</a>
+			</span>
+						</span>
+						<span class="nav-footer-link">
+			<span class="trabaja">
+					
+					<a href="https://shop.elijahmcquinn.com/redirect.faces?op=conta&amp;externa=pieTrabajar" target="_blank" data-ga-label="pieTrabajar">
+						
+						Work for elijahmcquinn
+					</a>
+			</span>
+						</span>
+						<span class="nav-footer-link">
+			<span class="prensa">
+					
+					<a href="https://press.elijahmcquinn.com/" target="_blank" data-ga-label="pressroom">
+						
+						Press
+					</a>
+			</span>
+						</span>
+						<span class="nav-footer-link">
+			<span class="">
+					
+					<a href="https://www.elijahmcquinnoutlet.com/us/women?utm_source=elijahmcquinn.com&amp;utm_medium=interno&amp;utm_campaign=enlace_footer" target="_blank" data-ga-label="outlet">
+						
+						elijahmcquinn Outlet
+					</a>
+			</span>
+						</span>
+		</div>
+
 		
 		<div id="nav-socialnetwork" class="nav-socialnetwork" data-ga-action="redes sociales">
 		   			<span class="nav-socialnetwork-link">
 			<span class="social__icon fb icon">
 					
-					<a href="http://www.facebook.com/elijahmcquinn" target="_blank" rel="nofollow" data-ga-label="facebook">
+					<a href="http://www.facebook.com/elijahmcquinn.com" target="_blank" rel="nofollow" data-ga-label="facebook">
 						
 						f
 					</a>
@@ -16100,9 +15989,9 @@ echo '
 			</span>
 			
 			<span class="phoneSales__telf" id="">
-				<a target="" href="tel:%256779815657" data-ga-label="">		
+				<a target="" href="tel:%201.866.6elijah.elijah" data-ga-label="">		
 						
-						256-779815657
+						1.866.6elijah.elijah
 				</a>
 			</span>
 				</span>
@@ -16153,7 +16042,7 @@ echo '
 
     <div class="posRelative">
     	<div id="bocataAvisame" style="display: none" class="modalNoStock"><div id="SVFichaAvisame:avisameAll"><form id="SVFichaAvisame:FAvisame" name="SVFichaAvisame:FAvisame" method="post" action="https://shop.elijahmcquinn.com/home.faces?ts=1529393591276&amp;state=she_400_US" onkeypress="return event.keyCode != 13;" style="margin: 0px; padding: 0px;" enctype="application/x-www-form-urlencoded">
-						<div class="headerAvisame"><div id="SVFichaAvisame:FAvisame:close" onclick="_mng_preSubmit('_mng_hidde_valueclose','close','SVFichaAvisame:FAvisame');jsf.util.chain(document.getElementById('SVFichaAvisame:FAvisame:close'), event,'jsf.ajax.request(\'SVFichaAvisame:FAvisame:close\',event,{execute:\'@form \',render:\'SVFichaAvisame:avisameAll \',onevent:function(e) {if (e.status==\'success\') {avisameController.hideAvisamePopup();}},\'javax.faces.behavior.event\':\'click\'})'); return false;" style="cursor: pointer;height: 11px; line-height: 11px; vertical-align: middle; width: 10px; display: block; text-align: center; " class="icon botonCerrarAvisame">C</div><span id="SVFichaAvisame:FAvisame:closeMobil" onclick="_mng_preSubmit('_mng_hidde_valuecloseMobil','closeMobil','SVFichaAvisame:FAvisame');jsf.util.chain(document.getElementById('SVFichaAvisame:FAvisame:closeMobil'), event,'jsf.ajax.request(\'SVFichaAvisame:FAvisame:closeMobil\',event,{execute:\'@form \',render:\'SVFichaAvisame:avisameAll \',onevent:function(e) {if (e.status==\'success\') {avisameController.hideAvisamePopup();}},\'javax.faces.behavior.event\':\'click\'})'); return false;" style="cursor: pointer;" class="icono cerrarAvisame">k</span><span id="SVFichaAvisame:FAvisame:nombreProductoAvisame" class="tituloProductoAvisame"></span>
+						<div class="headerAvisame"><div id="SVFichaAvisame:FAvisame:close" onclick="_elijah_preSubmit('_elijah_hidde_valueclose','close','SVFichaAvisame:FAvisame');jsf.util.chain(document.getElementById('SVFichaAvisame:FAvisame:close'), event,'jsf.ajax.request(\'SVFichaAvisame:FAvisame:close\',event,{execute:\'@form \',render:\'SVFichaAvisame:avisameAll \',onevent:function(e) {if (e.status==\'success\') {avisameController.hideAvisamePopup();}},\'javax.faces.behavior.event\':\'click\'})'); return false;" style="cursor: pointer;height: 11px; line-height: 11px; vertical-align: middle; width: 10px; display: block; text-align: center; " class="icon botonCerrarAvisame">C</div><span id="SVFichaAvisame:FAvisame:closeMobil" onclick="_elijah_preSubmit('_elijah_hidde_valuecloseMobil','closeMobil','SVFichaAvisame:FAvisame');jsf.util.chain(document.getElementById('SVFichaAvisame:FAvisame:closeMobil'), event,'jsf.ajax.request(\'SVFichaAvisame:FAvisame:closeMobil\',event,{execute:\'@form \',render:\'SVFichaAvisame:avisameAll \',onevent:function(e) {if (e.status==\'success\') {avisameController.hideAvisamePopup();}},\'javax.faces.behavior.event\':\'click\'})'); return false;" style="cursor: pointer;" class="icono cerrarAvisame">k</span><span id="SVFichaAvisame:FAvisame:nombreProductoAvisame" class="tituloProductoAvisame"></span>
       					</div>
 
       					<div class="avisameIntroduceMail">Enter your e-mail address and we will notify you if the item becomes available again.
@@ -16161,7 +16050,7 @@ echo '
 
       					<div class="formAvisame"><span class="emailLabel">E-mail</span><input id="SVFichaAvisame:FAvisame:avisameMail" name="SVFichaAvisame:FAvisame:avisameMail" value="Enter your e-mail address" onfocus="if (this.value == 'Enter your e-mail address') { this.value=''; }" onblur="if (this.value == '') { this.value = 'Enter your e-mail address'; }" maxlength="120" class="inputReg1  " type="text">
 	        	            <div id="divError">
-	     					</div><div id="SVFichaAvisame:FAvisame:botonEnviar" onclick="_mng_preSubmit('_mng_hidde_valuebotonEnviar','botonEnviar','SVFichaAvisame:FAvisame');jsf.util.chain(document.getElementById('SVFichaAvisame:FAvisame:botonEnviar'), event,'jsf.ajax.request(\'SVFichaAvisame:FAvisame:botonEnviar\',event,{execute:\'@form \',render:\'SVFichaAvisame:avisameAll \',\'javax.faces.behavior.event\':\'click\'})'); return false;" style="cursor: pointer;width: 166px; display: block; text-align: center; " class="buttonBlack ">Receive notification</div>
+	     					</div><div id="SVFichaAvisame:FAvisame:botonEnviar" onclick="_elijah_preSubmit('_elijah_hidde_valuebotonEnviar','botonEnviar','SVFichaAvisame:FAvisame');jsf.util.chain(document.getElementById('SVFichaAvisame:FAvisame:botonEnviar'), event,'jsf.ajax.request(\'SVFichaAvisame:FAvisame:botonEnviar\',event,{execute:\'@form \',render:\'SVFichaAvisame:avisameAll \',\'javax.faces.behavior.event\':\'click\'})'); return false;" style="cursor: pointer;width: 166px; display: block; text-align: center; " class="buttonBlack ">Receive notification</div>
       					</div>
 
 						<div class="footerAvisame">
@@ -16174,7 +16063,7 @@ echo '
 " type="hidden"></form></div>
    		</div>
    	</div><script type="text/javascript" src="home_files/panelBasic.faces"></script><script type="text/javascript" src="home_files/events.faces"></script><script>
-		var _mng_sb = null;
+		var _elijah_sb = null;
 
 		// Comprueba si una cadena es un digito.
 		function is_numeric(str){
@@ -16233,13 +16122,13 @@ echo '
 				}
 			
 		}
-	function _mng_ButtonTRender(cell, src, color, style, styleClass) { 
+	function _elijah_ButtonTRender(cell, src, color, style, styleClass) { 
  	if (src != 'null') cell.style.backgroundImage= "url('"+src+"')"; 
  	if (color != 'null') cell.style.color=color; 
  	if (style != 'null') cell.style.cssText=style; 
  	if (styleClass != 'null') cell.className=styleClass; 
  } 
- function _mng_autoscrollAdd(anchor) {
+ function _elijah_autoscrollAdd(anchor) {
 	try { 
  		if (window.pageYOffset) 
  			anchor.href = anchor.href + '?scroll=' + window.pageYOffset; 
@@ -16251,7 +16140,7 @@ echo '
  			anchor.href = anchor.href + '?scroll=' + document.body.scrollTop; 
  	} catch (ex) {} 
  } 
- function _mng_autoscrollSet() {
+ function _elijah_autoscrollSet() {
 try { 
  	if (document.location.href.indexOf('scroll=') != -1) { 
 		var scr = document.location.href.substring( document.location.href.indexOf('scroll=')+7); 
@@ -16260,7 +16149,7 @@ try {
  	} 
  } catch (ex) {} 
  } 
- function _mng_add_onload(func) {
+ function _elijah_add_onload(func) {
 	var oldonload = window.onload;
 	if (typeof window.onload != 'function') {
 		window.onload = func;
@@ -16273,7 +16162,7 @@ try {
 		}
 	}
 }
-_mng_add_onload(_mng_autoscrollSet); 
+_elijah_add_onload(_elijah_autoscrollSet); 
 
 		function showBocataProducto(event) {
 			document.getElementById('SVBodyHeader:SVUserMenu:userMenuForm:SVWishlistHeader:WishListAddProducto').style.display = 'block';
@@ -16312,41 +16201,41 @@ _mng_add_onload(_mng_autoscrollSet);
 			    sendTransportCountryChangeExperimentVariation();
 			}
 			//]]>
-			function _mng_preSubmit(name, value, formName) { 
+			function _elijah_preSubmit(name, value, formName) { 
  	if (document.getElementById(name)) document.getElementById(name).value = value; 
  	else {  
- 		var _mngh = document.createElement('input'); 
- 		_mngh.setAttribute('type','hidden'); 
- 		_mngh.setAttribute('name',name); _mngh.setAttribute('id',name); 
- 		_mngh.setAttribute('value',value); 
- 		document.forms[formName].appendChild(_mngh); 
+ 		var _elijahh = document.createElement('input'); 
+ 		_elijahh.setAttribute('type','hidden'); 
+ 		_elijahh.setAttribute('name',name); _elijahh.setAttribute('id',name); 
+ 		_elijahh.setAttribute('value',value); 
+ 		document.forms[formName].appendChild(_elijahh); 
  	} 
  } 
- var _mng_collapseFunctions = new Array(); 
-function _mng_divCollapse(id, from, count)  { 
+ var _elijah_collapseFunctions = new Array(); 
+function _elijah_divCollapse(id, from, count)  { 
 	var div = document.getElementById(id);  	
 	var height = Number(div.offsetHeight);  
 	if (height == 0) return;  
 	if (count == null) count = -1;  
 	var offset = 20;  	
 	if (count == -1 && div.style.display=='block') {  
-		collapseTimer = setTimeout('_mng_divCollapse("'+id+'","'+from+'",1)', 65);  
+		collapseTimer = setTimeout('_elijah_divCollapse("'+id+'","'+from+'",1)', 65);  
 	} else { 
 		if (from == 'bottom') {  		
 			if (height > offset) { 
 				height = height - offset;  
-				collapseTimer = setTimeout('_mng_divCollapse("'+id+'","'+from+'",'+(count+1)+')', 65);  
+				collapseTimer = setTimeout('_elijah_divCollapse("'+id+'","'+from+'",'+(count+1)+')', 65);  
 			} else {  
 				div.style.display = 'none';  
 				height = 0;  
-				if (typeof(_mng_collapseFunctions[id]) != 'undefined') {_mng_collapseFunctions[id].call();}  
+				if (typeof(_elijah_collapseFunctions[id]) != 'undefined') {_elijah_collapseFunctions[id].call();}  
 			}  	
 		} 	
 		div.style.height = height+'px'; 
 		var width = Number(div.offsetWidth);  
 	}  
 }  
-function _mng_divShow(id, from, count, total)  {  	
+function _elijah_divShow(id, from, count, total)  {  	
 	var div = document.getElementById(id);  	
 	var height = Number(div.offsetHeight);  
 	if (height == total) return;  
@@ -16356,12 +16245,12 @@ function _mng_divShow(id, from, count, total)  {
 		div.style.height = offset+'px'; 
 		div.style.display = 'block'; 
 		var totH = div.firstChild.offsetHeight; 
-		collapseTimer = setTimeout('_mng_divShow("'+id+'","'+from+'",1,'+totH+')', 65);  
+		collapseTimer = setTimeout('_elijah_divShow("'+id+'","'+from+'",1,'+totH+')', 65);  
 	} else {  
 		if (from == 'bottom') { 
 			if (height+offset < total) { 
 				height = height + offset;  
-				collapseTimer = setTimeout('_mng_divShow("'+id+'","'+from+'",'+(count+1)+','+total+')', 65);  
+				collapseTimer = setTimeout('_elijah_divShow("'+id+'","'+from+'",'+(count+1)+','+total+')', 65);  
 			} else {  
 				height = total;  
 			}  	
@@ -16370,10 +16259,10 @@ function _mng_divShow(id, from, count, total)  {
 	}  
 }  
 function cierraArticuloBolsa_230376593615_1() { 
-	if (document.getElementById('_mng_divVisible_j_id_2e_b_w_t230376593615_1').value == 'true') {  
-		_mng_collapseFunctions['SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:SVBolsa:panelBolsa:iteradorBolsa:0:j_id_2e_b_w_t'] = function(event) {_mng_preSubmit('_mng_hidde_valuej_id_2e_b_w_t','230376593615_1','SVBodyHeader:SVUserMenu:userMenuForm');jsf.util.chain(document.getElementById('SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:SVBolsa:panelBolsa:iteradorBolsa:0:j_id_2e_b_w_t'), event,'jsf.ajax.request(\'SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:SVBolsa:panelBolsa:iteradorBolsa:0:j_id_2e_b_w_t\',event,{render:\'SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:SVBolsa:panelBolsa:bolsaItems SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:SVBolsa:panelBolsa:bolsa_total SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:bolsa_articulosNum SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:SVBolsa:panelBolsa:dentrobolsa SVBodyHeader:SVMobileHeaderMenu:mobileMenuCart:items_bolsa_mobile SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:SVBolsa:panelBolsa:bolsa_titulo \',onevent:function(data){if(data.status===\'success\')shoppingBagController.showMoveBolsaIcon();},\'javax.faces.behavior.event\':\'action\'})'); return false;}; 
-		_mng_divCollapse('SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:SVBolsa:panelBolsa:iteradorBolsa:0:j_id_2e_b_w_t', 'bottom', -1); 
-		document.getElementById('_mng_divVisible_j_id_2e_b_w_t230376593615_1').value = 'false'; 
+	if (document.getElementById('_elijah_divVisible_j_id_2e_b_w_t230376593615_1').value == 'true') {  
+		_elijah_collapseFunctions['SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:SVBolsa:panelBolsa:iteradorBolsa:0:j_id_2e_b_w_t'] = function(event) {_elijah_preSubmit('_elijah_hidde_valuej_id_2e_b_w_t','230376593615_1','SVBodyHeader:SVUserMenu:userMenuForm');jsf.util.chain(document.getElementById('SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:SVBolsa:panelBolsa:iteradorBolsa:0:j_id_2e_b_w_t'), event,'jsf.ajax.request(\'SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:SVBolsa:panelBolsa:iteradorBolsa:0:j_id_2e_b_w_t\',event,{render:\'SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:SVBolsa:panelBolsa:bolsaItems SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:SVBolsa:panelBolsa:bolsa_total SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:bolsa_articulosNum SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:SVBolsa:panelBolsa:dentrobolsa SVBodyHeader:SVMobileHeaderMenu:mobileMenuCart:items_bolsa_mobile SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:SVBolsa:panelBolsa:bolsa_titulo \',onevent:function(data){if(data.status===\'success\')shoppingBagController.showMoveBolsaIcon();},\'javax.faces.behavior.event\':\'action\'})'); return false;}; 
+		_elijah_divCollapse('SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:SVBolsa:panelBolsa:iteradorBolsa:0:j_id_2e_b_w_t', 'bottom', -1); 
+		document.getElementById('_elijah_divVisible_j_id_2e_b_w_t230376593615_1').value = 'false'; 
 	} 
 } 
  
@@ -16390,10 +16279,10 @@ function cierraArticuloBolsa_230376593615_1() {
 							ga('ec:setAction', 'remove');
 							ga('send', 'event', 'accion sobre producto', 'quitar de bolsa', '23037659-15');	
 						}
-					var _mng_timerUpAndDown = null; 
+					var _elijah_timerUpAndDown = null; 
 function bolsaDown(despl) { 
     if (despl == null) { 
-            _mng_timerUpAndDown = setTimeout('bolsaDown(0)', 45); 
+            _elijah_timerUpAndDown = setTimeout('bolsaDown(0)', 45); 
     } else { 
             var offset = 15; 
             var div = document.getElementById('SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:SVBolsa:panelBolsa:j_id_2e_b_w_r'); 
@@ -16403,7 +16292,7 @@ function bolsaDown(despl) {
                     if (despl + offset < 114) { 
                             newTop = top + offset; 
                             div.style.top = newTop+'px';
-                            _mng_timerUpAndDown = setTimeout('bolsaDown('+(despl+offset)+')', 45); 
+                            _elijah_timerUpAndDown = setTimeout('bolsaDown('+(despl+offset)+')', 45); 
                     } else { 
                             newTop = top + (114-despl); 
                             div.style.top = newTop+'px';
@@ -16413,7 +16302,7 @@ function bolsaDown(despl) {
 } 
 function bolsaUp(despl) { 
     if (despl == null) { 
-            _mng_timerUpAndDown = setTimeout('bolsaUp(0)', 45); 
+            _elijah_timerUpAndDown = setTimeout('bolsaUp(0)', 45); 
     } else { 
             var offset = 15; 
             var div = document.getElementById('SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:SVBolsa:panelBolsa:j_id_2e_b_w_r'); 
@@ -16424,7 +16313,7 @@ function bolsaUp(despl) {
                     if (despl + offset < 114) { 
                             newTop = top - offset; 
                             div.style.top = newTop+'px';
-                            _mng_timerUpAndDown = setTimeout('bolsaUp('+(despl+offset)+')', 45); 
+                            _elijah_timerUpAndDown = setTimeout('bolsaUp('+(despl+offset)+')', 45); 
                     } else { 
                             newTop = top - (114-despl); 
                             div.style.top = newTop+'px';
@@ -16432,7 +16321,7 @@ function bolsaUp(despl) {
             } 
     } 
 } 
-function _mng_mouse_pos(event) {
+function _elijah_mouse_pos(event) {
 	var pos = new Object(); 
 	if (event.pageX && event.pageY) { 
 		pos.x = event.pageX; 
@@ -16455,26 +16344,26 @@ function _mng_mouse_pos(event) {
 	} 
 	return pos; 
 } 
-var _mng_estaBolsaVisible = new Array();  
-var _mng_estaBolsaMov = new Array();  
-function _mng_bolsaPageWidth() { 
+var _elijah_estaBolsaVisible = new Array();  
+var _elijah_estaBolsaMov = new Array();  
+function _elijah_bolsaPageWidth() { 
 	if (document.documentElement && document.documentElement.clientWidth) return document.documentElement.clientWidth; 
 	else if (document.body) return document.body.clientWidth; 
 	else if (window.innerWidth) return window.innerWidth; 
 	else return 1024; 
 } 
-function _mng_bolsaShow(count, divId, posY, msecs, clip) { 
+function _elijah_bolsaShow(count, divId, posY, msecs, clip) { 
 	var div = document.getElementById(divId); 
 	if (count == null) count = -1; 
-	if (count == -1 && !_mng_estaBolsaMov[divId]) { 
-		_mng_estaBolsaMov[divId] = true;  
+	if (count == -1 && !_elijah_estaBolsaMov[divId]) { 
+		_elijah_estaBolsaMov[divId] = true;  
 		var top = posY; 
 		div.style.top = '-2000px'; 	
 		div.style.display = 'block'; 
 		var height = Number(div.offsetHeight);
 		var width = Number(div.offsetWidth); 
 		div.style.top = (top - height)+'px'; 
-		var bolsaTimer = setTimeout('_mng_bolsaShow(1,"'+divId+'",'+posY+','+msecs+','+clip+')', msecs); 
+		var bolsaTimer = setTimeout('_elijah_bolsaShow(1,"'+divId+'",'+posY+','+msecs+','+clip+')', msecs); 
 		div.style.clip = 'rect('+height+'px '+width+'px '+height+'px 0px)'; 
 	} else if (count != -1) { 
 		var height = Number(div.offsetHeight); 
@@ -16489,21 +16378,21 @@ function _mng_bolsaShow(count, divId, posY, msecs, clip) {
 			div.style.clip = 'rect('+(height-clip)+'px '+width+'px '+height+'px 0px)'; 
 			var top = Number(div.style.top.substr(0,div.style.top.length-2)); 
 			div.style.top = (top + offset)+'px';  
-			var bolsaTimer = setTimeout('_mng_bolsaShow('+(count+1)+',"'+divId+'",'+posY+','+msecs+','+clip+')', msecs); 
+			var bolsaTimer = setTimeout('_elijah_bolsaShow('+(count+1)+',"'+divId+'",'+posY+','+msecs+','+clip+')', msecs); 
 		} else { 
 			offsetTop = height - (offset*(count-1)); 
-			_mng_estaBolsaMov[divId] = false;  
-			_mng_estaBolsaVisible[divId] = true;  
+			_elijah_estaBolsaMov[divId] = false;  
+			_elijah_estaBolsaVisible[divId] = true;  
 			div.style.clip = ''; 
 			div.style.top = posY+'px';  
 		} 
 	} 
 } 
-function _mng_bolsaHide(count, divId, posY, msecs, clip) { 
+function _elijah_bolsaHide(count, divId, posY, msecs, clip) { 
 	if (count == null) count = -1; 
-	if (count == -1 && !_mng_estaBolsaMov[divId]) { 
-		_mng_estaBolsaMov[divId] = true;  
-		var bolsaTimer = setTimeout('_mng_bolsaHide(1,"'+divId+'",'+posY+','+msecs+','+clip+')', msecs); 
+	if (count == -1 && !_elijah_estaBolsaMov[divId]) { 
+		_elijah_estaBolsaMov[divId] = true;  
+		var bolsaTimer = setTimeout('_elijah_bolsaHide(1,"'+divId+'",'+posY+','+msecs+','+clip+')', msecs); 
 	} else if (count != -1) { 
 		var offset = 32; 
 		var div = document.getElementById(divId); 
@@ -16515,43 +16404,43 @@ function _mng_bolsaHide(count, divId, posY, msecs, clip) {
 		offset = Math.round(offset * factor); if (offset < 2) offset = 2;
 		clip = clip + offset; 
 		if (clip < height ) { 
-			var bolsaTimer = setTimeout('_mng_bolsaHide('+(count+1)+',"'+divId+'",'+posY+','+msecs+','+clip+')', msecs); 
+			var bolsaTimer = setTimeout('_elijah_bolsaHide('+(count+1)+',"'+divId+'",'+posY+','+msecs+','+clip+')', msecs); 
 			div.style.clip = 'rect('+clip+'px '+width+'px '+height+'px 0px)'; 
 			var top = Number(div.style.top.substr(0,div.style.top.length-2)); 
 			div.style.top = (top - offset)+'px'; 
 		} else { 
 			div.style.display ='none'; 
 			div.style.top = posY+'px'; 
-			_mng_estaBolsaMov[divId] = false;  
-			_mng_estaBolsaVisible[divId] = false;  
+			_elijah_estaBolsaMov[divId] = false;  
+			_elijah_estaBolsaVisible[divId] = false;  
 		} 
 	} 
 } 
-_mng_estaBolsaVisible['SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:SVBolsa:panelBolsa'] = false;  
-_mng_estaBolsaMov['SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:SVBolsa:panelBolsa'] = false;  
+_elijah_estaBolsaVisible['SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:SVBolsa:panelBolsa'] = false;  
+_elijah_estaBolsaMov['SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:SVBolsa:panelBolsa'] = false;  
 function showHideBolsa() { 
-  if (_mng_estaBolsaVisible['SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:SVBolsa:panelBolsa'] == false) showBolsa(); 
+  if (_elijah_estaBolsaVisible['SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:SVBolsa:panelBolsa'] == false) showBolsa(); 
   else hideBolsa();
 }  
 function showBolsa() { 
-if (!_mng_estaBolsaMov['SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:SVBolsa:panelBolsa']) { 
-	_mng_bolsaShow(null,'SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:SVBolsa:panelBolsa',0,28,0);  
+if (!_elijah_estaBolsaMov['SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:SVBolsa:panelBolsa']) { 
+	_elijah_bolsaShow(null,'SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:SVBolsa:panelBolsa',0,28,0);  
 } 
 } 
 function hideBolsa() { 
-if (!_mng_estaBolsaMov['SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:SVBolsa:panelBolsa']) { 
-	_mng_bolsaHide(null,'SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:SVBolsa:panelBolsa',0,28,0);  
+if (!_elijah_estaBolsaMov['SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:SVBolsa:panelBolsa']) { 
+	_elijah_bolsaHide(null,'SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:SVBolsa:panelBolsa',0,28,0);  
 } 
 } 
 function bolsaSeMueve() { 
-	return _mng_estaBolsaMov['SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:SVBolsa:panelBolsa']; 
+	return _elijah_estaBolsaMov['SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:SVBolsa:panelBolsa']; 
 } 
 
 			if ($('.panelDroppointsGeneral').length > 0) {
 				$('.panelDroppointsGeneral').remove();
 				$('.blancoModal').removeClass('abierto');
 			}
-		function _mng_popupShow(container, content) { 
+		function _elijah_popupShow(container, content) { 
 	var doc = document.documentElement, body = document.body;  
 	var top = (doc && doc.scrollTop  || body && body.scrollTop  || 0); 
 	container.style.height = (document.documentElement.offsetHeight-120)+'px';   
@@ -16563,28 +16452,28 @@ function bolsaSeMueve() {
 	content.style.top = (top+((wh/2)-(content.offsetHeight/2)))+'px';  
 	container.style.display = 'block'; 
 } 
-function _mng_popupHide(container, content) { 
+function _elijah_popupHide(container, content) { 
 	container.style.display = 'none'; 
 	content.style.display = 'none'; 
 } 
 function mostrarInfoPopup() { 
 	var div1 = document.getElementById('Form:SVLoading:popupLoading'); 
 	var div2 = document.getElementById('Form:SVLoading:popupLoading_t'); 
-	document.getElementById('_mng_dialogVisible_popupLoading').value = 'true'; 
-	_mng_popupShow(div1, div2); 
+	document.getElementById('_elijah_dialogVisible_popupLoading').value = 'true'; 
+	_elijah_popupShow(div1, div2); 
 } 
 function ocultarInfoPopup() { 
 	var div1 = document.getElementById('Form:SVLoading:popupLoading'); 
 	var div2 = document.getElementById('Form:SVLoading:popupLoading_t'); 
-	document.getElementById('_mng_dialogVisible_popupLoading').value = 'false'; 
-	_mng_popupHide(div1, div2); 
+	document.getElementById('_elijah_dialogVisible_popupLoading').value = 'false'; 
+	_elijah_popupHide(div1, div2); 
 } 
 
 			function showAviso() {
-				_mng_showPanel('popupAviso','40%','40%','_panel_visiblepopupAviso','','');
+				_elijah_showPanel('popupAviso','40%','40%','_panel_visiblepopupAviso','','');
 			}
 			function hideAviso() {
-				_mng_closePanel('popupAviso','_panel_visiblepopupAviso');
+				_elijah_closePanel('popupAviso','_panel_visiblepopupAviso');
 			}
 			document.getElementById('popupAviso').style.left = '40%'; document.getElementById('popupAviso').style.top = '40%';
 		
@@ -16643,7 +16532,7 @@ function ocultarInfoPopup() {
 fbq("track","PageView",{page_brand:google_tag_manager["GTM-TWFTD4"].macro(4),page_type:google_tag_manager["GTM-TWFTD4"].macro(5),country_name:google_tag_manager["GTM-TWFTD4"].macro(6),language:google_tag_manager["GTM-TWFTD4"].macro(7),userID:google_tag_manager["GTM-TWFTD4"].macro(8)});</script>
 <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=441271682641901&amp;ev=PageView&amp;noscript=1"></noscript>
 
-<script type="text/javascript" id="">try{var __scP="https:"==document.location.protocol?"https://":"http://",__scS=document.createElement("script");__scS.type="text/javascript";__scS.src=__scP+"app.salecycle.com/capture/UAT/elijahmcquinn.js";document.getElementsByTagName("head")[0].appendChild(__scS)}catch(a){};</script><script type="text/javascript" id="">(function(a,b,c){var d=a.getElementsByTagName(b)[0];a.getElementById(c)||(a=a.createElement(b),a.id=c,a.src="\/\/st.mngbcn.com\/static\/assets\/mngrtd\/mngrtd.2.0.2.js",d.parentNode.insertBefore(a,d))})(document,"script","mngRTD");</script><script type="application/ld+json">
+<script type="text/javascript" id="">try{var __scP="https:"==document.location.protocol?"https://":"http://",__scS=document.createElement("script");__scS.type="text/javascript";__scS.src=__scP+"app.salecycle.com/capture/UAT/elijahmcquinn.js";document.getElementsByTagName("head")[0].appendChild(__scS)}catch(a){};</script><script type="text/javascript" id="">(function(a,b,c){var d=a.getElementsByTagName(b)[0];a.getElementById(c)||(a=a.createElement(b),a.id=c,a.src="\/\/st.elijahbcn.com\/static\/assets\/elijahrtd\/elijahrtd.2.0.2.js",d.parentNode.insertBefore(a,d))})(document,"script","elijahRTD");</script><script type="application/ld+json">
       {
       "@context": "http://schema.org/",
       "@type": "Organization",
@@ -16655,6 +16544,6 @@ fbq("track","PageView",{page_brand:google_tag_manager["GTM-TWFTD4"].macro(4),pag
     "postalCode": "08184",
     "streetAddress": "Polígono Industrial Riera de Caldes, Carrer dels Basters, 12-14"
   },
-      "logo": "http://st.mngbcn.com/static/assets/img/logo/elijahmcquinn.svg"
+      "logo": "http://st.elijahbcn.com/static/assets/img/logo/elijahmcquinn.svg"
       }
-</script><script type="text/javascript" id="">if("undefined"===typeof _etmc)var _etmc=[];_etmc.push(["setOrgId","7247942"]);google_tag_manager["GTM-TWFTD4"].macro(9)&&_etmc.push(["setUserInfo",{email:""}]);</script><script type="text/javascript" id="">_etmc.push(["trackPageView"]);</script><script type="text/javascript" id="" src="home_files/collect.js"></script><div style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon0.23442383162120728"><img style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon0.3703764159247118" alt="" src="home_files/0.txt" width="0" height="0"></div><div style="display: none;"><img src="home_files/track_page_view.gif" style="display: none;" title="blank image" aria-hidden="true" width="0" height="0"></div><script type="text/javascript" id="">var args={tipoContenido:google_tag_manager["GTM-TWFTD4"].macro(14),dispositivo:google_tag_manager["GTM-TWFTD4"].macro(15),genero:google_tag_manager["GTM-TWFTD4"].macro(16)};mngRTD.sendNavigation(args);</script><div id="criteo-tags-div" style="display: none;"></div></body><script src="home_files/a"></script></html>
+</script><script type="text/javascript" id="">if("undefined"===typeof _etmc)var _etmc=[];_etmc.push(["setOrgId","7247942"]);google_tag_manager["GTM-TWFTD4"].macro(9)&&_etmc.push(["setUserInfo",{email:""}]);</script><script type="text/javascript" id="">_etmc.push(["trackPageView"]);</script><script type="text/javascript" id="" src="home_files/collect.js"></script><div style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon0.23442383162120728"><img style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon0.3703764159247118" alt="" src="home_files/0.txt" width="0" height="0"></div><div style="display: none;"><img src="home_files/track_page_view.gif" style="display: none;" title="blank image" aria-hidden="true" width="0" height="0"></div><script type="text/javascript" id="">var args={tipoContenido:google_tag_manager["GTM-TWFTD4"].macro(14),dispositivo:google_tag_manager["GTM-TWFTD4"].macro(15),genero:google_tag_manager["GTM-TWFTD4"].macro(16)};elijahRTD.sendNavigation(args);</script><div id="criteo-tags-div" style="display: none;"></div></body><script src="home_files/a"></script></html>

@@ -14443,7 +14443,7 @@ function extend() {
     </li>
 	
 	<li class="menu-elem ">
-        <a href="acc.php" class="menu-link menu-link-js " data-id="sections_editsSubmenu" data-ga-action="nino" data-ga-label="exterior-nino" data-ga-category="">Accessoies</a>
+        <a href="acc.php" class="menu-link menu-link-js " data-id="sections_editsSubmenu" data-ga-action="nino" data-ga-label="exterior-nino" data-ga-category="">Accessories</a>
     </li>
 	
  

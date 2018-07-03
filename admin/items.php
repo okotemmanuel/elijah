@@ -446,10 +446,10 @@
                                 <a href="items.php?cateeg=food" type="button" class="btn btn-default waves-effect" > HOME </a>
                                 <a href="items.php?cateeg=womens" type="button" class="btn btn-default waves-effect" > 	WOMEN </a>
                                 <a href="items.php?cateeg=mens" type="button" class="btn btn-default waves-effect" > MENS </a>
-                                <a href="items.php?cateeg=childrens" type="button" class="btn btn-default waves-effect" > BOYS </a>
-                                <a href="items.php?cateeg=babies" type="button" class="btn btn-default waves-effect" > GIRLS </a>
-                                <a href="items.php?cateeg=households" type="button" class="btn btn-default waves-effect" > SHOES </a>
-               <a href="items.php?cateeg=electronics" type="button" class="btn btn-default waves-effect" > ACCESSORIES </a>
+                                <a href="items.php?cateeg=boys" type="button" class="btn btn-default waves-effect" > BOYS </a>
+                                <a href="items.php?cateeg=girls" type="button" class="btn btn-default waves-effect" > GIRLS </a>
+                                <a href="items.php?cateeg=shoes" type="button" class="btn btn-default waves-effect" > SHOES </a>
+               <a href="items.php?cateeg=accessories" type="button" class="btn btn-default waves-effect" > ACCESSORIES </a>
               
                                 
                             </div>

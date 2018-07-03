@@ -470,7 +470,7 @@
 											<th>price  </th>
                                             <th>quantity</th>
 											<th>amount  </th>
-											 <th>date and time</th>
+											 <th> Paid</th>
                                             
                                         </tr>
                                     </thead>
@@ -481,7 +481,7 @@
 											<th>price  </th>
                                             <th>quantity</th>
 											<th>amount  </th>
-											 <th>date and time</th>
+											 <th> Paid</th>
                                     </tfoot>
 									  <tbody>
 	<style>
@@ -495,8 +495,8 @@
 			<?php include 'config.php';?>
  <?php
 
-$date = $_GET['date'];
-$number = $_GET['number'];
+//$date = $_GET['date'];
+$id = $_GET['number'];
 //echo $date .' ' .$number;
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -505,59 +505,82 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sqls = "SELECT * FROM customerrs WHERE cnumber='$number' AND date='$date'  ORDER BY ID DESC ";
+$sqls = "SELECT * FROM customer WHERE id='$id'  ORDER BY ID DESC ";
 $results = mysqli_query($conn, $sqls);
 
 if (mysqli_num_rows($results) > 0) {
     // output data of each row
 	while($rows = mysqli_fetch_assoc($results)){
-	$idt = $rows["id"];
-	$number = $rows["cnumber"];
-   $location = $rows["location"];
-  $dat = $rows["date"];
+	$id = $rows["id"];
+	$email = $rows["email"];
+	$name = $rows["name"];
+	$country = $rows["country"];
+	$apartment = $rows["apartment"];
+	$zip = $rows["zip"];
+    $town = $rows["town"];
+	$state = $rows["state"];
+	$tel = $rows["tel"];
+  
 }}
 
-echo '<div style="font-color:red;" class="panel"> <span  class="tom">ORDER NUMBER : </span >'.$idt.'<br>';
-echo '<span class="tom">TELEPHONE NUMBER : </span >'. $number.'<br>';	
-echo '<span class="tom">LOCATION : </span >'. $location.'<br>';
-echo '<span class="tom" >DATE : </span >'. $dat.'<br></div>';
+echo '<div style="font-color:red;" class="panel"> <span  class="tom">Email : </span >'.$email.'<br>';
+echo '<span class="tom">Name : </span >'. $name.'<br>';	
+echo '<span class="tom">Country : </span >'. $country.'<br>';
+echo '<span class="tom" > Apartment : </span >'. $apartment.'<br></div>';
 
+echo '<div style="font-color:red;" class="panel"> <span  class="tom">Zip: </span >'.$zip.'<br>';
+echo '<span class="tom">Town : </span >'. $town.'<br>';	
+echo '<span class="tom">State : </span >'. $state.'<br>';
+echo '<span class="tom" > Telephone : </span >'. $tel.'<br></div>';
 
 
 
 $name = $text = $amount = $categ = "";
 $tot = 0;
 
-$sqls = "SELECT * FROM orders WHERE customerno='$number' AND date='$date'  ORDER BY ID DESC ";
+$sqls = "SELECT * FROM orders WHERE idcust='$id'  ORDER BY ID DESC ";
 $results = mysqli_query($conn, $sqls);
 
 if (mysqli_num_rows($results) > 0) {
     // output data of each row
 	while($rows = mysqli_fetch_assoc($results)){
-	$idd = $rows["id"];
-	$item = $rows["iditem"];
-   $quantity = $rows["quantity"];
-  $date = $rows["date"];
+	$idd = $rows["idprod"];
+	$paid = $rows["paid"];
+	
+	
   
-  
- $sql = "SELECT * FROM items WHERE id='$item'  ORDER BY ID DESC ";
-$result = mysqli_query($conn, $sql);
+ $sqlss = "SELECT * FROM items WHERE id='$idd' LIMIT 1  ";
+$resultss = mysqli_query($conn, $sqlss);
 
-if (mysqli_num_rows($result) > 0) {
+if (mysqli_num_rows($resultss) > 0) {
     // output data of each row
-	while($row = mysqli_fetch_assoc($result)){
-	$name = $row["name"];
-   $amount = $row["amount"]; 
+	while($rowss = mysqli_fetch_assoc($resultss)){
+		$idi = $rowss["id"];
+	$name = $rowss["name"];
+   $amount = $rowss["amount"]; 
 
-   $total = $quantity * $amount;
+   $sqlf = "SELECT * FROM itemsimages WHERE iditem='$idi' LIMIT 1 ";
+$resultf = mysqli_query($conn, $sqlf);
+
+if (mysqli_num_rows($resultf) > 0) {
+    // output data of each row
+	while($rowf = mysqli_fetch_assoc($resultf)){
+	$imagef = $rowf["image"];
+
+
+}
+} 
+   
+   
+   $total = 1 * $amount;
  echo										' <tr>
-											<td>'.$idd.'</td>
+											<td><img style="height:100px;" src="'.$imagef.'"></td>
                                           
                                             <td>'.$name.'</td>
                                             <td>'.$amount.'</td>                                
-                                            <td>'.$quantity.'</td>
-                                            <td>'.$total .'</td>
-											  <td>'.$date.'</td>
+                                            <td>1</td>
+                                            <td>'.$amount .'</td>
+											  <td>'.$paid.'</td>
                                         </tr>';
    
 } 

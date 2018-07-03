@@ -9,7 +9,23 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 ?>
-<html class="catalog_catalogPc p-n-catalog    add-horizontal-scroll" xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en"><script type="text/javascript" async="" src="women_files/js"></script><script id="mngRTD" src="women_files/mngrtd.js"></script><script src="women_files/441271682641901.js" async=""></script><script async="" src="women_files/fbevents.js"></script><script type="text/javascript" async="" src="women_files/ld.js"></script><script type="text/javascript" async="" src="women_files/conversion_async.js"></script><script type="text/javascript" async="" src="women_files/bat.js"></script><script type="text/javascript" async="" src="women_files/bntmtycmx0.js"></script><script type="text/javascript" async="" src="women_files/analytics.js"></script><script type="text/javascript" async="" src="women_files/ec.js"></script><script async="" src="women_files/analytics.js"></script><script async="" src="women_files/gtm.js"></script><script>(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(_dereq_,module,exports){
+<html class="catalog_catalogPc p-n-catalog    add-horizontal-scroll" xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+<script type="text/javascript" async="" src="women_files/js"></script>
+
+<script id="mngRTD" src="women_files/mngrtd.js"></script>
+<script src="women_files/441271682641901.js" async=""></script>
+<script async="" src="women_files/fbevents.js"></script>
+<script type="text/javascript" async="" src="women_files/ld.js">
+</script><script type="text/javascript" async="" src="women_files/conversion_async.js"></script>
+<script type="text/javascript" async="" src="women_files/bat.js"></script><script type="text/javascript" async="" src="women_files/bntmtycmx0.js">
+</script><script type="text/javascript" async="" src="women_files/analytics.js"></script>
+<script type="text/javascript" async="" src="women_files/ec.js"></script>
+<script async="" src="women_files/analytics.js"></script>
+<script async="" src="women_files/gtm.js"></script>
+
+<script>
+
+(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(_dereq_,module,exports){
 (function (global){
 'use strict';
 
@@ -14443,7 +14459,7 @@ function extend() {
     </li>
 	
 	<li class="menu-elem ">
-        <a href="acc.php" class="menu-link menu-link-js " data-id="sections_editsSubmenu" data-ga-action="nino" data-ga-label="exterior-nino" data-ga-category="">Accessoies</a>
+        <a href="acc.php" class="menu-link menu-link-js " data-id="sections_editsSubmenu" data-ga-action="nino" data-ga-label="exterior-nino" data-ga-category="">Accessories</a>
     </li>
 	
  
@@ -15039,7 +15055,7 @@ $categg = '1' ;
 }else{
 $categg = $_GET['id'];
 }
-$sqll = "SELECT * FROM items WHERE category='$categg' ";
+$sqll = "SELECT * FROM items WHERE category='$categg' ORDER BY ID DESC";
 $resultt = mysqli_query($conn, $sqll);
 
 if (mysqli_num_rows($resultt) > 0) {
@@ -15057,6 +15073,7 @@ if (mysqli_num_rows($results) > 0) {
 
 while($rows = mysqli_fetch_assoc($results)){	
 $image =$rows["image"];
+$imgid =$rows["id"];
 }
 
 }
@@ -15064,7 +15081,7 @@ $image =$rows["image"];
 
 echo ' 
       <div class="product-list-item product-layout-2-columns-A1 product-list-item-js" id="31080750" data-color="04" data-imgsize="A1">
-        <a class="product-list-link product-list-link-js" href="prod.php?id='.$id.'" title="Buckle high-waist trousers" target="_self">
+        <a class="product-list-link product-list-link-js" href="prod.php?id='.$id.'&idimg='.$imgid.'" title="Buckle high-waist trousers" target="_self">
             <div class="product-list-img img-container-js visible ">
                     <div class="swiper-container swiper-container-js">
                       <span class="swiper-button-prev">d</span>

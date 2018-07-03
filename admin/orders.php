@@ -498,23 +498,35 @@ if ($conn->connect_error) {
 
 $name = $text = $amount = $categ = "";
 
-$st = 'new';
+$st = 'not yet';
 
 
-$sql = "SELECT * FROM customerrs  WHERE status='$st'  GROUP BY cnumber ORDER BY ID DESC ";
+$sql = "SELECT * FROM orders  WHERE paid='$st' ORDER BY ID DESC ";
 $result = mysqli_query($conn, $sql);
 
 if (mysqli_num_rows($result) > 0) {
     // output data of each row
 	while($row = mysqli_fetch_assoc($result)){
-	$item = $row["id"];
-   $customerno = $row["cnumber"];
- $date = $row["date"];
+	$idcust = $row["id"];
+
+ 
+ 
+ $sqlr = "SELECT * FROM customer  WHERE id='$idcust' ORDER BY ID DESC LIMIT 1";
+$resultr = mysqli_query($conn, $sqlr);
+
+if (mysqli_num_rows($resultr) > 0) {
+    // output data of each row
+	while($rowr = mysqli_fetch_assoc($resultr)){
+	$namee = $rowr["name"];
+
+}
+}
+ 
   
  echo'      <tr>
-                                            <td>'.$item.'</td>
-                                            <td>'.$customerno.'</td>
-                                            <td><a href="ordersdetails.php?number='.$customerno.'&date='.$date.' " class="btn btn-primary waves-effect" role="button">View</a></td>
+                                            <td>'.$idcust.'</td>
+                                            <td>'.$namee.'</td>
+                                            <td><a href="ordersdetails.php?number='.$idcust.' " class="btn btn-primary waves-effect" role="button">View</a></td>
                                     
                                         </tr>';
    

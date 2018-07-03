@@ -14443,7 +14443,7 @@ function extend() {
     </li>
 	
 	<li class="menu-elem ">
-        <a href="acc.php" class="menu-link menu-link-js " data-id="sections_editsSubmenu" data-ga-action="nino" data-ga-label="exterior-nino" data-ga-category="">Accessoies</a>
+        <a href="acc.php" class="menu-link menu-link-js " data-id="sections_editsSubmenu" data-ga-action="nino" data-ga-label="exterior-nino" data-ga-category="">Accessories</a>
     </li>
 	
  
@@ -15039,7 +15039,7 @@ $categg = '2' ;
 }else{
 $categg = $_GET['id'];
 }
-$sqll = "SELECT * FROM items WHERE category='$categg'";
+$sqll = "SELECT * FROM items WHERE category='$categg' ORDER BY ID DESC";
 $resultt = mysqli_query($conn, $sqll);
 
 if (mysqli_num_rows($resultt) > 0) {
@@ -15057,6 +15057,7 @@ if (mysqli_num_rows($results) > 0) {
 
 while($rows = mysqli_fetch_assoc($results)){	
 $image =$rows["image"];
+$imgid =$rows["id"];
 }
 
 }
@@ -15064,7 +15065,7 @@ $image =$rows["image"];
 
 echo ' 
       <div class="product-list-item product-layout-2-columns-A1 product-list-item-js" id="31080750" data-color="04" data-imgsize="A1">
-        <a class="product-list-link product-list-link-js" href="prod.php?id='.$id.'" title="Buckle high-waist trousers" target="_self">
+        <a class="product-list-link product-list-link-js" href="prod.php?id='.$id.'&idimg='.$imgid.'" title="Buckle high-waist trousers" target="_self">
             <div class="product-list-img img-container-js visible ">
                     <div class="swiper-container swiper-container-js">
                       <span class="swiper-button-prev">d</span>
@@ -15085,7 +15086,7 @@ echo '
             
             <span class="product-list-name">'.$name.'</span>
               <span class="product-list-fav product-list-fav-js" data-fav="add" data-color="04" data-url-service="/ws-favorites/favorites/v1/favorites" data-category="pantalones" data-id="31080750"></span>
-                <span class="product-list-price">$'.$amount.'</span>
+                <span class="product-list-price">UGX SHS '.$amount.'</span>
           </div>
         </a>
       </div>

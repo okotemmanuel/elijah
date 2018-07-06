@@ -1,7 +1,10 @@
-﻿<!DOCTYPE html>
+﻿<?php
+
+session_start();
+?>
+
+<!DOCTYPE html>
 <html>
-
-
 
 <head>
     <meta charset="UTF-8">
@@ -31,25 +34,7 @@
 
     <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
     <link href="css/themes/all-themes.css" rel="stylesheet" />
-	
-    <!-- Wait Me Css -->
-    <link href="plugins/waitme/waitMe.css" rel="stylesheet" />
-
-    <!-- Bootstrap Select Css -->
-    <link href="plugins/bootstrap-select/css/bootstrap-select.css" rel="stylesheet" />
-
-  
-
 </head>
-	
-	
-	
-</head>
-
-
-
-
-
 
 <body class="theme-red">
     <!-- Page Loader -->
@@ -221,8 +206,7 @@
             <!-- #User Info -->
             <!-- Menu -->
 			
-           
-    <div class="menu">
+       <div class="menu">
                 <ul class="list">
                     <li class="header">MAIN NAVIGATION</li>
                     
@@ -292,7 +276,6 @@
             </div>
 			
 				
-	
 				
 			
 			<!-- #Menu -->
@@ -466,10 +449,23 @@
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="card">
 					
-					
-				<?php include 'config.php';?>
+                        <div class="header">
+                            <h2>ADD IMAGES</h2>
+                            <ul class="header-dropdown m-r--5">
+                                <li class="dropdown">
+                                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        <i class="material-icons">more_vert</i>
+                                    </a>
+                                    <ul class="dropdown-menu pull-right">
+                                      
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="body">
+                            <h2 class="card-inside-title"></h2>
+					<?php include 'config.php';?>
  <?php
-
 
 
 // Create connection
@@ -478,233 +474,115 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-	echo '<br><div class="row">';
-	
-$sql = "SELECT * FROM category  WHERE category='home'";
-$result = mysqli_query($conn, $sql);
-
-if (mysqli_num_rows($result) > 0) {
-    // output data of each row
-	echo '<div class="col-lg-2" > home -<br>';
-	while($row = mysqli_fetch_assoc($result)){
-	
-	 $subitem = $row["subcategory"];
-	 $id = $row["id"];
-	 
-echo ' - '.$subitem.'<a href="delete.php?id='.$id.'"><button>delete</button></a><br>';
-	}
-	echo '</div>';
-    } else {
-  
-}
-
-	$sql = "SELECT * FROM category  WHERE category='womens'";
-$result = mysqli_query($conn, $sql);
-
-if (mysqli_num_rows($result) > 0) {
-    // output data of each row
-	echo '<div class="col-lg-2" > WOMENS -<br>';
-	while($row = mysqli_fetch_assoc($result)){
-	
-	 $subitem = $row["subcategory"];
-	 $id = $row["id"];
-	 
-echo ' - '.$subitem.'<a href="delete.php?id='.$id.'"><button>delete</button></a><br>';
-	}
-	echo '</div>';
-    } else {
-  
-}
-
-	$sql = "SELECT * FROM category  WHERE category='mens'";
-$result = mysqli_query($conn, $sql);
-
-if (mysqli_num_rows($result) > 0) {
-    // output data of each row
-	echo '<div class="col-lg-2" > MENS -<br>';
-	while($row = mysqli_fetch_assoc($result)){
-	
-	 $subitem = $row["subcategory"];
-	 $id = $row["id"];
-	 
-echo ' - '.$subitem.'<a href="delete.php?id='.$id.'"><button>delete</button></a><br>';
-	}
-	echo '</div>';
-    } else {
-  
-}
 
 
-	$sql = "SELECT * FROM category  WHERE category='boys'";
-$result = mysqli_query($conn, $sql);
-
-if (mysqli_num_rows($result) > 0) {
-    // output data of each row
-	echo '<div class="col-lg-2" > BOYS -<br>';
-	while($row = mysqli_fetch_assoc($result)){
-	
-	 $subitem = $row["subcategory"];
-	 $id = $row["id"];
-	 
-echo ' - '.$subitem.'<a href="delete.php?id='.$id.'"><button>delete</button></a><br>';
-	}
-	echo '</div>';
-    } else {
-  
-}	
-
-	$sql = "SELECT * FROM category  WHERE category='girls'";
-$result = mysqli_query($conn, $sql);
-
-if (mysqli_num_rows($result) > 0) {
-    // output data of each row
-	echo '<div class="col-lg-2" > GIRLS -<br>';
-	while($row = mysqli_fetch_assoc($result)){
-	
-	 $subitem = $row["subcategory"];
-	 $id = $row["id"];
-	 
-echo ' - '.$subitem.'<a href="delete.php?id='.$id.'"><button>delete</button></a><br>';
-	}
-	echo '</div>';
-    } else {
-  
-}
-
-	$sql = "SELECT * FROM category  WHERE category='shoes' ";
-$result = mysqli_query($conn, $sql);
-
-if (mysqli_num_rows($result) > 0) {
-    // output data of each row
-	echo '<div class="col-lg-2" > Shoes -<br>';
-	while($row = mysqli_fetch_assoc($result)){
-	
-	 $subitem = $row["subcategory"];
-	 $id = $row["id"];
-	 
-echo ' - '.$subitem.'<a href="delete.php?id='.$id.'"><button>delete</button></a><br>';
-	}
-	echo '</div>';
-    } else {
-  
-}
-	echo '</div><br>'	;
-	echo '<div class="row">';
-	$sql = "SELECT * FROM category  WHERE category='accessories'";
-$result = mysqli_query($conn, $sql);
-
-if (mysqli_num_rows($result) > 0) {
-    // output data of each row
-	echo '<div class="col-lg-2" > ACCESSORIES -<br>';
-	while($row = mysqli_fetch_assoc($result)){
-	
-	 $subitem = $row["subcategory"];
-	 $id = $row["id"];
-	 
-echo ' - '.$subitem.'<a href="delete.php?id='.$id.'"><button>delete</button></a><br>';
-	}
-	echo '</div>';
-    } else {
-  
-}	
-	
-	
-		
-	echo '</div>'	;
-		
-		
-		
-		
-		
-		
-		
+	$id = $_GET['id'];
 
 
-$name = $maincat = $amount =  "";
 
+
+
+
+
+
+
+
+// Check if image file is a actual image or fake image
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-	echo '<div style="margin-left:30px;margin-top:30px;padding:20px;">';
-	if(empty($_POST["name"])){
-		echo 'enter name <br>';
-	}else{
-		echo  $name = $_POST["name"];
-	}
-	echo $maincat= $_POST["maincat"];
 	
-	if( !empty($name)){
-$sql = "INSERT INTO category (category, subcategory)
-VALUES ( '$maincat' , '$name')";
 
+	$id = $_POST["id"];
+	
+	
+	$target_dir = "uploads/";
+$target_file = $target_dir .(rand(10000,100000)). basename($_FILES["fileToUpload"]["name"]);
+$uploadOk = 1;
+$imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+    $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
+    if($check !== false) {
+        echo "File is an image - " . $check["mime"] . ".";
+        $uploadOk = 1;
+    } else {
+        echo "File is not an image.";
+        $uploadOk = 0;
+    }
+
+// Check if file already exists
+if (file_exists($target_file)) {
+    echo "Sorry, file already exists.";
+    $uploadOk = 0;
+}
+// Check file size
+if ($_FILES["fileToUpload"]["size"] > 50000000000) {
+    echo "Sorry, your file is too large.";
+    $uploadOk = 0;
+}
+// Allow certain file formats
+if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
+&& $imageFileType != "gif" ) {
+    echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
+    $uploadOk = 0;
+}
+// Check if $uploadOk is set to 0 by an error
+if ($uploadOk == 0) {
+    echo "Sorry, your file was not uploaded.";
+// if everything is ok, try to upload file
+} else {
+    if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
+        echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
+    } else {
+        echo "Sorry, there was an error uploading your file.";
+    }
+}
+/*
+$sql = "INSERT INTO itemsimages (iditem, image)
+VALUES ('$iditem', '$target_file')";*/
+
+$sql ="UPDATE itemsimages SET image='$target_file' WHERE id='$id'";
 if ($conn->query($sql) === TRUE) {
     echo "New record created successfully";
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
 
-	
-	
+
+$sql = "SELECT * FROM itemsimages WHERE id='$id'";
+$result = mysqli_query($conn, $sql);
+
+if (mysqli_num_rows($result) > 0) {
+    // output data of each row
+    while($row = mysqli_fetch_assoc($result)) {
+		
+$iddd = $row["iditem"];
+}}
 echo '
 <script type="text/javascript">
-window.location.href = "categ.php";
+window.location.href = "editimgs.php?iditem='.$iddd.'";
 </script>';	
-		
-	}
-echo '</div>';
-	
+
+
+
 }
 
 
 
 
+
 $conn->close();
-?> 	
-                        <div class="header">
-                            <h2>NEW ITEM</h2>
-                            <ul class="header-dropdown m-r--5">
-                                <li class="dropdown">
-                                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                        <i class="material-icons">more_vert</i>
-                                    </a>
-                                    <ul class="dropdown-menu pull-right">
-                                       
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="body">
-						 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-
-                            <h2 class="card-inside-title"></h2>
-								<div class="form-group form-float ">	
-
-						
-                                 <select name="maincat" class="form-control show-tick">
-                                        <option value="home">HOME</option>
-                                        <option value="WOMENS">WOMENS</option>
-                                        <option value="MENS">MENS'</option>
-                                        <option value="boys">BOYS</option>
-                                        <option value="girls">GIRLS</option>
-										<option value="shoes">SHOES</option>
-										<option value="accessories">ACCESSORIES</option>
-                                    </select>
-</div>
-								
-							 <div class="form-group form-float ">
-                                        <div class="form-line">
-                                            <input type="text" name="name" class="form-control" />
-                                            <label class="form-label">SUB CATEG</label>
-                                        </div>
-                                    </div>
-							
-								
-									
-									
+?> 							
+	<div class="row">					
+<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>"  method="post" enctype="multipart/form-data">
+    Select image to upload:
+	<input type="hidden" name="iditem" value="<?php echo $iditem?>">
+    <input type="file" name="fileToUpload" id="fileToUpload">
+	<input type="hidden" name="id" value="<?php echo $id ;?>">
+    <input class="btn btn-primary btn-lg m-t-15 waves-effect" type="submit" value="Upload Image" name="submit">
+</form>
+	</div>												
 							<center>
-							<a href="addimage.html" >
- <button type="submit" class="btn btn-primary btn-lg m-t-15 waves-effect">ADD</button>
-                           <a></center>
-						   
-						   </form>
+							<a href="items.php">
+ <button type="button" class="btn btn-primary btn-lg m-t-15 waves-effect">FINISH</button>
+                           </a></center>
                         </div>
                     </div>
                 </div>

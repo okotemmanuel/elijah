@@ -14657,15 +14657,130 @@ settings.</p>
 		
 		<input id="SVBody:panelTarjetasForm:SVResumenImporteTotalComprar:tipo_pago_votf" name="SVBody:panelTarjetasForm:SVResumenImporteTotalComprar:tipo_pago_votf" value="pasarela" data-component-id="tipo_pago_votf" type="hidden">
 		
-		<a href="payleo.php" >
-		<span id="SVBody:panelTarjetasForm:SVResumenImporteTotalComprar:botoneraCheckout">
-		<span id="btnCheckout" onclick="" style="cursor: pointer;" class="botonNew clearfix confirmaCompra confirm-button-js" >
-		CONFIRM PAYMENT
+	
+		<span   >
+		<span style="height:30px;" ></span>
+		<span style="padding-top:20px;" id="btnCheckout"  style="cursor: pointer;" class="botonNew clearfix confirmaCompra confirm-button-js" >
+			<div id="paypal-button" style="" ></div>
 		</span>
+		
 		<span id="btnCheckoutConfirmar" onclick="" style="cursor: pointer;display: none;" class="botonNew clearfix confirmaCompra confirm-button-js">
 		Confirm payment</span>
+		
+		</span>
+		
+		
+		
+		<!--div style="height:30px;" ></div>
+		<div  style="margin-left:80%;height:100px;"--->
+	
+<script src="https://www.paypalobjects.com/api/checkout.js"></script>
+<script>
+paypal.Button.render({
+  // Configure environment
+  //env: 'sandbox',
+  env: 'production',
+  client: {
+   // sandbox: 'AaZj3TkX_cF72osjlsz9xSpOh0L9bwLOh5ZoqgpzEcxstIH7sJKCbTTM-dfelRxf-k3R0BWDVw9rRSrZ',
+    production: 'Ac5C4w9pZJ2TQn_3hL--zLG-gYhbjFmccgf_zcrCdxsHH_-foT9oN6bxEz2zC5Cy4-BjE9bYy5aB2Snl'
+  },
+  // Customize button (optional)
+  locale: 'en_US',
+  style: {
+    size: 'small',
+    color: 'gold',
+    shape: 'pill',
+  },
+  // Set up a payment
+payment: function (data, actions) {
+  return actions.payment.create({
+    transactions: [{
+      amount: {
+        total: '30.11',
+        currency: 'USD',
+        details: {
+          subtotal: '30.00',
+          tax: '0.07',
+          shipping: '0.03',
+          handling_fee: '1.00',
+          shipping_discount: '-1.00',
+          insurance: '0.01'
+        }
+      },
+      description: 'The payment transaction description.',
+      custom: '90048630024435',
+      //invoice_number: '12345', Insert a unique invoice number
+      payment_options: {
+        allowed_payment_method: 'INSTANT_FUNDING_SOURCE'
+      },
+      soft_descriptor: 'ECHI5786786',
+      item_list: {
+        items: [
+          {
+            name: 'hat',
+            description: 'Brown hat.',
+            quantity: '5',
+            price: '3',
+            tax: '0.01',
+            sku: '1',
+            currency: 'USD'
+          },
+          {
+            name: 'handbag',
+            description: 'Black handbag.',
+            quantity: '1',
+            price: '15',
+            tax: '0.02',
+            sku: 'product34',
+            currency: 'USD'
+          }
+        ],
+        shipping_address: {
+          recipient_name: 'Brian Robinson',
+          line1: '4th Floor',
+          line2: 'Unit #34',
+          city: 'San Jose',
+          country_code: 'US',
+          postal_code: '95131',
+          phone: '011862212345678',
+          state: 'CA'
+        }
+      }
+    }],
+    note_to_payer: 'Contact us for any questions on your order.'
+  });
+},
+  // Execute the payment
+  onAuthorize: function (data, actions) {
+    return actions.payment.execute()
+      .then(function () {
+        // Show a confirmation message to the buyer
+        window.alert('Thank you for your purchase!');
+      });
+  }
+}, '#paypal-button');
+</script>
+		
+
+		
+		
+		
+		
+	
+		
+			<a style="margin-top:-20px;" href="payleo.php" >
+		<span id="SVBody:panelTarjetasForm:SVResumenImporteTotalComprar:botoneraCheckout">
+		
+		<span id="btnCheckout" onclick="" style="cursor: pointer;" class="botonNew clearfix confirmaCompra confirm-button-js" >
+		PAY WITH MOBILE MONEY
+		</span>
+		
+		<span id="btnCheckoutConfirmar" onclick="" style="cursor: pointer;display: none;" class="botonNew clearfix confirmaCompra confirm-button-js">
+		Confirm paymentS</span>
+		
 		</span>
 		</a>
+		
 		
 		</span>
 		<input name="SVBody:panelTarjetasForm_SUBMIT" value="1" type="hidden">
@@ -14730,119 +14845,16 @@ settings.</p>
 		</div></span>
 
 	
-	
-	<div id="footerContentCache" class="row" data-cache-id="shop.elijahmcquinn.com_562_pc_400_US_she">
+<div id="footerContentCache" class="row" data-cache-id="shop.elijahmcquinn.com_562_pc_400_US_she">
 
 		
-		<div id="nav-footer" class="nav-footer">
-						<span class="nav-footer-link">
-				<span class="" id="ayuda">
-					<a target="" href="https://shop.elijahmcquinn.com/us/women/help/12592.html" data-ga-label="ayuda">Help</a>
-				</span>
-						</span>
-						<span class="nav-footer-link">
-			
-			<span class="" id="pedidos">
-				<a target="" href="https://shop.elijahmcquinn.com/registroExterno.faces?op=listaPedidos" data-ga-label="pedidos">		
-						
-						Orders
-				</a>
-			</span>
-						</span>
-						<span class="nav-footer-link">
-				<span class="" id="devoluciones">
-					<a target="" href="https://shop.elijahmcquinn.com/us/women/help/2882.html" data-ga-label="devoluciones">Returns</a>
-				</span>
-						</span>
-						<span class="nav-footer-link">
-			
-			<span class="modal-bt-js" id="buscarTiendas">
-				<a target="" href="javascript:void(0)" data-ga-label="buscarTiendas">		
-						
-						Stores
-				</a>
-			</span>
-						</span>
-						<span class="nav-footer-link">
-			
-			<span class="cheques" id="cheques">
-				<a target="" href="https://shop.elijahmcquinn.com/chequeRegalo.faces" data-ga-label="cheques">		
-						
-						eGift card
-				</a>
-			</span>
-						</span>
-						<span class="nav-footer-link">
-			
-			<span class="" id="apps">
-				<a target="" href="https://shop.elijahmcquinn.com/redirect.faces?op=conta&amp;externa=APPsheS0515" data-ga-label="apps">		
-						
-						Apps
-				</a>
-			</span>
-						</span>
-						<span class="nav-footer-link">
-			<span class="empresa">
-					
-					<a href="https://shop.elijahmcquinn.com/redirect.faces?op=conta&amp;externa=pieEmpresa" target="_blank" data-ga-label="pieEmpresa">
-						
-						Company
-					</a>
-			</span>
-						</span>
-						<span class="nav-footer-link">
-			<span class="franquicias">
-					
-					<a href="https://shop.elijahmcquinn.com/redirect.faces?op=conta&amp;externa=pieFranquicias" target="_blank" data-ga-label="pieFranquicias">
-						
-						Franchises
-					</a>
-			</span>
-						</span>
-						<span class="nav-footer-link">
-			<span class="">
-					
-					<a href="https://shop.elijahmcquinn.com/redirect.faces?op=conta&amp;externa=affiliate" target="_blank" data-ga-label="afiliados">
-						
-						Affiliate
-					</a>
-			</span>
-						</span>
-						<span class="nav-footer-link">
-			<span class="trabaja">
-					
-					<a href="https://shop.elijahmcquinn.com/redirect.faces?op=conta&amp;externa=pieTrabajar" target="_blank" data-ga-label="pieTrabajar">
-						
-						Work for elijahmcquinn
-					</a>
-			</span>
-						</span>
-						<span class="nav-footer-link">
-			<span class="prensa">
-					
-					<a href="https://press.elijahmcquinn.com/" target="_blank" data-ga-label="pressroom">
-						
-						Press
-					</a>
-			</span>
-						</span>
-						<span class="nav-footer-link">
-			<span class="">
-					
-					<a href="https://www.elijahmcquinnoutlet.com/us/women?utm_source=elijahmcquinn.com&amp;utm_medium=interno&amp;utm_campaign=enlace_footer" target="_blank" data-ga-label="outlet">
-						
-						elijahmcquinn Outlet
-					</a>
-			</span>
-						</span>
-		</div>
-
+	
 		
 		<div id="nav-socialnetwork" class="nav-socialnetwork" data-ga-action="redes sociales">
 		   			<span class="nav-socialnetwork-link">
 			<span class="social__icon fb icon">
 					
-					<a href="http://www.facebook.com/elijahmcquinn.com" target="_blank" rel="nofollow" data-ga-label="facebook">
+					<a href="http://www.facebook.com/elijah mcquinn" target="_blank" rel="nofollow" data-ga-label="facebook">
 						
 						f
 					</a>
@@ -14851,25 +14863,17 @@ settings.</p>
 		   			<span class="nav-socialnetwork-link">
 			<span class="social__icon tw icon">
 					
-					<a href="http://www.twitter.com/elijahmcquinn" target="_blank" rel="nofollow" data-ga-label="twitter">
+					<a href="http://www.twitter.com/elijah mcquinn" target="_blank" rel="nofollow" data-ga-label="twitter">
 						
 						t
 					</a>
 			</span>
 		   			</span>
-		   			<span class="nav-socialnetwork-link">
-			<span class="social__icon gp  icon">
-					
-					<a href="http://www.google.com/+elijahmcquinn" target="_blank" rel="nofollow" data-ga-label="google">
-						
-						g
-					</a>
-			</span>
-		   			</span>
+		   
 		   			<span class="nav-socialnetwork-link">
 			<span class="social__icon it icon">
 					
-					<a href="http://instagram.com/elijahmcquinn" target="_blank" rel="nofollow" data-ga-label="instagram">
+					<a href="https://www.instagram.com/explore/tags/elijahmcquinnofficial/" target="_blank" rel="nofollow" data-ga-label="instagram">
 						
 						i
 					</a>
@@ -14878,48 +14882,27 @@ settings.</p>
 		   			<span class="nav-socialnetwork-link">
 			<span class="social__icon pn icon">
 					
-					<a href="http://pinterest.com/elijahmcquinnfashion/" target="_blank" rel="nofollow" data-ga-label="pinterest">
+					<a href="https://www.pinterest.com/aharriet30/womens-fashion/" target="_blank" rel="nofollow" data-ga-label="pinterest">
 						
 						p
 					</a>
 			</span>
 		   			</span>
-		   			<span class="nav-socialnetwork-link">
-			<span class="social__icon sp icon">
-					
-					<a href="https://open.spotify.com/user/elijahmcquinn_official" target="_blank" rel="nofollow" data-ga-label="spotify">
-						
-						2
-					</a>
-			</span>
-		   			</span>
-		   			<span class="nav-socialnetwork-link">
-			<span class="social__icon yt icon">
-					
-					<a href="http://www.youtube.com/user/elijahmcquinnFashion/" target="_blank" rel="nofollow" data-ga-label="youtube">
-						
-						y
-					</a>
-			</span>
-		   			</span>
-		   			<span class="nav-socialnetwork-link">
-			<span class="social__icon fs  icon">
-					
-					<a href="https://es.foursquare.com/elijahmcquinn" target="_blank" rel="nofollow" data-ga-label="foursquare">
-						
-						F
-					</a>
-			</span>
-		   			</span>
+		   			
+		   		
+		   			
 		</div>
 
 		
 		<div class="nav-pay-methods">
-		
-		
-			<img id="paypal" src="payment_files/paypal2x_002.png" alt="PayPal">
-		
-			<img id="" src="payment_files/amazonpayments2x.png" alt="Amazon">
+			<img id="visa" src="home_files/visa2x.png" alt="VISA">
+			<img id="mc" src="home_files/mc2x.png" alt="MasterCard">
+			<img id="amex" src="home_files/amex2x.png" alt="American Express">
+			<img id="paypal" src="home_files/paypal2x.png" alt="PayPal">
+			<img id="" src="home_files/jcb2x.png" alt="JCB">
+			<img id="diners" src="home_files/diners2x.png" alt="Diners">
+			<img id="" src="home_files/discover2x.png" alt="Discover">
+			<img id="" src="home_files/amazonpayments2x.png" alt="Amazon">
 		</div>
 		
 		
@@ -14931,9 +14914,9 @@ settings.</p>
 			</span>
 			
 			<span class="phoneSales__telf" id="">
-				<a target="" href="tel:%201.866.6MNG.MNG" data-ga-label="">		
+				<a target="" href="tel:%256774721257" data-ga-label="">		
 						
-						1.866.6MNG.MNG
+						256-774721257
 				</a>
 			</span>
 				</span>
@@ -14951,7 +14934,7 @@ settings.</p>
 			<span id="" class="contentLegal__divider">|</span>
 				<a class="separateLeft modal-link " onclick="window.open('https://shop.elijahmcquinn.com/us/women/helppopup/6515.html','ayuda','menubar=no,resizable=yes,scrollbars=yes,width=970,height=750').focus();" data-ga-label="condicionesventa"><span>Terms &amp; Conditions</span></a>
 						<div class="nav-locale-certificate">
-			<img id="geotrust" src="payment_files/geotrust2x.png" alt="">
+			<img id="geotrust" src="home_files/geotrust2x.png" alt="">
 						</div>  				
 			</span>
 				<ul class="nav-locale-menu">
@@ -14962,7 +14945,7 @@ settings.</p>
 							<a>English</a>
 							<ul class="nav-locale-language-secondary langSelector__lang">
 										<li class="langSelector__list">
-											<a data-lang-iso="es" href="https://shop.elijahmcquinn.com/us-es" data-ga-label="idioma">
+											<a data-lang-iso="es" href="https://shop.elijahmcquinn.com/us-es/mujer" data-ga-label="idioma">
 												Castellano
 											</a>
 										</li>
@@ -14973,7 +14956,9 @@ settings.</p>
 		</div>
 
 	</div>
-						<script async="true" type="text/javascript"></script>
+		
+
+				<script async="true" type="text/javascript"></script>
 					
 
 				</div>

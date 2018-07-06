@@ -1,4 +1,5 @@
 ﻿<!DOCTYPE html>
+<?php  include 'config.php';session_start();?>
 <html>
 
 
@@ -221,8 +222,7 @@
             <!-- #User Info -->
             <!-- Menu -->
 			
-           
-    <div class="menu">
+         <div class="menu">
                 <ul class="list">
                     <li class="header">MAIN NAVIGATION</li>
                     
@@ -292,8 +292,7 @@
             </div>
 			
 				
-	
-				
+			
 			
 			<!-- #Menu -->
             <!-- Footer -->
@@ -467,7 +466,7 @@
                     <div class="card">
 					
 					
-				<?php include 'config.php';?>
+				
  <?php
 
 
@@ -478,175 +477,64 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-	echo '<br><div class="row">';
-	
-$sql = "SELECT * FROM category  WHERE category='home'";
+$idt = $_GET['id'];
+
+
+$sql = "SELECT * FROM items WHERE id ='$idt' ORDER BY id DESC LIMIT 1 ";
 $result = mysqli_query($conn, $sql);
 
 if (mysqli_num_rows($result) > 0) {
     // output data of each row
-	echo '<div class="col-lg-2" > home -<br>';
-	while($row = mysqli_fetch_assoc($result)){
-	
-	 $subitem = $row["subcategory"];
-	 $id = $row["id"];
-	 
-echo ' - '.$subitem.'<a href="delete.php?id='.$id.'"><button>delete</button></a><br>';
-	}
-	echo '</div>';
-    } else {
-  
-}
+	$row = mysqli_fetch_assoc($result);
+	 $iddd = $row["id"];
+	 $name = $row["name"];
+	 $text = $row["textt"];
+	 $amount = $row["amount"];
+	 $categ = $row["category"];
+   
+    }
 
-	$sql = "SELECT * FROM category  WHERE category='womens'";
-$result = mysqli_query($conn, $sql);
-
-if (mysqli_num_rows($result) > 0) {
-    // output data of each row
-	echo '<div class="col-lg-2" > WOMENS -<br>';
-	while($row = mysqli_fetch_assoc($result)){
-	
-	 $subitem = $row["subcategory"];
-	 $id = $row["id"];
-	 
-echo ' - '.$subitem.'<a href="delete.php?id='.$id.'"><button>delete</button></a><br>';
-	}
-	echo '</div>';
-    } else {
-  
-}
-
-	$sql = "SELECT * FROM category  WHERE category='mens'";
-$result = mysqli_query($conn, $sql);
-
-if (mysqli_num_rows($result) > 0) {
-    // output data of each row
-	echo '<div class="col-lg-2" > MENS -<br>';
-	while($row = mysqli_fetch_assoc($result)){
-	
-	 $subitem = $row["subcategory"];
-	 $id = $row["id"];
-	 
-echo ' - '.$subitem.'<a href="delete.php?id='.$id.'"><button>delete</button></a><br>';
-	}
-	echo '</div>';
-    } else {
-  
-}
-
-
-	$sql = "SELECT * FROM category  WHERE category='boys'";
-$result = mysqli_query($conn, $sql);
-
-if (mysqli_num_rows($result) > 0) {
-    // output data of each row
-	echo '<div class="col-lg-2" > BOYS -<br>';
-	while($row = mysqli_fetch_assoc($result)){
-	
-	 $subitem = $row["subcategory"];
-	 $id = $row["id"];
-	 
-echo ' - '.$subitem.'<a href="delete.php?id='.$id.'"><button>delete</button></a><br>';
-	}
-	echo '</div>';
-    } else {
-  
-}	
-
-	$sql = "SELECT * FROM category  WHERE category='girls'";
-$result = mysqli_query($conn, $sql);
-
-if (mysqli_num_rows($result) > 0) {
-    // output data of each row
-	echo '<div class="col-lg-2" > GIRLS -<br>';
-	while($row = mysqli_fetch_assoc($result)){
-	
-	 $subitem = $row["subcategory"];
-	 $id = $row["id"];
-	 
-echo ' - '.$subitem.'<a href="delete.php?id='.$id.'"><button>delete</button></a><br>';
-	}
-	echo '</div>';
-    } else {
-  
-}
-
-	$sql = "SELECT * FROM category  WHERE category='shoes' ";
-$result = mysqli_query($conn, $sql);
-
-if (mysqli_num_rows($result) > 0) {
-    // output data of each row
-	echo '<div class="col-lg-2" > Shoes -<br>';
-	while($row = mysqli_fetch_assoc($result)){
-	
-	 $subitem = $row["subcategory"];
-	 $id = $row["id"];
-	 
-echo ' - '.$subitem.'<a href="delete.php?id='.$id.'"><button>delete</button></a><br>';
-	}
-	echo '</div>';
-    } else {
-  
-}
-	echo '</div><br>'	;
-	echo '<div class="row">';
-	$sql = "SELECT * FROM category  WHERE category='accessories'";
-$result = mysqli_query($conn, $sql);
-
-if (mysqli_num_rows($result) > 0) {
-    // output data of each row
-	echo '<div class="col-lg-2" > ACCESSORIES -<br>';
-	while($row = mysqli_fetch_assoc($result)){
-	
-	 $subitem = $row["subcategory"];
-	 $id = $row["id"];
-	 
-echo ' - '.$subitem.'<a href="delete.php?id='.$id.'"><button>delete</button></a><br>';
-	}
-	echo '</div>';
-    } else {
-  
-}	
-	
-	
-		
-	echo '</div>'	;
-		
-		
-		
-		
-		
-		
-		
-
-
-$name = $maincat = $amount =  "";
+//$name = $text = $amount = $categ = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	echo '<div style="margin-left:30px;margin-top:30px;padding:20px;">';
 	if(empty($_POST["name"])){
 		echo 'enter name <br>';
 	}else{
-		echo  $name = $_POST["name"];
+		$name = $_POST["name"];
 	}
-	echo $maincat= $_POST["maincat"];
+	$idit = $_POST["id"];
+	$categ = $_POST["categ"];
 	
-	if( !empty($name)){
-$sql = "INSERT INTO category (category, subcategory)
-VALUES ( '$maincat' , '$name')";
-
+	if(empty($_POST["textt"])){
+		echo 'enter about commodity <br>';
+	}else{
+		$text = $_POST["textt"];
+	}
+	
+	if(empty($_POST["amount"])){
+		echo 'enter price <br>';
+	}else{
+		$amount = $_POST["amount"];
+	}
+	
+	
+	if( !empty($name) && !empty($text) && !empty($amount)){
+	
+$sql = "UPDATE items SET name='$name' ,amount='$amount' WHERE id='$idit' ";
 if ($conn->query($sql) === TRUE) {
     echo "New record created successfully";
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
 
-	
-	
+
+
 echo '
 <script type="text/javascript">
-window.location.href = "categ.php";
+window.location.href = "editimgs.php?iditem='.$idit.'";
 </script>';	
+
 		
 	}
 echo '</div>';
@@ -655,11 +543,9 @@ echo '</div>';
 
 
 
-
-$conn->close();
 ?> 	
                         <div class="header">
-                            <h2>NEW ITEM</h2>
+                            <h2>EDIT ITEM DETAILS</h2>
                             <ul class="header-dropdown m-r--5">
                                 <li class="dropdown">
                                     <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
@@ -675,33 +561,44 @@ $conn->close();
 						 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
 
                             <h2 class="card-inside-title"></h2>
-								<div class="form-group form-float ">	
+								<div class="form-group form-float ">
 
-						
-                                 <select name="maincat" class="form-control show-tick">
-                                        <option value="home">HOME</option>
-                                        <option value="WOMENS">WOMENS</option>
-                                        <option value="MENS">MENS'</option>
-                                        <option value="boys">BOYS</option>
-                                        <option value="girls">GIRLS</option>
-										<option value="shoes">SHOES</option>
-										<option value="accessories">ACCESSORIES</option>
-                                    </select>
+							
 </div>
+                                            <input type="hidden" name="id" value="<?php echo $iddd;?>"/>
 								
 							 <div class="form-group form-float ">
                                         <div class="form-line">
-                                            <input type="text" name="name" class="form-control" />
-                                            <label class="form-label">SUB CATEG</label>
+                                            <input type="text" name="name" value="<?php echo $name;?>" class="form-control" />
+                                            <label class="form-label">Name of item</label>
+                                        </div>
+                                    </div>
+							 <div class="form-group form-float ">
+                                        <div class="form-line">
+                                            <input type="text" value="<?php echo $amount ;?>" name="amount" class="form-control" />
+                                            <label class="form-label">Price eg (3000)</label>
                                         </div>
                                     </div>
 							
-								
+							
+							<br><br>
+                            <div class="row clearfix">
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <div class="form-line">
+                                            <textarea  name="textt" rows="4" class="form-control no-resize" placeholder=""><?php echo $text?></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+							
+							   
+									
 									
 									
 							<center>
 							<a href="addimage.html" >
- <button type="submit" class="btn btn-primary btn-lg m-t-15 waves-effect">ADD</button>
+ <button type="submit" class="btn btn-primary btn-lg m-t-15 waves-effect">NEXT</button>
                            <a></center>
 						   
 						   </form>

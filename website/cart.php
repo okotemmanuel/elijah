@@ -14315,7 +14315,7 @@ function extend() {
 },{}]},{},[1]);
 //# sourceURL=moz-extension://48904160-8e34-4d16-9296-27ab0d330361/scripts/inpage.js
 </script><head>
-				<title>Women</title>
+				<title>ELIJAHMCQUINN </title>
 				<meta name="description" content="Latest trends in women’s fashion. Discover our designs: dresses, t-shirts, jeans, shoes, bags and accessories.  FREE SHIPPING &amp; FREE RETURNS ON ALL ORDERS">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
 		<meta name="apple-itunes-app" content="app-id=372216941, affiliate-data=myAffiliateData, app-argument=myURL">
@@ -14674,11 +14674,12 @@ echo '
 									<div class="span12 desc_articulo_rel_pack">
 									</div>
 										<div class="div_eliminar_articulo">
-											<span class="eliminarArticulo"><span id="" style="cursor: pointer;">
+											<span class="eliminarArticulo">
+											<a href="cartdel.php?id='.$tomm.'"><span id="" style="cursor: pointer;">
 													<span class="icono basura">j</span>		
 													Delete
 													</span>										
-											</span>
+											</span></a>
 										</div>
 								</div>
 								<div class="span1 colorRes">
@@ -14829,118 +14830,16 @@ echo '
 
 	
 	
-	<div id="footerContentCache" class="row" data-cache-id="shop.elijahmcquinn.com_562_pc_400_US_she">
+<div id="footerContentCache" class="row" data-cache-id="shop.elijahmcquinn.com_562_pc_400_US_she">
 
 		
-		<div id="nav-footer" class="nav-footer">
-						<span class="nav-footer-link">
-				<span class="" id="ayuda">
-					<a target="" href="https://shop.elijahmcquinn.com/us/women/help/12592.html" data-ga-label="ayuda">Help</a>
-				</span>
-						</span>
-						<span class="nav-footer-link">
-			
-			<span class="" id="pedidos">
-				<a target="" href="https://shop.elijahmcquinn.com/registroExterno.faces?op=listaPedidos" data-ga-label="pedidos">		
-						
-						Orders
-				</a>
-			</span>
-						</span>
-						<span class="nav-footer-link">
-				<span class="" id="devoluciones">
-					<a target="" href="https://shop.elijahmcquinn.com/us/women/help/2882.html" data-ga-label="devoluciones">Returns</a>
-				</span>
-						</span>
-						<span class="nav-footer-link">
-			
-			<span class="modal-bt-js" id="buscarTiendas">
-				<a target="" href="javascript:void(0)" data-ga-label="buscarTiendas">		
-						
-						Stores
-				</a>
-			</span>
-						</span>
-						<span class="nav-footer-link">
-			
-			<span class="cheques" id="cheques">
-				<a target="" href="https://shop.elijahmcquinn.com/chequeRegalo.faces" data-ga-label="cheques">		
-						
-						eGift card
-				</a>
-			</span>
-						</span>
-						<span class="nav-footer-link">
-			
-			<span class="" id="apps">
-				<a target="" href="https://shop.elijahmcquinn.com/redirect.faces?op=conta&amp;externa=APPsheS0515" data-ga-label="apps">		
-						
-						Apps
-				</a>
-			</span>
-						</span>
-						<span class="nav-footer-link">
-			<span class="empresa">
-					
-					<a href="https://shop.elijahmcquinn.com/redirect.faces?op=conta&amp;externa=pieEmpresa" target="_blank" data-ga-label="pieEmpresa">
-						
-						Company
-					</a>
-			</span>
-						</span>
-						<span class="nav-footer-link">
-			<span class="franquicias">
-					
-					<a href="https://shop.elijahmcquinn.com/redirect.faces?op=conta&amp;externa=pieFranquicias" target="_blank" data-ga-label="pieFranquicias">
-						
-						Franchises
-					</a>
-			</span>
-						</span>
-						<span class="nav-footer-link">
-			<span class="">
-					
-					<a href="https://shop.elijahmcquinn.com/redirect.faces?op=conta&amp;externa=affiliate" target="_blank" data-ga-label="afiliados">
-						
-						Affiliate
-					</a>
-			</span>
-						</span>
-						<span class="nav-footer-link">
-			<span class="trabaja">
-					
-					<a href="https://shop.elijahmcquinn.com/redirect.faces?op=conta&amp;externa=pieTrabajar" target="_blank" data-ga-label="pieTrabajar">
-						
-						Work for elijahmcquinn
-					</a>
-			</span>
-						</span>
-						<span class="nav-footer-link">
-			<span class="prensa">
-					
-					<a href="https://press.elijahmcquinn.com/" target="_blank" data-ga-label="pressroom">
-						
-						Press
-					</a>
-			</span>
-						</span>
-						<span class="nav-footer-link">
-			<span class="">
-					
-					<a href="https://www.elijahmcquinnoutlet.com/us/women?utm_source=elijahmcquinn.com&amp;utm_medium=interno&amp;utm_campaign=enlace_footer" target="_blank" data-ga-label="outlet">
-						
-						elijahmcquinn Outlet
-					</a>
-			</span>
-						</span>
-		</div>
-
+	
 		
 		<div id="nav-socialnetwork" class="nav-socialnetwork" data-ga-action="redes sociales">
 		   			<span class="nav-socialnetwork-link">
 			<span class="social__icon fb icon">
 					
-					<a href="http://www.facebook.com/elijahmcquinn.com" target="_blank" rel="nofollow" data-ga-label="facebook">
+					<a href="http://www.facebook.com/elijah mcquinn" target="_blank" rel="nofollow" data-ga-label="facebook">
 						
 						f
 					</a>
@@ -14949,25 +14848,17 @@ echo '
 		   			<span class="nav-socialnetwork-link">
 			<span class="social__icon tw icon">
 					
-					<a href="http://www.twitter.com/elijahmcquinn" target="_blank" rel="nofollow" data-ga-label="twitter">
+					<a href="http://www.twitter.com/elijah mcquinn" target="_blank" rel="nofollow" data-ga-label="twitter">
 						
 						t
 					</a>
 			</span>
 		   			</span>
-		   			<span class="nav-socialnetwork-link">
-			<span class="social__icon gp  icon">
-					
-					<a href="http://www.google.com/+elijahmcquinn" target="_blank" rel="nofollow" data-ga-label="google">
-						
-						g
-					</a>
-			</span>
-		   			</span>
+		   
 		   			<span class="nav-socialnetwork-link">
 			<span class="social__icon it icon">
 					
-					<a href="http://instagram.com/elijahmcquinn" target="_blank" rel="nofollow" data-ga-label="instagram">
+					<a href="https://www.instagram.com/explore/tags/elijahmcquinnofficial/" target="_blank" rel="nofollow" data-ga-label="instagram">
 						
 						i
 					</a>
@@ -14976,48 +14867,27 @@ echo '
 		   			<span class="nav-socialnetwork-link">
 			<span class="social__icon pn icon">
 					
-					<a href="http://pinterest.com/elijahmcquinnfashion/" target="_blank" rel="nofollow" data-ga-label="pinterest">
+					<a href="https://www.pinterest.com/aharriet30/womens-fashion/" target="_blank" rel="nofollow" data-ga-label="pinterest">
 						
 						p
 					</a>
 			</span>
 		   			</span>
-		   			<span class="nav-socialnetwork-link">
-			<span class="social__icon sp icon">
-					
-					<a href="https://open.spotify.com/user/elijahmcquinn_official" target="_blank" rel="nofollow" data-ga-label="spotify">
-						
-						2
-					</a>
-			</span>
-		   			</span>
-		   			<span class="nav-socialnetwork-link">
-			<span class="social__icon yt icon">
-					
-					<a href="http://www.youtube.com/user/elijahmcquinnFashion/" target="_blank" rel="nofollow" data-ga-label="youtube">
-						
-						y
-					</a>
-			</span>
-		   			</span>
-		   			<span class="nav-socialnetwork-link">
-			<span class="social__icon fs  icon">
-					
-					<a href="https://es.foursquare.com/elijahmcquinn" target="_blank" rel="nofollow" data-ga-label="foursquare">
-						
-						F
-					</a>
-			</span>
-		   			</span>
+		   			
+		   		
+		   			
 		</div>
 
 		
 		<div class="nav-pay-methods">
-		
-		
-			<img id="paypal" src="payment_files/paypal2x_002.png" alt="PayPal">
-		
-			<img id="" src="payment_files/amazonpayments2x.png" alt="Amazon">
+			<img id="visa" src="home_files/visa2x.png" alt="VISA">
+			<img id="mc" src="home_files/mc2x.png" alt="MasterCard">
+			<img id="amex" src="home_files/amex2x.png" alt="American Express">
+			<img id="paypal" src="home_files/paypal2x.png" alt="PayPal">
+			<img id="" src="home_files/jcb2x.png" alt="JCB">
+			<img id="diners" src="home_files/diners2x.png" alt="Diners">
+			<img id="" src="home_files/discover2x.png" alt="Discover">
+			<img id="" src="home_files/amazonpayments2x.png" alt="Amazon">
 		</div>
 		
 		
@@ -15029,9 +14899,9 @@ echo '
 			</span>
 			
 			<span class="phoneSales__telf" id="">
-				<a target="" href="tel:%201.866.6MNG.MNG" data-ga-label="">		
+				<a target="" href="tel:%256774721257" data-ga-label="">		
 						
-						1.866.6MNG.MNG
+						256-774721257
 				</a>
 			</span>
 				</span>
@@ -15049,7 +14919,7 @@ echo '
 			<span id="" class="contentLegal__divider">|</span>
 				<a class="separateLeft modal-link " onclick="window.open('https://shop.elijahmcquinn.com/us/women/helppopup/6515.html','ayuda','menubar=no,resizable=yes,scrollbars=yes,width=970,height=750').focus();" data-ga-label="condicionesventa"><span>Terms &amp; Conditions</span></a>
 						<div class="nav-locale-certificate">
-			<img id="geotrust" src="payment_files/geotrust2x.png" alt="">
+			<img id="geotrust" src="home_files/geotrust2x.png" alt="">
 						</div>  				
 			</span>
 				<ul class="nav-locale-menu">
@@ -15060,7 +14930,7 @@ echo '
 							<a>English</a>
 							<ul class="nav-locale-language-secondary langSelector__lang">
 										<li class="langSelector__list">
-											<a data-lang-iso="es" href="https://shop.elijahmcquinn.com/us-es" data-ga-label="idioma">
+											<a data-lang-iso="es" href="https://shop.elijahmcquinn.com/us-es/mujer" data-ga-label="idioma">
 												Castellano
 											</a>
 										</li>
@@ -15071,7 +14941,9 @@ echo '
 		</div>
 
 	</div>
-						<script async="true" type="text/javascript"></script>
+		
+
+					<script async="true" type="text/javascript"></script>
 					
 
 				</div>

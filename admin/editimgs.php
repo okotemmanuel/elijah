@@ -1,7 +1,10 @@
-﻿<!DOCTYPE html>
+﻿<?php
+
+session_start();
+?>
+
+<!DOCTYPE html>
 <html>
-
-
 
 <head>
     <meta charset="UTF-8">
@@ -31,25 +34,7 @@
 
     <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
     <link href="css/themes/all-themes.css" rel="stylesheet" />
-	
-    <!-- Wait Me Css -->
-    <link href="plugins/waitme/waitMe.css" rel="stylesheet" />
-
-    <!-- Bootstrap Select Css -->
-    <link href="plugins/bootstrap-select/css/bootstrap-select.css" rel="stylesheet" />
-
-  
-
 </head>
-	
-	
-	
-</head>
-
-
-
-
-
 
 <body class="theme-red">
     <!-- Page Loader -->
@@ -221,8 +206,7 @@
             <!-- #User Info -->
             <!-- Menu -->
 			
-           
-    <div class="menu">
+       <div class="menu">
                 <ul class="list">
                     <li class="header">MAIN NAVIGATION</li>
                     
@@ -292,7 +276,6 @@
             </div>
 			
 				
-	
 				
 			
 			<!-- #Menu -->
@@ -466,10 +449,23 @@
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="card">
 					
-					
-				<?php include 'config.php';?>
+                        <div class="header">
+                            <h2>ADD IMAGES</h2>
+                            <ul class="header-dropdown m-r--5">
+                                <li class="dropdown">
+                                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        <i class="material-icons">more_vert</i>
+                                    </a>
+                                    <ul class="dropdown-menu pull-right">
+                                      
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="body">
+                            <h2 class="card-inside-title"></h2>
+					<?php include 'config.php';?>
  <?php
-
 
 
 // Create connection
@@ -478,233 +474,52 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-	echo '<br><div class="row">';
-	
-$sql = "SELECT * FROM category  WHERE category='home'";
+
+
+	$iditem = $_GET['iditem'];
+
+
+
+
+$sql = "SELECT * FROM itemsimages WHERE iditem='$iditem'";
 $result = mysqli_query($conn, $sql);
 
 if (mysqli_num_rows($result) > 0) {
     // output data of each row
-	echo '<div class="col-lg-2" > home -<br>';
-	while($row = mysqli_fetch_assoc($result)){
-	
-	 $subitem = $row["subcategory"];
-	 $id = $row["id"];
-	 
-echo ' - '.$subitem.'<a href="delete.php?id='.$id.'"><button>delete</button></a><br>';
-	}
-	echo '</div>';
-    } else {
-  
-}
-
-	$sql = "SELECT * FROM category  WHERE category='womens'";
-$result = mysqli_query($conn, $sql);
-
-if (mysqli_num_rows($result) > 0) {
-    // output data of each row
-	echo '<div class="col-lg-2" > WOMENS -<br>';
-	while($row = mysqli_fetch_assoc($result)){
-	
-	 $subitem = $row["subcategory"];
-	 $id = $row["id"];
-	 
-echo ' - '.$subitem.'<a href="delete.php?id='.$id.'"><button>delete</button></a><br>';
-	}
-	echo '</div>';
-    } else {
-  
-}
-
-	$sql = "SELECT * FROM category  WHERE category='mens'";
-$result = mysqli_query($conn, $sql);
-
-if (mysqli_num_rows($result) > 0) {
-    // output data of each row
-	echo '<div class="col-lg-2" > MENS -<br>';
-	while($row = mysqli_fetch_assoc($result)){
-	
-	 $subitem = $row["subcategory"];
-	 $id = $row["id"];
-	 
-echo ' - '.$subitem.'<a href="delete.php?id='.$id.'"><button>delete</button></a><br>';
-	}
-	echo '</div>';
-    } else {
-  
-}
-
-
-	$sql = "SELECT * FROM category  WHERE category='boys'";
-$result = mysqli_query($conn, $sql);
-
-if (mysqli_num_rows($result) > 0) {
-    // output data of each row
-	echo '<div class="col-lg-2" > BOYS -<br>';
-	while($row = mysqli_fetch_assoc($result)){
-	
-	 $subitem = $row["subcategory"];
-	 $id = $row["id"];
-	 
-echo ' - '.$subitem.'<a href="delete.php?id='.$id.'"><button>delete</button></a><br>';
-	}
-	echo '</div>';
-    } else {
-  
-}	
-
-	$sql = "SELECT * FROM category  WHERE category='girls'";
-$result = mysqli_query($conn, $sql);
-
-if (mysqli_num_rows($result) > 0) {
-    // output data of each row
-	echo '<div class="col-lg-2" > GIRLS -<br>';
-	while($row = mysqli_fetch_assoc($result)){
-	
-	 $subitem = $row["subcategory"];
-	 $id = $row["id"];
-	 
-echo ' - '.$subitem.'<a href="delete.php?id='.$id.'"><button>delete</button></a><br>';
-	}
-	echo '</div>';
-    } else {
-  
-}
-
-	$sql = "SELECT * FROM category  WHERE category='shoes' ";
-$result = mysqli_query($conn, $sql);
-
-if (mysqli_num_rows($result) > 0) {
-    // output data of each row
-	echo '<div class="col-lg-2" > Shoes -<br>';
-	while($row = mysqli_fetch_assoc($result)){
-	
-	 $subitem = $row["subcategory"];
-	 $id = $row["id"];
-	 
-echo ' - '.$subitem.'<a href="delete.php?id='.$id.'"><button>delete</button></a><br>';
-	}
-	echo '</div>';
-    } else {
-  
-}
-	echo '</div><br>'	;
-	echo '<div class="row">';
-	$sql = "SELECT * FROM category  WHERE category='accessories'";
-$result = mysqli_query($conn, $sql);
-
-if (mysqli_num_rows($result) > 0) {
-    // output data of each row
-	echo '<div class="col-lg-2" > ACCESSORIES -<br>';
-	while($row = mysqli_fetch_assoc($result)){
-	
-	 $subitem = $row["subcategory"];
-	 $id = $row["id"];
-	 
-echo ' - '.$subitem.'<a href="delete.php?id='.$id.'"><button>delete</button></a><br>';
-	}
-	echo '</div>';
-    } else {
-  
-}	
-	
-	
-		
-	echo '</div>'	;
-		
-		
-		
-		
-		
-		
-		
-
-
-$name = $maincat = $amount =  "";
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-	echo '<div style="margin-left:30px;margin-top:30px;padding:20px;">';
-	if(empty($_POST["name"])){
-		echo 'enter name <br>';
-	}else{
-		echo  $name = $_POST["name"];
-	}
-	echo $maincat= $_POST["maincat"];
-	
-	if( !empty($name)){
-$sql = "INSERT INTO category (category, subcategory)
-VALUES ( '$maincat' , '$name')";
-
-if ($conn->query($sql) === TRUE) {
-    echo "New record created successfully";
+    while($row = mysqli_fetch_assoc($result)) {
+		$scr = $row["image"];
+		$idd = $row["id"];
+		echo '<div class="col-sm-6 col-md-3">	
+                                    <div class="thumbnail">
+                                        <img src="'.$scr.'">
+                                     
+                                    </div>
+								 <a href="imgedit.php?id='.$idd.'" class="btn btn-primary waves-effect" role="button">EDIT</a>
+                                </div>';	
+            }
 } else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
+    echo "0 results";
 }
 
-	
-	
-echo '
-<script type="text/javascript">
-window.location.href = "categ.php";
-</script>';	
-		
-	}
-echo '</div>';
-	
-}
+
+
+
+
+
+
 
 
 
 
 $conn->close();
-?> 	
-                        <div class="header">
-                            <h2>NEW ITEM</h2>
-                            <ul class="header-dropdown m-r--5">
-                                <li class="dropdown">
-                                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                        <i class="material-icons">more_vert</i>
-                                    </a>
-                                    <ul class="dropdown-menu pull-right">
-                                       
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="body">
-						 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+?> 							
+			<div class="row">					
 
-                            <h2 class="card-inside-title"></h2>
-								<div class="form-group form-float ">	
-
-						
-                                 <select name="maincat" class="form-control show-tick">
-                                        <option value="home">HOME</option>
-                                        <option value="WOMENS">WOMENS</option>
-                                        <option value="MENS">MENS'</option>
-                                        <option value="boys">BOYS</option>
-                                        <option value="girls">GIRLS</option>
-										<option value="shoes">SHOES</option>
-										<option value="accessories">ACCESSORIES</option>
-                                    </select>
-</div>
-								
-							 <div class="form-group form-float ">
-                                        <div class="form-line">
-                                            <input type="text" name="name" class="form-control" />
-                                            <label class="form-label">SUB CATEG</label>
-                                        </div>
-                                    </div>
-							
-								
-									
-									
+	</div>										
 							<center>
-							<a href="addimage.html" >
- <button type="submit" class="btn btn-primary btn-lg m-t-15 waves-effect">ADD</button>
-                           <a></center>
-						   
-						   </form>
+							<a href="items.php">
+ <button type="button" class="btn btn-primary btn-lg m-t-15 waves-effect">FINISH</button>
+                           </a></center>
                         </div>
                     </div>
                 </div>

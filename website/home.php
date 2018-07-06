@@ -14504,8 +14504,9 @@ function extend() {
 	<li class="menu-elem ">
         <a href="acc.php" class="menu-link menu-link-js " data-id="sections_editsSubmenu" data-ga-action="nino" data-ga-label="exterior-nino" data-ga-category="">Accessories</a>
     </li>
+	
 		<li class="menu-elem ">
-        <a href="acc.php" class="menu-link menu-link-js " >About Us </a>
+        <a href="about.php" class="menu-link menu-link-js " >About Us </a>
     </li>
  
     <li id="menuLine" class="menu-line" style="left: 460px; width: 47px;"></li>
@@ -14562,7 +14563,9 @@ function extend() {
 			</a>
 			
    
-		</div></div></div><input name="SVBodyHeader:SVUserMenu:userMenuForm_SUBMIT" value="1" type="hidden">
+		</div>
+		
+		</div></div><input name="SVBodyHeader:SVUserMenu:userMenuForm_SUBMIT" value="1" type="hidden">
 		<input name="javax.faces.ViewState" id="j_id__v_0:javax.faces.ViewState:1" value="HlhAdMQoAxeY41jaqQLRxNO1DaUxr5I1NVxXAAUwanoltDzb
 " type="hidden"></form>
 	</div>			
@@ -15948,22 +15951,24 @@ echo '
 
 			
 			<footer id="footerMNG" class="footerMNG" data-ga-category="footer" data-cached="false">
-				<div class="container-fluid user-select"><span id="SVPie:SVFooterNewsletter:panelFooterRegistroNewsletter">
+				<div class="container-fluid user-select">
+				
+				<span id="SVPie:SVFooterNewsletter:panelFooterRegistroNewsletter">
     	<div class="row">
        		<div class="col-xs-24 col-ie-24 fullcol">
 			
-			<form id="SVPie:SVFooterNewsletter:FExpr4" name="SVPie:SVFooterNewsletter:FExpr4" method="post" action="email.php" class="customFormIdFExpr4 focusOff" enctype="application/x-www-form-urlencoded" data-validate-active="true">
+			<form id="" name="" method="get" action="email.php" class="customFormIdFExpr4 focusOff" >
            			<div class="newsletterForm newsletter">
 
    	
 
-  	<div class="newsletter-label">Sign up for our newsletter and get 10% off </div>
+  	<div class="newsletter-label">Sign up for our newsletter </div>
 
 
 	<div class="newsletter-form newsletterContainer">
 	<div class="eac-input-wrap" style="display: inline; position: relative; font-size: 13px;">
 	
-	<input id="" name="email" maxlength="120" class="newsletterForm__input newsletterFormInput emailSuggest newsletter-form-input" data-validate-required="true" data-validate-validator="^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-zA-Z]{2,6}(?:\.[a-zA-Z]{2})?)$" placeholder="Enter your e-mail" data-validate-validatormessage="Enter a correct e-mail address (e.g. name@gmail.com)" data-component-id="FExpr4_regExpMail4" data-validate-requiredmessage="Enter a correct e-mail address (e.g. name@gmail.com)" type="email">
+	<input id="" name="email" maxlength="120" class="newsletterForm__input newsletterFormInput emailSuggest newsletter-form-input" placeholder="Enter your e-mail" data-validate-validatormessage="Enter a correct e-mail address (e.g. name@gmail.com)" data-validate-requiredmessage="Enter a correct e-mail address (e.g. name@gmail.com)" type="text">
 	<span class="eac-sugg" style="display: block; box-sizing: content-box; line-height: 42px; padding-top: 1.9px; padding-bottom: 1.9px; font-family: elijahmcquinn-light, Arial; font-weight: 400; letter-spacing: 0px; position: absolute; top: 0px; left: 0px;">
 	</span>
 	<span class="eac-cval" style="visibility: hidden; position: absolute; display: inline-block; font-family: elijahmcquinn-light, Arial; font-weight: 400; letter-spacing: 0px;">
@@ -15995,7 +16000,8 @@ echo '
 					</form>
 
 			</div>
-		</div></span>
+		</div>
+		</span>
 
 	
 	
@@ -16008,7 +16014,7 @@ echo '
 		   			<span class="nav-socialnetwork-link">
 			<span class="social__icon fb icon">
 					
-					<a href="http://www.facebook.com/elijahmcquinn" target="_blank" rel="nofollow" data-ga-label="facebook">
+					<a href="http://www.facebook.com/elijah mcquinn" target="_blank" rel="nofollow" data-ga-label="facebook">
 						
 						f
 					</a>
@@ -16017,25 +16023,17 @@ echo '
 		   			<span class="nav-socialnetwork-link">
 			<span class="social__icon tw icon">
 					
-					<a href="http://www.twitter.com/elijahmcquinn" target="_blank" rel="nofollow" data-ga-label="twitter">
+					<a href="http://www.twitter.com/elijah mcquinn" target="_blank" rel="nofollow" data-ga-label="twitter">
 						
 						t
 					</a>
 			</span>
 		   			</span>
-		   			<span class="nav-socialnetwork-link">
-			<span class="social__icon gp  icon">
-					
-					<a href="http://www.google.com/+elijahmcquinn" target="_blank" rel="nofollow" data-ga-label="google">
-						
-						g
-					</a>
-			</span>
-		   			</span>
+		   
 		   			<span class="nav-socialnetwork-link">
 			<span class="social__icon it icon">
 					
-					<a href="http://instagram.com/elijahmcquinn" target="_blank" rel="nofollow" data-ga-label="instagram">
+					<a href="https://www.instagram.com/explore/tags/elijahmcquinnofficial/" target="_blank" rel="nofollow" data-ga-label="instagram">
 						
 						i
 					</a>
@@ -16044,39 +16042,15 @@ echo '
 		   			<span class="nav-socialnetwork-link">
 			<span class="social__icon pn icon">
 					
-					<a href="http://pinterest.com/elijahmcquinnfashion/" target="_blank" rel="nofollow" data-ga-label="pinterest">
+					<a href="https://www.pinterest.com/aharriet30/womens-fashion/" target="_blank" rel="nofollow" data-ga-label="pinterest">
 						
 						p
 					</a>
 			</span>
 		   			</span>
-		   			<span class="nav-socialnetwork-link">
-			<span class="social__icon sp icon">
-					
-					<a href="https://open.spotify.com/user/elijahmcquinn_official" target="_blank" rel="nofollow" data-ga-label="spotify">
-						
-						2
-					</a>
-			</span>
-		   			</span>
-		   			<span class="nav-socialnetwork-link">
-			<span class="social__icon yt icon">
-					
-					<a href="http://www.youtube.com/user/elijahmcquinnFashion/" target="_blank" rel="nofollow" data-ga-label="youtube">
-						
-						y
-					</a>
-			</span>
-		   			</span>
-		   			<span class="nav-socialnetwork-link">
-			<span class="social__icon fs  icon">
-					
-					<a href="https://es.foursquare.com/elijahmcquinn" target="_blank" rel="nofollow" data-ga-label="foursquare">
-						
-						F
-					</a>
-			</span>
-		   			</span>
+		   			
+		   		
+		   			
 		</div>
 
 		
@@ -16100,9 +16074,9 @@ echo '
 			</span>
 			
 			<span class="phoneSales__telf" id="">
-				<a target="" href="tel:%256779815657" data-ga-label="">		
+				<a target="" href="tel:%256774721257" data-ga-label="">		
 						
-						256-779815657
+						256-774721257
 				</a>
 			</span>
 				</span>
@@ -16142,7 +16116,9 @@ echo '
 		</div>
 
 	</div>
-						<script async="true" type="text/javascript"></script>
+					
+
+					<script async="true" type="text/javascript"></script>
 					
 
 				</div>

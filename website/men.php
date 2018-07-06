@@ -14413,8 +14413,8 @@ function extend() {
 	
 		<div class="nav-main-container">
 
-	<div class="nav-logo">
-			<img src="photos/logo.png" style="margin-left:30px;height:150px;">
+		<div class="nav-logo">
+			<img src="photos/logo.png" style="margin-left:30px;height:60px;">
 	</div>
 
 	<div class="nav-shop">
@@ -14425,12 +14425,12 @@ function extend() {
     </li>
 	
 	 <li class="menu-elem ">
-        <a href="women.php" class="menu-link menu-link-js selected" data-id="sheSubmenu" data-ga-action="mujer" data-ga-label="exterior-mujer" data-ga-category="">Women</a>
+        <a href="women.php" class="menu-link menu-link-js " data-id="sheSubmenu" data-ga-action="mujer" data-ga-label="exterior-mujer" data-ga-category="">Women</a>
     </li>
 	
  
     <li class="menu-elem ">
-        <a href="men.php" class="menu-link menu-link-js " data-id="heSubmenu" data-ga-action="hombre" data-ga-label="exterior-hombre" data-ga-category="">Men</a>
+        <a href="men.php" class="menu-link menu-link-js selected" data-id="heSubmenu" data-ga-action="hombre" data-ga-label="exterior-hombre" data-ga-category="">Men</a>
     </li>
     <li class="menu-elem ">
         <a href="girls.php" class="menu-link menu-link-js " data-id="ninaSubmenu" data-ga-action="nina" data-ga-label="exterior-nina" data-ga-category="">Girls</a>
@@ -14445,7 +14445,9 @@ function extend() {
 	<li class="menu-elem ">
         <a href="acc.php" class="menu-link menu-link-js " data-id="sections_editsSubmenu" data-ga-action="nino" data-ga-label="exterior-nino" data-ga-category="">Accessories</a>
     </li>
-	
+		<li class="menu-elem ">
+        <a href="about.php" class="menu-link menu-link-js " >About Us </a>
+    </li>
  
     <li id="menuLine" class="menu-line" style="left: 460px; width: 47px;"></li>
 </ul>
@@ -14465,8 +14467,7 @@ function extend() {
 					
 					<div id="navToolsUser" class="nav-tools-wrapper nav-tools-user">
 						<div id="userMenuContainer" class="user-menu-container">
-										<a id="userMenuTrigger" class="nav-tools-link" href="https://shop.elijahmcquinn.com/us/login?tab=login" data-origin="login"><span class="nav-tools-link-text">Sign in</span></a>								
-						
+										
 								<nav class="user-menu log_false" id="userMenu">
 										
 										<a href="https://shop.elijahmcquinn.com/us/login?tab=login" class="user-menu-link userMenu__content userMenu__register" data-origin="login"><span>Sign in</span></a>
@@ -14484,31 +14485,21 @@ function extend() {
 					</div><div id="SVBodyHeader:SVUserMenu:userMenuForm:SVWishlistHeader:WishListAddProducto" style="padding: 10px; position: absolute; right: 7px; top:37px; z-index: 180; background-color: #fff; display: none; border: 1px solid #dedede; width: 400px;"></div>
 	
 		
-		<div id="shoppingBag" class="nav-tools-wrapper nav-tools-shopping-bag hidden_mobile userMenu__shoppingCart"><span id="SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:panelWishListBolsa" class="nav-tools-link shopping-bag-button-js shoppingBagButton"><span id="SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:j_id_11_b_w_5" class="icon">j</span>
+		<div id="shoppingBag" class="nav-tools-wrapper nav-tools-shopping-bag hidden_mobile userMenu__shoppingCart">
+		<a href="cart.php">
+		<span id="SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:panelWishListBolsa" class="nav-tools-link shopping-bag-button-js shoppingBagButton">
+		<span id="SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:j_id_11_b_w_5" class="icon">j</span>
 				<span class="conjunto_numItemsBolsa">
 					<span class="parentesisbolsa hidden">(</span><span id="SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:bolsa_articulosNum" class="shopping-bag-items bolsaItems bolsa_empty"></span>
 					<span class="parentesisbolsa hidden">)</span>
 				</span></span>
+				
+			</a>
 			
-			
-            <div id="shoppingBagContent" class="shopping-bag shoppingBagContent">
-			<script type="text/javascript"></script>
-                <div id="mainDivBolsa" class="shopping-bag-content clearfix"><div id="SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:SVBolsa:panelBolsa" style=""><span id="SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:SVBolsa:panelBolsa:bolsa_titulo">
-			<div class="bolsa_cerrar row-fluid">
-				<p class="tu_bolsa">Your shopping bag is empty
-				</p>
-				<p class="bolsa_close icono">x</p>
-			</div></span><div id="SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:SVBolsa:panelBolsa:bolsaItems" class="bolsa_items row-fluid">
-			<span class="moveBolsa icono hidden_mobile" onclick="bolsaDown();">^</span><div style="max-height: 258px;"><div id="SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:SVBolsa:panelBolsa:j_id_11_b_w_r"></div></div>
-
-			<span class="moveBolsa icono hidden_mobile" onclick="bolsaUp();">v</span></div><div id="SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:SVBolsa:panelBolsa:bolsa_total" class="row-fluid"></div></div>
-				</div>
-				<div id="mainDivBolsaUpdate" class="clearfix show-1">
-					<p class="title">YOUR SHOPPING BAG HAS BEEN UPDATED</p>
-					<p>The items you added in your last session have been included.</p>
-				</div>
-			</div>
-		</div></div></div><input name="SVBodyHeader:SVUserMenu:userMenuForm_SUBMIT" value="1" type="hidden"><input name="javax.faces.ViewState" id="j_id__v_0:javax.faces.ViewState:1" value="HlhAdMQoAxeY41jaqQLRxNO1DaUxr5I1NVxXAAUwanoltDzb
+   
+		</div>
+		
+		</div></div><input name="SVBodyHeader:SVUserMenu:userMenuForm_SUBMIT" value="1" type="hidden"><input name="javax.faces.ViewState" id="j_id__v_0:javax.faces.ViewState:1" value="HlhAdMQoAxeY41jaqQLRxNO1DaUxr5I1NVxXAAUwanoltDzb
 " type="hidden"></form>
 	</div>			
 			</div>
@@ -14996,24 +14987,24 @@ echo '
 
 				<div class="span2 sidebar filters-sidebar--sticky" style="top: 75px;"><aside class="filters-sidebar" id="filtersSidebar">
       <nav class="nav-filters" id="nuevoFilter">
-          <h2 class="nav-filters-header">New now</h2>
+          <h2 class="nav-filters-header"></h2>
           <ul class="nav-filters-list" data-filter-multi-select="false">
               <li class="nav-filters-list-element nav-filters-list-element-js" data-filter-type="link" data-filter-name="nuevo" data-filter-value="#shop.url.home.she/#header.secciones.nuevo" data-filter-subsection="" data-subfilter="false" data-filter-url="https://shop.elijahmcquinn.com/us/women/new-now_d71927648" data-ga-category="filtros" data-ga-action="nuevo" data-ga-label="mujer:mujer">
-                <a class="nav-filters-list-element-link" href="https://shop.elijahmcquinn.com/us/women/new-now_d71927648">Women</a>
+                <a class="nav-filters-list-element-link" href="https://shop.elijahmcquinn.com/us/women/new-now_d71927648"></a>
               </li>
               <li class="nav-filters-list-element nav-filters-list-element-js" data-filter-type="link" data-filter-name="nuevo" data-filter-value="#shop.url.home.he/#header.secciones.nuevo" data-filter-subsection="" data-subfilter="false" data-filter-url="https://shop.elijahmcquinn.com/us/men/new-now_d19433329" data-ga-category="filtros" data-ga-action="nuevo" data-ga-label="mujer:hombre">
-                <a class="nav-filters-list-element-link nav-filters-list-element-link--selected" href="https://shop.elijahmcquinn.com/us/men/new-now_d19433329">Men</a>
+                <a class="nav-filters-list-element-link nav-filters-list-element-link--selected" href="https://shop.elijahmcquinn.com/us/men/new-now_d19433329"></a>
               </li>
           </ul>
       </nav>
       <nav class="nav-filters nav-filters--gap" id="colorFilter">
-          <h2 class="nav-filters-header">Colors</h2>
+          <h2 class="nav-filters-header"></h2>
       </nav>
       <nav class="nav-filters nav-filters--gap" id="tallaFilter">
-          <h2 class="nav-filters-header">Size</h2>
+          <h2 class="nav-filters-header"></h2>
       </nav>
         <nav class="nav-filters nav-filters--gap" id="priceFilter">
-          <h2 class="nav-filters-header">Price</h2>
+          <h2 class="nav-filters-header"></h2>
         </nav>
 </aside>
 </div>
@@ -15144,12 +15135,7 @@ echo '
 	  
 
 </div>
-    <section class="cross-selling">
-      <span class="cross-selling-title">Discover more garments in the collection</span>
-        <a class="cross-selling-link cross-selling-link-js" href="https://shop.elijahmcquinn.com/us/women/dresses_c55363448" data-ga="mujer:prendas:vestidos:todo">Dresses</a>
-        <a class="cross-selling-link cross-selling-link-js" href="https://shop.elijahmcquinn.com/us/women/jumpsuits_c99834840" data-ga="mujer:prendas:monos:todo">Jumpsuits</a>
-        <a class="cross-selling-link cross-selling-link-js" href="https://shop.elijahmcquinn.com/us/women/shirts_c78920337" data-ga="mujer:prendas:camisas:todo">Shirts</a>
-    </section>
+
 </div></div>
 </div>
 			</div><div id="scrollTop" class="scroll-top">
@@ -15210,161 +15196,68 @@ echo '
 
 			
 			<footer id="footerMNG" class="footerMNG" data-ga-category="footer" data-cached="false">
-				<div class="container-fluid user-select"><span id="SVPie:SVFooterNewsletter:panelFooterRegistroNewsletter">
+				<div class="container-fluid user-select">
+				
+					<span id="SVPie:SVFooterNewsletter:panelFooterRegistroNewsletter">
     	<div class="row">
-       		<div class="col-xs-24 col-ie-24 fullcol"><form id="SVPie:SVFooterNewsletter:FExpr4" name="SVPie:SVFooterNewsletter:FExpr4" method="post" action="https://shop.elijahmcquinn.com/catalog/catalogPc.faces?ts=1529393591276&amp;state=she_400_US" class="customFormIdFExpr4 focusOff" enctype="application/x-www-form-urlencoded" data-validate-active="true">
+       		<div class="col-xs-24 col-ie-24 fullcol">
+			
+			<form id="" name="" method="get" action="email.php" class="customFormIdFExpr4 focusOff" >
            			<div class="newsletterForm newsletter">
 
    	
 
-  	<div class="newsletter-label">Sign up for our newsletter and get 10% off </div>
+  	<div class="newsletter-label">Sign up for our newsletter </div>
 
 
-	<div class="newsletter-form newsletterContainer"><div class="eac-input-wrap" style="display: inline; position: relative; font-size: 13px;"><input id="SVPie:SVFooterNewsletter:FExpr4:SVFooterNewsletter:regExpMail4" name="SVPie:SVFooterNewsletter:FExpr4:SVFooterNewsletter:regExpMail4" maxlength="120" class="newsletterForm__input newsletterFormInput emailSuggest newsletter-form-input" data-validate-required="true" data-validate-validator="^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-zA-Z]{2,6}(?:\.[a-zA-Z]{2})?)$" placeholder="Enter your e-mail" data-validate-validatormessage="Enter a correct e-mail address (e.g. name@gmail.com)" data-component-id="FExpr4_regExpMail4" data-validate-requiredmessage="Enter a correct e-mail address (e.g. name@gmail.com)" type="email"><span class="eac-sugg" style="display: block; box-sizing: content-box; line-height: 42px; padding-top: 1.9px; padding-bottom: 1.9px; font-family: elijahmcquinn-light, Arial; font-weight: 400; letter-spacing: 0px; position: absolute; top: 0px; left: 0px;"></span><span class="eac-cval" style="visibility: hidden; position: absolute; display: inline-block; font-family: elijahmcquinn-light, Arial; font-weight: 400; letter-spacing: 0px;"></span></div>
+	<div class="newsletter-form newsletterContainer">
+	<div class="eac-input-wrap" style="display: inline; position: relative; font-size: 13px;">
+	
+	<input id="" name="email" maxlength="120" class="newsletterForm__input newsletterFormInput emailSuggest newsletter-form-input" placeholder="Enter your e-mail" data-validate-validatormessage="Enter a correct e-mail address (e.g. name@gmail.com)" data-validate-requiredmessage="Enter a correct e-mail address (e.g. name@gmail.com)" type="text">
+	<span class="eac-sugg" style="display: block; box-sizing: content-box; line-height: 42px; padding-top: 1.9px; padding-bottom: 1.9px; font-family: elijahmcquinn-light, Arial; font-weight: 400; letter-spacing: 0px; position: absolute; top: 0px; left: 0px;">
+	</span>
+	<span class="eac-cval" style="visibility: hidden; position: absolute; display: inline-block; font-family: elijahmcquinn-light, Arial; font-weight: 400; letter-spacing: 0px;">
+	</span></div>
 			
 		
 		<div id="FExpr4_regExpMail4ErrorLabel" class="newsletterForm__error">
 		</div>
 
 		
-		<div class="newsletterForm__buttonContainer" data-ga-action="newsletter"><input id="SVPie:SVFooterNewsletter:FExpr4:SVFooterNewsletter:j_id_3z_1_1_6_9" name="SVPie:SVFooterNewsletter:FExpr4:SVFooterNewsletter:j_id_3z_1_1_6_9" value="J" onclick="jsf.util.chain(document.getElementById('SVPie:SVFooterNewsletter:FExpr4:SVFooterNewsletter:j_id_3z_1_1_6_9'), event,'return formController.setSubmitValidation(this);', 'jsf.ajax.request(\'SVPie:SVFooterNewsletter:FExpr4:SVFooterNewsletter:j_id_3z_1_1_6_9\',event,{execute:\'@form \',render:\'SVPie:SVFooterNewsletter:panelFooterRegistroNewsletter \',\'javax.faces.behavior.event\':\'action\'})'); return false;" class="newsletterForm__link icon " data-ga-label="suscribir" type="submit">
+		<div class="newsletterForm__buttonContainer" data-ga-action="newsletter">
 		</div>
-
-		
+<div class="submitContent" style="width:20%;margin-left:40%;">
+			<div class="submit">
+	<input style="background-color:black;color:white;boder-size:0px;padding:5px;width:100px;" id="SVLoginCheck:j_id_36:j_id_3v" name="SVLoginCheck:j_id_36:j_id_3v" value="Signup "  tabindex="8" class="submit" type="submit">
+	</div>	</div>
 		
 	</div>
 		<div class="newsletterForm__text newsletterForm__textHover" data-ga-action="newsletter">
-			By subscribing you accept the
-			
-			
-				<a class="separateLeft modal-link " onclick="window.open('https://shop.elijahmcquinn.com/us/women/helppopup/11622.html','ayuda','menubar=no,resizable=yes,scrollbars=yes,width=970,height=750').focus();" data-ga-label="politicaPrivacidad"><span>Privacy Policy</span></a>
-			 
-			
-				and the
-				
-				
-				<a class="separateLeft modal-link " onclick="window.open('https://shop.elijahmcquinn.com/us/women/helppopup/38740.html','ayuda','menubar=no,resizable=yes,scrollbars=yes,width=970,height=750').focus();" data-ga-label="termsconditions"><span>Promotion's T&amp;C</span></a>
+			By subscribing you accept the		
 		</div>
-					</div><input name="SVPie:SVFooterNewsletter:FExpr4_SUBMIT" value="1" type="hidden"><input name="javax.faces.ViewState" id="j_id__v_0:javax.faces.ViewState:5" value="HlhAdMQoAxeY41jaqQLRxNO1DaUxr5I1NVxXAAUwanoltDzb
-" type="hidden"></form>
+	
+					</div>
+									
+	
+								</div>
+								</div>			
+					
+					</form>
 
 			</div>
-		</div></span>
-
-	
+		</div>
+		</span>
 	
 	<div id="footerContentCache" class="row" data-cache-id="shop.elijahmcquinn.com_562_pc_400_US_she">
 
 		
-		<div id="nav-footer" class="nav-footer">
-						<span class="nav-footer-link">
-				<span class="" id="ayuda">
-					<a target="" href="https://shop.elijahmcquinn.com/us/women/help/12592.html" data-ga-label="ayuda">Help</a>
-				</span>
-						</span>
-						<span class="nav-footer-link">
-			
-			<span class="" id="pedidos">
-				<a target="" href="https://shop.elijahmcquinn.com/registroExterno.faces?op=listaPedidos" data-ga-label="pedidos">		
-						
-						Orders
-				</a>
-			</span>
-						</span>
-						<span class="nav-footer-link">
-				<span class="" id="devoluciones">
-					<a target="" href="https://shop.elijahmcquinn.com/us/women/help/2882.html" data-ga-label="devoluciones">Returns</a>
-				</span>
-						</span>
-						<span class="nav-footer-link">
-			
-			<span class="modal-bt-js" id="buscarTiendas">
-				<a target="" href="javascript:void(0)" data-ga-label="buscarTiendas">		
-						
-						Stores
-				</a>
-			</span>
-						</span>
-						<span class="nav-footer-link">
-			
-			<span class="cheques" id="cheques">
-				<a target="" href="https://shop.elijahmcquinn.com/chequeRegalo.faces" data-ga-label="cheques">		
-						
-						eGift card
-				</a>
-			</span>
-						</span>
-						<span class="nav-footer-link">
-			
-			<span class="" id="apps">
-				<a target="" href="https://shop.elijahmcquinn.com/redirect.faces?op=conta&amp;externa=APPsheS0515" data-ga-label="apps">		
-						
-						Apps
-				</a>
-			</span>
-						</span>
-						<span class="nav-footer-link">
-			<span class="empresa">
-					
-					<a href="https://shop.elijahmcquinn.com/redirect.faces?op=conta&amp;externa=pieEmpresa" target="_blank" data-ga-label="pieEmpresa">
-						
-						Company
-					</a>
-			</span>
-						</span>
-						<span class="nav-footer-link">
-			<span class="franquicias">
-					
-					<a href="https://shop.elijahmcquinn.com/redirect.faces?op=conta&amp;externa=pieFranquicias" target="_blank" data-ga-label="pieFranquicias">
-						
-						Franchises
-					</a>
-			</span>
-						</span>
-						<span class="nav-footer-link">
-			<span class="">
-					
-					<a href="https://shop.elijahmcquinn.com/redirect.faces?op=conta&amp;externa=affiliate" target="_blank" data-ga-label="afiliados">
-						
-						Affiliate
-					</a>
-			</span>
-						</span>
-						<span class="nav-footer-link">
-			<span class="trabaja">
-					
-					<a href="https://shop.elijahmcquinn.com/redirect.faces?op=conta&amp;externa=pieTrabajar" target="_blank" data-ga-label="pieTrabajar">
-						
-						Work for elijahmcquinn
-					</a>
-			</span>
-						</span>
-						<span class="nav-footer-link">
-			<span class="prensa">
-					
-					<a href="https://press.elijahmcquinn.com/" target="_blank" data-ga-label="pressroom">
-						
-						Press
-					</a>
-			</span>
-						</span>
-						<span class="nav-footer-link">
-			<span class="">
-					
-					<a href="https://www.elijahmcquinnoutlet.com/us/women?utm_source=elijahmcquinn.com&amp;utm_medium=interno&amp;utm_campaign=enlace_footer" target="_blank" data-ga-label="outlet">
-						
-						elijahmcquinn Outlet
-					</a>
-			</span>
-						</span>
-		</div>
-
+	
 		
 		<div id="nav-socialnetwork" class="nav-socialnetwork" data-ga-action="redes sociales">
 		   			<span class="nav-socialnetwork-link">
 			<span class="social__icon fb icon">
 					
-					<a href="http://www.facebook.com/elijahmcquinn.com" target="_blank" rel="nofollow" data-ga-label="facebook">
+					<a href="http://www.facebook.com/elijah mcquinn" target="_blank" rel="nofollow" data-ga-label="facebook">
 						
 						f
 					</a>
@@ -15373,25 +15266,17 @@ echo '
 		   			<span class="nav-socialnetwork-link">
 			<span class="social__icon tw icon">
 					
-					<a href="http://www.twitter.com/elijahmcquinn" target="_blank" rel="nofollow" data-ga-label="twitter">
+					<a href="http://www.twitter.com/elijah mcquinn" target="_blank" rel="nofollow" data-ga-label="twitter">
 						
 						t
 					</a>
 			</span>
 		   			</span>
-		   			<span class="nav-socialnetwork-link">
-			<span class="social__icon gp  icon">
-					
-					<a href="http://www.google.com/+elijahmcquinn" target="_blank" rel="nofollow" data-ga-label="google">
-						
-						g
-					</a>
-			</span>
-		   			</span>
+		   
 		   			<span class="nav-socialnetwork-link">
 			<span class="social__icon it icon">
 					
-					<a href="http://instagram.com/elijahmcquinn" target="_blank" rel="nofollow" data-ga-label="instagram">
+					<a href="https://www.instagram.com/explore/tags/elijahmcquinnofficial/" target="_blank" rel="nofollow" data-ga-label="instagram">
 						
 						i
 					</a>
@@ -15400,51 +15285,27 @@ echo '
 		   			<span class="nav-socialnetwork-link">
 			<span class="social__icon pn icon">
 					
-					<a href="http://pinterest.com/elijahmcquinnfashion/" target="_blank" rel="nofollow" data-ga-label="pinterest">
+					<a href="https://www.pinterest.com/aharriet30/womens-fashion/" target="_blank" rel="nofollow" data-ga-label="pinterest">
 						
 						p
 					</a>
 			</span>
 		   			</span>
-		   			<span class="nav-socialnetwork-link">
-			<span class="social__icon sp icon">
-					
-					<a href="https://open.spotify.com/user/elijahmcquinn_official" target="_blank" rel="nofollow" data-ga-label="spotify">
-						
-						2
-					</a>
-			</span>
-		   			</span>
-		   			<span class="nav-socialnetwork-link">
-			<span class="social__icon yt icon">
-					
-					<a href="http://www.youtube.com/user/elijahmcquinnFashion/" target="_blank" rel="nofollow" data-ga-label="youtube">
-						
-						y
-					</a>
-			</span>
-		   			</span>
-		   			<span class="nav-socialnetwork-link">
-			<span class="social__icon fs  icon">
-					
-					<a href="https://es.foursquare.com/elijahmcquinn" target="_blank" rel="nofollow" data-ga-label="foursquare">
-						
-						F
-					</a>
-			</span>
-		   			</span>
+		   			
+		   		
+		   			
 		</div>
 
 		
 		<div class="nav-pay-methods">
-			<img id="visa" src="women_files/visa2x.png" alt="VISA">
-			<img id="mc" src="women_files/mc2x.png" alt="MasterCard">
-			<img id="amex" src="women_files/amex2x.png" alt="American Express">
-			<img id="paypal" src="women_files/paypal2x.png" alt="PayPal">
-			<img id="" src="women_files/jcb2x.png" alt="JCB">
-			<img id="diners" src="women_files/diners2x.png" alt="Diners">
-			<img id="" src="women_files/discover2x.png" alt="Discover">
-			<img id="" src="women_files/amazonpayments2x.png" alt="Amazon">
+			<img id="visa" src="home_files/visa2x.png" alt="VISA">
+			<img id="mc" src="home_files/mc2x.png" alt="MasterCard">
+			<img id="amex" src="home_files/amex2x.png" alt="American Express">
+			<img id="paypal" src="home_files/paypal2x.png" alt="PayPal">
+			<img id="" src="home_files/jcb2x.png" alt="JCB">
+			<img id="diners" src="home_files/diners2x.png" alt="Diners">
+			<img id="" src="home_files/discover2x.png" alt="Discover">
+			<img id="" src="home_files/amazonpayments2x.png" alt="Amazon">
 		</div>
 		
 		
@@ -15456,9 +15317,9 @@ echo '
 			</span>
 			
 			<span class="phoneSales__telf" id="">
-				<a target="" href="tel:%201.866.6MNG.MNG" data-ga-label="">		
+				<a target="" href="tel:%256774721257" data-ga-label="">		
 						
-						1.866.6MNG.MNG
+						256-774721257
 				</a>
 			</span>
 				</span>
@@ -15476,7 +15337,7 @@ echo '
 			<span id="" class="contentLegal__divider">|</span>
 				<a class="separateLeft modal-link " onclick="window.open('https://shop.elijahmcquinn.com/us/women/helppopup/6515.html','ayuda','menubar=no,resizable=yes,scrollbars=yes,width=970,height=750').focus();" data-ga-label="condicionesventa"><span>Terms &amp; Conditions</span></a>
 						<div class="nav-locale-certificate">
-			<img id="geotrust" src="women_files/geotrust2x.png" alt="">
+			<img id="geotrust" src="home_files/geotrust2x.png" alt="">
 						</div>  				
 			</span>
 				<ul class="nav-locale-menu">
@@ -15487,7 +15348,7 @@ echo '
 							<a>English</a>
 							<ul class="nav-locale-language-secondary langSelector__lang">
 										<li class="langSelector__list">
-											<a data-lang-iso="es" href="https://shop.elijahmcquinn.com/us-es/mujer/nuevo_d71927648" data-ga-label="idioma">
+											<a data-lang-iso="es" href="https://shop.elijahmcquinn.com/us-es/mujer" data-ga-label="idioma">
 												Castellano
 											</a>
 										</li>
@@ -15498,7 +15359,11 @@ echo '
 		</div>
 
 	</div>
-						<script async="true" type="text/javascript"></script>
+		
+	
+	
+
+			<script async="true" type="text/javascript"></script>
 					
 
 				</div>

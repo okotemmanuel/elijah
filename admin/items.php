@@ -443,7 +443,7 @@
 			         <div class="body">
                             <div class="button-demo">
 							
-                                <a href="items.php?cateeg=food" type="button" class="btn btn-default waves-effect" > HOME </a>
+                                <a href="items.php?cateeg=home" type="button" class="btn btn-default waves-effect" > HOME </a>
                                 <a href="items.php?cateeg=womens" type="button" class="btn btn-default waves-effect" > 	WOMEN </a>
                                 <a href="items.php?cateeg=mens" type="button" class="btn btn-default waves-effect" > MENS </a>
                                 <a href="items.php?cateeg=boys" type="button" class="btn btn-default waves-effect" > BOYS </a>
@@ -526,8 +526,8 @@ if (mysqli_num_rows($resultt) > 0) {
                                               '.$textt.'
                                             </p>
 											<p>
-                                                <a href="javascript:void(0);" class="btn btn-primary waves-effect" role="button">EDIT</a>
-                                            <a href="javascript:void(0);" class="btn btn-primary waves-effect" role="button">REMOVE</a>
+                                                <a href="editprod.php?id='.$idit.'" class="btn btn-primary waves-effect" role="button">EDIT</a>
+
 										   </p>
                                         </div>
                                     </div>

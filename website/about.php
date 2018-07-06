@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+	 
+
 <?php include 'config.php';
 
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -6,14 +8,292 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-
-session_start();          //php part
-
 ?>
+<html class="catalog_catalogPc p-n-catalog    add-horizontal-scroll" xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en"><script type="text/javascript" async="" src="women_files/js"></script><script id="mngRTD" src="women_files/mngrtd.js"></script><script src="women_files/441271682641901.js" async=""></script><script async="" src="women_files/fbevents.js"></script><script type="text/javascript" async="" src="women_files/ld.js"></script><script type="text/javascript" async="" src="women_files/conversion_async.js"></script><script type="text/javascript" async="" src="women_files/bat.js"></script><script type="text/javascript" async="" src="women_files/bntmtycmx0.js"></script><script type="text/javascript" async="" src="women_files/analytics.js"></script><script type="text/javascript" async="" src="women_files/ec.js"></script><script async="" src="women_files/analytics.js"></script><script async="" src="women_files/gtm.js"></script><script>(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(_dereq_,module,exports){
+(function (global){
+'use strict';
 
-<html class="ficha    add-horizontal-scroll" xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en"><script type="text/javascript" async="" src="prod_files/js_002"></script><script id="mngRTD" src="prod_files/mngrtd.js"></script><script src="prod_files/441271682641901.js" async=""></script><script async="" src="prod_files/fbevents.js"></script><script type="text/javascript" async="" src="prod_files/ld.js"></script><script type="text/javascript" async="" src="prod_files/conversion_async.js"></script><script type="text/javascript" async="" src="prod_files/bat.js"></script><script type="text/javascript" async="" src="prod_files/bntmtycmx0.js"></script><script type="text/javascript" async="" src="prod_files/analytics.js"></script><script type="text/javascript" async="" src="prod_files/ec.js"></script><script async="" src="prod_files/gtm.js"></script><script async="" src="prod_files/analytics.js"></script><script>(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(_dereq_,module,exports){
+/*global Web3*/
+cleanContextForImports();
+_dereq_('web3/dist/web3.min.js');
+var log = _dereq_('loglevel');
+var LocalMessageDuplexStream = _dereq_('post-message-stream');
+// const PingStream = require('ping-pong-stream/ping')
+// const endOfStream = require('end-of-stream')
+var setupDappAutoReload = _dereq_('./lib/auto-reload.js');
+var MetamaskInpageProvider = _dereq_('./lib/inpage-provider.js');
+restoreContextAfterImports();
 
+var METAMASK_DEBUG = undefined;
+window.log = log;
+log.setDefaultLevel(METAMASK_DEBUG ? 'debug' : 'warn');
 
+//
+// setup plugin communication
+//
+
+// setup background connection
+var metamaskStream = new LocalMessageDuplexStream({
+  name: 'inpage',
+  target: 'contentscript'
+});
+
+// compose the inpage provider
+var inpageProvider = new MetamaskInpageProvider(metamaskStream);
+
+//
+// setup web3
+//
+
+if (typeof window.web3 !== 'undefined') {
+  throw new Error('MetaMask detected another web3.\n     MetaMask will not work reliably with another web3 extension.\n     This usually happens if you have two MetaMasks installed,\n     or MetaMask and another web3 extension. Please remove one\n     and try again.');
+}
+var web3 = new Web3(inpageProvider);
+web3.setProvider = function () {
+  log.debug('MetaMask - overrode web3.setProvider');
+};
+log.debug('MetaMask - injected web3');
+// export global web3, with ugandage-detection
+setupDappAutoReload(web3, inpageProvider.publicConfigStore);
+
+// set web3 defaultAccount
+
+inpageProvider.publicConfigStore.subscribe(function (state) {
+  web3.eth.defaultAccount = state.selectedAddress;
+});
+
+//
+// util
+//
+
+// need to make sure we aren't affected by overlapping namespaces
+// and that we dont affect the app with our namespace
+// mostly a fix for web3's BigNumber if AMD's "define" is defined...
+var __define;
+
+function cleanContextForImports() {
+  __define = global.define;
+  try {
+    global.define = undefined;
+  } catch (_) {
+    console.warn('MetaMask - global.define could not be deleted.');
+  }
+}
+
+function restoreContextAfterImports() {
+  try {
+    global.define = __define;
+  } catch (_) {
+    console.warn('MetaMask - global.define could not be overwritten.');
+  }
+}
+
+}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
+},{"./lib/auto-reload.js":2,"./lib/inpage-provider.js":3,"loglevel":111,"post-message-stream":116,"web3/dist/web3.min.js":139}],2:[function(_dereq_,module,exports){
+(function (global){
+'use strict';
+
+module.exports = setupDappAutoReload;
+
+function setupDappAutoReload(web3, observable) {
+  // export web3 as a global, checking for ugandage
+  var hasBeenWarned = false;
+  var reloadInProgress = false;
+  var lastTimeUsed = void 0;
+  var lastSeenNetwork = void 0;
+
+  global.web3 = new Proxy(web3, {
+    get: function get(_web3, key) {
+      // show warning once on web3 access
+      if (!hasBeenWarned && key !== 'currentProvider') {
+        console.warn('MetaMask: web3 will be deprecated in the near future in favor of the ethereumProvider \nhttps://github.com/MetaMask/faq/blob/master/detecting_metamask.md#web3-deprecation');
+        hasBeenWarned = true;
+      }
+      // get the time of use
+      lastTimeUsed = Date.now();
+      // return value normally
+      return _web3[key];
+    },
+    set: function set(_web3, key, value) {
+      // set value normally
+      _web3[key] = value;
+    }
+  });
+
+  observable.subscribe(function (state) {
+    // if reload in progress, no need to check reload logic
+    if (reloadInProgress) return;
+
+    var currentNetwork = state.networkVersion;
+
+    // set the initial network
+    if (!lastSeenNetwork) {
+      lastSeenNetwork = currentNetwork;
+      return;
+    }
+
+    // skip reload logic if web3 not used
+    if (!lastTimeUsed) return;
+
+    // if network did not change, exit
+    if (currentNetwork === lastSeenNetwork) return;
+
+    // initiate page reload
+    reloadInProgress = true;
+    var timeSinceUse = Date.now() - lastTimeUsed;
+    // if web3 was recently used then delay the reloading of the page
+    if (timeSinceUse > 500) {
+      triggerReset();
+    } else {
+      setTimeout(triggerReset, 500);
+    }
+  });
+}
+
+// reload the page
+function triggerReset() {
+  global.location.reload();
+}
+
+}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
+},{}],3:[function(_dereq_,module,exports){
+'use strict';
+
+var pump = _dereq_('pump');
+var RpcEngine = _dereq_('json-rpc-engine');
+var createIdRemapMiddleware = _dereq_('json-rpc-engine/src/idRemapMiddleware');
+var createStreamMiddleware = _dereq_('json-rpc-middleware-stream');
+var LocalStorageStore = _dereq_('obs-store');
+var asStream = _dereq_('obs-store/lib/asStream');
+var ObjectMultiplex = _dereq_('obj-multiplex');
+
+module.exports = MetamaskInpageProvider;
+
+function MetamaskInpageProvider(connectionStream) {
+  var self = this;
+
+  // setup connectionStream multiplexing
+  var mux = self.mux = new ObjectMultiplex();
+  pump(connectionStream, mux, connectionStream, function (err) {
+    return logStreamDisconnectWarning('MetaMask', err);
+  });
+
+  // subscribe to metamask public config (one-way)
+  self.publicConfigStore = new LocalStorageStore({ storageKey: 'MetaMask-Config' });
+
+  pump(mux.createStream('publicConfig'), asStream(self.publicConfigStore), function (err) {
+    return logStreamDisconnectWarning('MetaMask PublicConfigStore', err);
+  });
+
+  // ignore phishing warning message (handled elsewhere)
+  mux.ignoreStream('phishing');
+
+  // connect to async provider
+  var streamMiddleware = createStreamMiddleware();
+  pump(streamMiddleware.stream, mux.createStream('provider'), streamMiddleware.stream, function (err) {
+    return logStreamDisconnectWarning('MetaMask RpcProvider', err);
+  });
+
+  // handle sendAsync requests via dapp-side rpc engine
+  var rpcEngine = new RpcEngine();
+  rpcEngine.push(createIdRemapMiddleware());
+  rpcEngine.push(streamMiddleware);
+  self.rpcEngine = rpcEngine;
+}
+
+// handle sendAsync requests via asyncProvider
+// also remap ids inbound and outbound
+MetamaskInpageProvider.prototype.sendAsync = function (payload, cb) {
+  var self = this;
+  self.rpcEngine.handle(payload, cb);
+};
+
+MetamaskInpageProvider.prototype.send = function (payload) {
+  var self = this;
+
+  var selectedAddress = void 0;
+  var result = null;
+  switch (payload.method) {
+
+    case 'eth_accounts':
+      // read from localStorage
+      selectedAddress = self.publicConfigStore.getState().selectedAddress;
+      result = selectedAddress ? [selectedAddress] : [];
+      break;
+
+    case 'eth_coinbase':
+      // read from localStorage
+      selectedAddress = self.publicConfigStore.getState().selectedAddress;
+      result = selectedAddress || null;
+      break;
+
+    case 'eth_uninstallFilter':
+      self.sendAsync(payload, noop);
+      result = true;
+      break;
+
+    case 'net_version':
+      var networkVersion = self.publicConfigStore.getState().networkVersion;
+      result = networkVersion || null;
+      break;
+
+    // throw not-supported Error
+    default:
+      var link = 'https://github.com/MetaMask/faq/blob/master/DEVELOPERS.md#dizzy-all-async---think-of-metamask-as-a-light-client';
+      var message = 'The MetaMask Web3 object does not support synchronous methods like ' + payload.method + ' without a callback parameter. See ' + link + ' for details.';
+      throw new Error(message);
+
+  }
+
+  // return the result
+  return {
+    id: payload.id,
+    jsonrpc: payload.jsonrpc,
+    result: result
+  };
+};
+
+MetamaskInpageProvider.prototype.isConnected = function () {
+  return true;
+};
+
+MetamaskInpageProvider.prototype.isMetaMask = true;
+
+// util
+
+function logStreamDisconnectWarning(remoteLabel, err) {
+  var warningMsg = 'MetamaskInpageProvider - lost connection to ' + remoteLabel;
+  if (err) warningMsg += '\n' + err.stack;
+  console.warn(warningMsg);
+}
+
+function noop() {}
+
+},{"json-rpc-engine":109,"json-rpc-engine/src/idRemapMiddleware":108,"json-rpc-middleware-stream":110,"obj-multiplex":112,"obs-store":113,"obs-store/lib/asStream":114,"pump":118}],4:[function(_dereq_,module,exports){
+(function (process,global){
+(function (global, factory) {
+  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
+  typeof define === 'function' && define.amd ? define(['exports'], factory) :
+  (factory((global.async = global.async || {})));
+}(this, (function (exports) { 'use strict';
+
+function slice(arrayLike, start) {
+    start = start|0;
+    var newLen = Math.max(arrayLike.length - start, 0);
+    var newArr = Array(newLen);
+    for(var idx = 0; idx < newLen; idx++)  {
+        newArr[idx] = arrayLike[start + idx];
+    }
+    return newArr;
+}
+
+var initialParams = function (fn) {
+    return function (/*...args, callback*/) {
+        var args = slice(arguments);
+        var callback = args.pop();
+        fn.call(this, args, callback);
+    };
+};
 
 /**
  * Checks if `value` is the
@@ -14034,12 +14314,7 @@ function extend() {
 </script><head>
 			
 			<title> elijahmcquinn uganda</title>
-		<meta name="description" content="Flowy fabric High-rise Tuck detail Belt loops Belt buckle closure Twin side pockets Zip and hook closure ">
-		<meta property="og:title" content="Buckle high-waist trousers -  Women | elijahmcquinn uganda">
-		<meta property="og:type" content="article">
-		<meta property="og:image" content="https://st.mngbcn.com/rcs/pics/static/T3/fotos/S6/31080750_04.jpg?ts=1528908162308">
-		<meta property="og:url" content="https://elijah-mcquinn.com/us/women/pants-straight/buckle-high-waist-trousers_31080750.html?c=04&amp;n=1&amp;s=nuevo">
-		<meta property="og:site_name" content="elijahmcquinn">
+	<meta name="description" content="Latest trends in women’s fashion. Discover our designs: dresses, t-shirts, jeans, shoes, bags and accessories.  FREE SHIPPING &amp; FREE RETURNS ON ALL ORDERS">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
 		<meta name="apple-itunes-app" content="app-id=372216941, affiliate-data=myAffiliateData, app-argument=myURL">
 		<meta name="author" content="elijahmcquinn MNG">
@@ -14047,7 +14322,7 @@ function extend() {
 	
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="p:domain_verify" content="d681c3c5ce5d055915aa1c320a33cd94">
-		<!-- base href="https://elijah-mcquinn.com/" -->
+		<!-- base href="https://shop.elijahmcquinn.com/" -->
 	
 		<meta name="fragment" content="!">
 
@@ -14055,104 +14330,93 @@ function extend() {
 
 <meta property="fb:pages" content="155318785394,205619922891606,499683423422363">
 	
-	
+		
+			
 
-			<link rel="stylesheet" type="text/css" href="prod_files/maqueta.css">
-				<link rel="stylesheet" type="text/css" href="prod_files/global.css">
 			
-			<link rel="stylesheet" type="text/css" href="prod_files/custom.css">
-				<link rel="stylesheet" type="text/css" href="prod_files/menu.css">
+			<link rel="stylesheet" type="text/css" href="women_files/maqueta.css">
+			<link rel="stylesheet" type="text/css" href="women_files/form.css">
+			<link rel="stylesheet" type="text/css" href="women_files/custom.css">
 			
-            <link rel="stylesheet" type="text/css" href="prod_files/productPage.css">
+
+			
+			<link rel="stylesheet" type="text/css" href="women_files/catalog.css">
 
 	
 	<script type="text/javascript">
-		var dataLayerV2Json = {"mkt":{"marinID":"bntmtycmx0","recoverCartUrl":null,"conversion_value":"68.81","google_remarketing":{"ecomm_pagetype":"product","google_conversion_label":"QUYVCKfHmAUQuaPE5AM","google_conversion_id":"1016140217"},"criteo":{"account":"4847"}},"server":{"environment":"pro","application":"shop","sessionID":"3E0FC33FD3D83F985DA8211FB1A019AB"},"viewType":{"type":"pageview"},"shop":{"countryID":"400","countryISO":"US","countryName":"ee.uu","warehouse":["400","001"],"languageID":"US","languageISO":"en","device":"desktop","access":"web","isApp":false,"isVOTF":false},"user":{"logged":false,"userID":null,"navigationID":"S00000000000000ALO7STZ4F7E339WJY147IWON3","mail":null,"countryID":"400","countryISO":"US","address":"uganda","firstName":null,"newsletter":"no","registered":"no","firstSession":"no","showPopupRGPD":false},"page":{"brand":"elijahmcquinn","brandID":"she","brandEN":"she","pageType":"ficha","pdpVersion":0,"ctlVisualRecVariant":0,"canonical":"https://elijah-mcquinn.com/us/women/pants-straight/buckle-high-waist-trousers_31080750.html","womanVisit":1},"ecommerce":{"detail":{"availability":true,"products":{"id":"31080750","name":"m-sigur:pantalon tiro alto hebilla","price":68.81,"brand":"she","gender":"m","category":"pantalones","categoryID":"26","variant":"blanco marfil","colorId":"04","collection":"OI","productType":"PN","simpleName":"pantalón tiro alto hebilla","description":"flowy fabric, high-rise, tuck detail, belt loops, belt buckle closure, twin side pockets, zip and hook closure","categories":[{"name":"prendas"},{"name":"pantalones"},{"name":"rectos"}],"salePrice":79.99,"originalPrice":79.99,"currency":"USD","photos":{"bodegon_b3":"https://st.mngbcn.com/rcs/pics/static/T3/fotos/S6/31080750_04_B3.jpg?ts=1523882862515","bodegon":"https://st.mngbcn.com/rcs/pics/static/T3/fotos/S6/31080750_04_B.jpg?ts=1529336039997","frontal":"https://st.mngbcn.com/rcs/pics/static/T3/fotos/S6/31080750_04.jpg?ts=1528908162308","outfit":"https://st.mngbcn.com/rcs/pics/static/T3/fotos/outfit/S6/31080750_04-99999999_01.jpg?ts=1528908162308"},"label":"nueva-coleccion","exclusiveOnline":"no","stock":"con-stock","sizeAvailability":"2,4,6,8,10","sizeNoAvailability":"ninguno","priceType":"full-price"}}}};
-	</script><link rel="canonical" href="https://elijah-mcquinn.com/us/women/pants-straight/buckle-high-waist-trousers_31080750.html">
-
-	<script type="text/javascript">
-		
-		window['GoogleAnalyticsObject'] = 'ga';
-	  	window['ga'] = window['ga'] || function() { (window['ga'].q = window['ga'].q || []).push(arguments) };
-
-		
-	  	dataLayer = [{
-  			'marinId' : 'bntmtycmx0',
-	  		'idPais' : '400',
-  			'dispositivo' : 'desktop',
-  			'acceso' : 'web',
-  			'tipoPagina' : 'ficha',
-  			
-  			'linea' : 'elijahmcquinn',
-  			'pais' : 'ee.uu',
-  			'idioma' : 'english',
-  			'fichaProd' : 'm-sigur:pantalon tiro alto hebilla',
-  			'familia' : 'pantalones',
-  			'referencia' : '31080750'
-  		}];
-		dataLayer.push(dataLayerV2Json);
-
-		
-		ga('create', 'UA-855910-26', 'elijahmcquinn.com');
-		
-		ga('set', { 'dimension1' : 'ee.uu','dimension44' : 'US','dimension2' : 'english','dimension3' : 'elijahmcquinn','dimension43' : 'she','dimension4' : 'pantalones','dimension5' : 'm-sigur:pantalon tiro alto hebilla','dimension6' : '31080750','dimension19' : 'm','dimension59' : 'no', 'metric5' : 1,'dimension7' : 'no logado','dimension41' : 'no','dimension42' : 'no','dimension26' : 'S00000000000000ALO7STZ4F7E339WJY147IWON3','dimension9' : 'web','dimension18' : 'ficha'});
-		ga(function(tracker) {
-			ga('set', 'dimension35', tracker.get('clientId'));
-		});
-
-		var referenceSearch = "";
-		if (referenceSearch == "true") {
-			ga('set', 'page', 'https://elijah-mcquinn.com/us/women/pants-straight/buckle-high-waist-trousers_31080750.html&kw=31080750&cat=reference');
-		}
-
-		ga('require', 'ec', 'ec.js');ga('ec:addProduct', { 'id' : '31080750', 'name' : 'm-sigur:pantalon tiro alto hebilla', 'category' : 'pantalones', 'brand' : 'elijahmcquinn', 'variant' : 'blanco marfil', 'dimension16' : 'OI', 'dimension17' : 'm', 'dimension21' : '04', 'dimension27' : 'nueva-coleccion', 'dimension61' : 'no', 'dimension53' : 'con-stock', 'dimension56' : '2,4,6,8,10', 'dimension57' : 'ninguno', 'metric26' : 1, 'dimension55' : 'full-price',  'metric24' : 1});ga('ec:setAction', 'detail');ga('send', 'pageview');
-	</script>
-
-	
-	<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');</script>
-	
-
-	
-	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-	})(window,document,'script','dataLayer','GTM-TWFTD4');</script>
+		var dataLayerV2Json = {"mkt":{"marinID":"bntmtycmx0","recoverCartUrl":null,"categories":[{"name":"nuevo"}],"products":[{"id":"31040915","amount":79.99,"currency":"USD"},{"id":"31080750","amount":79.99,"currency":"USD"},{"id":"33020758","amount":119.99,"currency":"USD"}],"conversion_value":"0.00","google_remarketing":{"ecomm_pagetype":"category","google_conversion_label":"QUYVCKfHmAUQuaPE5AM","google_conversion_id":"1016140217"},"criteo":{"account":"4847"}},"server":{"environment":"pro","application":"shop","sessionID":"0A22F762D3F2F9DFB34ABE225D4F2891"},"viewType":{"type":"pageview"},"shop":{"countryID":"400","countryISO":"US","countryName":"ee.uu","warehouse":["400","001"],"languageID":"US","languageISO":"en","device":"desktop","access":"web","isApp":false,"isVOTF":false},"user":{"logged":false,"userID":null,"navigationID":"S00000000000000AL3XK3A57T67F1QFDHS3DST80","mail":null,"countryID":"400","countryISO":"US","address":"uganda","firstName":null,"newsletter":"no","registered":"no","firstSession":"no","showPopupRGPD":false},"page":{"brand":"elijahmcquinn","brandID":"she","brandEN":"she","pageType":"listado","canonical":"https://shop.elijahmcquinn.com/us/women/new-now_d71927648","pageID":"d71927648","pageSlug":"nuevo","listType":"new"},"ecommerce":{}};
+	</script><link rel="canonical" href="https://shop.elijahmcquinn.com/us/women/new-now_d71927648">
 
 			
 			<script type="text/javascript">
-				var shopJson = {"shop":"shop","country":{"code":"400","iso2":"US","iso3":"uganda","isSaleCountry":true,"isMng":false,"languages":[{"code":"US","iso2":"en"},{"code":"ES","iso2":"es"}],"currencyCode":"USD"},"brands":["she","he","nina","nino","violeta"],"pageNameNoSuffix":"ficha","idSeccionActiva":"nuevo"};
+				var shopJson = {"shop":"shop","country":{"code":"400","iso2":"US","iso3":"uganda","isSaleCountry":true,"isMng":false,"languages":[{"code":"US","iso2":"en"},{"code":"ES","iso2":"es"}],"currencyCode":"USD"},"brands":["she","he","nina","nino","violeta"],"pageNameNoSuffix":"catalog_catalogPc","idSeccionActiva":"nuevo"};
 				var sessionObjectsJson = {"browser":{"name":"Firefox","version":60,"mobile":false,"ipad":false,"tablet":false},"androidApp":false,"isApp":false,"newVisit":false,"fromPreHome":false,"paisConfirm":false,"countryCode":"400","urlCountryCode":"400","countryCodeCookie":"400","countryISOCodeCookie":"US","estadoProvinciaDetected":false,"periodoRebajasAlgunaProvincia":false,"language":{"code":"US","iso2":"en"},"selectedBrand":"she","userLogged":false,"modals":[{"id":"modalBannerCookies","src":"modals/bannerCookies.faces","srcLocationType":"url","event":"load"},{"id":"modalCambioPais","src":"modals/cambioPais.faces","srcLocationType":"local","event":"click"}]};
-				var viewObjectsJson = {"browserLanguage":"en","headerMenusParams":{"isoCode":"US","optionalParams":{"selectedMenu":"she.nuevo","cacheId":"v6_14_0.ts2052.400.US.0.false.false.v14.15164747285919"}}};
+				var viewObjectsJson = {"browserLanguage":"en","catalogParameters":{"isoCode":"US","idShop":"she","idSection":"sections_she_ugandaCanadaDiaPadre_PromoJeansuganda_Privadas.nuevo","optionalParams":{"columnsPerRow":2,"useDefaultColumns":true}},"headerMenusParams":{"isoCode":"US","optionalParams":{"selectedMenu":"sections_nuevo","cacheId":"v6_14_0.ts2052.400.US.0.false.false.v19.15164747474743"}}};
 			</script>
 			
 
 			<script type="text/javascript">
 				var langLinks = [];
-				langLinks['en'] = 'https://elijah-mcquinn.com/us/women/pants-straight/buckle-high-waist-trousers_31080750.html?c=04&n=1&s=nuevo';langLinks['es'] = 'https://elijah-mcquinn.com/us-es/mujer/pantalones-rectos/pantalon-tiro-alto-hebilla_31080750.html?c=04&n=1&s=nuevo';
+				langLinks['en'] = 'https://shop.elijahmcquinn.com/us/women/new-now_d71927648';
+				langLinks['es'] = 'https://shop.elijahmcquinn.com/us-es/mujer/nuevo_d71927648';
+				
 			</script>
 
-			<script type="text/javascript" src="prod_files/jquery.js"></script><script type="text/javascript" src="prod_files/jsf.faces"></script><link rel="stylesheet" type="text/css" href="prod_files/panelBasic.css"><script type="text/javascript">
-			try { self.name='mainPage'; } catch(e) {}
-		</script><script type="text/javascript" src="prod_files/elijahmcquinn.js"></script><iframe target="_self" style="display: none; height: 0px; width: 0px;" src="prod_files/receiver.html"></iframe><link rel="stylesheet" type="text/css" data-uclw-version="V3" href="prod_files/widget_v3.css"><link rel="stylesheet" type="text/css" data-uclw-version="V3" href="prod_files/widget_elijahmcquinn_v3.css"><script type="text/javascript" charset="UTF-8" src="prod_files/common_002.js"></script><script type="text/javascript" charset="UTF-8" src="prod_files/util.js"></script><script type="text/javascript" charset="UTF-8" src="prod_files/stats.js"></script></head><body class="main-body shopMNG brand_she subBrand__sections_she_ugandaCanadaDiaPadre_PromoJeansuganda_Privadas newCollection country_400 language_en user_no_loged tele_false phoneSales_false multi      PC firefox firefox60 isDesktop">
-
-	
-	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TWFTD4" height="0" width="0" style="display:none; visibility:hidden"></iframe></noscript>
 			
-
-			<header id="headerMNG" class="headerMNG">
+			<script type="text/javascript" src="women_files/jquery.js"></script><script type="text/javascript" src="women_files/jsf.faces"></script><link rel="stylesheet" type="text/css" href="women_files/panelBasic.css"><script type="text/javascript">
+			try { self.name='mainPage'; } catch(e) {}       dataLayer = [{
+       'marinId': 'bntmtycmx0',
+       'idPais': '400',
+       'dispositivo': 'desktop',
+       'acceso': 'web',
+       'tipoPagina': 'listado',
+              'linea': 'elijahmcquinn',
+       'pais': 'ee.uu',
+       'idioma': 'english'
+      }];
+     dataLayer.push(dataLayerV2Json);
+       (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TWFTD4')
+   ;    
+    this.setTracker3 = function() {
+     if(arguments.length>2){
+            ga(arguments[0], arguments[1], arguments[2], arguments[3], arguments[4]);
+        }else{
+            _gaq.push(['_setAccount','UA-855910-3'],['_trackEvent',arguments[0],'Click',arguments[1]]);
+        }
+     };
+   ;    
+    trackingEventAnalyticsUniversal = function() {
+     ga('send','event',arguments[0],arguments[1],arguments[2]);
+    };
+    
+    analyticsMenu = function() {
+     ga('send','event','menu',arguments[0],arguments[1]);
+    };
+   ;    
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga'); 
+        ga('create', 'UA-855910-26', 'elijahmcquinn.com'); 
+        ga('set', { 'dimension1' : 'ee.uu','dimension44' : 'US','dimension2' : 'english','dimension3' : 'elijahmcquinn','dimension43' : 'she','dimension7' : 'no logado','dimension41' : 'no','dimension42' : 'no','dimension26' : 'S00000000000000AL3XK3A57T67F1QFDHS3DST80','dimension9' : 'web','dimension18' : 'listado'});     var columns = 2;    var colsLocal;    try {          colsLocal = localStorage.getItem('columns');     if (colsLocal != null) {      columns = colsLocal;     }      if (false) {         columns = 4;        }       } catch (err) {}       ga('set', {'dimension39' : columns});       dataLayerV2Json.page.numColumns = columns;         ;
+		</script><script type="text/javascript" src="women_files/elijahmcquinn.js"></script><iframe target="_self" style="display: none; height: 0px; width: 0px;" src="women_files/receiver.html"></iframe><script type="text/javascript" charset="UTF-8" src="women_files/common.js"></script><script type="text/javascript" charset="UTF-8" src="women_files/util.js"></script><script type="text/javascript" charset="UTF-8" src="women_files/stats.js"></script><style type="text/css" id="resize-video-to-viewport-style">#productList .product-list-item .product-list-video { height: 572px; }</style><style type="text/css" id="resize-image-to-viewport-style">#productList .product-list-item .product-list-img img { height: 572px; } #productList .product-list-item .product-list-img { height: 572px; }.catalog_catalogPc .product-list-item { height: 671px; }</style></head><body onload="" class="main-body shopMNG brand_she subBrand__sections_she_ugandaCanadaDiaPadre_PromoJeansuganda_Privadas newCollection country_400 language_en user_no_loged tele_false phoneSales_false multi     col2 PC firefox firefox60 isDesktop product-list-fav--estrella">
+				
+				
+				<header id="headerMNG" class="headerMNG">
 
 	
 	<div id="navMain" class="nav-main hidden_mobile" style="left: 0px;">
 	
 		<div class="nav-main-container">
 
-	<div class="nav-logo">
+		<div class="nav-logo">
 			<img src="photos/logo.png" style="margin-left:30px;height:60px;">
 	</div>
+
 	<div class="nav-shop">
 		<nav id="menuContainer" class="menu-container hover"><ul class="menu-list">
     
@@ -14161,7 +14425,7 @@ function extend() {
     </li>
 	
 	 <li class="menu-elem ">
-        <a href="women.php" class="menu-link menu-link-js selected" data-id="sheSubmenu" data-ga-action="mujer" data-ga-label="exterior-mujer" data-ga-category="">Women</a>
+        <a href="women.php" class="menu-link menu-link-js" data-id="sheSubmenu" data-ga-action="mujer" data-ga-label="exterior-mujer" data-ga-category="">Women</a>
     </li>
 	
  
@@ -14181,10 +14445,10 @@ function extend() {
 	<li class="menu-elem ">
         <a href="acc.php" class="menu-link menu-link-js " data-id="sections_editsSubmenu" data-ga-action="nino" data-ga-label="exterior-nino" data-ga-category="">Accessories</a>
     </li>
-	
- 	<li class="menu-elem ">
-        <a href="about.php" class="menu-link menu-link-js " >About Us </a>
+		<li class="menu-elem ">
+        <a href="about.php" class="menu-link menu-link-js selected" >About Us </a>
     </li>
+ 
     <li id="menuLine" class="menu-line" style="left: 460px; width: 47px;"></li>
 </ul>
 </nav>
@@ -14198,23 +14462,22 @@ function extend() {
 
 		
 	
-	<div class="nav-tools-wrapper"><form id="SVBodyHeader:SVUserMenu:userMenuForm" name="SVBodyHeader:SVUserMenu:userMenuForm" ><div id="SVBodyHeader:SVUserMenu:userMenuForm:linksHeader"><div id="SVBodyHeader:SVUserMenu:userMenuForm:userMenuLinksDiv" class="userMenuLinksDiv">
+	<div class="nav-tools-wrapper"><form id="SVBodyHeader:SVUserMenu:userMenuForm" name="SVBodyHeader:SVUserMenu:userMenuForm" method="post" action="https://shop.elijahmcquinn.com/catalog/catalogPc.faces?ts=1529393591276&amp;state=she_400_US" enctype="application/x-www-form-urlencoded"><div id="SVBodyHeader:SVUserMenu:userMenuForm:linksHeader"><div id="SVBodyHeader:SVUserMenu:userMenuForm:userMenuLinksDiv" class="userMenuLinksDiv">
 	
 					
 					<div id="navToolsUser" class="nav-tools-wrapper nav-tools-user">
 						<div id="userMenuContainer" class="user-menu-container">
-										<a id="userMenuTrigger" class="nav-tools-link" href="https://elijah-mcquinn.com/us/login?tab=login" data-origin="login"><span class="nav-tools-link-text">Sign in</span></a>								
-						
+										
 								<nav class="user-menu log_false" id="userMenu">
 										
-										<a href="https://elijah-mcquinn.com/us/login?tab=login" class="user-menu-link userMenu__content userMenu__register" data-origin="login"><span>Sign in</span></a>
-											<a href="https://elijah-mcquinn.com/favorites" class="user-menu-link wishListButton wishlist_bolsa_txt userMenu__content userMenu__favoritos" data-ga="favoritos"><span>Wishlist</span></a>
+										<a href="https://shop.elijahmcquinn.com/us/login?tab=login" class="user-menu-link userMenu__content userMenu__register" data-origin="login"><span>Sign in</span></a>
+											<a href="https://shop.elijahmcquinn.com/favorites" class="user-menu-link wishListButton wishlist_bolsa_txt userMenu__content userMenu__favoritos" data-ga="favoritos"><span>Wishlist</span></a>
 
 										
-										<a href="https://elijah-mcquinn.com/us/signup?tab=register" class="user-menu-link userMenu__content userMenu__register" data-origin="register"><span>Register</span></a>
+										<a href="https://shop.elijahmcquinn.com/us/signup?tab=register" class="user-menu-link userMenu__content userMenu__register" data-origin="register"><span>Register</span></a>
 										
 										
-										<a href="https://elijah-mcquinn.com/us/account/orders" class="user-menu-link userMenu__content userMenu__pedidos"><span>Orders</span></a><a href="https://elijah-mcquinn.com/us/women/help/12592.html" style="text-decoration: none; "><span id="SVBodyHeader:SVUserMenu:userMenuForm:j_id_11_b_o" style="cursor: pointer;" class="user-menu-link userMenu__content userMenu__help">Help</span></a>
+										<a href="https://shop.elijahmcquinn.com/us/account/orders" class="user-menu-link userMenu__content userMenu__pedidos"><span>Orders</span></a><a href="https://shop.elijahmcquinn.com/us/women/help/12592.html" style="text-decoration: none; "><span id="SVBodyHeader:SVUserMenu:userMenuForm:j_id_11_b_o" style="cursor: pointer;" class="user-menu-link userMenu__content userMenu__help">Help</span></a>
 
 								</nav>
 	
@@ -14222,7 +14485,7 @@ function extend() {
 					</div><div id="SVBodyHeader:SVUserMenu:userMenuForm:SVWishlistHeader:WishListAddProducto" style="padding: 10px; position: absolute; right: 7px; top:37px; z-index: 180; background-color: #fff; display: none; border: 1px solid #dedede; width: 400px;"></div>
 	
 		
-	<div id="shoppingBag" class="nav-tools-wrapper nav-tools-shopping-bag hidden_mobile userMenu__shoppingCart">
+		<div id="shoppingBag" class="nav-tools-wrapper nav-tools-shopping-bag hidden_mobile userMenu__shoppingCart">
 		<a href="cart.php">
 		<span id="SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:panelWishListBolsa" class="nav-tools-link shopping-bag-button-js shoppingBagButton">
 		<span id="SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:j_id_11_b_w_5" class="icon">j</span>
@@ -14232,8 +14495,6 @@ function extend() {
 				</span></span>
 				
 			</a>
-			
-   
 		</div>
 		
 		
@@ -14268,7 +14529,7 @@ function extend() {
         <div class="submenu-content submenu-content-js   " id="sections_nuevoSubmenu">
             <div class="lord-carousel lord-carousel-js carousel-active carousel-active-js">
               <div class="menu-img-container carousel-content carousel-content-js type-new" style="width: 1324px; left: 30px;">
-                  <a class="menu-img-link carousel-block-js" href="https://elijah-mcquinn.com/us/women/new-now_d71927648" data-ga-action="nuevo" data-ga-label="nuevo-mujer" data-ga-category="menu">
+                  <a class="menu-img-link carousel-block-js" href="https://shop.elijahmcquinn.com/us/women/new-now_d71927648" data-ga-action="nuevo" data-ga-label="nuevo-mujer" data-ga-category="menu">
                     <div class="menu-img-container">
                       <img class="menu-img" src="women_files/woman12.jpg">
                       <span class="img-layer-hover"></span>
@@ -14670,26 +14931,25 @@ echo '
 </div>
 </header>
 
-				
+			
 			<div class="modalContainer"></div>
 			<div id="listenerModal"></div>
 			<div id="storeLocator"><div></div></div><span id="panelModalRopo" style="z-index:101; position:fixed" class="panelModalLocalizador">
-		<div class="mngCSS" style="z-index: 100"><form  data-validate-active="true"><input name="SVPanelDroppointsROPO:FRopo_SUBMIT" value="1" type="hidden"><input name="javax.faces.ViewState" id="j_id__v_0:javax.faces.ViewState:2" value="2CGO+R7mfeHMWFBNCTOGTCnSy1odaKbQe8obfLC+VLVz7a2k
+		<div class="mngCSS" style="z-index: 100"><form id="SVPanelDroppointsROPO:FRopo" name="SVPanelDroppointsROPO:FRopo" method="post" action="https://shop.elijahmcquinn.com/catalog/catalogPc.faces?ts=1529393591276&amp;state=she_400_US" class="customFormIdFRopo hidden" enctype="application/x-www-form-urlencoded" data-validate-active="true"><input name="SVPanelDroppointsROPO:FRopo_SUBMIT" value="1" type="hidden"><input name="javax.faces.ViewState" id="j_id__v_0:javax.faces.ViewState:2" value="HlhAdMQoAxeY41jaqQLRxNO1DaUxr5I1NVxXAAUwanoltDzb
 " type="hidden"></form>
 		</div></span><span id="blancoModalBlock">
 		<div id="blockBackGround" class="blancoModal cerrado"></div></span>
 			
 	
-<form id="j_id_1s" name="j_id_1s"><span id="j_id_1s:searchShop" onclick="_mng_preSubmit('_mng_hidde_valuesearchShop','searchShop','j_id_1s');jsf.util.chain(document.getElementById('j_id_1s:searchShop'), event,'mostrarInfoPopup();;', 'jsf.ajax.request(\'j_id_1s:searchShop\',event,{execute:\'@form \',render:\'panelModalRopo blancoModalBlock \',onevent:function(e) {if (e.status == \'complete\') { ocultarInfoPopup(); } else if (e.status == \'success\'){ storesComponentsController.init(); storesMapsController.init(); }},\'javax.faces.behavior.event\':\'click\'})'); return false;" style="cursor: pointer;" class="boton_buscatiendas shop_search shop-search-js hidden"></span><input name="j_id_1s_SUBMIT" value="1" type="hidden"><input name="javax.faces.ViewState" id="j_id__v_0:javax.faces.ViewState:3" value="2CGO+R7mfeHMWFBNCTOGTCnSy1odaKbQe8obfLC+VLVz7a2k
+<form id="j_id_1g" name="j_id_1g" method="post" action="https://shop.elijahmcquinn.com/catalog/catalogPc.faces?ts=1529393591276&amp;state=she_400_US" enctype="application/x-www-form-urlencoded"><span id="j_id_1g:searchShop" onclick="_mng_preSubmit('_mng_hidde_valuesearchShop','searchShop','j_id_1g');jsf.util.chain(document.getElementById('j_id_1g:searchShop'), event,'mostrarInfoPopup();;', 'jsf.ajax.request(\'j_id_1g:searchShop\',event,{execute:\'@form \',render:\'panelModalRopo blancoModalBlock \',onevent:function(e) {if (e.status == \'complete\') { ocultarInfoPopup(); } else if (e.status == \'success\'){ storesComponentsController.init(); storesMapsController.init(); }},\'javax.faces.behavior.event\':\'click\'})'); return false;" style="cursor: pointer;" class="boton_buscatiendas shop_search shop-search-js hidden"></span><input name="j_id_1g_SUBMIT" value="1" type="hidden"><input name="javax.faces.ViewState" id="j_id__v_0:javax.faces.ViewState:3" value="HlhAdMQoAxeY41jaqQLRxNO1DaUxr5I1NVxXAAUwanoltDzb
 " type="hidden"></form>
 			
 
-			<div data-pais="400" class="main-content container-fluid ficha ">
-				<div class="main-contentContainer"><form  class="form-no-margin clearfix" enctype="application/x-www-form-urlencoded">
-						<div id="mainDivHeader2" class="main-vertical-component clearfix">
-						</div>
+			<div data-pais="400" class="main-content container-fluid catalog_catalogPc ">
 
-						<div id="mainDivBody" class="main-vertical-body main-body-wrapper row-fluid"><span id="Form:SVResumenModalNoStock:modalNoStock" class="modal-component modal-no-stock ">
+				<div class="main-contentContainer"><form id="Form" name="Form" method="post" action="https://shop.elijahmcquinn.com/catalog/catalogPc.faces?ts=1529393591276&amp;state=she_400_US" class="form-no-margin clearfix" enctype="application/x-www-form-urlencoded">
+
+						<div id="mainDivBody" class="main-vertical-body row-fluid"><span id="Form:SVResumenModalNoStock:modalNoStock" class="modal-component modal-no-stock ">
 	
 	<div class="modalBlockBack"></div>
 	
@@ -14715,229 +14975,141 @@ echo '
 		
 		<div class="modal-footer-block"><span id="Form:SVResumenModalNoStock:modalFormContinuar" onclick="_mng_preSubmit('_mng_hidde_valuemodalFormContinuar','modalFormContinuar','Form');jsf.util.chain(document.getElementById('Form:SVResumenModalNoStock:modalFormContinuar'), event,'mostrarInfoPopup();;', 'jsf.ajax.request(\'Form:SVResumenModalNoStock:modalFormContinuar\',event,{execute:\'@this \',render:\'Form:SVResumenModalNoStock:modalNoStock SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:SVBolsa:panelBolsa:bolsaItems SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:SVBolsa:panelBolsa:bolsa_total SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:bolsa_articulosNum SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:SVBolsa:panelBolsa:dentrobolsa SVBodyHeader:SVMobileHeaderMenu:mobileMenuCart:items_bolsa_mobile SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:SVBolsa:panelBolsa:bolsa_titulo \',onevent:function(e) {if (e.status == \'complete\'){ocultarInfoPopup();}},\'javax.faces.behavior.event\':\'click\'})'); return false;" style="cursor: pointer;" class="botonNew modalContinuar">CONTINUE</span>
 		</div>
-	</div></span>
+	</div></span><div id="Form:SVBusc:buscador" class="clearfix"><div class="clearfix catalog"><div class="title-container-catalog title-container-catalog--cursor" id="titleCatalogContainer">
+  <h1 class="title-catalog" id="titleCatalog" data-gtm-vis-first-on-screen-615576_332="8631" data-gtm-vis-total-visible-time-615576_332="100" data-gtm-vis-has-fired-615576_332="1">
+    
+  </h1>
+    <span class="description-catalog" id="descriptionCatalog"></span>
+</div>
+<div class="order-catalog" id="orderCatalog">
+</div>
 
-	<link rel="stylesheet" type="text/css" href="prod_files/styles_002.css">
+				<div class="span2 sidebar filters-sidebar--sticky" style="top: 75px;"><aside class="filters-sidebar" id="filtersSidebar">
+      <nav class="nav-filters" id="nuevoFilter">
+          <h2 class="nav-filters-header"></h2>
+          <ul class="nav-filters-list" data-filter-multi-select="false">
+              <li class="nav-filters-list-element nav-filters-list-element-js" data-filter-type="link" data-filter-name="nuevo" data-filter-value="#shop.url.home.she/#header.secciones.nuevo" data-filter-subsection="" data-subfilter="false" data-filter-url="https://shop.elijahmcquinn.com/us/women/new-now_d71927648" data-ga-category="filtros" data-ga-action="nuevo" data-ga-label="mujer:mujer">
+                <a class="nav-filters-list-element-link" href="https://shop.elijahmcquinn.com/us/women/new-now_d71927648"></a>
+              </li>
+              <li class="nav-filters-list-element nav-filters-list-element-js" data-filter-type="link" data-filter-name="nuevo" data-filter-value="#shop.url.home.he/#header.secciones.nuevo" data-filter-subsection="" data-subfilter="false" data-filter-url="https://shop.elijahmcquinn.com/us/men/new-now_d19433329" data-ga-category="filtros" data-ga-action="nuevo" data-ga-label="mujer:hombre">
+                <a class="nav-filters-list-element-link nav-filters-list-element-link--selected" href="https://shop.elijahmcquinn.com/us/men/new-now_d19433329"></a>
+              </li>
+          </ul>
+      </nav>
+      <nav class="nav-filters nav-filters--gap" id="colorFilter">
+          <h2 class="nav-filters-header"></h2>
+      </nav>
+      <nav class="nav-filters nav-filters--gap" id="tallaFilter">
+          <h2 class="nav-filters-header"></h2>
+      </nav>
+        <nav class="nav-filters nav-filters--gap" id="priceFilter">
+          <h2 class="nav-filters-header"></h2>
+        </nav>
+</aside>
+</div>
 
-	<div id="app">
-	<main data-reactroot="" class="product-detail">
-	<nav class="nav-product"><ol vocab="http://schema.org/" typeof="BreadcrumbList" class="nav-product-breadcrumbs">
-	<li property="itemListElement" typeof="ListItem" class="nav-product-breadcrumbs-element">
-	<a property="item" typeof="WebPage" class="nav-product-breadcrumbs-element-link" href="https://elijah-mcquinn.com/us/women">
-	<span property="name">Women</span></a><span class="nav-product-breadcrumbs-element-separator">|</span>
-	<meta property="position" content="1"></li><li property="itemListElement" typeof="ListItem" class="nav-product-breadcrumbs-element">
-	<a property="item" typeof="WebPage" class="nav-product-breadcrumbs-element-link" href="https://elijah-mcquinn.com/us/women/new-now_d71927648">
-	<span property="name"></span></a><meta property="position" content="2"></li></ol>
-	<div class="nav-product-navigation">
-	<a class="nav-product-navigation-link" id="prev" href="https://elijah-mcquinn.com/us/women/shirts-shirts/pocket-shirt_31040915.html?c=04&amp;n=1&amp;s=nuevo">
-	Previous</a><span class="nav-product-navigation-separator">/</span>
-	<a class="nav-product-navigation-link" id="next" href="https://elijah-mcquinn.com/us/women/bags-shoppers/braided-design-bag_33020758.html?c=99&amp;n=1&amp;s=nuevo">
-	Next</a></div></nav>
+			
+			<div class="span10 contents contents-sticky-filters">
+					
+					
 	
-	<div itemscope="" itemtype="http://schema.org/Product" class="product">
-	<div class="product-detail-main">
-	
-	<div class="product-images">
-	<div class="product-images-carousel">
-<?php	
-if(empty($_GET['id'])){
-$id = '1' ;
-}else{
-$id= $_GET['id'];
-}
-
-
-$sqls = "SELECT * FROM itemsimages WHERE iditem='$id'";
-$results = mysqli_query($conn, $sqls);
-
-if (mysqli_num_rows($results) > 0) {
-
-while($rows = mysqli_fetch_assoc($results)){	
- $image =$rows["image"];
-  $imgid =$rows["id"];
-
- echo ' 	
-<a href="prod.php?id='.$id.'&idimg='.$imgid.'" ><div class="carousel-img-container" role="button" tabindex="0">
-	<img class="carousel-img" src="../admin/'.$image.'" alt="Buckle high-waist trousers">
-	</div></a>
-	';
-
-}
-
-}
-
-
-	?>
-	
-	
-	
-	
-	</div><div class="product-images-main zoom-in" dir="ltr" role="button" tabindex="0">
-	<form action="addc.php"  method="post" >
-	<?php
-
-
-
-	
-if(empty($_GET['idimg'])){
-$idimg = '1' ;
-$idd= '1';
-}else{
-$idimg= $_GET['idimg'];
- $idd= $_GET['id'];
-}
-
-
-
-$sqlr = "SELECT * FROM itemsimages WHERE id='$idimg'";
-$resultr = mysqli_query($conn, $sqlr);
-
-if (mysqli_num_rows($resultr) > 0) {
-
-while($rowr = mysqli_fetch_assoc($resultr)){
-  $imager =$rowr["image"];
-  $imgidr=$rowr["id"];
+					
+					<div id="productCatalog"><div class="product-list" id="productList">
   
-  $sqll = "SELECT * FROM items WHERE id='$idd' ";
-$resultt = mysqli_query($conn, $sqll);
-
-if (mysqli_num_rows($resultt) > 0) {
-
-	while($rowt = mysqli_fetch_assoc($resultt)){
-	
-	
-	$namee =$rowt["name"];
-	$amount =$rowt["amount"];
-	$text =$rowt["textt"];
-}}
- echo ' 
-  	<div class="main-img" style="cursor: crosshair; width: auto; height: auto; font-size: 0px; position: relative; -moz-user-select: none;">
-	<img src="../admin/'.$imager.'" sizes="(min-width: 800px) 33.5vw, (min-width: 415px) 50vw, 100vw" alt="" style="width: 100%; height: auto; display: block; pointer-events: none;">
-	<!-- react-empty: 225 --></div>
-	</div>
-	</div>
-	
-	<div style="" class="product-actions">
-	<div class="product-info"><span class="product-info-tag"></span>
-	<h1 itemprop="name" class="product-info-name">'.$namee.'</h1>
-	<span itemprop="mpn" class="product-info-reference">REF.</span>
-	</div>
-	<div itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" class="product-prices">
-	<meta itemprop="priceCurrency" content="USD"><meta itemprop="price" content="79.99">
-	<span class="product-prices-sale">UGX SHS '.$amount.'</span></div>
-	
-	<div class="product-colors">
-	<div class="product-colors-info"><span class="product-colors-info-label">
-	</div>
+<div class="product-list-page product-list-page-js" id="page1Height" style="height: 13820px;"><div class="product-list-page" id="page1">
+     
 
 
-	
-	
-	
-	
-	
-	<a href="addc.php?id='.$id.'" ><button type="button" class="sg-s-btn product-form-add" id="">Add to Cart</button></a>
-	
-	
-	
-	<!-- react-empty: 62 -->
-	<div class="product-social-container">
-	<div>
 
-	
 
-	</div></div>
-	<div class="product-description">
-	<div class="product-description-panel product-description-panel--active" id="descriptionPanel">
-	<h2 class="product-description-title"><a role="button" tabindex="-5">Description</a></h2>
-	
-	<p>
-	<span class="description-panel-block">'.$text.'</span>
 
-	</p></div>
-';
+
+   
+    <center>  <h1>About ElijahMcQuinn</h1> 
+
+
+  <p class=""  >
+we have bee the best fashion designser in africa , 
+  </p>
+	  <p class=""  >
+we have bee the best fashion designser in africa , 
+  </p>   <p class=""  >
+we have bee the best fashion designser in africa , 
+  </p>  <p class=""  >
+we have bee the best fashion designser in africa , 
+  </p>
+</center> 
+
+	  
+	
   
+	  
+
+	  
+
+	  
+	  
+ 
+	  
+	  
+	  
+ 
+</div>
+</div>
+
+<br>  
+ 
+<div class="product-list-page product-list-page-js" id="page2Height"><div class="product-list-page" id="page2">
+   	  	<br>  
+		<br>    
+  <br>  
+	  	<br>  
+		<br>    
+	  
+
+	  	  	<br>  
+		<br>    
+  <br>  
+	  	<br>  
+		<br> 
+	  
+ 	  	<br>  
+
+
+
+
+
+		
+	  
   
-  
-}
-}
-	?>
-	
+	  
 
-	
-	
-	
-	</div></div></div>
-	
-</form>
-	
-	<div class="last-viewed">
-	
-	
-	</div></div></main></div>
-	
-	<input id="Form:SVFichaProducto:hiddenBtnCart" name="Form:SVFichaProducto:hiddenBtnCart" onclick="jsf.util.chain(document.getElementById('Form:SVFichaProducto:hiddenBtnCart'), event,'jsf.ajax.request(\'Form:SVFichaProducto:hiddenBtnCart\',event,{render:\'SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:SVBolsa:panelBolsa SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:bolsa_articulosNum SVBodyHeader:SVMobileHeaderMenu:mobileMenuCart:items_bolsa_mobile \',\'javax.faces.behavior.event\':\'action\'})'); return false;" style="visibility:hidden" class="hidden-btn-bolsa hidden-btn-bolsa-js" type="submit">
-
-	
-	<div id="zoomContainer" style="display: none">
-		<img class="zoomContainer__img">
-	</div>
-
-	<script src="prod_files/main_00.js" async="async"></script>
-
-	
-	<script type="text/javascript" src="prod_files/pdp.js" async="async"></script>
-			<script type="text/javascript"></script>
-			<script type="text/javascript"></script>
+</div>
+   
+</div></div>
+</div>
+			</div><div id="scrollTop" class="scroll-top">
+      <div id="scrollToTop" class="scroll-top-container visible">
+          <div class="scroll-top-sub-container">
+              <div class="scroll-top-step">
+                  <span class="scroll-top-icon icon">3</span>
+              </div>
+              <div class="scroll-top-step">
+                  <span class="scroll-top-icon icon">3</span>
+              </div>
+          </div>
+      </div>
+  </div></div></div><input id="Form:j_id_2p" name="Form:j_id_2p" onclick="jsf.util.chain(document.getElementById('Form:j_id_2p'), event,'jsf.ajax.request(\'Form:j_id_2p\',event,{render:\'SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:SVBolsa:panelBolsa SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:bolsa_articulosNum SVBodyHeader:SVMobileHeaderMenu:mobileMenuCart:items_bolsa_mobile \',\'javax.faces.behavior.event\':\'action\'})'); return false;" style="visibility:hidden" class="hidden-btn-bolsa hidden-btn-bolsa-js" type="submit">
 						</div>
 						<div id="mainDivBodyHome" class="main-vertical-component">
 						</div><div id="Form:SVLoading:popupLoading" style="z-index: 302; position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; background-color: #ffffff; opacity: 0.9; display: none; "></div><div id="Form:SVLoading:popupLoading_t" style="z-index: 303; position: absolute; left: 50%; margin-left: -125px; width: 250px; height: 130px; text-align: center; vertical-align: middle; background-color: #ffffff; display: none; " class="panelLoadingMobile">
 		<div class="panel_loading" style="text-align: center; height: 100%;">
 			<div style="display: block; margin: 0 auto; height:100%;">
 				
-				<img class="gifLoadingMobile she" src="prod_files/she.gif">
+				<img class="gifLoadingMobile she" src="women_files/she.gif">
 			</div>
-		</div><input name="_mng_dialogVisible_popupLoading" id="_mng_dialogVisible_popupLoading" value="false" type="hidden"></div><div id="Form:SVPAviso:avisoPopup" class="max_stock">
-    	<span id="_panel_visiblepopupAviso"><input id="Form:SVPAviso:popupAviso:j_id_2y" name="Form:SVPAviso:popupAviso:j_id_2y" value="false" type="hidden"> 
-    	</span>
-    	<div id="popupAviso" class="_mng_panel alertBanner _mng_panel_fixed" style="z-index: 201; display: none; width: 300px; left: 40%; top: 40%;">
-    		
-    		<div id="popupAviso_header" class="_mng_panel_header alertBanner__header _mng_panel_move " onmousedown="if (true) _mng_activatePanelMove(event, 'popupAviso');"><a href="#" onclick="jsf.util.chain(document.getElementById('Form:SVPAviso:popupAviso:closePanel'), event,'hideAviso()', 'jsf.ajax.request(\'Form:SVPAviso:popupAviso:closePanel\',event,{\'javax.faces.behavior.event\':\'action\'})'); return false;" id="Form:SVPAviso:popupAviso:closePanel" name="Form:SVPAviso:popupAviso:closePanel" class="_mng_panel_close">  
-		    			<span class="icon" style="text-decoration:none">C</span></a>
-    		</div>
-    		
-    		<div id="popupAviso_body" class="_mng_panel_body ">
-		<div class="aviso_popup alertBanner__info"><span class="txt8 texto_limite_prendas alertBanner__text">We remind you that the limit on purchases is a maximum of $2,000 and/or 40 items, as indicated in the purchasing conditions.</span>
-			<div class="aviso_boton alertBanner__button"><span id="Form:SVPAviso:popupAviso:j_id_39" onclick="_mng_preSubmit('_mng_hidde_valuej_id_39','j_id_39','Form');jsf.util.chain(document.getElementById('Form:SVPAviso:popupAviso:j_id_39'), event,'hideAviso();; hideBolsa();', 'jsf.ajax.request(\'Form:SVPAviso:popupAviso:j_id_39\',event,{render:\'Form:SVPAviso:avisoPopup \',\'javax.faces.behavior.event\':\'click\'})'); return false;" style="cursor: pointer;" class="txt7B txtLink limite_prendas_aceptar">Accept</span>
-			</div>
-		</div>
-    		</div>
-    	</div>
-		</div><div id="Form:SVPRegWL:identificateWishListPanel" class="identificateWishListPanel">
-    	<span id="_panel_visibleidentificateWishListPopup"><input id="Form:SVPRegWL:identificateWishListPopup:j_id_3k" name="Form:SVPRegWL:identificateWishListPopup:j_id_3k" value="false" type="hidden"> 
-    	</span>
-    	<div id="identificateWishListPopup" class="_mng_panel  _mng_panel_fixed" style="z-index: 201; display: none; width: 300px; left: 25%; top: 40%;">
-    		
-    		<div id="identificateWishListPopup_header" class="_mng_panel_header alertBanner__header _mng_panel_move " onmousedown="if (true) _mng_activatePanelMove(event, 'identificateWishListPopup');">
-	    			<div id="closePanel" class="_mng_panel_close" onclick="hideAvisoIdentWishList()">
-	    			</div>
-    		</div>
-    		
-    		<div id="identificateWishListPopup_body" class="_mng_panel_body ">
-		<div class="panel_standard"><span class="txt8">To create your WishList, you must be registered.</span>
-			<br><span class="txt8"> If you are already registered, log in.</span>
-		</div>
-		<div class="panel_standard"><div id="Form:SVPRegWL:identificateWishListPopup:j_id_3x" onclick="_mng_preSubmit('_mng_hidde_valuej_id_3x','j_id_3x','Form');return jsf.util.chain(document.getElementById('Form:SVPRegWL:identificateWishListPopup:j_id_3x'), event,'hideAvisoIdentWishList();', 'return myfaces.oam.submitForm(\'Form\',\'Form:SVPRegWL:identificateWishListPopup:j_id_3x\');');" style="cursor: pointer;color: #ffffff; height: 18px; line-height: 18px; vertical-align: middle; width: 150px; display: block; text-align: center; " onmouseover="_mng_ButtonTRender(this, 'null', '#cccccc', 'null', 'null')" onmousedown="_mng_ButtonTRender(this, 'null', '#333333', 'null', 'null')" onmouseup="_mng_ButtonTRender(this, 'null', '#ffffff', 'cursor: pointer;color: #ffffff; height: 18px; line-height: 18px; vertical-align: middle; width: 150px; display: block; text-align: center; ', 'txt7 login')" onmouseout="_mng_ButtonTRender(this, 'null', '#ffffff', 'cursor: pointer;color: #ffffff; height: 18px; line-height: 18px; vertical-align: middle; width: 150px; display: block; text-align: center; ', 'txt7 login')" class="txt7 login">Sign in</div><div id="Form:SVPRegWL:identificateWishListPopup:j_id_3z" onclick="window.open('https://elijah-mcquinn.com/registroExterno.faces?op=alta','_self')" style="cursor: pointer;color: #ffffff; height: 18px; line-height: 18px; vertical-align: middle; width: 150px; display: block; text-align: center; " onmouseover="_mng_ButtonTRender(this, 'null', '#cccccc', 'null', 'null')" onmousedown="_mng_ButtonTRender(this, 'null', '#333333', 'null', 'null')" onmouseup="_mng_ButtonTRender(this, 'null', '#ffffff', 'cursor: pointer;color: #ffffff; height: 18px; line-height: 18px; vertical-align: middle; width: 150px; display: block; text-align: center; ', 'txt7 registro')" onmouseout="_mng_ButtonTRender(this, 'null', '#ffffff', 'cursor: pointer;color: #ffffff; height: 18px; line-height: 18px; vertical-align: middle; width: 150px; display: block; text-align: center; ', 'txt7 registro')" class="txt7 registro">Register</div><div id="Form:SVPRegWL:identificateWishListPopup:j_id_41" onclick="hideAvisoIdentWishList();" style="cursor: pointer;color: #ffffff; height: 18px; line-height: 18px; vertical-align: middle; width: 150px; display: block; text-align: center; " onmouseover="_mng_ButtonTRender(this, 'null', '#cccccc', 'null', 'null')" onmousedown="_mng_ButtonTRender(this, 'null', '#333333', 'null', 'null')" onmouseup="_mng_ButtonTRender(this, 'null', '#ffffff', 'cursor: pointer;color: #ffffff; height: 18px; line-height: 18px; vertical-align: middle; width: 150px; display: block; text-align: center; ', 'txt7 cerrar')" onmouseout="_mng_ButtonTRender(this, 'null', '#ffffff', 'cursor: pointer;color: #ffffff; height: 18px; line-height: 18px; vertical-align: middle; width: 150px; display: block; text-align: center; ', 'txt7 cerrar')" class="txt7 cerrar">Close</div>
-		</div>
-    		</div>
-    	</div>
-		</div><div id="Form:SVWishlistPanelMaxItems:avisoMaxItems"><div id="Form:SVWishlistPanelMaxItems:popupmaxItems" style="z-index: 251; position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; background-color: #dedede; opacity: 0.35; display: none; "></div><div id="Form:SVWishlistPanelMaxItems:popupmaxItems_t" style="z-index: 252; position: absolute; left: 50%; margin-left: -20px; width: 40px; height: 110px; text-align: center; vertical-align: middle; background-color: #ffffff; border: 1px solid #999999;display: none; ">			
-		<div class="panel_standard">
-			<img src="prod_files/alert50_she.png" width="50" height="50"><span class="txt8">We remind you that you can add up to </span><span class="txt8">40 </span><span class="txt8">items to the Wish List.</span>
-			<div class="panel_inside_button clearfix"><span id="Form:SVWishlistPanelMaxItems:j_id_4g" onclick="hideAvisoMaxItems(); hideBolsa();" style="cursor: pointer;" class="txt7">Accept</span>
-			</div>
-		</div><input name="_mng_dialogVisible_popupmaxItems" id="_mng_dialogVisible_popupmaxItems" value="false" type="hidden"></div></div><span id="Form:SVEnvioTienda:wishListManagement" class="wishlist_popup_init row-fluid">
-    	<span id="_panel_visiblepanelWishList"><input id="Form:SVEnvioTienda:panelWishList:j_id_4m" name="Form:SVEnvioTienda:panelWishList:j_id_4m" value="false" type="hidden"> 
+		</div><input name="_mng_dialogVisible_popupLoading" id="_mng_dialogVisible_popupLoading" value="false" type="hidden"></div><span id="Form:SVEnvioTienda:wishListManagement" class="wishlist_popup_init row-fluid">
+    	<span id="_panel_visiblepanelWishList"><input id="Form:SVEnvioTienda:panelWishList:j_id_2z" name="Form:SVEnvioTienda:panelWishList:j_id_2z" value="false" type="hidden"> 
     	</span>
     	<div id="panelWishList" class="_mng_panel  _mng_panel_fixed" style="z-index: 201; display: none; width: 300px; left: 35%; top: 50%;">
     		
@@ -14952,9 +15124,9 @@ if (mysqli_num_rows($resultt) > 0) {
 					<div class="wishlist_input_reg1 span3">
 					</div>
 				</div>
-				<div id="crearWLBoton" class="wishlist_create row-fluid"><span id="Form:SVEnvioTienda:panelWishList:j_id_51" onclick="document.getElementById('crearWLBoton').style.display='none';document.getElementById('crearWL').style.display='block';" style="cursor: pointer;" class="wishlist_create_new span5">Create a new WishList &gt;&gt;</span>
+				<div id="crearWLBoton" class="wishlist_create row-fluid"><span id="Form:SVEnvioTienda:panelWishList:j_id_3e" onclick="document.getElementById('crearWLBoton').style.display='none';document.getElementById('crearWL').style.display='block';" style="cursor: pointer;" class="wishlist_create_new span5">Create a new WishList &gt;&gt;</span>
 				</div>
-				<div id="crearWL" class="wishlist_create crearWLText row-fluid"><span style="color: #333333;" class="span5">First Name</span><input id="Form:SVEnvioTienda:panelWishList:nombre" name="Form:SVEnvioTienda:panelWishList:nombre" maxlength="50" size="37" class="inputReg1 span3" type="text"><span id="Form:SVEnvioTienda:panelWishList:j_id_55" onclick="_mng_preSubmit('_mng_hidde_valuej_id_55','j_id_55','Form');jsf.util.chain(document.getElementById('Form:SVEnvioTienda:panelWishList:j_id_55'), event,'mostrarInfoPopup();', 'jsf.ajax.request(\'Form:SVEnvioTienda:panelWishList:j_id_55\',event,{execute:\'@form \',render:\'SVBodyHeader:SVUserMenu:userMenuForm:SVWishlistHeader:WishListAddProducto Form:SVEnvioTienda:wishListManagement \',onevent:function(e) {if (e.status==\'success\') {ocultarInfoPopup();;window.scrollTo(0,0);showBocataProducto(event);}},\'javax.faces.behavior.event\':\'click\'})'); return false;" style="cursor: pointer;" class="span4 wishlist_anadir crear_wish">Create the WishList</span>
+				<div id="crearWL" class="wishlist_create crearWLText row-fluid"><span style="color: #333333;" class="span5">First Name</span><input id="Form:SVEnvioTienda:panelWishList:nombre" name="Form:SVEnvioTienda:panelWishList:nombre" maxlength="50" size="37" class="inputReg1 span3" type="text"><span id="Form:SVEnvioTienda:panelWishList:j_id_3i" onclick="_mng_preSubmit('_mng_hidde_valuej_id_3i','j_id_3i','Form');jsf.util.chain(document.getElementById('Form:SVEnvioTienda:panelWishList:j_id_3i'), event,'mostrarInfoPopup();', 'jsf.ajax.request(\'Form:SVEnvioTienda:panelWishList:j_id_3i\',event,{execute:\'@form \',render:\'SVBodyHeader:SVUserMenu:userMenuForm:SVWishlistHeader:WishListAddProducto Form:SVEnvioTienda:wishListManagement \',onevent:function(e) {if (e.status==\'success\') {ocultarInfoPopup();;window.scrollTo(0,0);showBocataProducto(event);}},\'javax.faces.behavior.event\':\'click\'})'); return false;" style="cursor: pointer;" class="span4 wishlist_anadir crear_wish">Create the WishList</span>
 				</div>				
 				<div class="crearWLText create_wishlist row-fluid">
 					
@@ -14963,12 +15135,12 @@ if (mysqli_num_rows($resultt) > 0) {
 				</div>
     		</div>
     	</div>
-		</span><input name="Form_SUBMIT" value="1" type="hidden"><input name="javax.faces.ViewState" id="j_id__v_0:javax.faces.ViewState:4" value="2CGO+R7mfeHMWFBNCTOGTCnSy1odaKbQe8obfLC+VLVz7a2k
+		</span><input name="Form_SUBMIT" value="1" type="hidden"><input name="javax.faces.ViewState" id="j_id__v_0:javax.faces.ViewState:4" value="HlhAdMQoAxeY41jaqQLRxNO1DaUxr5I1NVxXAAUwanoltDzb
 " type="hidden"></form>
 
-					<div id="mainDivBody2" class="main-vertical-body main-body-wrapper">
+					<div id="mainDivBody2" class="main-vertical-body">
 					</div>
-				</div><span id="SVPie:panelPiePagina">
+				</div><span id="SVPie:panelPiePagina" class="hidden_mobile">
 
 			<script type="text/javascript"></script>
 
@@ -14976,9 +15148,7 @@ if (mysqli_num_rows($resultt) > 0) {
 			<footer id="footerMNG" class="footerMNG" data-ga-category="footer" data-cached="false">
 				<div class="container-fluid user-select">
 				
-				
-				
-					<span id="SVPie:SVFooterNewsletter:panelFooterRegistroNewsletter">
+				<span id="SVPie:SVFooterNewsletter:panelFooterRegistroNewsletter">
     	<div class="row">
        		<div class="col-xs-24 col-ie-24 fullcol">
 			
@@ -15027,9 +15197,8 @@ if (mysqli_num_rows($resultt) > 0) {
 			</div>
 		</div>
 		</span>
-		
 	
-	<div id="footerContentCache" class="row" data-cache-id="shop.elijahmcquinn.com_562_pc_400_US_she">
+		<div id="footerContentCache" class="row" data-cache-id="shop.elijahmcquinn.com_562_pc_400_US_she">
 
 		
 	
@@ -15141,12 +15310,8 @@ if (mysqli_num_rows($resultt) > 0) {
 
 	</div>
 		
-	
-	
-	
-	
 
-		<script async="true" type="text/javascript"></script>
+			<script async="true" type="text/javascript"></script>
 					
 
 				</div>
@@ -15156,8 +15321,7 @@ if (mysqli_num_rows($resultt) > 0) {
 	<div id="blockedModal" style="display: none"></div>
 
     <div class="posRelative">
-    	<div id="bocataAvisame" style="display: none" class="modalNoStock"><div id="SVFichaAvisame:avisameAll">
-		<form id="SVFichaAvisame:FAvisame" name="SVFichaAvisame:FAvisame"  style="margin: 0px; padding: 0px;" >
+    	<div id="bocataAvisame" style="display: none" class="modalNoStock"><div id="SVFichaAvisame:avisameAll"><form id="SVFichaAvisame:FAvisame" name="SVFichaAvisame:FAvisame" method="post" action="https://shop.elijahmcquinn.com/catalog/catalogPc.faces?ts=1529393591276&amp;state=she_400_US" onkeypress="return event.keyCode != 13;" style="margin: 0px; padding: 0px;" enctype="application/x-www-form-urlencoded">
 						<div class="headerAvisame"><div id="SVFichaAvisame:FAvisame:close" onclick="_mng_preSubmit('_mng_hidde_valueclose','close','SVFichaAvisame:FAvisame');jsf.util.chain(document.getElementById('SVFichaAvisame:FAvisame:close'), event,'jsf.ajax.request(\'SVFichaAvisame:FAvisame:close\',event,{execute:\'@form \',render:\'SVFichaAvisame:avisameAll \',onevent:function(e) {if (e.status==\'success\') {avisameController.hideAvisamePopup();}},\'javax.faces.behavior.event\':\'click\'})'); return false;" style="cursor: pointer;height: 11px; line-height: 11px; vertical-align: middle; width: 10px; display: block; text-align: center; " class="icon botonCerrarAvisame">C</div><span id="SVFichaAvisame:FAvisame:closeMobil" onclick="_mng_preSubmit('_mng_hidde_valuecloseMobil','closeMobil','SVFichaAvisame:FAvisame');jsf.util.chain(document.getElementById('SVFichaAvisame:FAvisame:closeMobil'), event,'jsf.ajax.request(\'SVFichaAvisame:FAvisame:closeMobil\',event,{execute:\'@form \',render:\'SVFichaAvisame:avisameAll \',onevent:function(e) {if (e.status==\'success\') {avisameController.hideAvisamePopup();}},\'javax.faces.behavior.event\':\'click\'})'); return false;" style="cursor: pointer;" class="icono cerrarAvisame">k</span><span id="SVFichaAvisame:FAvisame:nombreProductoAvisame" class="tituloProductoAvisame"></span>
       					</div>
 
@@ -15172,16 +15336,16 @@ if (mysqli_num_rows($resultt) > 0) {
 						<div class="footerAvisame">
 								<div class="prefieresAvisame">Or if you prefer, add this item to the Wishlist<span class="recibirAviso">.</span>
 								</div>
-	   								<span class="politicaAvisame">By clicking on "Receive notification", you accept the <span id="SVFichaAvisame:FAvisame:j_id_6t" onclick="window.open('https://elijah-mcquinn.com/us/women/helppopup/11622.html', 'ayuda', 'menubar=no,resizable=yes,scrollbars=yes,width=970,height=750').focus();" style="cursor: pointer;" class="txtLink">confidentiality policy</span>.
+	   								<span class="politicaAvisame">By clicking on "Receive notification", you accept the <span id="SVFichaAvisame:FAvisame:j_id_55" onclick="window.open('https://shop.elijahmcquinn.com/us/women/helppopup/11622.html', 'ayuda', 'menubar=no,resizable=yes,scrollbars=yes,width=970,height=750').focus();" style="cursor: pointer;" class="txtLink">confidentiality policy</span>.
 	   								</span>							
 							
-    					</div><input id="SVFichaAvisame:FAvisame:hiddenTalla" name="SVFichaAvisame:FAvisame:hiddenTalla" value="" type="hidden"><input id="SVFichaAvisame:FAvisame:hiddenColor" name="SVFichaAvisame:FAvisame:hiddenColor" value="" type="hidden"><input id="SVFichaAvisame:FAvisame:hiddenIdProd" name="SVFichaAvisame:FAvisame:hiddenIdProd" value="" type="hidden"><input name="SVFichaAvisame:FAvisame_SUBMIT" value="1" type="hidden"><input name="javax.faces.ViewState" id="j_id__v_0:javax.faces.ViewState:6" value="2CGO+R7mfeHMWFBNCTOGTCnSy1odaKbQe8obfLC+VLVz7a2k
+    					</div><input id="SVFichaAvisame:FAvisame:hiddenTalla" name="SVFichaAvisame:FAvisame:hiddenTalla" value="" type="hidden"><input id="SVFichaAvisame:FAvisame:hiddenColor" name="SVFichaAvisame:FAvisame:hiddenColor" value="" type="hidden"><input id="SVFichaAvisame:FAvisame:hiddenIdProd" name="SVFichaAvisame:FAvisame:hiddenIdProd" value="" type="hidden"><input name="SVFichaAvisame:FAvisame_SUBMIT" value="1" type="hidden"><input name="javax.faces.ViewState" id="j_id__v_0:javax.faces.ViewState:6" value="HlhAdMQoAxeY41jaqQLRxNO1DaUxr5I1NVxXAAUwanoltDzb
 " type="hidden"></form></div>
    		</div>
    	</div>
 
 			
-			<script type="text/javascript" src="prod_files/api.js"></script><script type="text/javascript" src="prod_files/panelBasic.faces"></script><script type="text/javascript" src="prod_files/events.faces"></script><script>
+			<script type="text/javascript" src="women_files/api.js"></script><script type="text/javascript" src="women_files/panelBasic.faces"></script><script type="text/javascript" src="women_files/events.faces"></script><script>
 		var _mng_sb = null;
 
 		// Comprueba si una cadena es un digito.
@@ -15326,7 +15490,7 @@ function bolsaDown(despl) {
             _mng_timerUpAndDown = setTimeout('bolsaDown(0)', 45); 
     } else { 
             var offset = 15; 
-            var div = document.getElementById('SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:SVBolsa:panelBolsa:j_id_1d_b_w_r'); 
+            var div = document.getElementById('SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:SVBolsa:panelBolsa:j_id_11_b_w_r'); 
             var top = Number(div.style.top.substr(0,div.style.top.length-2)); 
             if (top < 0) { 
                     var height = Number(div.parentNode.style.height.substr(0, div.parentNode.style.height.length-2)); 
@@ -15346,7 +15510,7 @@ function bolsaUp(despl) {
             _mng_timerUpAndDown = setTimeout('bolsaUp(0)', 45); 
     } else { 
             var offset = 15; 
-            var div = document.getElementById('SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:SVBolsa:panelBolsa:j_id_1d_b_w_r'); 
+            var div = document.getElementById('SVBodyHeader:SVUserMenu:userMenuForm:SVBolsaHeader:SVBolsa:panelBolsa:j_id_11_b_w_r'); 
             var top = Number(div.style.top.substr(0,div.style.top.length-2)); 
             var heightParent = shoppingBagController.getHeightShoppingBag(); 
             var height = Number(div.offsetHeight);  
@@ -15491,57 +15655,7 @@ function bolsaSeMueve() {
  		document.forms[formName].appendChild(_mngh); 
  	} 
  } 
- 
-			//<![CDATA[
-
-			function sendNewProductPage2018ExperimentVariationWithouthCXAPI() {
-			        var experimentId = 'zi8X3zIHR6uaNGgEta8YGA';
-			        var variation = '0';
-			        ga('set', 'expId', experimentId);
-			        ga('set', 'expVar', variation);
-			        ga('send', 'event', 'testAB', 'NewProductPage2018', variation);
-			        ga('set', 'expId', null);
-			        ga('set', 'expVar', null);
-			}
-
-			function sendNewProductPage2018ExperimentVariation() {
-			    // Enviar la variante del experimento 'NewProductPage2018' a Google Analytics
-			    if (typeof cxApi !== 'undefined') {
-			        sendNewProductPage2018ExperimentVariationWithouthCXAPI();
-			    }
-			}
-
-			var sendNow = true;
-			if (sendNow) {
-			    sendNewProductPage2018ExperimentVariation();
-			}
-			//]]>
-			
-			//<![CDATA[
-
-			function sendCTLWithVisualRecExperimentVariationWithouthCXAPI() {
-			        var experimentId = 'gB20ykb0Su-roLrE6Pmcog';
-			        var variation = '0';
-			        ga('set', 'expId', experimentId);
-			        ga('set', 'expVar', variation);
-			        ga('send', 'event', 'testAB', 'CTLWithVisualRec', variation);
-			        ga('set', 'expId', null);
-			        ga('set', 'expVar', null);
-			}
-
-			function sendCTLWithVisualRecExperimentVariation() {
-			    // Enviar la variante del experimento 'CTLWithVisualRec' a Google Analytics
-			    if (typeof cxApi !== 'undefined') {
-			        sendCTLWithVisualRecExperimentVariationWithouthCXAPI();
-			    }
-			}
-
-			var sendNow = true;
-			if (sendNow) {
-			    sendCTLWithVisualRecExperimentVariation();
-			}
-			//]]>
-			function _mng_popupShow(container, content) { 
+ ga('require', 'ec', 'ec.js');function _mng_popupShow(container, content) { 
 	var doc = document.documentElement, body = document.body;  
 	var top = (doc && doc.scrollTop  || body && body.scrollTop  || 0); 
 	container.style.height = (document.documentElement.offsetHeight-120)+'px';   
@@ -15567,34 +15681,6 @@ function ocultarInfoPopup() {
 	var div1 = document.getElementById('Form:SVLoading:popupLoading'); 
 	var div2 = document.getElementById('Form:SVLoading:popupLoading_t'); 
 	document.getElementById('_mng_dialogVisible_popupLoading').value = 'false'; 
-	_mng_popupHide(div1, div2); 
-} 
-
-			function showAviso() {
-				_mng_showPanel('popupAviso','40%','40%','_panel_visiblepopupAviso','','');
-			}
-			function hideAviso() {
-				_mng_closePanel('popupAviso','_panel_visiblepopupAviso');
-			}
-			document.getElementById('popupAviso').style.left = '40%'; document.getElementById('popupAviso').style.top = '40%';
-		
-			function showAvisoIdentWishList() {
-				_mng_showPanel('identificateWishListPopup','25%','40%','_panel_visibleidentificateWishListPopup','','');
-			}
-			function hideAvisoIdentWishList() {
-				_mng_closePanel('identificateWishListPopup','_panel_visibleidentificateWishListPopup');
-			}
-			document.getElementById('identificateWishListPopup').style.left = '25%'; document.getElementById('identificateWishListPopup').style.top = '40%';
-		function showAvisoMaxItems() { 
-	var div1 = document.getElementById('Form:SVWishlistPanelMaxItems:popupmaxItems'); 
-	var div2 = document.getElementById('Form:SVWishlistPanelMaxItems:popupmaxItems_t'); 
-	document.getElementById('_mng_dialogVisible_popupmaxItems').value = 'true'; 
-	_mng_popupShow(div1, div2); 
-} 
-function hideAvisoMaxItems() { 
-	var div1 = document.getElementById('Form:SVWishlistPanelMaxItems:popupmaxItems'); 
-	var div2 = document.getElementById('Form:SVWishlistPanelMaxItems:popupmaxItems_t'); 
-	document.getElementById('_mng_dialogVisible_popupmaxItems').value = 'false'; 
 	_mng_popupHide(div1, div2); 
 } 
 
@@ -15624,37 +15710,35 @@ function hideAvisoMaxItems() {
 						</script>
 
 		
-		<script type="text/javascript" src="prod_files/pluginsTOP.js"></script>
+ 		<script type="text/javascript" src="women_files/catalog.js" async="async"></script>
 		
-		<script type="text/javascript" src="prod_files/topLayoutDivs.js"></script>
-		<script type="text/javascript" src="prod_files/plugins.js"></script>
-		<script type="text/javascript" src="prod_files/oldLibs.js" defer="defer"></script>
+
 		
-	    <script type="text/javascript" src="prod_files/common.js"></script>
-	    	<script type="text/javascript" src="prod_files/custom.js"></script>
-			<script type="text/javascript" src="prod_files/menu.js"></script>
+		<script type="text/javascript" src="women_files/pluginsTOP.js"></script>
+		<script type="text/javascript" src="women_files/plugins.js"></script>
+		<script type="text/javascript" src="women_files/topLayoutDivs.js"></script>
+    	<script type="text/javascript" src="women_files/custom.js"></script>
+    	<script type="text/javascript" src="women_files/common_002.js"></script>
+    	<script type="text/javascript" src="women_files/app.js" defer="defer"></script>
 	
 	
-	<link rel="stylesheet" type="text/css" href="prod_files/styles.css">
-		<script type="text/javascript" id="googleMaps" src="prod_files/js" async="async" defer="defer"></script>
-	<script type="text/javascript" src="prod_files/main.js"></script>
-	
-	<form id="j_id_7t:modalRGPDForm" name="j_id_7t:modalRGPDForm" ><span id="j_id_7t:modalRGPDForm:modalRGPD"></span><input name="j_id_7t:modalRGPDForm_SUBMIT" value="1" type="hidden"><input name="javax.faces.ViewState" id="j_id__v_0:javax.faces.ViewState:7" value="2CGO+R7mfeHMWFBNCTOGTCnSy1odaKbQe8obfLC+VLVz7a2k
+	<link rel="stylesheet" type="text/css" href="women_files/styles.css">
+		<script type="text/javascript" id="googleMaps" src="women_files/js_002" async="async" defer="defer"></script>
+	<script type="text/javascript" src="women_files/main.js"></script><form id="j_id_64:modalRGPDForm" name="j_id_64:modalRGPDForm" method="post" action="https://shop.elijahmcquinn.com/catalog/catalogPc.faces?ts=1529393591276&amp;state=she_400_US" enctype="application/x-www-form-urlencoded"><span id="j_id_64:modalRGPDForm:modalRGPD"></span><input name="j_id_64:modalRGPDForm_SUBMIT" value="1" type="hidden"><input name="javax.faces.ViewState" id="j_id__v_0:javax.faces.ViewState:7" value="HlhAdMQoAxeY41jaqQLRxNO1DaUxr5I1NVxXAAUwanoltDzb
 " type="hidden"></form>
 
-<script src="prod_files/widget.js" type="text/javascript"></script>
+    	<script type="text/javascript" defer="defer"></script>
+
+
 <script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","//connect.facebook.net/en_US/fbevents.js");fbq("init","441271682641901");
-fbq("track","PageView",{page_brand:google_tag_manager["GTM-TWFTD4"].macro(4),page_type:google_tag_manager["GTM-TWFTD4"].macro(5),country_name:google_tag_manager["GTM-TWFTD4"].macro(6),language:google_tag_manager["GTM-TWFTD4"].macro(7),userID:google_tag_manager["GTM-TWFTD4"].macro(8)});</script>
+fbq("track","PageView",{page_brand:google_tag_manager["GTM-TWFTD4"].macro(6),page_type:google_tag_manager["GTM-TWFTD4"].macro(7),country_name:google_tag_manager["GTM-TWFTD4"].macro(8),language:google_tag_manager["GTM-TWFTD4"].macro(9),userID:google_tag_manager["GTM-TWFTD4"].macro(10)});</script>
 <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=441271682641901&amp;ev=PageView&amp;noscript=1"></noscript>
 
-<script type="text/javascript" id="">try{var __scP="https:"==document.location.protocol?"https://":"http://",__scS=document.createElement("script");__scS.type="text/javascript";__scS.src=__scP+"app.salecycle.com/capture/UAT/elijahmcquinn.js";document.getElementsByTagName("head")[0].appendChild(__scS)}catch(a){};</script>
-<script type="text/javascript" id="">fbq("track","ViewContent",{content_ids:"31080750400",content_type:"product_group",availability:"true",product_category:"pantalones",product_collection:"OI",product_genre:"undefined"});</script>
-
-<script type="text/javascript" id="">var overlayData=JSON.parse(localStorage.getItem("eb-"+google_tag_manager["GTM-TWFTD4"].macro(9)));localStorage.removeItem("eb-"+google_tag_manager["GTM-TWFTD4"].macro(10));</script><script type="text/javascript" id="">(function(a,b,c){var d=a.getElementsByTagName(b)[0];a.getElementById(c)||(a=a.createElement(b),a.id=c,a.src="\/\/st.mngbcn.com\/static\/assets\/mngrtd\/mngrtd.2.0.2.js",d.parentNode.insertBefore(a,d))})(document,"script","mngRTD");</script><script type="text/javascript" id="">if("undefined"===typeof _etmc)var _etmc=[];_etmc.push(["setOrgId","7247942"]);google_tag_manager["GTM-TWFTD4"].macro(11)&&_etmc.push(["setUserInfo",{email:""}]);</script><script type="text/javascript" id="">_etmc.push(["trackPageView",{item:"3108075004"}]);</script><script type="application/ld+json">
+<script type="text/javascript" id="">try{var __scP="https:"==document.location.protocol?"https://":"http://",__scS=document.createElement("script");__scS.type="text/javascript";__scS.src=__scP+"app.salecycle.com/capture/UAT/elijahmcquinn.js";document.getElementsByTagName("head")[0].appendChild(__scS)}catch(a){};</script><script type="text/javascript" id="">(function(a,b,c){var d=a.getElementsByTagName(b)[0];a.getElementById(c)||(a=a.createElement(b),a.id=c,a.src="\/\/st.mngbcn.com\/static\/assets\/mngrtd\/mngrtd.2.0.2.js",d.parentNode.insertBefore(a,d))})(document,"script","mngRTD");</script><script type="text/javascript" id="">if("undefined"===typeof _etmc)var _etmc=[];_etmc.push(["setOrgId","7247942"]);google_tag_manager["GTM-TWFTD4"].macro(11)&&_etmc.push(["setUserInfo",{email:""}]);</script><script type="text/javascript" id="">_etmc.push(["trackPageView",{category:""}]);</script><script type="application/ld+json">
       {
       "@context": "http://schema.org/",
       "@type": "Organization",
-      "url": "https://elijah-mcquinn.com",
+      "url": "https://shop.elijahmcquinn.com",
       "name": "elijahmcquinn",
        "address": {
     "@type": "PostalAddress",
@@ -15664,4 +15748,4 @@ fbq("track","PageView",{page_brand:google_tag_manager["GTM-TWFTD4"].macro(4),pag
   },
       "logo": "http://st.mngbcn.com/static/assets/img/logo/elijahmcquinn.svg"
       }
-</script><script type="text/javascript" id="" src="prod_files/collect.js"></script><div style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon0.5115837670447348"><img style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon0.6868068700903264" alt="" src="prod_files/0.txt" width="0" height="0"></div><div style="display: none;"><img src="prod_files/track_page_view.gif" style="display: none;" title="blank image" aria-hidden="true" width="0" height="0"></div><script type="text/javascript" id="">var args={tipoContenido:google_tag_manager["GTM-TWFTD4"].macro(16),dispositivo:google_tag_manager["GTM-TWFTD4"].macro(17),genero:google_tag_manager["GTM-TWFTD4"].macro(18)};mngRTD.sendNavigation(args);</script><script type="text/javascript" id="">var args={tipoFeedback:"VIS",products:google_tag_manager["GTM-TWFTD4"].macro(19),aplicacion:google_tag_manager["GTM-TWFTD4"].macro(20),tipoContenido:google_tag_manager["GTM-TWFTD4"].macro(21),canal:google_tag_manager["GTM-TWFTD4"].macro(22),dispositivo:google_tag_manager["GTM-TWFTD4"].macro(23),paisShop:google_tag_manager["GTM-TWFTD4"].macro(24),idioma:google_tag_manager["GTM-TWFTD4"].macro(25)};mngRTD.sendFeedback(args);</script><div id="criteo-tags-div" style="display: none;"></div></body><script src="prod_files/a"></script></html>
+</script><script type="text/javascript" id="" src="women_files/collect.js"></script><div style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon0.9421103160988831"><img style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon0.8595223655638624" alt="" src="women_files/0.txt" width="0" height="0"></div><div style="display: none;"><img src="women_files/track_page_view.gif" style="display: none;" title="blank image" aria-hidden="true" width="0" height="0"></div><script type="text/javascript" id="">var args={tipoContenido:google_tag_manager["GTM-TWFTD4"].macro(15),dispositivo:google_tag_manager["GTM-TWFTD4"].macro(16),genero:google_tag_manager["GTM-TWFTD4"].macro(17)};mngRTD.sendNavigation(args);</script><iframe style="display: none;" src="women_files/pixel.html"></iframe><div id="criteo-tags-div" style="display: none;"></div></body><script src="women_files/a"></script></html>

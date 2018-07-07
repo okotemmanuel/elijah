@@ -527,6 +527,7 @@ if (mysqli_num_rows($resultt) > 0) {
                                             </p>
 											<p>
                                                 <a href="editprod.php?id='.$idit.'" class="btn btn-primary waves-effect" role="button">EDIT</a>
+<a href="deli.php?id='.$idit.'" class="btn btn-primary waves-effect" role="button">DELETE</a>
 
 										   </p>
                                         </div>

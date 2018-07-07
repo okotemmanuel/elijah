@@ -15027,11 +15027,11 @@ echo '
 
 
 if(empty($_GET['id'])){
-$categg = '1' ;
+$categg = '10' ;
 }else{
 $categg = $_GET['id'];
 }
-$sqll = "SELECT * FROM items WHERE category='$categg' ";
+$sqll = "SELECT * FROM items WHERE category='$categg' ORDER BY ID DESC";
 $resultt = mysqli_query($conn, $sqll);
 
 if (mysqli_num_rows($resultt) > 0) {
@@ -15077,7 +15077,7 @@ echo '
             
             <span class="product-list-name">'.$name.'</span>
               <span class="product-list-fav product-list-fav-js" data-fav="add" data-color="04" data-url-service="/ws-favorites/favorites/v1/favorites" data-category="pantalones" data-id="31080750"></span>
-                <span class="product-list-price">$'.$amount.'</span>
+                <span class="product-list-price">UGX '.$amount.' /= </span>
           </div>
         </a>
       </div>

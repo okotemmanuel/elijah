@@ -15269,8 +15269,7 @@ echo '
 		   			<span class="nav-socialnetwork-link">
 			<span class="social__icon fb icon">
 					
-					<a href="http://www.facebook.com/elijah mcquinn" target="_blank" rel="nofollow" data-ga-label="facebook">
-						
+					<a href="https://web.facebook.com/elijahmcquinn/?ref=br_rs" target="_blank" rel="nofollow" data-ga-label="facebook">					
 						f
 					</a>
 			</span>
@@ -15278,7 +15277,7 @@ echo '
 		   			<span class="nav-socialnetwork-link">
 			<span class="social__icon tw icon">
 					
-					<a href="http://www.twitter.com/elijah mcquinn" target="_blank" rel="nofollow" data-ga-label="twitter">
+					<a href="https://twitter.com/aharriet30" target="_blank" rel="nofollow" data-ga-label="twitter">
 						
 						t
 					</a>
@@ -15288,7 +15287,7 @@ echo '
 		   			<span class="nav-socialnetwork-link">
 			<span class="social__icon it icon">
 					
-					<a href="https://www.instagram.com/explore/tags/elijahmcquinnofficial/" target="_blank" rel="nofollow" data-ga-label="instagram">
+					<a href="https://www.instagram.com/elijahmcquinn/" target="_blank" rel="nofollow" data-ga-label="instagram">
 						
 						i
 					</a>
@@ -15371,7 +15370,7 @@ echo '
 		</div>
 
 	</div>
-		
+	
 	
 
 

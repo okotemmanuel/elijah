@@ -1,25 +1,38 @@
 <div id="paypal-button"></div>
+
+	
 <script src="https://www.paypalobjects.com/api/checkout.js"></script>
 <script>
 paypal.Button.render({
   // Configure environment
-  env: 'sandbox',
+  //env: 'sandbox',
+  env: 'production',
   client: {
-    sandbox: 'AaZj3TkX_cF72osjlsz9xSpOh0L9bwLOh5ZoqgpzEcxstIH7sJKCbTTM-dfelRxf-k3R0BWDVw9rRSrZ',
-    //production: 'Ac5C4w9pZJ2TQn_3hL--zLG-gYhbjFmccgf_zcrCdxsHH_-foT9oN6bxEz2zC5Cy4-BjE9bYy5aB2Snl'
+   // sandbox: 'AaZj3TkX_cF72osjlsz9xSpOh0L9bwLOh5ZoqgpzEcxstIH7sJKCbTTM-dfelRxf-k3R0BWDVw9rRSrZ',
+    production: 'Ac5C4w9pZJ2TQn_3hL--zLG-gYhbjFmccgf_zcrCdxsHH_-foT9oN6bxEz2zC5Cy4-BjE9bYy5aB2Snl'
   },
   // Customize button (optional)
   locale: 'en_US',
   style: {
-    size: 'small'
+    size: 'small',
+    color: 'gold',
+    shape: 'pill',
   },
   // Set up a payment
 payment: function (data, actions) {
   return actions.payment.create({
     transactions: [{
       amount: {
-        total: '<?php echo '200'?>',
-        currency: 'USD'
+        total: '30.11',
+        currency: 'USD',
+        details: {
+          subtotal: '30.00',
+          tax: '0.07',
+          shipping: '0.03',
+          handling_fee: '1.00',
+          shipping_discount: '-1.00',
+          insurance: '0.01'
+        }
       },
       description: 'The payment transaction description.',
       custom: '90048630024435',
@@ -74,3 +87,4 @@ payment: function (data, actions) {
   }
 }, '#paypal-button');
 </script>
+		

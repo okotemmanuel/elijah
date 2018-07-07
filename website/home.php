@@ -15222,9 +15222,10 @@ echo '
 			</div>
 			<div class="position-text position-text-center">
 					<div class="text1" > </div>
-					<div style="background-color:rgba(255,255,255,0.6);box-shadow:1px 1px rgba(0,0,0,0.1);font-family:Segoe UI Semibold;" class="text2"  > ELIJAH </div>
-					<div style="background-color:rgba(255,255,255,0.6);box-shadow:1px 1px rgba(0,0,0,0.1);font-family:Segoe UI Semibold;" class="text2" > MCQUINN</div>
-					<div style="background-color:rgba(255,255,255,0.6);box-shadow:1px 1px rgba(0,0,0,0.1);height:60px;font-family:Segoe UI Semibold;" class="text3"  > CLOTHING<br></div>
+					
+					<div style="margin-left:-550px;margin-top:50px;text-shadow:2px 2px rgba(0,0,0,1);font-family:Segoe UI Semibold;color:white;" class="text2"  > ELIJAH  MCQUINN <br> CLOTHING </div>
+					
+				
 				<div class="text4">  <span> </span>  </div>
 				<!--@ desktop && tablet landscape @-->
 				<div class="links">
@@ -15429,7 +15430,27 @@ collection, whose reference begins with a 3.
       font-size: 10px; } }
   </style></div><div class="vsv-box vsv-with-menu-lateral" data-id="201"><div>
         <div id="trigger0" class="vsv-container">
-            <div class="title">New <span></span></div>
+		
+		
+            <!--div style="margin-top:;margin-left:-100px;text-align:center;" class="title"> 
+			<div style="margin-left:150px;background-color:#fad10a;" ><div style="height:10px;" ></div>
+			<span style="margin-top:10px;padding-top:10px;color:red;text-shadow:1px 1px rgba(0 ,0,0,0.5);"><h1>SALE </h1><span>
+			<br>
+			<span style="color:red;text-shadow:1px 1px rgba(0 ,0,0,0.5);" > Up To 70% off</span>
+			<br><br>
+			<span style="color:red;text-shadow:1px 1px rgba(0 ,0,0,0.5);" >spring / summer 2018 collection </span>
+			<br><br>
+			
+			<span></span>
+			
+			</div>
+			</div-->
+			
+		
+            <div class="title"><span></span></div>
+			
+			
+			
             <div class="vsv-menu-wrapper" style="">
                 <div style="top: auto; left: auto; bottom: auto; right: auto; margin: 0px; display: block; position: absolute; box-sizing: content-box; width: 119.933px; height: 590px;" data-scrollmagic-pin-spacer="" class="scrollmagic-pin-spacer">
 				<div class="vsv-menu-prendas" style="position: absolute; margin: auto; top: 0px; left: 0px; bottom: auto; right: auto;">
@@ -16014,8 +16035,7 @@ echo '
 		   			<span class="nav-socialnetwork-link">
 			<span class="social__icon fb icon">
 					
-					<a href="http://www.facebook.com/elijah mcquinn" target="_blank" rel="nofollow" data-ga-label="facebook">
-						
+					<a href="https://web.facebook.com/elijahmcquinn/?ref=br_rs" target="_blank" rel="nofollow" data-ga-label="facebook">					
 						f
 					</a>
 			</span>
@@ -16023,7 +16043,7 @@ echo '
 		   			<span class="nav-socialnetwork-link">
 			<span class="social__icon tw icon">
 					
-					<a href="http://www.twitter.com/elijah mcquinn" target="_blank" rel="nofollow" data-ga-label="twitter">
+					<a href="https://twitter.com/aharriet30" target="_blank" rel="nofollow" data-ga-label="twitter">
 						
 						t
 					</a>
@@ -16033,7 +16053,7 @@ echo '
 		   			<span class="nav-socialnetwork-link">
 			<span class="social__icon it icon">
 					
-					<a href="https://www.instagram.com/explore/tags/elijahmcquinnofficial/" target="_blank" rel="nofollow" data-ga-label="instagram">
+					<a href="https://www.instagram.com/elijahmcquinn/" target="_blank" rel="nofollow" data-ga-label="instagram">
 						
 						i
 					</a>

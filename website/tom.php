@@ -11,14 +11,14 @@ session_start();          //php part
 ?>
 
 <?php
-	if(empty($_POST["name"]) || empty($_POST["email"])  || empty($_POST["countries"])  || empty($_POST["tell"])){
+	if(empty($_POST["namem"]) || empty($_POST["email"])  || empty($_POST["countries"])  || empty($_POST["tell"])){
 	echo 'name , email , country and telephone number are mandatory fields';	
 	echo '
 <script type="text/javascript">
 window.location.href = "biladress.php";
 </script>';		
 	}else{
-$name = $_POST["name"];
+$name = $_POST["namem"];
 $email = $_POST["email"];
 $countries = $_POST["countries"];
 	

@@ -49,6 +49,7 @@ if ($conn->query($sql) === TRUE) {
 	
 	
 };
+$_SESSION['student'] = array();
 echo '
 <script type="text/javascript">
 window.location.href = "pay.php";

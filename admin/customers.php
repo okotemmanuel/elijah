@@ -462,11 +462,11 @@
                                 <table class="table table-bordered table-striped table-hover dataTable js-exportable">
                                     <thead>
                                         <tr>
-                                            <th>No</th>
+										 <th>No</th>
                                             <th>Name</th>
                                             <th>email</th>
                                             <th>Telephone</th>
-                                            <th>date</th>
+                                            <th>zip</th>
                                             <th>Location</th>
                                         </tr>
                                     </thead>
@@ -474,19 +474,67 @@
                                         <th>No</th>
                                             <th>Name</th>
                                             <th>email</th>
-                                            <th>Location</th>
-                                            <th>Amount</th>
+                                            <th>Telephone</th>
+                                            <th>zip</th>
                                             <th>Location</th>
                                     </tfoot>
 									  <tbody>
+									  
+			<?php include 'config.php';?>
+ <?php
+
+
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+	
+
+
+
+
+$sql = "SELECT * FROM customer ORDER BY ID DESC ";
+$result = mysqli_query($conn, $sql);
+
+if (mysqli_num_rows($result) > 0) {
+    // output data of each row
+	while($row = mysqli_fetch_assoc($result)){
+	$email = $row["email"];
+	$name = $row["name"];
+	$tel = $row["tel"];
+	$country = $row["country"];
+	$zip = $row["town"];
+	
+echo '
+
 									        <tr>
-                                            <td>1</td>
-                                            <td>Emma okot</td>
-                                            <td>SAND WICH</td>
-                                            <td>2</td>
-                                            <td>20000</td>
-                                            <td>MUTUNGO</td>
+                                            <td></td>
+                                            <td>'.$name.'</td>
+                                            <td>'.$email.'</td>
+                                            <td>'.$tel.'</td>
+                                            <td>'.$zip.'</td>
+                                            <td>'.$country.'</td>
                                         </tr>
+';
+}}
+ ?>									  
+									  
+									  
+									  
+									  
+									  
+									  
+									  
+									  
+									  
+									  
+										
+										
+										
+										
 									    </tbody>
                                </table>
                             </div>

@@ -14745,7 +14745,7 @@ echo '
        
 	   
 	   
-	   <div class="submenu-content submenu-content-js  single-brand " id="ninaSubmenu">
+	   <div style="height:200px;" class="submenu-content submenu-content-js  single-brand " id="ninaSubmenu">
              
 			  <div class="col-submenu col-submenu-js">
                 <ul>
@@ -14755,7 +14755,7 @@ echo '
                   </ul>
               </div>
 			 
-              <div class="col-submenu col-submenu-js">
+              <div class="col-submenu col-submenu-js"  >
                 <ul>
                           <li class="bold uppercase header">
                                   <span>GIRLS</span>
@@ -14983,14 +14983,7 @@ echo '
 
 
 ?>
-
-
-						 
-						 
-					
-                     
-                        
-                  </ul>
+      </ul>
               </div>
 			  
 			  
@@ -15107,8 +15100,9 @@ echo '
 					
 <?php
 
+
 $categg ='7';
-$sql = "SELECT * FROM items WHERE category='$categg'";
+$sql = "SELECT * FROM items WHERE category='$categg' ORDER BY ID DESC LIMIT 1";
 $result = mysqli_query($conn, $sql);
 
 if (mysqli_num_rows($result) > 0) {
@@ -15119,7 +15113,7 @@ if (mysqli_num_rows($result) > 0) {
 	$id =$row["id"];
 
 	
-$sql = "SELECT * FROM itemsimages WHERE iditem='$id'";
+$sql = "SELECT * FROM itemsimages WHERE iditem='$id' ORDER BY ID DESC LIMIT 1";
 $result = mysqli_query($conn, $sql);
 
 if (mysqli_num_rows($result) > 0) {
@@ -15132,10 +15126,10 @@ $img =$row["image"];
 }
 }	
 	
-	
+
 
 echo '
-     <img data-bg="897 1024 cover center top" src="../admin/'.$img.'" style="top: 0px; left: -230px; width: 459.012px; height: 524px; position: absolute;">
+     <img data-bg="897 1024 cover center top" src="../admin/'.$img.'" style="top: 0px; left: -230px; width: 100%; height: 524px; position: absolute;">
 			
 		
 
@@ -15154,9 +15148,10 @@ echo '
 				</div>
 				<div class="position-text position-text-center">
 					<div class="text1" > </div>
-					<div style="background-color:rgba(255,255,255,0.6);box-shadow:1px 1px rgba(0,0,0,0.1);font-family:Segoe UI Semibold;" class="text2"  > ELIJAH </div>
-					<div style="background-color:rgba(255,255,255,0.6);box-shadow:1px 1px rgba(0,0,0,0.1);font-family:Segoe UI Semibold;" class="text2"  > MCQUINN</div>
-					<div style="background-color:rgba(255,255,255,0.6);box-shadow:1px 1px rgba(0,0,0,0.1);font-family:Segoe UI Semibold;height:60px;" class="text3" > CLOTHING<br></div>
+					
+				<div style="margin-left:-550px;margin-top:50px;text-shadow:2px 2px rgba(0,0,0,1);font-family:Segoe UI Semibold;color:white;" class="text2"  > ELIJAH  MCQUINN <br> CLOTHING </div>
+				
+				
 				<div class="text4">  <span> </span>  </div>
 					<div class="links"><div class="link" data-cta="//shop.elijahmcquinn.com/redirect.faces?op=conta&amp;seccion=prendas.tejanos&amp;tiendaid=she"><span class="hvr-underline-fix2"> </span></div></div>
 				</div>
@@ -15204,7 +15199,7 @@ $img =$row["image"];
 	
 
 echo '
-   <img data-bg="2048 1141 cover center top" src="../admin/'.$img.'" style="top: 0px; left: 0px; width: 1263px; height: 703.654px; position: absolute;"></div><!--@ end desktop && tablet landscape @-->
+   <img data-bg="2048 1141 cover center top" src="../admin/'.$img.'" style="top: 0px; left: 0px; width: 100%; height: 703.654px; position: absolute;"></div><!--@ end desktop && tablet landscape @-->
 ';
 	}
 }
@@ -15220,7 +15215,7 @@ echo '
 			<div class="position-text position-text-top">
 				<div class="text0">   </div>
 			</div>
-			<div class="position-text position-text-center">
+			<div  class="position-text position-text-center">
 					<div class="text1" > </div>
 					
 					<div style="margin-left:-550px;margin-top:50px;text-shadow:2px 2px rgba(0,0,0,1);font-family:Segoe UI Semibold;color:white;" class="text2"  > ELIJAH  MCQUINN <br> CLOTHING </div>
@@ -15499,7 +15494,10 @@ echo '
 				   </div>
 
                     <div>
-                        <div class="vsv-menu-title2">Accessories</div>
+
+					
+					
+<div class="vsv-menu-title2">Accessories</div>
                         
 									   
       						 <?php

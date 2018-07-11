@@ -464,11 +464,10 @@
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="card">
 					
-					
-				<?php include 'config.php';?>
+<?php include 'config.php';?>
+
+
  <?php
-
-
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -477,8 +476,6 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 	
-
-
 $name = $text = $amount = $categ = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -497,7 +494,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 $sql = "INSERT INTO notification (notification, date)
 VALUES ('$amount','$date')";
 
+$rom = array();
+
+
 if ($conn->query($sql) === TRUE) {
+	$sqll = "SELECT * FROM customer ORDER BY ID DESC ";
+$resultl = mysqli_query($conn, $sqll);
+
+if (mysqli_num_rows($resultl) > 0) {
+    // output data of each row
+	while($rowl = mysqli_fetch_assoc($resultl)){
+	array_push($rom,$rowl["email"] );
+}
+}
+echo $email_to = implode(',', $rom); 
+	
+	
     echo 'Notification published ,ON '. $date. '<br>';	
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
@@ -513,9 +525,12 @@ echo '</div>';
 
 
 
-?> 	
+
+?>
+
+ 	
                         <div class="header">
-                            <h2>SEND NOTIFICATION</h2>
+                            <h2>SEND NEWS LETTER</h2>
                             <ul class="header-dropdown m-r--5">
                                 <li class="dropdown">
                                     <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">

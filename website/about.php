@@ -15029,15 +15029,26 @@ echo '
 
 
   <p class=""  >
-we have bee the best fashion designser in africa , 
+
+  Elijah Mcquinn is a brand started in 2016 by Alur Harriet and named after her son ”Elijah Cong Mcquinn” The meaning behind the brand is for training child headed homesteads in Northern Uganda with practical enterprenual skills to not only equip them, but in the run eradicate
+
+Elijah Mcquinn is a brand started in 2016 by Alur Harriet and named after her son ”Elijah Cong Mcquinn” The meaning behind the brand is for training child headed homesteads in Northern Uganda with practical enterprenual skills to not only equip them, but in the run eradicate poverty in the region.
+
+Of each piece you purchase 50% goes directly into training these youth.
+<br><br>
+With a view that existing materials are a precious resource with much untapped potential we bring you 40%recycled items that are fashionably wearable.
+
+
+Of each piece you purchase 50% goes directly into training these youth.
+
+With a view that existing materials are a precious resource with much untapped potential we bring you 40%recycled items that are fashionably wearable.
+  
+  
   </p>
-	  <p class=""  >
-we have bee the best fashion designser in africa , 
-  </p>   <p class=""  >
-we have bee the best fashion designser in africa , 
-  </p>  <p class=""  >
-we have bee the best fashion designser in africa , 
-  </p>
+
+  
+  
+  
 </center> 
 
 	  

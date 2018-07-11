@@ -539,7 +539,7 @@ if (mysqli_num_rows($resultr) > 0) {
 
 ?> 									  
 									  
-									  
+	<div>	</div>							  
 									    
 									    </tbody>
                                </table>

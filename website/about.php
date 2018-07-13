@@ -15025,12 +15025,10 @@ echo '
 
 
    
-    <center>  <h1>About ElijahMcQuinn</h1> 
+    <center>  <h1>Elijah Mcquinn</h1> 
 
-
+<br><br>
   <p class=""  >
-
-  Elijah Mcquinn is a brand started in 2016 by Alur Harriet and named after her son ”Elijah Cong Mcquinn” The meaning behind the brand is for training child headed homesteads in Northern Uganda with practical enterprenual skills to not only equip them, but in the run eradicate
 
 Elijah Mcquinn is a brand started in 2016 by Alur Harriet and named after her son ”Elijah Cong Mcquinn” The meaning behind the brand is for training child headed homesteads in Northern Uganda with practical enterprenual skills to not only equip them, but in the run eradicate poverty in the region.
 

@@ -521,7 +521,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	
 	if( !empty($name) && !empty($text) && !empty($amount)){
 	
-$sql = "UPDATE items SET name='$name' ,amount='$amount' WHERE id='$idit' ";
+$sql = "UPDATE items SET name='$name' ,amount='$amount' ,textt='$text'WHERE id='$idit' ";
 if ($conn->query($sql) === TRUE) {
     echo "New record created successfully";
 } else {

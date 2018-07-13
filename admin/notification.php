@@ -511,6 +511,8 @@ echo $email_to = implode(',', $rom);
 	
 	
     echo 'Notification published ,ON '. $date. '<br>';	
+	
+	
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }

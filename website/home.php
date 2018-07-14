@@ -15599,7 +15599,7 @@ echo '
 
 $categg = 9 ;
 
-$sqll = "SELECT * FROM items WHERE category='$categg' ORDER BY ID DESC LIMIT 6 ";
+$sqll = "SELECT * FROM items WHERE category='$categg' ORDER BY ID DESC";
 $resultt = mysqli_query($conn, $sqll);
 
 if (mysqli_num_rows($resultt) > 0) {

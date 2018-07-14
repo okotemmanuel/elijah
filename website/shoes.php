@@ -9,7 +9,23 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 ?>
-<html class="catalog_catalogPc p-n-catalog    add-horizontal-scroll" xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en"><script type="text/javascript" async="" src="women_files/js"></script><script id="mngRTD" src="women_files/mngrtd.js"></script><script src="women_files/441271682641901.js" async=""></script><script async="" src="women_files/fbevents.js"></script><script type="text/javascript" async="" src="women_files/ld.js"></script><script type="text/javascript" async="" src="women_files/conversion_async.js"></script><script type="text/javascript" async="" src="women_files/bat.js"></script><script type="text/javascript" async="" src="women_files/bntmtycmx0.js"></script><script type="text/javascript" async="" src="women_files/analytics.js"></script><script type="text/javascript" async="" src="women_files/ec.js"></script><script async="" src="women_files/analytics.js"></script><script async="" src="women_files/gtm.js"></script><script>(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(_dereq_,module,exports){
+<html class="catalog_catalogPc p-n-catalog    add-horizontal-scroll" xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+<script type="text/javascript" async="" src="women_files/js"></script>
+
+<script id="mngRTD" src="women_files/mngrtd.js"></script>
+<script src="women_files/441271682641901.js" async=""></script>
+<script async="" src="women_files/fbevents.js"></script>
+<script type="text/javascript" async="" src="women_files/ld.js">
+</script><script type="text/javascript" async="" src="women_files/conversion_async.js"></script>
+<script type="text/javascript" async="" src="women_files/bat.js"></script><script type="text/javascript" async="" src="women_files/bntmtycmx0.js">
+</script><script type="text/javascript" async="" src="women_files/analytics.js"></script>
+<script type="text/javascript" async="" src="women_files/ec.js"></script>
+<script async="" src="women_files/analytics.js"></script>
+<script async="" src="women_files/gtm.js"></script>
+
+<script>
+
+(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(_dereq_,module,exports){
 (function (global){
 'use strict';
 
@@ -14413,7 +14429,7 @@ function extend() {
 	
 		<div class="nav-main-container">
 
-		<div class="nav-logo">
+	<div class="nav-logo">
 			<img src="photos/logo.png" style="margin-left:30px;height:60px;">
 	</div>
 
@@ -14425,7 +14441,7 @@ function extend() {
     </li>
 	
 	 <li class="menu-elem ">
-        <a href="women.php" class="menu-link menu-link-js " data-id="sheSubmenu" data-ga-action="mujer" data-ga-label="exterior-mujer" data-ga-category="">Women</a>
+        <a href="women.php" class="menu-link menu-link-js" data-id="sheSubmenu" data-ga-action="mujer" data-ga-label="exterior-mujer" data-ga-category="">Women</a>
     </li>
 	
  
@@ -14439,7 +14455,7 @@ function extend() {
         <a href="boys.php" class="menu-link menu-link-js " data-id="ninoSubmenu" data-ga-action="nino" data-ga-label="exterior-nino" data-ga-category="">Boys</a>
     </li>
 	<li class="menu-elem ">
-        <a href="shoes.php" class="menu-link menu-link-js selected" data-id="violetaSubmenu" data-ga-action="violeta" data-ga-label="exterior-violeta" data-ga-category="">Shoes</a>
+        <a href="shoes.php" class="menu-link menu-link-js  selected" data-id="violetaSubmenu" data-ga-action="violeta" data-ga-label="exterior-violeta" data-ga-category="">Shoes</a>
     </li>
 	
 	<li class="menu-elem ">
@@ -14471,6 +14487,7 @@ function extend() {
 								<nav class="user-menu log_false" id="userMenu">
 										
 										<a href="https://shop.elijahmcquinn.com/us/login?tab=login" class="user-menu-link userMenu__content userMenu__register" data-origin="login"><span>Sign in</span></a>
+											
 											<a href="https://shop.elijahmcquinn.com/favorites" class="user-menu-link wishListButton wishlist_bolsa_txt userMenu__content userMenu__favoritos" data-ga="favoritos"><span>Wishlist</span></a>
 
 										
@@ -14998,15 +15015,8 @@ echo '
               </li>
           </ul>
       </nav>
-      <nav class="nav-filters nav-filters--gap" id="colorFilter">
-          <h2 class="nav-filters-header"></h2>
-      </nav>
-      <nav class="nav-filters nav-filters--gap" id="tallaFilter">
-          <h2 class="nav-filters-header"></h2>
-      </nav>
-        <nav class="nav-filters nav-filters--gap" id="priceFilter">
-          <h2 class="nav-filters-header"></h2>
-        </nav>
+  
+   
 </aside>
 </div>
 
@@ -15049,6 +15059,7 @@ if (mysqli_num_rows($results) > 0) {
 
 while($rows = mysqli_fetch_assoc($results)){	
 $image =$rows["image"];
+$imgid =$rows["id"];
 }
 
 }
@@ -15056,7 +15067,7 @@ $image =$rows["image"];
 
 echo ' 
       <div class="product-list-item product-layout-2-columns-A1 product-list-item-js" id="31080750" data-color="04" data-imgsize="A1">
-        <a class="product-list-link product-list-link-js" href="prod.php?id='.$id.'" title="Buckle high-waist trousers" target="_self">
+        <a class="product-list-link product-list-link-js" href="prod.php?id='.$id.'&idimg='.$imgid.'" title="Buckle high-waist trousers" target="_self">
             <div class="product-list-img img-container-js visible ">
                     <div class="swiper-container swiper-container-js">
                       <span class="swiper-button-prev">d</span>
@@ -15077,7 +15088,7 @@ echo '
             
             <span class="product-list-name">'.$name.'</span>
               <span class="product-list-fav product-list-fav-js" data-fav="add" data-color="04" data-url-service="/ws-favorites/favorites/v1/favorites" data-category="pantalones" data-id="31080750"></span>
-                <span class="product-list-price">UGX '.$amount.' /= </span>
+                <span class="product-list-price">UGX '.$amount.' /=</span>
           </div>
         </a>
       </div>
@@ -15136,7 +15147,7 @@ echo '
 	  
 
 </div>
-  
+    
 </div></div>
 </div>
 			</div><div id="scrollTop" class="scroll-top">
@@ -15199,7 +15210,7 @@ echo '
 			<footer id="footerMNG" class="footerMNG" data-ga-category="footer" data-cached="false">
 				<div class="container-fluid user-select">
 				
-				<span id="SVPie:SVFooterNewsletter:panelFooterRegistroNewsletter">
+			<span id="SVPie:SVFooterNewsletter:panelFooterRegistroNewsletter">
     	<div class="row">
        		<div class="col-xs-24 col-ie-24 fullcol">
 			
@@ -15249,9 +15260,7 @@ echo '
 		</div>
 		</span>
 	
-	
-	
-<div id="footerContentCache" class="row" data-cache-id="shop.elijahmcquinn.com_562_pc_400_US_she">
+	<div id="footerContentCache" class="row" data-cache-id="shop.elijahmcquinn.com_562_pc_400_US_she">
 
 		
 	
@@ -15363,12 +15372,9 @@ echo '
 	</div>
 	
 	
-	
-	
-	
-	
 
-			<script async="true" type="text/javascript"></script>
+
+				<script async="true" type="text/javascript"></script>
 					
 
 				</div>

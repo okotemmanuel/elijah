@@ -15626,15 +15626,14 @@ $imgid =$rows["id"];
 echo ' 
 
 	  
-	   <a class="product-list-link product-list-link-js" href="prod.php?id='.$id.'&idimg='.$imgid.'" title="" target="_self">
-        
+	
 	        <div class="image image50 image2 vsv-waypoint-image" style="visibility: inherit; opacity: 1;">
                         <div data-cta="//shop.elijahmcquinn.com/redirect.faces?op=CONTA&amp;producto=33030522&amp;color=20&amp;tiendaid=she" data-ga-cr="top">
 						<img class="img-responsive" src="../admin/'.$image.'" data-width="100"></div>
                         <div class="price"><a href="https://shop.elijahmcquinn.com/redirect.faces?op=CONTA&amp;idioma=US&amp;pais=400&amp;producto=33030522&amp;tiendaid=she" class="vsv-opi-price" data-reference="33030522" data-color="20">
                          </a></div>
                     </div>
-					</a>
+					
 ';
 
 

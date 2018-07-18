@@ -14493,25 +14493,15 @@ function extend() {
 							<div class="pm__group pmGroup">
 		
 								<div class="pm__groupCards span12">
-									<div class="pm__cardBox">
-													<div class="pm__card cuadroPago  selected" id="pm__paypal" data-analytics="paypal">
-														<input value="PAYPAL" type="hidden">
-														<input name="tarjeta" value="paypal" checked="checked" type="radio">
-														<img src="payment_files/paypal2x.png" class="">
-													</div><input id="SVBody:panelTarjetasForm:SVResumenTpvs:j_id_13w:0:j_id_141:5:j_id_143:0:selectTPVButton" name="SVBody:panelTarjetasForm:SVResumenTpvs:j_id_13w:0:j_id_141:5:j_id_143:0:selectTPVButton" onclick="jsf.util.chain(document.getElementById('SVBody:panelTarjetasForm:SVResumenTpvs:j_id_13w:0:j_id_141:5:j_id_143:0:selectTPVButton'), event,'changePaymentMethod(\'paypal\');if ($(this).parent().find(\'.cuadroPago\').hasClass(\'selected\')) { return false; } else {mostrarInfoPopup();};', 'jsf.ajax.request(\'SVBody:panelTarjetasForm:SVResumenTpvs:j_id_13w:0:j_id_141:5:j_id_143:0:selectTPVButton\',event,{execute:\'@this \',render:\'SVBody:panelTarjetasForm:SVResumenTpvs:panelContenidoTarjetas SVBody:SVResumenModalDatosEnvio:modalDatosEnvio SVBody:SVResumenDatosEnvio:datosEnvio SVBody:panelTarjetasForm:SVResumenTpvs:hiddenTarjetas SVBody:panelTarjetasForm:SVResumenImporteTotalComprar:botoneraCheckout \',onevent:function(e){if (e.status == \'begin\') {removePCI();} else if (e.status == \'success\') {showContenidoTarjeta(); ocultarInfoPopup(); showPCI();}},\'javax.faces.behavior.event\':\'click\'})'); return false;" class="loadPayment" type="submit">
-										</div>
+									
 										
-												<div class="pm__cardBox">
-													<div class="pm__card cuadroPago  selected" id="pm__paypal" data-analytics="paypal">
-														<input value="PAYPAL" type="hidden">
-														<input name="tarjeta" value="paypal" checked="checked" type="radio"> <b style="color:blue;">MOBILE MONEY </b>
-													
-													</div><input id="SVBody:panelTarjetasForm:SVResumenTpvs:j_id_13w:0:j_id_141:5:j_id_143:0:selectTPVButton" name="SVBody:panelTarjetasForm:SVResumenTpvs:j_id_13w:0:j_id_141:5:j_id_143:0:selectTPVButton" onclick="jsf.util.chain(document.getElementById('SVBody:panelTarjetasForm:SVResumenTpvs:j_id_13w:0:j_id_141:5:j_id_143:0:selectTPVButton'), event,'changePaymentMethod(\'paypal\');if ($(this).parent().find(\'.cuadroPago\').hasClass(\'selected\')) { return false; } else {mostrarInfoPopup();};', 'jsf.ajax.request(\'SVBody:panelTarjetasForm:SVResumenTpvs:j_id_13w:0:j_id_141:5:j_id_143:0:selectTPVButton\',event,{execute:\'@this \',render:\'SVBody:panelTarjetasForm:SVResumenTpvs:panelContenidoTarjetas SVBody:SVResumenModalDatosEnvio:modalDatosEnvio SVBody:SVResumenDatosEnvio:datosEnvio SVBody:panelTarjetasForm:SVResumenTpvs:hiddenTarjetas SVBody:panelTarjetasForm:SVResumenImporteTotalComprar:botoneraCheckout \',onevent:function(e){if (e.status == \'begin\') {removePCI();} else if (e.status == \'success\') {showContenidoTarjeta(); ocultarInfoPopup(); showPCI();}},\'javax.faces.behavior.event\':\'click\'})'); return false;" class="loadPayment" type="submit">
-										</div>
+										
 										
 									
 										
 								</div>
+								
+								
 								<div class="pm__groupContainer row-fluid">
 									<div class="span12 pm__groupContainerCell"></div>
 								</div>

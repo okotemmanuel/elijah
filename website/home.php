@@ -14473,12 +14473,20 @@ function extend() {
 		<div class="nav-main-container">
 
 	<div class="nav-logo">
-			<img src="photos/logo.png" style="margin-left:30px;height:60px;">
+			<img src="photos/logo.png" style="margin-left:1px;height:60px;">
 	</div>
 
 	<div class="nav-shop">
 		<nav id="menuContainer" class="menu-container hover"><ul class="menu-list">
-    
+		
+       <li class="menu-elem ">
+	   <style>
+			.g{
+				a:color;
+			}
+	   </style>
+        <span href="home.php" class="g menu-link menu-link-js " style="color:white;">home </span>
+    </li>
 	   <li class="menu-elem ">
         <a href="home.php" class="menu-link menu-link-js selected" >Home</a>
     </li>
@@ -14588,15 +14596,17 @@ function extend() {
 		</div>
 		</div>
 	</div>
-				<div class="submenu-container" id="submenuContainer">
+	
+	
+				<div  class="submenu-container" id="submenuContainer" style="min-height:10px;" >
   <div class="submenu-arrow submenu-arrow-js ninoSubmenu"></div>
   <div class="submenu-line ninoSubmenu"></div>
   <div class="submenu-arrow submenu-arrow-js ninaSubmenu"></div>
   <div class="submenu-line ninaSubmenu"></div>
 
-        <div class="submenu-content submenu-content-js   " id="sections_nuevoSubmenu">
-            <div class="lord-carousel lord-carousel-js carousel-active carousel-active-js">
-              <div class="menu-img-container carousel-content carousel-content-js type-new" style="width: 1324px; left: 30px;">
+        <div class="submenu-content submenu-content-js   " id="sections_nuevoSubmenu" style="max-height:100px;">
+            <div class="lord-carousel lord-carousel-js carousel-active carousel-active-js" style="max-height:100px;">
+              <div class="menu-img-container carousel-content carousel-content-js type-new" style="width: 1324px; left: 30px;height:100px;">
                   <a class="menu-img-link carousel-block-js" href="https://shop.elijahmcquinn.com/us/women/new-now_d71927648" data-ga-action="nuevo" data-ga-label="nuevo-mujer" data-ga-category="menu">
                     <div class="menu-img-container">
                       <img class="menu-img" src="women_files/woman12.jpg">
@@ -14622,8 +14632,9 @@ function extend() {
               </div>
 			  
 			  
-              <div class="col-submenu col-submenu-js">
-                <ul>
+              <div  class="col-submenu col-submenu-js">
+               
+			   <ul>
                           <li class="bold uppercase header">
                                   <span>WOMEN</span>
                           </li>
@@ -14632,7 +14643,6 @@ function extend() {
 
 // Create connection
 // Check connection
-
 
 $categg ='womens';
 $sql = "SELECT * FROM category WHERE category='$categg'";
@@ -15450,7 +15460,8 @@ collection, whose reference begins with a 3.
                 <div style="top: auto; left: auto; bottom: auto; right: auto; margin: 0px; display: block; position: absolute; box-sizing: content-box; width: 119.933px; height: 590px;" data-scrollmagic-pin-spacer="" class="scrollmagic-pin-spacer">
 				<div class="vsv-menu-prendas" style="position: absolute; margin: auto; top: 0px; left: 0px; bottom: auto; right: auto;">
                     <div>
-                        <div class="vsv-menu-title">WOMENS </div>
+					
+                        <div class="vsv-menu-title"><b>WOMENS </b></div>
                     
 					   
       						 <?php
@@ -15481,7 +15492,7 @@ echo '
 	    
 					   <div class="link"  data-ga-cr="dresses">
 					   <a href="women.php?id='.$id.'">
-					   <span class="hvr-underline-fix2">'.$categ.'</span>
+					  <span class="hvr-underline-fix2">'.$categ.'</span>
 					   </a></div>
 
 ';
@@ -15497,7 +15508,7 @@ echo '
 
 					
 					
-<div class="vsv-menu-title2">Accessories</div>
+<div class="vsv-menu-title2"><b>Accessories</b></div>
                         
 									   
       						 <?php
@@ -15528,7 +15539,7 @@ echo '
 	    
 					   <div class="link"  data-ga-cr="dresses">
 					   <a href="women.php?id='.$id.'">
-					   <span class="hvr-underline-fix2">'.$categ.'</span>
+					 <span class="hvr-underline-fix2">'.$categ.'</span>
 					   </a></div>
 
 ';

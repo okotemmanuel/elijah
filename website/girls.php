@@ -15055,7 +15055,7 @@ $image =$rows["image"];
 
 echo ' 
       <div class="product-list-item product-layout-2-columns-A1 product-list-item-js" id="31080750" data-color="04" data-imgsize="A1">
-        <a class="product-list-link product-list-link-js" href="prod.php?id='.$id.'" title="Buckle high-waist trousers" target="_self">
+        <a class="product-list-link product-list-link-js" href="prod.php?id='.$id.'" title="" target="_self">
             <div class="product-list-img img-container-js visible ">
                     <div class="swiper-container swiper-container-js">
                       <span class="swiper-button-prev">d</span>

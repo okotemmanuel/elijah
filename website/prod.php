@@ -14035,7 +14035,7 @@ function extend() {
 			
 			<title> elijahmcquinn uganda</title>
 		<meta name="description" content="Flowy fabric High-rise Tuck detail Belt loops Belt buckle closure Twin side pockets Zip and hook closure ">
-		<meta property="og:title" content="Buckle high-waist trousers -  Women | elijahmcquinn uganda">
+		<meta property="og:title" content=" -  Women | elijahmcquinn uganda">
 		<meta property="og:type" content="article">
 		<meta property="og:image" content="https://st.mngbcn.com/rcs/pics/static/T3/fotos/S6/31080750_04.jpg?ts=1528908162308">
 		<meta property="og:url" content="https://elijah-mcquinn.com/us/women/pants-straight/buckle-high-waist-trousers_31080750.html?c=04&amp;n=1&amp;s=nuevo">
@@ -14758,7 +14758,7 @@ while($rows = mysqli_fetch_assoc($results)){
 
  echo ' 	
 <a href="prod.php?id='.$id.'&idimg='.$imgid.'" ><div class="carousel-img-container" role="button" tabindex="0">
-	<img class="carousel-img" src="../admin/'.$image.'" alt="Buckle high-waist trousers">
+	<img class="carousel-img" src="../admin/'.$image.'" alt="">
 	</div></a>
 	';
 

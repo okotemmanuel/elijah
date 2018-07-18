@@ -14482,10 +14482,10 @@ function extend() {
        <li class="menu-elem ">
 	   <style>
 			.g{
-				a:color;
+				text-decoration: none;
 			}
 	   </style>
-        <span href="home.php" class="g menu-link menu-link-js " style="color:white;">home </span>
+        <span href="home.php" class="g menu-link  " style="color:white;text-decoration: none">home </span>
     </li>
 	   <li class="menu-elem ">
         <a href="home.php" class="menu-link menu-link-js selected" >Home</a>

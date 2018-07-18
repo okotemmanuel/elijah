@@ -14420,6 +14420,11 @@ function extend() {
 	<div class="nav-shop">
 		<nav id="menuContainer" class="menu-container hover"><ul class="menu-list">
     
+	      <li class="menu-elem ">
+        <span href="home.php" class="g menu-link  " style="color:white;text-decoration: none">home </span>
+    </li>
+	
+	
 	   <li class="menu-elem ">
         <a href="home.php" class="menu-link menu-link-js " data-id="sheSubmenu" data-ga-action="mujer" data-ga-label="exterior-mujer" data-ga-category="">Home</a>
     </li>
@@ -14521,7 +14526,7 @@ function extend() {
 		</div>
 		</div>
 	</div>
-				<div class="submenu-container" id="submenuContainer">
+				<div class="submenu-container" id="submenuContainer" style="min-height:10px;" >
   <div class="submenu-arrow submenu-arrow-js ninoSubmenu"></div>
   <div class="submenu-line ninoSubmenu"></div>
   <div class="submenu-arrow submenu-arrow-js ninaSubmenu"></div>

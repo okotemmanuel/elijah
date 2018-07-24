@@ -14729,10 +14729,10 @@ payment: function (data, actions) {
           line1: '4th Floor',
           line2: 'Unit #34',
           city: 'San Jose',
-          country_code: 'US',
-          postal_code: '95131',
-          phone: '011862212345678',
-          state: 'CA'
+          country_code: 'UG',
+          postal_code: '256',
+          phone: '',
+          state: 'kampala'
         }
       }
     }],

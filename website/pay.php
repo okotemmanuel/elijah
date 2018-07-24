@@ -14666,12 +14666,15 @@ settings.</p>
 	
 <script src="https://www.paypalobjects.com/api/checkout.js"></script>
 <script>
-var val = "<?php 
-$val=3800 * $amnt; 
+
+var val = "<?php $amnt = 60000;
+$val= $amnt/3800; 
+//echo(round($val));
+$val= number_format((float)$val, 1, '.', '');
 echo $val ;
 ?>";
 
-
+console.log(val+"hello");
 paypal.Button.render({
   // Configure environment
  //env: 'sandbox',

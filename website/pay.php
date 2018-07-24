@@ -14676,11 +14676,11 @@ echo $val ;
 
 paypal.Button.render({
   // Configure environment
- env: 'sandbox',
-  //env: 'production',
+ //env: 'sandbox',
+  env: 'production',
   client: {
-   sandbox: 'AXXgwbVa5EFkhrgT0bl1q78jMR337PeHEro0MARo-1kqdWt3JWkAd8_nIqdyHHZm4Ym82j9UNiiT5Wgf',
-  // production: 'AQRCd13Za7eOcKUuAH9ZM4izxNFl0ydGLilvNxkRnN222zL-G0i3VIWxyhlwvQbZjz9hzOjK3WxGMVSl'
+   //sandbox: 'AXXgwbVa5EFkhrgT0bl1q78jMR337PeHEro0MARo-1kqdWt3JWkAd8_nIqdyHHZm4Ym82j9UNiiT5Wgf',
+   production: 'AQRCd13Za7eOcKUuAH9ZM4izxNFl0ydGLilvNxkRnN222zL-G0i3VIWxyhlwvQbZjz9hzOjK3WxGMVSl'
   },
   // Customize button (optional)
   locale: 'en_US',

@@ -14666,13 +14666,19 @@ settings.</p>
 	
 <script src="https://www.paypalobjects.com/api/checkout.js"></script>
 <script>
+var val = "<?php 
+$val=3800 * $amnt; 
+echo $val ;
+?>";
+
+
 paypal.Button.render({
   // Configure environment
-  //env: 'sandbox',
+ //env: 'sandbox',
   env: 'production',
   client: {
-   // sandbox: 'AaZj3TkX_cF72osjlsz9xSpOh0L9bwLOh5ZoqgpzEcxstIH7sJKCbTTM-dfelRxf-k3R0BWDVw9rRSrZ',
-    production: 'Ac5C4w9pZJ2TQn_3hL--zLG-gYhbjFmccgf_zcrCdxsHH_-foT9oN6bxEz2zC5Cy4-BjE9bYy5aB2Snl'
+    //sandbox: 'AaZj3TkX_cF72osjlsz9xSpOh0L9bwLOh5ZoqgpzEcxstIH7sJKCbTTM-dfelRxf-k3R0BWDVw9rRSrZ',
+   production: 'Ac5C4w9pZJ2TQn_3hL--zLG-gYhbjFmccgf_zcrCdxsHH_-foT9oN6bxEz2zC5Cy4-BjE9bYy5aB2Snl'
   },
   // Customize button (optional)
   locale: 'en_US',
@@ -14686,15 +14692,15 @@ payment: function (data, actions) {
   return actions.payment.create({
     transactions: [{
       amount: {
-        total: '30.11',
+        total: val,
         currency: 'USD',
         details: {
-          subtotal: '30.00',
-          tax: '0.07',
-          shipping: '0.03',
-          handling_fee: '1.00',
-          shipping_discount: '-1.00',
-          insurance: '0.01'
+          subtotal: val,
+          tax: '0.0',
+          shipping: '0.0',
+          handling_fee: '0.0',
+          shipping_discount: '0.0',
+          insurance: '0.0'
         }
       },
       description: 'The payment transaction description.',
@@ -14707,21 +14713,12 @@ payment: function (data, actions) {
       item_list: {
         items: [
           {
-            name: 'hat',
-            description: 'Brown hat.',
-            quantity: '5',
-            price: '3',
-            tax: '0.01',
-            sku: '1',
-            currency: 'USD'
-          },
-          {
-            name: 'handbag',
-            description: 'Black handbag.',
+            name: 'Elijah McQuinn Products',
+            description: 'Best African designs.',
             quantity: '1',
-            price: '15',
-            tax: '0.02',
-            sku: 'product34',
+            price: val,
+            tax: '0.0',
+            sku: '0.0',
             currency: 'USD'
           }
         ],

@@ -1,15 +1,17 @@
 <div id="paypal-button"></div>
-
+<div id="result">hello</div>
 	
 <script src="https://www.paypalobjects.com/api/checkout.js"></script>
 <script>
+var val = "<?php $val="1000" ; echo $val ?>";
+console.log( val+"hello" );
 paypal.Button.render({
   // Configure environment
-  //env: 'sandbox',
-  env: 'production',
+  env: 'sandbox',
+  //env: 'production',
   client: {
-   // sandbox: 'AaZj3TkX_cF72osjlsz9xSpOh0L9bwLOh5ZoqgpzEcxstIH7sJKCbTTM-dfelRxf-k3R0BWDVw9rRSrZ',
-    production: 'Ac5C4w9pZJ2TQn_3hL--zLG-gYhbjFmccgf_zcrCdxsHH_-foT9oN6bxEz2zC5Cy4-BjE9bYy5aB2Snl'
+   sandbox: 'AaZj3TkX_cF72osjlsz9xSpOh0L9bwLOh5ZoqgpzEcxstIH7sJKCbTTM-dfelRxf-k3R0BWDVw9rRSrZ',
+  //  production: 'Ac5C4w9pZJ2TQn_3hL--zLG-gYhbjFmccgf_zcrCdxsHH_-foT9oN6bxEz2zC5Cy4-BjE9bYy5aB2Snl'
   },
   // Customize button (optional)
   locale: 'en_US',
@@ -23,7 +25,7 @@ payment: function (data, actions) {
   return actions.payment.create({
     transactions: [{
       amount: {
-        total: '30.11',
+        total: '1000',
         currency: 'USD',
         details: {
           subtotal: '30.00',
@@ -87,4 +89,3 @@ payment: function (data, actions) {
   }
 }, '#paypal-button');
 </script>
-		

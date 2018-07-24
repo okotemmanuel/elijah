@@ -14731,7 +14731,7 @@ payment: function (data, actions) {
           city: 'San Jose',
           country_code: 'UG',
           postal_code: '256',
-          phone: '',
+          phone: '0779815657',
           state: 'kampala'
         }
       }

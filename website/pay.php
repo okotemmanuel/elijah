@@ -14667,21 +14667,20 @@ settings.</p>
 <script src="https://www.paypalobjects.com/api/checkout.js"></script>
 <script>
 
-var val = "<?php $amnt = 60000;
+var val = "<?php
 $val= $amnt/3800; 
 //echo(round($val));
 $val= number_format((float)$val, 1, '.', '');
 echo $val ;
 ?>";
 
-console.log(val+"hello");
 paypal.Button.render({
   // Configure environment
- //env: 'sandbox',
-  env: 'production',
+ env: 'sandbox',
+  //env: 'production',
   client: {
-    //sandbox: 'AaZj3TkX_cF72osjlsz9xSpOh0L9bwLOh5ZoqgpzEcxstIH7sJKCbTTM-dfelRxf-k3R0BWDVw9rRSrZ',
-   production: 'Ac5C4w9pZJ2TQn_3hL--zLG-gYhbjFmccgf_zcrCdxsHH_-foT9oN6bxEz2zC5Cy4-BjE9bYy5aB2Snl'
+   sandbox: 'AXXgwbVa5EFkhrgT0bl1q78jMR337PeHEro0MARo-1kqdWt3JWkAd8_nIqdyHHZm4Ym82j9UNiiT5Wgf',
+  // production: 'AQRCd13Za7eOcKUuAH9ZM4izxNFl0ydGLilvNxkRnN222zL-G0i3VIWxyhlwvQbZjz9hzOjK3WxGMVSl'
   },
   // Customize button (optional)
   locale: 'en_US',

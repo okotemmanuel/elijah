@@ -14671,6 +14671,7 @@ var val = "<?php
 $val= $amnt/3800; 
 //echo(round($val));
 $val= number_format((float)$val, 1, '.', '');
+$vall = $val-5;
 echo $val ;
 ?>";
 
@@ -14697,10 +14698,10 @@ payment: function (data, actions) {
         total: val,
         currency: 'USD',
         details: {
-          subtotal: val,
+          subtotal: vall,
           tax: '0.0',
-          shipping: '0.0',
-          handling_fee: '0.0',
+          shipping: '4.0',
+          handling_fee: '1.0',
           shipping_discount: '0.0',
           insurance: '0.0'
         }

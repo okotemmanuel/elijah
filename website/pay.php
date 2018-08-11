@@ -14699,8 +14699,8 @@ payment: function (data, actions) {
         details: {
           subtotal: val,
           tax: '0.0',
-          shipping: '0.0',
-          handling_fee: '0.0',
+          shipping: '4.0',
+          handling_fee: '1.0',
           shipping_discount: '0.0',
           insurance: '0.0'
         }

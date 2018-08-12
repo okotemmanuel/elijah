@@ -14671,8 +14671,11 @@ var val = "<?php
 $val= $amnt/3800; 
 //echo(round($val));
 $val= number_format((float)$val, 1, '.', '');
-$vall = $val-5;
 echo $val ;
+?>";
+
+var vall = "<?php
+echo $val-5 ;
 ?>";
 
 paypal.Button.render({
@@ -14695,7 +14698,7 @@ payment: function (data, actions) {
   return actions.payment.create({
     transactions: [{
       amount: {
-        total: val,
+        total: val ,
         currency: 'USD',
         details: {
           subtotal: vall,
@@ -14719,9 +14722,10 @@ payment: function (data, actions) {
             name: 'Elijah McQuinn Products',
             description: 'Best African designs.',
             quantity: '1',
-            price: val,
+            price: vall,
             tax: '0.0',
-            sku: '0.0',
+            sku: '5.0',
+			
             currency: 'USD'
           }
         ],

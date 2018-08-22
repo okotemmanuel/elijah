@@ -20,7 +20,7 @@
 	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 	$result = curl_exec($ch); // This is the result from the API
 	echo $result;
-	//echo 'hello -'.$ch;
+	echo 'hello -'.$ch;
 	if($result==true){echo 'sent';}else{echo 'not sent';}
 	
 	curl_close($ch);

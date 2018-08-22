@@ -1,7 +1,7 @@
 <?php
 	// Authorisation details.
 	$username = "okotemmanuel22@gmail.com";
-	$hash = "8f119a63a439c9774b9a443fd8237d3ae1ac66a87fa4153ac9f0e88743679673";
+	$hash = "LDhriYDFFak-NSHWos8CzDlW2LUvnip1jl8IA51lBY";
 
 	// Config variables. Consult http://api.txtlocal.com/docs for more info.
 	$test = "0";
